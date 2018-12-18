@@ -1,11 +1,5 @@
-import React, { Component } from 'react';
-import Data from "../data/characters.json";
+import React, { Component } from "react";
 
-
-const CharacterCard = () => (
-<div>Character Card
-</div>
-);
-
+const CharacterCard = ({ data }) => <div> {data.name}</div>;
 
 export default CharacterCard;
