@@ -1,58 +1,336 @@
 [
   {
-    "id": 74,
-    "name": "Goku",
-    "saga": "Buu",
-    "pictures": {
-      "face": "",
-      "profile": ""
+    "id":74,
+    "name":"Goku",
+    "saga":"Buu",
+    "pictures":{
+      "face":"",
+      "profile":""
     },
-    "race": ["Saiyan"],
-    "stats": {
-      "attack": 2.4,
-      "defense": 3.6,
-      "speed": 2.4,
-      "ki": 100
+    "race":[
+      "Saiyan"
+    ],
+    "stats":{
+      "attack":2.4,
+      "defense":3.6,
+      "speed":2.4,
+      "ki":100
     },
-    "moves": {
-      "basic": [
+    "moves":{
+      "basic":[
         {
-          "name": "Ki Charge",
-          "input": "D J A (A A A...)"
+          "name":"Ki Charge",
+          "input":"D J A (A A A...)"
         },
         {
-          "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "name":"Ki Blast",
+          "input":"D 🡆 A (A A A...)"
         }
       ],
-      "special": [
+      "special":[
         {
-          "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "name":"Kamehameha",
+          "input":"D 🡆 J"
         },
         {
-          "name": "Destructo Disc",
-          "input": "D 🡅 A"
+          "name":"Destructo Disc",
+          "input":"D 🡅 A"
         },
         {
-          "name": "Instant Transmission (Enemy)",
-          "input": "D 🡇 J"
+          "name":"Instant Transmission (Enemy)",
+          "input":"D 🡇 J"
         },
         {
-          "name": "Instant Transmission (Ally)",
-          "input": "D 🡇 JJ"
+          "name":"Instant Transmission (Ally)",
+          "input":"D 🡇 JJ"
         }
       ],
-      "counter": [
+      "counter":[
         {
-          "name": "Instant Transmission Counter Attack",
-          "input": "Block attack + A"
+          "name":"Instant Transmission Counter Attack",
+          "input":"Block attack + A"
         }
       ],
-      "transformations": [
+      "transformations":[
         {
-          "name": "Super Saiyan",
-          "input": "DJA J"
+          "name":"Super Saiyan",
+          "input":"DJA J"
+        }
+      ]
+    }
+  },
+  {
+    "id":75,
+    "name":"Super Saiyan Goku",
+    "saga":"Buu",
+    "pictures":{
+      "face":"",
+      "profile":""
+    },
+    "race":[
+      "Saiyan"
+    ],
+    "stats":{
+      "attack":3.38,
+      "defense":5.07,
+      "speed":3.38,
+      "ki":105
+    },
+    "moves":{
+      "basic":[
+        {
+          "name":"Ki Charge",
+          "input":"D J A (A A A...)"
+        },
+        {
+          "name":"Ki Blast",
+          "input":"D 🡆 A (A A A...)"
+        }
+      ],
+      "special":[
+        {
+          "name":"Super Energy Wave Volley",
+          "input":"D 🡆 AJ"
+        },
+        {
+          "name":"Kamehameha",
+          "input":"D 🡆 J"
+        },
+        {
+          "name":"Super Kamehameha",
+          "input":"D 🡆 JA"
+        },
+        {
+          "name":"Instant Kamehameha (In Front)",
+          "input":"D 🡆 J, D 🡆 A"
+        },
+        {
+          "name":"Instant Kamehameha (Behind)",
+          "input":"D 🡆 J, D 🡄 A"
+        },
+        {
+          "name":"Instant Super Kamehameha (In Front)",
+          "input":"D 🡆 JA, D 🡆 A"
+        },
+        {
+          "name":"Instant Super Kamehameha (Behind)",
+          "input":"D 🡆 JA, D 🡄 A"
+        },
+        {
+          "name":"Flash Kick (Upwards)",
+          "input":"D 🡅 A"
+        },
+        {
+          "name":"Flash Kick (Downwards)",
+          "input":"D 🡇 A"
+        },
+        {
+          "name":"Instant Transmission (Enemy)",
+          "input":"D 🡇 J"
+        },
+        {
+          "name":"Instant Transmission (Ally)",
+          "input":"D 🡇 JJ"
+        }
+      ],
+      "counter":[
+        {
+          "name":"Instant Transmission Counter Attack",
+          "input":"Block attack + A"
+        }
+      ],
+      "transformations":[
+        {
+          "name":"Super Saiyan 2",
+          "input":"DJA J"
+        },
+        {
+          "name":"Base Form",
+          "input":"DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id":76,
+    "name":"Super Saiyan 2 Goku",
+    "saga":"Buu",
+    "pictures":{
+      "face":"",
+      "profile":""
+    },
+    "race":[
+      "Saiyan"
+    ],
+    "stats":{
+      "attack":4.8,
+      "defense":7.2,
+      "speed":4.8,
+      "ki":150
+    },
+    "moves":{
+      "basic":[
+        {
+          "name":"Ki Charge",
+          "input":"D J A (A A A...)"
+        },
+        {
+          "name":"Ki Blast",
+          "input":"D 🡆 A (A A A...)"
+        }
+      ],
+      "special":[
+        {
+          "name":"Super Energy Wave Volley",
+          "input":"D 🡆 AJ"
+        },
+        {
+          "name":"Kamehameha",
+          "input":"D 🡆 J"
+        },
+        {
+          "name":"Super Kamehameha",
+          "input":"D 🡆 JA"
+        },
+        {
+          "name":"Instant Kamehameha (In Front)",
+          "input":"D 🡆 J, D 🡆 A"
+        },
+        {
+          "name":"Instant Kamehameha (Behind)",
+          "input":"D 🡆 J, D 🡄 A"
+        },
+        {
+          "name":"Instant Super Kamehameha (In Front)",
+          "input":"D 🡆 JA, D 🡆 A"
+        },
+        {
+          "name":"Instant Super Kamehameha (Behind)",
+          "input":"D 🡆 JA, D 🡄 A"
+        },
+        {
+          "name":"Explosive Wave",
+          "input":"D 🡅 J"
+        },
+        {
+          "name":"Meteor Blast",
+          "input":"D 🡇 A, D 🡆 J, D 🡅 J"
+        },
+        {
+          "name":"Instant Transmission (Enemy)",
+          "input":"D 🡇 J"
+        },
+        {
+          "name":"Instant Transmission (Ally)",
+          "input":"D 🡇 JJ"
+        }
+      ],
+      "counter":[
+        {
+          "name":"Instant Transmission Counter Attack",
+          "input":"Block attack + A"
+        }
+      ],
+      "transformations":[
+        {
+          "name":"Super Saiyan 2",
+          "input":"DJA J"
+        },
+        {
+          "name":"Base Form",
+          "input":"DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id":77,
+    "name":"Super Saiyan 3 Goku",
+    "saga":"Buu",
+    "pictures":{
+      "face":"",
+      "profile":""
+    },
+    "race":[
+      "Saiyan"
+    ],
+    "stats":{
+      "attack":9.6,
+      "defense":14.4,
+      "speed":9.6,
+      "ki":200
+    },
+    "moves":{
+      "basic":[
+        {
+          "name":"Ki Charge",
+          "input":"D J A (A A A...)"
+        },
+        {
+          "name":"Ki Blast",
+          "input":"D 🡆 A (A A A...)"
+        }
+      ],
+      "special":[
+        {
+          "name":"Super Energy Wave Volley",
+          "input":"D 🡆 AJ"
+        },
+        {
+          "name":"Kamehameha",
+          "input":"D 🡆 J"
+        },
+        {
+          "name":"Super Kamehameha",
+          "input":"D 🡆 JA"
+        },
+        {
+          "name":"Instant Kamehameha (In Front)",
+          "input":"D 🡆 J, D 🡆 A"
+        },
+        {
+          "name":"Instant Kamehameha (Behind)",
+          "input":"D 🡆 J, D 🡄 A"
+        },
+        {
+          "name":"Instant Super Kamehameha (In Front)",
+          "input":"D 🡆 JA, D 🡆 A"
+        },
+        {
+          "name":"Instant Super Kamehameha (Behind)",
+          "input":"D 🡆 JA, D 🡄 A"
+        },
+        {
+          "name":"Kiai Blast Combo",
+          "input":"D 🡅 A A A A"
+        },
+        {
+          "name":"Explosive Wave",
+          "input":"D 🡅 J"
+        },
+        {
+          "name":"Dragonthrow",
+          "input":"Grab + J"
+        },
+        {
+          "name":"Instant Transmission (Enemy)",
+          "input":"D 🡇 J"
+        },
+        {
+          "name":"Instant Transmission (Ally)",
+          "input":"D 🡇 JJ"
+        }
+      ],
+      "counter":[
+        {
+          "name":"Instant Transmission Counter Attack",
+          "input":"Block attack + A"
+        }
+      ],
+      "transformations":[
+        {
+          "name":"Base Form",
+          "input":"DJA D"
         }
       ]
     }
