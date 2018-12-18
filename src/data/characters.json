@@ -1,0 +1,60 @@
+[
+  {
+    "id": 74,
+    "name": "Goku",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 2.4,
+      "defense": 3.6,
+      "speed": 2.4,
+      "ki": 100
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Destructo Disc",
+          "input": "D 🡅 A"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D 🡇 J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D 🡇 JJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Instant Transmission Counter Attack",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan",
+          "input": "DJA J"
+        }
+      ]
+    }
+  }
+]
