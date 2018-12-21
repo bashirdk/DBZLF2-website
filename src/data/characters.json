@@ -1,336 +1,1247 @@
 [
   {
-    "id":74,
-    "name":"Goku",
-    "saga":"Buu",
-    "pictures":{
-      "face":"",
-      "profile":""
+    "id": 66,
+    "url_id": "vegeta",
+    "name": "Vegeta",
+    "saga": "Namek",
+    "pictures": {
+      "face": "",
+      "profile": ""
     },
-    "race":[
-      "Saiyan"
-    ],
-    "stats":{
-      "attack":2.4,
-      "defense":3.6,
-      "speed":2.4,
-      "ki":100
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 1.8,
+      "defense": 2.7,
+      "speed": 2.7,
+      "ki": 100
     },
-    "moves":{
-      "basic":[
+    "moves": {
+      "basic": [
         {
-          "name":"Ki Charge",
-          "input":"D J A (A A A...)"
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
         },
         {
-          "name":"Ki Blast",
-          "input":"D 🡆 A (A A A...)"
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
         }
       ],
-      "special":[
+      "special": [
         {
-          "name":"Kamehameha",
-          "input":"D 🡆 J"
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 JA"
         },
         {
-          "name":"Destructo Disc",
-          "input":"D 🡅 A"
+          "name": "Dirty Fireworks",
+          "input": "D 🡅 A A"
         },
         {
-          "name":"Instant Transmission (Enemy)",
-          "input":"D 🡇 J"
+          "name": "Genocide Breaker",
+          "input": "D 🡅 JA"
         },
         {
-          "name":"Instant Transmission (Ally)",
-          "input":"D 🡇 JJ"
+          "name": "Final Crash",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Final Burst Cannon",
+          "input": "D 🡇 J"
+        },
+        {
+          "name": "Final Galick Cannon",
+          "input": "Grabbing Enemy + D 🡅 A"
         }
       ],
-      "counter":[
+      "counter": [
         {
-          "name":"Instant Transmission Counter Attack",
-          "input":"Block attack + A"
+          "name": "Basic Counter",
+          "input": "Block attack + A"
         }
       ],
-      "transformations":[
+      "transformations": []
+    }
+  },
+  {
+    "id": 67,
+    "url_id": "vegeta",
+    "name": "Vegeta",
+    "saga": "Android",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 2.15,
+      "defense": 3.23,
+      "speed": 2.15,
+      "ki": 100
+    },
+    "moves": {
+      "basic": [
         {
-          "name":"Super Saiyan",
-          "input":"DJA J"
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
+        },
+        {
+          "name": "Maximum Flasher",
+          "input": "D 🡆 J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan",
+          "input": "DJA J"
         }
       ]
     }
   },
   {
-    "id":75,
-    "name":"Super Saiyan Goku",
-    "saga":"Buu",
-    "pictures":{
-      "face":"",
-      "profile":""
+    "id": 68,
+    "url_id": "ss-vegeta",
+    "name": "Super Saiyan Vegeta",
+    "saga": "Android",
+    "pictures": {
+      "face": "",
+      "profile": ""
     },
-    "race":[
-      "Saiyan"
-    ],
-    "stats":{
-      "attack":3.38,
-      "defense":5.07,
-      "speed":3.38,
-      "ki":105
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 3.03,
+      "defense": 4.55,
+      "speed": 3.03,
+      "ki": 125
     },
-    "moves":{
-      "basic":[
+    "moves": {
+      "basic": [
         {
-          "name":"Ki Charge",
-          "input":"D J A (A A A...)"
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
         },
         {
-          "name":"Ki Blast",
-          "input":"D 🡆 A (A A A...)"
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
         }
       ],
-      "special":[
+      "special": [
         {
-          "name":"Super Energy Wave Volley",
-          "input":"D 🡆 AJ"
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
         },
         {
-          "name":"Kamehameha",
-          "input":"D 🡆 J"
+          "name": "Big Bang Attack",
+          "input": "D 🡇 A"
         },
         {
-          "name":"Super Kamehameha",
-          "input":"D 🡆 JA"
+          "name": "Final Flash",
+          "input": "D 🡆 J"
         },
         {
-          "name":"Instant Kamehameha (In Front)",
-          "input":"D 🡆 J, D 🡆 A"
+          "name": "Photon Bomber",
+          "input": "D 🡅 A"
         },
         {
-          "name":"Instant Kamehameha (Behind)",
-          "input":"D 🡆 J, D 🡄 A"
+          "name": "Maximum Flasher",
+          "input": "D 🡇 A"
         },
         {
-          "name":"Instant Super Kamehameha (In Front)",
-          "input":"D 🡆 JA, D 🡆 A"
-        },
-        {
-          "name":"Instant Super Kamehameha (Behind)",
-          "input":"D 🡆 JA, D 🡄 A"
-        },
-        {
-          "name":"Flash Kick (Upwards)",
-          "input":"D 🡅 A"
-        },
-        {
-          "name":"Flash Kick (Downwards)",
-          "input":"D 🡇 A"
-        },
-        {
-          "name":"Instant Transmission (Enemy)",
-          "input":"D 🡇 J"
-        },
-        {
-          "name":"Instant Transmission (Ally)",
-          "input":"D 🡇 JJ"
+          "name": "Big Bang Attack Combo",
+          "input": "Super Punch + J A, D 🡇 A"
         }
       ],
-      "counter":[
+      "counter": [
         {
-          "name":"Instant Transmission Counter Attack",
-          "input":"Block attack + A"
-        }
-      ],
-      "transformations":[
-        {
-          "name":"Super Saiyan 2",
-          "input":"DJA J"
+          "name": "Basic Counter",
+          "input": "Block attack + A"
         },
         {
-          "name":"Base Form",
-          "input":"DJA D"
+          "name": "Amazing Impact",
+          "input": "Block attack + J"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Vegeta",
+          "input": "DJA J"
+        },
+        {
+          "name": "Base Form",
+          "input": "DJA D"
         }
       ]
     }
   },
   {
-    "id":76,
-    "name":"Super Saiyan 2 Goku",
-    "saga":"Buu",
-    "pictures":{
-      "face":"",
-      "profile":""
+    "id": 69,
+    "url_id": "super-vegeta",
+    "name": "Super Vegeta",
+    "saga": "Android",
+    "pictures": {
+      "face": "",
+      "profile": ""
     },
-    "race":[
-      "Saiyan"
-    ],
-    "stats":{
-      "attack":4.8,
-      "defense":7.2,
-      "speed":4.8,
-      "ki":150
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 3.3,
+      "defense": 5,
+      "speed": 3.3,
+      "ki": 150
     },
-    "moves":{
-      "basic":[
+    "moves": {
+      "basic": [
         {
-          "name":"Ki Charge",
-          "input":"D J A (A A A...)"
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
         },
         {
-          "name":"Ki Blast",
-          "input":"D 🡆 A (A A A...)"
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
         }
       ],
-      "special":[
+      "special": [
         {
-          "name":"Super Energy Wave Volley",
-          "input":"D 🡆 AJ"
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 JA"
         },
         {
-          "name":"Kamehameha",
-          "input":"D 🡆 J"
+          "name": "Final Flash",
+          "input": "D 🡆 J"
         },
         {
-          "name":"Super Kamehameha",
-          "input":"D 🡆 JA"
+          "name": "Big Bang Attack",
+          "input": "D 🡇 A"
         },
         {
-          "name":"Instant Kamehameha (In Front)",
-          "input":"D 🡆 J, D 🡆 A"
+          "name": "Atomic Blast",
+          "input": "D 🡅 A"
         },
         {
-          "name":"Instant Kamehameha (Behind)",
-          "input":"D 🡆 J, D 🡄 A"
+          "name": "Saiyan Energy Attack",
+          "input": "Super Punch + J, D 🡇 A"
         },
         {
-          "name":"Instant Super Kamehameha (In Front)",
-          "input":"D 🡆 JA, D 🡆 A"
-        },
-        {
-          "name":"Instant Super Kamehameha (Behind)",
-          "input":"D 🡆 JA, D 🡄 A"
-        },
-        {
-          "name":"Explosive Wave",
-          "input":"D 🡅 J"
-        },
-        {
-          "name":"Meteor Blast",
-          "input":"D 🡇 A, D 🡆 J, D 🡅 J"
-        },
-        {
-          "name":"Instant Transmission (Enemy)",
-          "input":"D 🡇 J"
-        },
-        {
-          "name":"Instant Transmission (Ally)",
-          "input":"D 🡇 JJ"
+          "name": "Full Power Final Flash",
+          "input": "Super Punch + J, D 🡅 J"
         }
       ],
-      "counter":[
+      "counter": [
         {
-          "name":"Instant Transmission Counter Attack",
-          "input":"Block attack + A"
+          "name": "Basic Counter",
+          "input": "Block attack + A"
         }
       ],
-      "transformations":[
+      "transformations": [
         {
-          "name":"Super Saiyan 2",
-          "input":"DJA J"
-        },
-        {
-          "name":"Base Form",
-          "input":"DJA D"
+          "name": "Base Form",
+          "input": "DJA D"
         }
       ]
     }
   },
   {
-    "id":77,
-    "name":"Super Saiyan 3 Goku",
-    "saga":"Buu",
-    "pictures":{
-      "face":"",
-      "profile":""
+    "id": 70,
+    "url_id": "vegeta",
+    "name": "Vegeta",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
     },
-    "race":[
-      "Saiyan"
-    ],
-    "stats":{
-      "attack":9.6,
-      "defense":14.4,
-      "speed":9.6,
-      "ki":200
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 2.35,
+      "defense": 3.53,
+      "speed": 2.35,
+      "ki": 100
     },
-    "moves":{
-      "basic":[
+    "moves": {
+      "basic": [
         {
-          "name":"Ki Charge",
-          "input":"D J A (A A A...)"
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
         },
         {
-          "name":"Ki Blast",
-          "input":"D 🡆 A (A A A...)"
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
         }
       ],
-      "special":[
+      "special": [
         {
-          "name":"Super Energy Wave Volley",
-          "input":"D 🡆 AJ"
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
         },
         {
-          "name":"Kamehameha",
-          "input":"D 🡆 J"
+          "name": "Explosive Ki Blast",
+          "input": "D 🡆 AD (A A A ...)"
         },
         {
-          "name":"Super Kamehameha",
-          "input":"D 🡆 JA"
+          "name": "Double Galick Cannon (Can also be used when grabbing enemy)",
+          "input": "D 🡇 J"
         },
         {
-          "name":"Instant Kamehameha (In Front)",
-          "input":"D 🡆 J, D 🡆 A"
-        },
-        {
-          "name":"Instant Kamehameha (Behind)",
-          "input":"D 🡆 J, D 🡄 A"
-        },
-        {
-          "name":"Instant Super Kamehameha (In Front)",
-          "input":"D 🡆 JA, D 🡆 A"
-        },
-        {
-          "name":"Instant Super Kamehameha (Behind)",
-          "input":"D 🡆 JA, D 🡄 A"
-        },
-        {
-          "name":"Kiai Blast Combo",
-          "input":"D 🡅 A A A A"
-        },
-        {
-          "name":"Explosive Wave",
-          "input":"D 🡅 J"
-        },
-        {
-          "name":"Dragonthrow",
-          "input":"Grab + J"
-        },
-        {
-          "name":"Instant Transmission (Enemy)",
-          "input":"D 🡇 J"
-        },
-        {
-          "name":"Instant Transmission (Ally)",
-          "input":"D 🡇 JJ"
+          "name": "Explosive Wave",
+          "input": "D 🡅 J"
         }
       ],
-      "counter":[
+      "counter": [
         {
-          "name":"Instant Transmission Counter Attack",
-          "input":"Block attack + A"
+          "name": "Basic Counter",
+          "input": "Block attack + AA"
+        },
+        {
+          "name": "Counter Attack",
+          "input": "Block attack + A"
+        },
+        {
+          "name": "Explosive Wave Counter",
+          "input": "Block attack + J"
         }
       ],
-      "transformations":[
+      "transformations": [
         {
-          "name":"Base Form",
-          "input":"DJA D"
+          "name": "Super Saiyan",
+          "input": "DJA J"
+        },
+        {
+          "name": "Babadi's Mind Control (Majin Vegeta)",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 71,
+    "url_id": "ss-vegeta",
+    "name": "Super Saiyan Vegeta",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 3.31,
+      "defense": 4.97,
+      "speed": 3.31,
+      "ki": 125
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
+        },
+        {
+          "name": "Hellzone Grenade",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Final Burst Cannon",
+          "input": "D 🡇 J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan 2",
+          "input": "DJA J"
+        },
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "url_id": "ss2-vegeta",
+    "name": "Super Saiyan 2 Vegeta",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 4.7,
+      "defense": 7.05,
+      "speed": 4.7,
+      "ki": 150
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
+        },
+        {
+          "name": "Big Bang Attack",
+          "input": "D 🡇 A"
+        },
+        {
+          "name": "Infinite Break (Can also be used when grabbing enemy)",
+          "input": "D 🡇 J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "url_id": "majin-vegeta",
+    "name": "Majin Vegeta",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 4.8,
+      "defense": 7.2,
+      "speed": 4.8,
+      "ki": 140
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D > AJ"
+        },
+        {
+          "name": "Final Flash",
+          "input": "D > J"
+        },
+        {
+          "name": "Big Bang Attack",
+          "input": "D v A"
+        },
+        {
+          "name": "Final Impact",
+          "input": "D v J"
+        },
+        {
+          "name": "Final Burst Cannon",
+          "input": "D ^ A"
+        },
+        {
+          "name": "Final Explosion",
+          "input": "D ^ J DJA"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        },
+        {
+          "name": "Dark Impact",
+          "input": "Block attack + J"
+        }
+      ],
+      "transformations": []
+    }
+  },
+  {
+    "id": 74,
+    "url_id": "goku",
+    "name": "Goku",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 2.4,
+      "defense": 3.6,
+      "speed": 2.4,
+      "ki": 100
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Destructo Disc",
+          "input": "D 🡅 A"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D 🡇 J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D 🡇 JJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Instant Transmission Counter Attack",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan",
+          "input": "DJA J"
+        }
+      ]
+    }
+  },
+  {
+    "id": 75,
+    "url_id": "ss-goku",
+    "name": "Super Saiyan Goku",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 3.38,
+      "defense": 5.07,
+      "speed": 3.38,
+      "ki": 105
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Super Kamehameha",
+          "input": "D 🡆 JA"
+        },
+        {
+          "name": "Instant Kamehameha (In Front)",
+          "input": "D 🡆 J, D 🡆 A"
+        },
+        {
+          "name": "Instant Kamehameha (Behind)",
+          "input": "D 🡆 J, D 🡄 A"
+        },
+        {
+          "name": "Instant Super Kamehameha (In Front)",
+          "input": "D 🡆 JA, D 🡆 A"
+        },
+        {
+          "name": "Instant Super Kamehameha (Behind)",
+          "input": "D 🡆 JA, D 🡄 A"
+        },
+        {
+          "name": "Flash Kick (Upwards)",
+          "input": "D 🡅 A"
+        },
+        {
+          "name": "Flash Kick (Downwards)",
+          "input": "D 🡇 A"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D 🡇 J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D 🡇 JJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Instant Transmission Counter Attack",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan 2",
+          "input": "DJA J"
+        },
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "url_id": "ss2-goku",
+    "name": "Super Saiyan 2 Goku",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 4.8,
+      "defense": 7.2,
+      "speed": 4.8,
+      "ki": 150
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Super Kamehameha",
+          "input": "D 🡆 JA"
+        },
+        {
+          "name": "Instant Kamehameha (In Front)",
+          "input": "D 🡆 J, D 🡆 A"
+        },
+        {
+          "name": "Instant Kamehameha (Behind)",
+          "input": "D 🡆 J, D 🡄 A"
+        },
+        {
+          "name": "Instant Super Kamehameha (In Front)",
+          "input": "D 🡆 JA, D 🡆 A"
+        },
+        {
+          "name": "Instant Super Kamehameha (Behind)",
+          "input": "D 🡆 JA, D 🡄 A"
+        },
+        {
+          "name": "Explosive Wave",
+          "input": "D 🡅 J"
+        },
+        {
+          "name": "Meteor Blast",
+          "input": "D 🡇 A, D 🡆 J, D 🡅 J"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D 🡇 J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D 🡇 JJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Instant Transmission Counter Attack",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan 2",
+          "input": "DJA J"
+        },
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 77,
+    "url_id": "ss3-goku",
+    "name": "Super Saiyan 3 Goku",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 9.6,
+      "defense": 14.4,
+      "speed": 9.6,
+      "ki": 200
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D 🡆 AJ"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Super Kamehameha",
+          "input": "D 🡆 JA"
+        },
+        {
+          "name": "Instant Kamehameha (In Front)",
+          "input": "D 🡆 J, D 🡆 A"
+        },
+        {
+          "name": "Instant Kamehameha (Behind)",
+          "input": "D 🡆 J, D 🡄 A"
+        },
+        {
+          "name": "Instant Super Kamehameha (In Front)",
+          "input": "D 🡆 JA, D 🡆 A"
+        },
+        {
+          "name": "Instant Super Kamehameha (Behind)",
+          "input": "D 🡆 JA, D 🡄 A"
+        },
+        {
+          "name": "Kiai Blast Combo",
+          "input": "D 🡅 A A A A"
+        },
+        {
+          "name": "Explosive Wave",
+          "input": "D 🡅 J"
+        },
+        {
+          "name": "Dragonthrow",
+          "input": "Grab + J"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D 🡇 J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D 🡇 JJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Instant Transmission Counter Attack",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 78,
+    "url_id": "gohan",
+    "name": "Gohan",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan", "Human"],
+    "stats": {
+      "attack": 2.2,
+      "defense": 3.3,
+      "speed": 2.2,
+      "ki": 100
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Expolosive Wave",
+          "input": "D 🡅 J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan",
+          "input": "DJA J"
+        },
+        {
+          "name": "Ultimate Gohan",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 79,
+    "url_id": "ss-gohan",
+    "name": "Super Saiyan Gohan",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan", "Human"],
+    "stats": {
+      "attack": 3.1,
+      "defense": 4.65,
+      "speed": 3.1,
+      "ki": 105
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Super Kamehameha",
+          "input": "D 🡆 JA"
+        },
+        {
+          "name": "Double Homing Blast",
+          "input": "D 🡅 A"
+        },
+        {
+          "name": "Explosive Combination (can also be used when grabbing enemy)",
+          "input": "D 🡅 JA"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan 2",
+          "input": "DJA J"
+        },
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "url_id": "ss2-gohan",
+    "name": "Super Saiyan 2 Gohan",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan", "Human"],
+    "stats": {
+      "attack": 4.4,
+      "defense": 6.6,
+      "speed": 4.4,
+      "ki": 150
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D > AJ"
+        },
+        {
+          "name": "Electric Kamehameha",
+          "input": "D > J"
+        },
+        {
+          "name": "Super Electric Kamehameha",
+          "input": "D > JA"
+        },
+        {
+          "name": "Rush Attack",
+          "input": "D 🡅 A A J"
+        },
+        {
+          "name": "Rush Attack ",
+          "input": "D 🡅 A AJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "url_id": "ultimate-gohan",
+    "name": "Ultimate Gohan",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan", "Human"],
+    "stats": {
+      "attack": 12.45,
+      "defense": 18.68,
+      "speed": 12.45,
+      "ki": 100
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Electric Kamehameha",
+          "input": "D > J"
+        },
+        {
+          "name": "Ultimate Kamehameha",
+          "input": "D > JA"
+        },
+        {
+          "name": "Ultimate Knuckle",
+          "input": "D v AA"
+        },
+        {
+          "name": "Ultimate Knuckle Rush",
+          "input": "D v AA J J"
+        },
+        {
+          "name": "Air Throw",
+          "input": "Grabbing Enemy + D ^ A"
+        },
+        {
+          "name": "Dragonthrow",
+          "input": "Grabbing Enemy + J"
+        },
+        {
+          "name": "Ki Shield",
+          "input": "D ^ J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        },
+        {
+          "name": "Burst Rush",
+          "input": "Block attack + J J"
+        }
+      ],
+      "transformations": []
+    }
+  },
+  {
+    "id": 23,
+    "url_id": "vegito",
+    "name": "Vegito",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 15.9,
+      "defense": 23.85,
+      "speed": 23.85,
+      "ki": 100
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 JA"
+        },
+        {
+          "name": "Super Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Instant Super Kamehameha (In Front)",
+          "input": "D 🡆 JA, D 🡆 A"
+        },
+        {
+          "name": "Instant Super Kamehameha (Behind)",
+          "input": "D 🡆 JA, D 🡄 A"
+        },
+        {
+          "name": "Big Bang Attack",
+          "input": "D 🡇 A"
+        },
+        {
+          "name": "Explosive Wave",
+          "input": "D 🡅 J"
+        },
+        {
+          "name": "Kiai ",
+          "input": "D 🡅 A"
+        },
+        {
+          "name": "Spirit Shot",
+          "input": "D 🡅 AA"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D 🡇 J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D 🡇 JJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Instant Transmission Counter Attack",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Vegito",
+          "input": "DJA J"
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "url_id": "super-vegito",
+    "name": "Super Vegito",
+    "saga": "Buu",
+    "pictures": {
+      "face": "",
+      "profile": ""
+    },
+    "race": ["Saiyan"],
+    "stats": {
+      "attack": 22.42,
+      "defense": 33.63,
+      "speed": 22.42,
+      "ki": 125
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D 🡆 A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Banshee Blast",
+          "input": "D 🡆 JA"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D 🡆 J"
+        },
+        {
+          "name": "Big Bang Attack",
+          "input": "D 🡇 A"
+        },
+        {
+          "name": "Spirit Sword",
+          "input": "D 🡅 A"
+        },
+        {
+          "name": "Explosive Wave",
+          "input": "D 🡅 J"
+        },
+        {
+          "name": "Vanishing Explosive Ki Blast",
+          "input": "Rowing + J"
+        },
+        {
+          "name": "Final Kamehameha",
+          "input": "D 🡇 J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Instant Transmission Counter Attack",
+          "input": "Block attack + A"
+        },
+        {
+          "name": "Explosive Wave Counter Attack",
+          "input": "(Dance of Pain)/(While being grabbed) + DJA"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D"
         }
       ]
     }
