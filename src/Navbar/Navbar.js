@@ -1,15 +1,20 @@
-import React from 'react';
-import { Link } from "react-router-dom";
-import './Navbar.css';
+import { NavLink } from "react-router-dom";
+import React from "react";
+
+const linkStyle = "text-blue hover:text-blue-darker no-underline hover:underline";
 
 const Navbar = () => (
   <nav>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
+    <ul className="list-reset flex m-4">
+      <li className="mr-6">
+        <NavLink to="/" className={linkStyle}>
+          Home
+        </NavLink>
       </li>
       <li>
-        <Link to="/characters/">Characters</Link>
+        <NavLink to="/characters/" className={linkStyle}>
+          Characters
+        </NavLink>
       </li>
     </ul>
   </nav>
