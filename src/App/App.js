@@ -5,14 +5,16 @@ import Navbar from '../Navbar';
 import CharacterList from '../CharacterList';
 
 const Index = () => <h2>Home</h2>
+import CharacterProfile from "../CharacterProfile";
 
 const App = () => (
   <Router>
-    <div>
+    <>
       <Navbar />
       <Route path="/" exact component={Index} />
-      <Route path="/characters/" component={CharacterList} />
-    </div>
+      <Route path="/characters/" exact component={CharacterList} />
+      <Route path="/characters/:saga/:name" component={CharacterProfile} />
+    </>
   </Router>
 );
 
