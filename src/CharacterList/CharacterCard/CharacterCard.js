@@ -1,7 +1,10 @@
-import React, { Component } from "react";
-
 import { Link } from "react-router-dom";
+import React from "react";
 
-const CharacterCard = ({ data }) => <div><Link to={`/characters/${data.saga}/${data.url_id}`}>{data.name}</Link></div>;
+const CharacterCard = ({ character }) => (
+  <Link to={`/characters/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}`}>
+    {character.name}
+  </Link>
+);
 
 export default CharacterCard;

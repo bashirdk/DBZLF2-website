@@ -1,23 +1,36 @@
-import React, { Component } from "react";
 import "./CharacterList.css";
-import Data from "../data/characters.json";
+
+import React, { Component } from "react";
+
 import CharacterGroup from "./CharacterGroup";
+import Characters from "../data/characters.json";
 
-const sagas = ["Saiyan", "Namek", "Android", "Buu"];
-const sagaGroups = sagas.map(saga => {
-  const data = {
-    name: `${saga} Saga`,
-    characters: Data.filter(character => character.saga === saga)
-  };
+class CharacterList extends Component {
+  constructor(props) {
+    super(props);
 
-  return <CharacterGroup key={saga} data={data} />;
-});
+    const groups = ["Saiyan", "Namek", "Android", "Buu"].map((saga) => ({
+      name: `${saga} Saga`,
+      characters: Characters.filter((character) => character.saga === saga),
+    }));
 
-const CharacterList = () => (
-  <div>
-    <h2>Character List</h2>
-    <div>{sagaGroups}</div>
-  </div>
-);
+    this.state = {
+      groups,
+    };
+  }
+
+  render() {
+    const groups = this.state.groups.map((group) => (
+      <CharacterGroup key={group.name} data={group} />
+    ));
+
+    return (
+      <div>
+        <h2>Character List</h2>
+        <div>{groups}</div>
+      </div>
+    );
+  }
+}
 
 export default CharacterList;

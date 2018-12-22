@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Navbar from '../Navbar';
-import CharacterList from '../CharacterList';
+import "./App.css";
 
-const Index = () => <h2>Home</h2>
+import { Route, BrowserRouter as Router } from "react-router-dom";
+
+import CharacterList from "../CharacterList";
 import CharacterProfile from "../CharacterProfile";
+import Navbar from "../Navbar";
+import React from "react";
+
+const Index = () => <h2>Home</h2>;
 
 const App = () => (
   <Router>
@@ -17,6 +19,5 @@ const App = () => (
     </>
   </Router>
 );
-
 
 export default App;

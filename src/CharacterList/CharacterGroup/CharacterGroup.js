@@ -1,10 +1,10 @@
-import React, { Component } from "react";
 import CharacterCard from "../CharacterCard";
+import React from "react";
 
 const CharacterGroup = ({ data: { name, characters } }) => {
-  const cards = characters.map(character => {
-    return <CharacterCard key={character.id} data={character} />;
-  });
+  const cards = characters.map((character) => (
+    <CharacterCard key={character.id} character={character} />
+  ));
 
   return (
     <div>
