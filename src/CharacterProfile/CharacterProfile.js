@@ -22,6 +22,7 @@ class CharacterProfile extends Component {
       <div>
         <h2>Character Profile</h2>
         <h3>{this.state.character.name}</h3>
+        <p>{JSON.stringify(this.state.character)}</p>
       </div>
     );
   }
