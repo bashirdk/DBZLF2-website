@@ -25,7 +25,7 @@ class CharacterProfile extends Component {
         <h3>{this.state.character.name}</h3>
         <p>{JSON.stringify(this.state.character)}</p>
         <div>
-          <MoveList />
+          <MoveList character={this.state.character} />
         </div>
       </div>
     );
