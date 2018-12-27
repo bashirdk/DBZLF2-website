@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Characters from "../data/characters.json";
+import MoveList from "./MoveList/MoveList.js";
 
 class CharacterProfile extends Component {
   constructor(props) {
@@ -23,6 +24,9 @@ class CharacterProfile extends Component {
         <h2>Character Profile</h2>
         <h3>{this.state.character.name}</h3>
         <p>{JSON.stringify(this.state.character)}</p>
+        <div>
+          <MoveList />
+        </div>
       </div>
     );
   }
