@@ -1,39 +1,25 @@
 import React from "react";
 
 const MoveList = ({ character }) => {
+  
+  const subMoveList = ( input ) => {
+    const mapMoves = input.map((mappedMove) => (
+      <div>
+        <div> {mappedMove.name} </div> 
+        <div> {mappedMove.input}</div>
+      </div>
+    ));
+    return mapMoves;
+  };
 
-  const basicMoves = character.moves.basic.map((basic) => (
-    <div>
-      <div> {basic.name} </div> 
-      <div> {basic.input}</div>
-    </div>
-  ));
-
-  const specialMoves = character.moves.special.map((special) => (
-    <div>
-      <div> {special.name} </div> 
-      <div> {special.input}</div>
-    </div>
-  ));
-
-  const counterAttacks = character.moves.counter.map((counter) => (
-    <div>
-      <div> {counter.name} </div> 
-      <div> {counter.input}</div>
-    </div>
-  ));
-
-  const transformations = character.moves.transformations.map((transformations) => (
-    <div>
-      <div> {transformations.name} </div> 
-      <div> {transformations.input}</div>
-    </div>
-  ));
+  const basicMoves = subMoveList(character.moves.basic);
+  const specialMoves = subMoveList(character.moves.special);
+  const counterAttacks = subMoveList(character.moves.counter);
+  const transformations = subMoveList(character.moves.transformations);
 
   return (
     <div>
       <h3> Move List </h3>
-      {character.name}
 
       <h4> Basic Moves </h4>
         {basicMoves}
