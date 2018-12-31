@@ -6,6 +6,14 @@
   width: 175px;
 }
 
+.character-card div
+{
+  background-color: white;
+  margin-top: -3px;
+  position: relative;
+  z-index: 2;
+}
+
 .character-card:hover
 {
   font-weight: bolder;
