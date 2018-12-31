@@ -1,0 +1,24 @@
+.character-card
+{
+  transition: 0.5s ease;
+  font-weight: 100;
+  color: rgb(100,175,250);
+  width: 175px;
+}
+
+.character-card:hover
+{
+  font-weight: bolder;
+  border: 1px solid rgb(50,225,255);
+  box-shadow: 0 0 5px 3px rgba(50, 225, 255, 0.85);
+  color: rgb(25,225,250);
+}
+
+.character-card img {
+  transition: 0.5s ease;
+}
+
+.character-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
