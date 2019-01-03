@@ -1,0 +1,49 @@
+/*
+Saga Labels
+*/
+.saiyan-saga-label {
+  background-color: #ffff00;
+}
+
+.namek-saga-label {
+  background-color: #45a329;
+}
+
+.android-saga-label {
+  background-color: #ff0000;
+}
+
+.buu-saga-label {
+  background-color: #ff99ff;
+}
+
+/*
+Race Labels
+*/
+.android-race-label {
+  background-color: #ff0000;
+}
+
+.demon-race-label {
+  background-color: #ff99ff;
+}
+
+.human-race-label {
+  background-color: #00b0f0;
+}
+
+.namekian-race-label {
+  background-color: #45a329;
+}
+
+.saiyan-race-label {
+  background-color: #ffff00;
+}
+
+.frieza-race-label {
+  background-color: #cc0099;
+}
+
+.alien-race-label {
+  background-color: #b7b7b7;
+}
