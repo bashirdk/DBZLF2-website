@@ -28,7 +28,7 @@ const MoveList = ({ character }) => {
   const moveHeaderStyle = "border px-2 py-2";
 
   return (
-    <div>
+    <div className="border">
       <h3> Move List </h3>
 
       <h4 className={moveHeaderStyle}> Basic Moves </h4> {basicMoves}
