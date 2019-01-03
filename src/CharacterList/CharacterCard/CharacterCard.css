@@ -1,9 +1,9 @@
 .character-card
 {
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   font-weight: 100;
   color: rgb(100,175,250);
-  width: 175px;
+  width: 190px;
 }
 
 .character-card div
@@ -23,7 +23,7 @@
 }
 
 .character-card img {
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .character-card:hover img {
