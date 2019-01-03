@@ -14,12 +14,14 @@ const App = () => (
   <Router>
     <>
       <Navbar />
-      <Switch>
-        <Route path="/characters/:saga/:name" component={CharacterProfile} />
-        <Route path="/characters/" exact component={CharacterList} />
-        <Route path="/" exact component={Index} />
-        <Route component={NoMatch} />
-      </Switch>
+      <div className="container mx-auto">
+        <Switch>
+          <Route path="/characters/:saga/:name" component={CharacterProfile} />
+          <Route path="/characters/" exact component={CharacterList} />
+          <Route path="/" exact component={Index} />
+          <Route component={NoMatch} />
+        </Switch>
+      </div>
     </>
   </Router>
 );

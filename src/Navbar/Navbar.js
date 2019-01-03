@@ -4,7 +4,7 @@ import React from "react";
 const linkStyle = "text-blue hover:text-blue-darker no-underline hover:underline";
 
 const Navbar = () => (
-  <nav>
+  <nav className="container mx-auto">
     <ul className="list-reset flex m-4">
       <li className="mr-6">
         <NavLink to="/" className={linkStyle}>
