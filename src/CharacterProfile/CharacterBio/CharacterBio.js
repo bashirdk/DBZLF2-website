@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class CharacterBio extends Component {
-
+const CharacterBio = ({ character }) => {
+  return <div>Character Bio</div>
 }
 
 export default CharacterBio;
