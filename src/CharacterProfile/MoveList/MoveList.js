@@ -2,7 +2,7 @@ import React from "react";
 
 const MoveList = ({ character }) => {
   
-  const moveContainerStyle = "max-w-md border";
+  const moveContainerStyle = "border";
   const moveNameStyle = "inline-block w-2/5 border px-2 py-2";
   const moveInputStyle = "inline-block w-3/5 border px-2 py-2";
 
@@ -25,7 +25,7 @@ const MoveList = ({ character }) => {
   const counterAttacks = subMoveList(character.moves.counter);
   const transformations = subMoveList(character.moves.transformations);
 
-  const moveHeaderStyle = "max-w-md border px-2 py-2";
+  const moveHeaderStyle = "border px-2 py-2";
 
   return (
     <div>
