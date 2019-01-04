@@ -4,7 +4,7 @@ import './CharacterBio.css'
 
 const CharacterBio = ({ character }) => {  
 
-  const labelStyle = "rounded-lg py-1 px-3 mr-2 bg-black text-white"
+  const labelStyle = "rounded-lg py-1 px-3 mr-2 text-white font-bold text-shadow-label"
   const hrStyle = "border mt-0 mb-3";
 
   const races = character.race.map((race) => (
