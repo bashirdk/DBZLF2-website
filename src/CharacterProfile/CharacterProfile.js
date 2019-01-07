@@ -24,7 +24,7 @@ class CharacterProfile extends Component {
       <div>
         <h2>Character Profile</h2>
         <h3 className="text-center">{this.state.character.name}</h3>
-        <section className="pr-5 my-5 inline-block align-top w-full sm:w-1/3">
+        <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
           <CharacterBio character={this.state.character} />
         </section>
         <section className="my-5  inline-block w-full sm:w-2/3 ">
