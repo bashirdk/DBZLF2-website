@@ -7,9 +7,9 @@ const CharacterGroup = ({ data: { name, characters } }) => {
   ));
 
   return (
-    <div>
-      <h3>{name}</h3>
-      <div>{cards}</div>
+    <div className="border-2 rounded my-5 px-6 py-5 mx-5 lg:mx-0">
+      <h3 className="text-center mb-5">{name}</h3>
+      <div className="text-center lg:text-left">{cards}</div>
     </div>
   );
 };
