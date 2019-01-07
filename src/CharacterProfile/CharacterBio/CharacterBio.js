@@ -12,7 +12,7 @@ const CharacterBio = ({ character }) => {
   ));
 
   return (
-    <div className="border px-5 py-5">
+    <div className="border rounded px-5 py-5">
       <img 
         src={require(`../../images/profile/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.gif`)}
         alt={`standing pic of ${character.name}`}
