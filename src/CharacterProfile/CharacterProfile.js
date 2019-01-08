@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Characters from "../data/characters.json";
 import MoveList from "./MoveList/MoveList.js";
 import CharacterBio from "./CharacterBio/CharacterBio.js";
+import CharacterStats from "./CharacterStats/CharacterStats.js";
 
 class CharacterProfile extends Component {
   constructor(props) {
@@ -28,7 +29,12 @@ class CharacterProfile extends Component {
           <CharacterBio character={this.state.character} />
         </section>
         <section className="my-5  inline-block w-full sm:w-2/3 ">
-          <MoveList character={this.state.character} />
+          <section>
+            <CharacterStats character={this.state.character} />
+          </section>
+          <section>
+            <MoveList character={this.state.character} />
+          </section>          
         </section>
       </div>
     );
