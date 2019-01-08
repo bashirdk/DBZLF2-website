@@ -8,17 +8,29 @@ const MoveList = ({ character }) => {
   const moveInputStyle = "w-full block sm:w-1/2 md:w-3/5 px-2 py-2";
 
   const subMoveList = ( input ) => {
-    const mapMoves = input.map((mappedMove) => (
-      <div className={moveContainerStyle}>
-        <div className={moveNameStyle}> 
-          {mappedMove.name} 
+    if (input.length === 0)
+    {
+      return (
+        <div className={moveContainerStyle}>
+        <div className="px-2 py-2"> 
+          None Available
         </div>
-        <div className={moveInputStyle}> 
-          {mappedMove.input}
+      </div>  
+      )
+    } else {
+      const mapMoves = input.map((mappedMove) => (
+        
+        <div className={moveContainerStyle}>
+          <div className={moveNameStyle}> 
+            {mappedMove.name} 
+          </div>
+          <div className={moveInputStyle}> 
+            {mappedMove.input}
+          </div>
         </div>
-      </div>
-    ));
-    return mapMoves;
+      ));
+      return mapMoves;
+    }
   };
 
   const basicMoves = subMoveList(character.moves.basic);
