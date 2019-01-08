@@ -11,7 +11,7 @@ const CharacterCard = ({ character }) => (
         alt={`face pic of ${character.name}`}
         className="w-full"
       />
-      <div class="text-center text-sm px-1 py-2">
+      <div className="text-center text-sm px-1 py-2">
         <p>{character.name}</p>
       </div>      
     </div>
