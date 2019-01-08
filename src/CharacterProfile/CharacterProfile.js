@@ -28,11 +28,11 @@ class CharacterProfile extends Component {
         <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
           <CharacterBio character={this.state.character} />
         </section>
-        <section className="my-5  inline-block w-full sm:w-2/3 ">
-          <section>
+        <section className="inline-block w-full sm:w-2/3 ">
+          <section className="my-5">
             <CharacterStats character={this.state.character} />
           </section>
-          <section>
+          <section className="my-5">
             <MoveList character={this.state.character} />
           </section>          
         </section>
