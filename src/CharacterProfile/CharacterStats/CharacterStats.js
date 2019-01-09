@@ -7,10 +7,10 @@ const CharacterStats = ({ character }) => {
 
   const statContainer = (statName, stat) => (
     <div className="flex">
-    <div className="block md:inline-block w-24 px-3 py-3 text-right">
+    <div className="block w-24 px-1 py-3 text-right">
       <p>{statName}</p>
     </div>
-    <div className="block md:inline-block py-2 pr-5 flex-auto">
+    <div className="w-full block py-2 pr-5 sm:pr-8 flex-auto">
       <StatBar statName={statName} stat={stat} />
     </div>        
     </div> 
@@ -23,12 +23,13 @@ const CharacterStats = ({ character }) => {
 
   return  (
     <div className="border rounded">
-      <p className="p-2 border-b"> CHARACTER STATS </p>
-      {attackStat}
-      {defenseStat}
-      {speedStat}
-      {kiStat}
-
+      <h3 className="p-5 border-b"> Character Stats </h3>
+      <div className="py-5">
+        {attackStat}
+        {defenseStat}
+        {speedStat}
+        {kiStat}
+      </div>
     </div>
   );
 }
