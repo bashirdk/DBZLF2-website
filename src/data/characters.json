@@ -8,7 +8,7 @@
     "stats": {
       "attack": 1.8,
       "defense": 2.7,
-      "speed": 2.7,
+      "speed": 1.8,
       "ki": 100
     },
     "moves": {
@@ -1033,7 +1033,7 @@
     "stats": {
       "attack": 15.9,
       "defense": 23.85,
-      "speed": 23.85,
+      "speed": 15.9,
       "ki": 100
     },
     "moves": {
