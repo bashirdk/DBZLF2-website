@@ -8,6 +8,15 @@ const CharacterStats = ({ character }) => {
 
   const statContainer = (statName, stat) => {
 
+    if (statName === "Ki Usage")
+    {
+      stat = ((stat/250)* 100) + "%";
+    }
+    else 
+    {
+      stat = stat + "%";
+    }
+
     const statStyle = {
       width: stat
     }
