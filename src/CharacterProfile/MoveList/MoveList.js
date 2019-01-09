@@ -40,7 +40,11 @@ const MoveList = ({ character }) => {
 
   return (
     <div className="border rounded border-b-0">
-      <h3 className="border-b p-2"> Move List </h3>
+      <div className="border-b p-2">
+        <h2> Move List </h2>
+        <p className="text-right"> <i> Commands for facing right </i> </p>
+      </div>
+      
 
       <h4 className={'bg-blue ' + moveHeaderStyle } > Basic Moves </h4> {basicMoves}
       <h4 className={'bg-red ' + moveHeaderStyle}> Special Moves </h4> {specialMoves}
