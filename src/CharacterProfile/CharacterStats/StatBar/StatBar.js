@@ -1,34 +1,36 @@
 import React from "react";
 
+import './StatBar.css'
+
 const StatBar = ({ statName, stat }) => {  
 
-  const barSpan = (bgColor, statWidth) => (
-    <span className={bgColor + " inline-block h-full absolute"} style={statWidth}></span>
+  const barSpan = (bgColor, styles) => (
+    <span className={bgColor + " stat-bar inline-block h-full absolute"} style={styles}></span>
   );
 
   var statBars = [];
 
   if (statName !== "Ki Usage" && stat > 30)
   {
-    statBars.push(barSpan("bg-red", {width: "100%"}));
-    statBars.push(barSpan("bg-yellow", {width: "100%"}));
-    statBars.push(barSpan("bg-green", {width: "100%"}));
-    statBars.push(barSpan("bg-blue", {width: (stat-30)*10+"%"}));
+    statBars.push(barSpan("bg-red", {width: "100%", animationTimingFunction: "ease-in", animationDuration: "0.5s"}));
+    statBars.push(barSpan("bg-yellow", {width: "100%", animationDelay: "0.5s", animationTimingFunction: "linear", animationDuration: "0.5s"}));
+    statBars.push(barSpan("bg-green", {width: "100%", animationDelay: "1s", animationTimingFunction: "linear",  animationDuration: "0.5s"}));
+    statBars.push(barSpan("bg-blue", {width: (stat-30)*10+"%", animationDelay: "1.5s", animationTimingFunction: "ease-out"}));
   }
   else if (statName !== "Ki Usage" && stat > 20)
   {
-    statBars.push(barSpan("bg-red", {width: "100%"}));
-    statBars.push(barSpan("bg-yellow", {width: "100%"}));
-    statBars.push(barSpan("bg-green", {width: (stat-20)*10+"%"}));
+    statBars.push(barSpan("bg-red", {width: "100%", animationTimingFunction: "ease-in", animationDuration: "0.5s"}));
+    statBars.push(barSpan("bg-yellow", {width: "100%", animationDelay: "0.5s", animationTimingFunction: "linear",  animationDuration: "0.5s"}));
+    statBars.push(barSpan("bg-green", {width: (stat-20)*10+"%", animationDelay: "1s", animationTimingFunction: "ease-out"}));
   }
   else if (statName !== "Ki Usage" && stat > 10)
   {
-    statBars.push(barSpan("bg-red", {width: "100%"}));
-    statBars.push(barSpan("bg-yellow", {width: (stat-10)*10+"%"}));
+    statBars.push(barSpan("bg-red", {width: "100%", animationTimingFunction: "ease-in",  animationDuration: "0.5s"}));
+    statBars.push(barSpan("bg-yellow", {width: (stat-10)*10+"%", animationDelay: "0.5s", animationTimingFunction: "ease-out"}));
   }
   else if (statName !== "Ki Usage" && stat <= 10)
   {
-    statBars.push(barSpan("bg-red", {width: stat*10+"%"}));
+    statBars.push(barSpan("bg-red", {width: stat*10+"%", animationTimingFunction: "ease-in-out"}));
   }
 
   if (statName === "Ki Usage")

@@ -1,0 +1,13 @@
+.stat-bar
+{
+  transform: scaleX(0);
+  animation-name: statBarAnimation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform-origin: left;
+}
+
+@keyframes statBarAnimation {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
