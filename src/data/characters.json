@@ -19,33 +19,33 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Dirty Fireworks",
-          "input": "D 🡅 A A"
+          "input": "D ^ A A"
         },
         {
           "name": "Genocide Breaker",
-          "input": "D 🡅 JA"
+          "input": "D ^ JA"
         },
         {
           "name": "Final Crash",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Final Burst Cannon",
-          "input": "D 🡇 J"
+          "input": "D v J"
         },
         {
           "name": "Final Galick Cannon",
-          "input": "Grabbing Enemy + D 🡅 A"
+          "input": "Grabbing Enemy + D ^ A"
         }
       ],
       "counter": [
@@ -77,17 +77,17 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Maximum Flasher",
-          "input": "D 🡆 J"
+          "input": "D > J"
         }
       ],
       "counter": [
@@ -124,33 +124,33 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Big Bang Attack",
-          "input": "D 🡇 A"
+          "input": "D v A"
         },
         {
           "name": "Final Flash",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Photon Bomber",
-          "input": "D 🡅 A"
+          "input": "D ^ A"
         },
         {
           "name": "Maximum Flasher",
-          "input": "D 🡇 A"
+          "input": "D v A"
         },
         {
           "name": "Big Bang Attack Combo",
-          "input": "Super Punch + J A, D 🡇 A",
+          "input": "Super Punch + J A, D v A",
           "ultimate": "yes"
         }
       ],
@@ -196,33 +196,33 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Final Flash",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Big Bang Attack",
-          "input": "D 🡇 A"
+          "input": "D v A"
         },
         {
           "name": "Atomic Blast",
-          "input": "D 🡅 A"
+          "input": "D ^ A"
         },
         {
           "name": "Saiyan Energy Attack",
-          "input": "Super Punch + J, D 🡇 A"
+          "input": "Super Punch + J, D v A"
         },
         {
           "name": "Full Power Final Flash",
-          "input": "Super Punch + J, D 🡅 J",
+          "input": "Super Punch + J, D ^ J",
           "ultimate": "yes"
         }
       ],
@@ -264,25 +264,25 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Explosive Ki Blast",
-          "input": "D 🡆 AD (A A A ...)"
+          "input": "D > AD (A A A ...)"
         },
         {
           "name": "Double Galick Cannon (Can also be used when grabbing enemy)",
-          "input": "D 🡇 J"
+          "input": "D v J"
         },
         {
           "name": "Explosive Wave",
-          "input": "D 🡅 J"
+          "input": "D ^ J"
         }
       ],
       "counter": [
@@ -331,21 +331,21 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Hellzone Grenade",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Final Burst Cannon",
-          "input": "D 🡇 J"
+          "input": "D v J"
         }
       ],
       "counter": [
@@ -386,21 +386,21 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Big Bang Attack",
-          "input": "D 🡇 A"
+          "input": "D v A"
         },
         {
           "name": "Infinite Break (Can also be used when grabbing enemy)",
-          "input": "D 🡇 J"
+          "input": "D v J"
         }
       ],
       "counter": [
@@ -437,7 +437,7 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
@@ -500,34 +500,34 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Destructo Disc",
-          "input": "D 🡅 A"
+          "input": "D ^ A"
         },
         {
           "name": "Instant Transmission (Enemy)",
-          "input": "D 🡇 J"
+          "input": "D v J"
         },
         {
           "name": "Instant Transmission (Ally)",
-          "input": "D 🡇 JJ"
+          "input": "D v JJ"
         },
         {
           "name": "Spirit Bomb",
-          "input": "Super Punch + J, D 🡅 J",
+          "input": "Super Punch + J, D ^ J",
           "ultimate": "yes"
         },
         {
           "name": "Instant Transmission (Ally)",
-          "input": "D 🡇 JJ"
+          "input": "D v JJ"
         }
       ],
       "counter": [
@@ -564,53 +564,53 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Super Kamehameha",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Instant Kamehameha (In Front)",
-          "input": "D 🡆 J, D 🡆 A"
+          "input": "D > J, D > A"
         },
         {
           "name": "Instant Kamehameha (Behind)",
-          "input": "D 🡆 J, D 🡄 A"
+          "input": "D > J, D < A"
         },
         {
           "name": "Instant Super Kamehameha (In Front)",
-          "input": "D 🡆 JA, D 🡆 A"
+          "input": "D > JA, D > A"
         },
         {
           "name": "Instant Super Kamehameha (Behind)",
-          "input": "D 🡆 JA, D 🡄 A"
+          "input": "D > JA, D < A"
         },
         {
           "name": "Flash Kick (Upwards)",
-          "input": "D 🡅 A"
+          "input": "D ^ A"
         },
         {
           "name": "Flash Kick (Downwards)",
-          "input": "D 🡇 A"
+          "input": "D v A"
         },
         {
           "name": "Instant Transmission (Enemy)",
-          "input": "D 🡇 J"
+          "input": "D v J"
         },
         {
           "name": "Instant Transmission (Ally)",
-          "input": "D 🡇 JJ"
+          "input": "D v JJ"
         }
       ],
       "counter": [
@@ -651,53 +651,53 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Super Kamehameha",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Instant Kamehameha (In Front)",
-          "input": "D 🡆 J, D 🡆 A"
+          "input": "D > J, D > A"
         },
         {
           "name": "Instant Kamehameha (Behind)",
-          "input": "D 🡆 J, D 🡄 A"
+          "input": "D > J, D < A"
         },
         {
           "name": "Instant Super Kamehameha (In Front)",
-          "input": "D 🡆 JA, D 🡆 A"
+          "input": "D > JA, D > A"
         },
         {
           "name": "Instant Super Kamehameha (Behind)",
-          "input": "D 🡆 JA, D 🡄 A"
+          "input": "D > JA, D < A"
         },
         {
           "name": "Explosive Wave",
-          "input": "D 🡅 J"
+          "input": "D ^ J"
         },
         {
           "name": "Meteor Blast",
-          "input": "D 🡇 A, D 🡆 J, D 🡅 J"
+          "input": "D v A, D > J, D ^ J"
         },
         {
           "name": "Instant Transmission (Enemy)",
-          "input": "D 🡇 J"
+          "input": "D v J"
         },
         {
           "name": "Instant Transmission (Ally)",
-          "input": "D 🡇 JJ"
+          "input": "D v JJ"
         }
       ],
       "counter": [
@@ -738,45 +738,45 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Super Energy Wave Volley",
-          "input": "D 🡆 AJ"
+          "input": "D > AJ"
         },
         {
           "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Super Kamehameha",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Instant Kamehameha (In Front)",
-          "input": "D 🡆 J, D 🡆 A"
+          "input": "D > J, D > A"
         },
         {
           "name": "Instant Kamehameha (Behind)",
-          "input": "D 🡆 J, D 🡄 A"
+          "input": "D > J, D < A"
         },
         {
           "name": "Instant Super Kamehameha (In Front)",
-          "input": "D 🡆 JA, D 🡆 A"
+          "input": "D > JA, D > A"
         },
         {
           "name": "Instant Super Kamehameha (Behind)",
-          "input": "D 🡆 JA, D 🡄 A"
+          "input": "D > JA, D < A"
         },
         {
           "name": "Kiai Blast Combo",
-          "input": "D 🡅 A A A A"
+          "input": "D ^ A A A A"
         },
         {
           "name": "Explosive Wave",
-          "input": "D 🡅 J"
+          "input": "D ^ J"
         },
         {
           "name": "Dragonthrow",
@@ -784,11 +784,11 @@
         },
         {
           "name": "Instant Transmission (Enemy)",
-          "input": "D 🡇 J"
+          "input": "D v J"
         },
         {
           "name": "Instant Transmission (Ally)",
-          "input": "D 🡇 JJ"
+          "input": "D v JJ"
         }
       ],
       "counter": [
@@ -825,17 +825,17 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Expolosive Wave",
-          "input": "D 🡅 J"
+          "input": "D ^ J"
         }
       ],
       "counter": [
@@ -876,25 +876,25 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Super Kamehameha",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Double Homing Blast",
-          "input": "D 🡅 A"
+          "input": "D ^ A"
         },
         {
           "name": "Explosive Combination (can also be used when grabbing enemy)",
-          "input": "D 🡅 JA"
+          "input": "D ^ JA"
         }
       ],
       "counter": [
@@ -935,7 +935,7 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
@@ -953,11 +953,11 @@
         },
         {
           "name": "Rush Attack",
-          "input": "D 🡅 A A J"
+          "input": "D ^ A A J"
         },
         {
           "name": "Rush Attack ",
-          "input": "D 🡅 A AJ"
+          "input": "D ^ A AJ"
         }
       ],
       "counter": [
@@ -994,7 +994,7 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
@@ -1060,49 +1060,49 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Kamehameha",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Super Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Instant Super Kamehameha (In Front)",
-          "input": "D 🡆 JA, D 🡆 A"
+          "input": "D > JA, D > A"
         },
         {
           "name": "Instant Super Kamehameha (Behind)",
-          "input": "D 🡆 JA, D 🡄 A"
+          "input": "D > JA, D < A"
         },
         {
           "name": "Big Bang Attack",
-          "input": "D 🡇 A"
+          "input": "D v A"
         },
         {
           "name": "Explosive Wave",
-          "input": "D 🡅 J"
+          "input": "D ^ J"
         },
         {
           "name": "Kiai ",
-          "input": "D 🡅 A"
+          "input": "D ^ A"
         },
         {
           "name": "Spirit Shot",
-          "input": "D 🡅 AA"
+          "input": "D ^ AA"
         },
         {
           "name": "Instant Transmission (Enemy)",
-          "input": "D 🡇 J"
+          "input": "D v J"
         },
         {
           "name": "Instant Transmission (Ally)",
-          "input": "D 🡇 JJ"
+          "input": "D v JJ"
         }
       ],
       "counter": [
@@ -1139,29 +1139,29 @@
         },
         {
           "name": "Ki Blast",
-          "input": "D 🡆 A (A A A...)"
+          "input": "D > A (A A A...)"
         }
       ],
       "special": [
         {
           "name": "Banshee Blast",
-          "input": "D 🡆 JA"
+          "input": "D > JA"
         },
         {
           "name": "Kamehameha",
-          "input": "D 🡆 J"
+          "input": "D > J"
         },
         {
           "name": "Big Bang Attack",
-          "input": "D 🡇 A"
+          "input": "D v A"
         },
         {
           "name": "Spirit Sword",
-          "input": "D 🡅 A"
+          "input": "D ^ A"
         },
         {
           "name": "Explosive Wave",
-          "input": "D 🡅 J"
+          "input": "D ^ J"
         },
         {
           "name": "Vanishing Explosive Ki Blast",
@@ -1169,7 +1169,7 @@
         },
         {
           "name": "Final Kamehameha",
-          "input": "D 🡇 J",
+          "input": "D v J",
           "ultimate": "yes"
         }
       ],
