@@ -5,6 +5,13 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   transform-origin: left;
+  box-shadow: inset 0px 2px 3px 0 rgba(255,255,255,0.6),
+              inset -0px -2px 3px 0 rgba(0,0,0,0.3);
+}
+
+.stat-bar-container
+{
+  box-shadow: inset 0px -2px 1px 0 rgba(0,0,0,0.5);
 }
 
 @keyframes statBarAnimation {

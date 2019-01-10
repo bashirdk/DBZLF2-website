@@ -40,7 +40,7 @@ const StatBar = ({ statName, stat }) => {
   }
 
   return (
-    <div className="mx-2 w-full h-full bg-grey-lighter relative">
+    <div className="stat-bar-container mx-2 w-full h-full bg-grey-lighter relative">
       {statBars}
     </div>
   );
