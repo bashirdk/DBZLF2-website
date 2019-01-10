@@ -2,14 +2,14 @@
 {
   transition: 0.3s ease;
   font-weight: 100;
-  color: rgb(100,175,250);
   max-width: 180px;
   width: 100%;
+  color: #3764FF;
 }
 
 .character-card div
 {
-  background-color: white;
+  background-color: black;
   margin-top: -3px;
   position: relative;
   z-index: 2;
@@ -18,9 +18,8 @@
 .character-card:hover
 {
   font-weight: bolder;
-  border: 1px solid rgb(50,225,255);
-  box-shadow: 0 0 5px 3px rgba(50, 225, 255, 0.85);
-  color: rgb(25,225,250);
+  box-shadow: 0 0 5px 3px rgba(90, 119, 216, 0.85);
+  color: #5582FF
 }
 
 .character-card img {

@@ -4,7 +4,7 @@ import React from "react";
 const linkStyle = "text-grey hover:text-white no-underline";
 
 const Navbar = () => (
-  <div className="pin-t sticky z-50 mb-4 shadow bg-blue-darker">
+  <div className="pin-t sticky z-50 mb-4 shadow lf2-bg-blue border-b-2 lf2-border-blue">
     <div class="container mx-auto">
       <nav className="py-4 h-16 md:h-24  flex items-center justify-between mx-3">
         <div className="h-full">

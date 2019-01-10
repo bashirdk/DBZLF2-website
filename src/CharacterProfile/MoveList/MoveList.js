@@ -2,10 +2,10 @@ import React from "react";
 
 const MoveList = ({ character }) => {
   
-  const moveContainerStyle = "border-b sm:flex";
-  const moveHeaderStyle = "border-b px-2 py-2 text-white";
-  const moveNameStyle = "bg-grey-lighter w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-2";
-  const moveInputStyle = "w-full block sm:w-1/2 md:w-3/5 px-2 py-2";
+  const moveContainerStyle = "border-b lf2-border-blue sm:flex";
+  const moveHeaderStyle = "border-b lf2-border-blue px-2 py-2 text-white";
+  const moveNameStyle = "lf2-bg-blue-dark text-white w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-2";
+  const moveInputStyle = "w-full text-white block sm:w-1/2 md:w-3/5 px-2 py-2";
 
   const subMoveList = ( input ) => {
     if (input.length === 0)
@@ -39,8 +39,11 @@ const MoveList = ({ character }) => {
   const transformations = subMoveList(character.moves.transformations);
 
   return (
-    <div className="border rounded border-b-0">
-      <h3 className="border-b p-2"> Move List </h3>
+    <div className="border-2 lf2-border-blue lf2-bg-blue rounded border-b-0">
+      <div className="border-b lf2-border-blue text-white p-2">
+        <h2> Move List </h2>
+        <p className="text-right"> <i> Commands for facing right </i> </p>
+      </div>     
 
       <h4 className={'bg-blue ' + moveHeaderStyle } > Basic Moves </h4> {basicMoves}
       <h4 className={'bg-red ' + moveHeaderStyle}> Special Moves </h4> {specialMoves}
