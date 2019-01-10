@@ -21,23 +21,30 @@ class CharacterProfile extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <h1 className="text-white">Character Profile</h1>
-        <h2 className="text-center text-white">{this.state.character.name}</h2>
-        <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
-          <CharacterBio character={this.state.character} />
-        </section>
-        <section className="inline-block w-full sm:w-2/3 ">
-          <section className="my-5">
-            <CharacterStats character={this.state.character} />
+    if (this.state.character)
+    {    
+      return (
+        <div>
+          <h1 className="text-white">Character Profile</h1>
+          <h2 className="text-center text-white">{this.state.character.name}</h2>
+          <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
+            <CharacterBio character={this.state.character} />
           </section>
-          <section className="my-5">
-            <MoveList character={this.state.character} />
-          </section>          
-        </section>
-      </div>
-    );
+          <section className="inline-block w-full sm:w-2/3 ">
+            <section className="my-5">
+              <CharacterStats character={this.state.character} />
+            </section>
+            <section className="my-5">
+              <MoveList character={this.state.character} />
+            </section>          
+          </section>
+        </div>
+      );
+    }
+    else {
+      return <h1 className="text-white">Character not found.</h1>
+    }
+    
   }
 }
 
