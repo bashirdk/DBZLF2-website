@@ -9,7 +9,7 @@ import Navbar from "../Navbar";
 import React from "react";
 
 const Index = () => <h2>Home</h2>;
-const NoMatch = () => <h2>404: Not found</h2>
+const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not found</h1>
 
 const App = () => (
   <Router>

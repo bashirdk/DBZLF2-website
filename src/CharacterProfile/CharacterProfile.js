@@ -42,7 +42,7 @@ class CharacterProfile extends Component {
       );
     }
     else {
-      return <h1 className="text-white">Character not found.</h1>
+      return <h1 className="text-white text-center my-24">Character not found.</h1>
     }
     
   }
