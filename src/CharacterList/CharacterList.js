@@ -26,7 +26,7 @@ class CharacterList extends Component {
 
     return (
       <div>
-        <h2>Character List</h2>
+        <h1 className="text-white">Character List</h1>
         <div>{groups}</div>
       </div>
     );
