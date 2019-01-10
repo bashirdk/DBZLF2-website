@@ -4,8 +4,8 @@ import './CharacterBio.css'
 
 const CharacterBio = ({ character }) => {  
 
-  const labelStyle = "rounded-lg py-1 px-3 mr-2 text-white font-bold text-shadow-label"
-  const hrStyle = "border lf2-border-blue mt-0 mb-3";
+  const labelStyle = "inline-block rounded-lg py-1 px-3 mr-2 mt-1 mb-1 text-white font-bold text-shadow-label"
+  const hrStyle = "border lf2-border-blue my-0";
 
   const races = character.race.map((race) => (
     <span className={`${labelStyle} ${race.toLowerCase()}-race-label`}> {race} </span>
@@ -19,12 +19,12 @@ const CharacterBio = ({ character }) => {
         className="w-full"
       />   
 
-      <div className="mt-5">
+      <div className="mt-3">
         <h4 className="text-white"> Race </h4> 
         <hr className={hrStyle} />
         <div> {races} </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-3">
         <h4 className="text-white"> Saga </h4> 
         <hr className={hrStyle} />
         <span className={`${labelStyle} ${character.saga.toLowerCase()}-saga-label`}> {character.saga} </span>
