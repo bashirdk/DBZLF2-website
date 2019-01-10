@@ -1,12 +1,12 @@
 .text-shadow-label {
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 1);
 }
 
 /*
 Saga Labels
 */
 .saiyan-saga-label {
-  background-color: #ffff00;
+  background-color: #FFED4A;
 }
 
 .namek-saga-label {
@@ -41,7 +41,7 @@ Race Labels
 }
 
 .saiyan-race-label {
-  background-color: #ffff00;
+  background-color: #FFED4A;
 }
 
 .frieza-race-label {
