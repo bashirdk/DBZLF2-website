@@ -1,6 +1,7 @@
 import "./App.css";
 
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import ScrollToTop from "../ScrollToTop";
 
 import CharacterList from "../CharacterList";
 import CharacterProfile from "../CharacterProfile";
@@ -15,12 +16,14 @@ const App = () => (
     <>
       <Navbar />
       <div className="container mx-auto">
-        <div className="mx-3">
+        <div className="mx-3">          
           <Switch>
+          <ScrollToTop>
             <Route path="/characters/:saga/:name" component={CharacterProfile} />
             <Route path="/characters/" exact component={CharacterList} />
             <Route path="/" exact component={Index} />
             <Route component={NoMatch} />
+            </ScrollToTop>
           </Switch>
         </div>
       </div>
