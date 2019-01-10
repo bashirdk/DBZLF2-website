@@ -12,7 +12,7 @@ const MoveList = ({ character }) => {
     {
       return (
         <div className={moveContainerStyle}>
-        <div className="px-2 py-2"> 
+        <div className="px-2 py-2 text-white"> 
           <i> None Available </i>
         </div>
       </div>  
