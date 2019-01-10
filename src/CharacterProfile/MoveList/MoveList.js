@@ -18,17 +18,25 @@ const MoveList = ({ character }) => {
       </div>  
       )
     } else {
-      const mapMoves = input.map((mappedMove) => (
-        
+      const mapMoves = input.map((mappedMove) => {
+        if (mappedMove.ultimate)
+        {
+          var ultimateMove = (
+            <span className="text-xs rounded px-2 py-1 bg-red-dark font-bold text-white">
+              ULTIMATE
+            </span>
+          )          
+        }
+        return(
         <div className={moveContainerStyle}>
           <div className={moveNameStyle}> 
-            {mappedMove.name} 
+            {mappedMove.name}  {ultimateMove}
           </div>
           <div className={moveInputStyle}> 
             {mappedMove.input}
           </div>
-        </div>
-      ));
+        </div> )
+      });
       return mapMoves;
     }
   };

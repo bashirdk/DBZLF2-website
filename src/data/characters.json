@@ -150,7 +150,8 @@
         },
         {
           "name": "Big Bang Attack Combo",
-          "input": "Super Punch + J A, D 🡇 A"
+          "input": "Super Punch + J A, D 🡇 A",
+          "ultimate": "yes"
         }
       ],
       "counter": [
@@ -221,13 +222,18 @@
         },
         {
           "name": "Full Power Final Flash",
-          "input": "Super Punch + J, D 🡅 J"
+          "input": "Super Punch + J, D 🡅 J",
+          "ultimate": "yes"
         }
       ],
       "counter": [
         {
           "name": "Basic Counter",
           "input": "Block attack + A"
+        }, 
+        {
+          "name": "Special Counter Attack",
+          "input": "Block attack + J"
         }
       ],
       "transformations": [
@@ -457,7 +463,8 @@
         },
         {
           "name": "Final Explosion",
-          "input": "D ^ J DJA"
+          "input": "D ^ J DJA",
+          "ultimate": "yes"
         }
       ],
       "counter": [
@@ -508,6 +515,15 @@
         {
           "name": "Instant Transmission (Enemy)",
           "input": "D 🡇 J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D 🡇 JJ"
+        },
+        {
+          "name": "Spirit Bomb",
+          "input": "Super Punch + J, D 🡅 J",
+          "ultimate": "yes"
         },
         {
           "name": "Instant Transmission (Ally)",
@@ -1153,7 +1169,8 @@
         },
         {
           "name": "Final Kamehameha",
-          "input": "D 🡇 J"
+          "input": "D 🡇 J",
+          "ultimate": "yes"
         }
       ],
       "counter": [
