@@ -16,15 +16,15 @@ const App = () => (
     <>
       <Navbar />
       <div className="container mx-auto">
-        <div className="mx-3">          
-          <Switch>
-          <ScrollToTop>
-            <Route path="/characters/:saga/:name" component={CharacterProfile} />
-            <Route path="/characters/" exact component={CharacterList} />
-            <Route path="/" exact component={Index} />
-            <Route component={NoMatch} />
-            </ScrollToTop>
-          </Switch>
+        <div className="mx-3">     
+          <ScrollToTop>     
+            <Switch>            
+              <Route path="/characters/:saga/:name" component={CharacterProfile} />
+              <Route path="/characters/" exact component={CharacterList} />
+              <Route path="/" exact component={Index} />
+              <Route component={NoMatch} />            
+            </Switch>
+          </ScrollToTop>
         </div>
       </div>
     </>
