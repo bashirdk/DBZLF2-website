@@ -14,13 +14,13 @@ const Footer = () => (
           </div>
           <div class="text-white">
             <ul>
-              <a href="https://www.youtube.com/user/dbzlf2" target="_blank" className="fa-icon m-1">
+              <a href="https://www.youtube.com/user/dbzlf2" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
                 <FontAwesomeIcon icon={['fab', "youtube"]} size="2x" color="white" /> 
               </a>
-              <a href="http://dbzlf2.blogspot.com/" target="_blank" className="fa-icon m-1">
+              <a href="http://dbzlf2.blogspot.com/" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
                 <FontAwesomeIcon icon={['fab', "blogger"]} size="2x" color="white" /> 
               </a>
-              <a href="https://discord.gg/mPR3Vr5" target="_blank" className="fa-icon m-1">
+              <a href="https://discord.gg/mPR3Vr5" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
                 <FontAwesomeIcon icon={['fab', "discord"]} size="2x" color="white" /> 
               </a>          
             </ul>
