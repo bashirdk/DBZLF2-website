@@ -4,6 +4,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import ScrollToTop from "../ScrollToTop";
+import ReactGA from 'react-ga';
 
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -16,6 +17,9 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faDiscord, faBlogger } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faCoffee, faYoutube, faDiscord, faBlogger)
+
+ReactGA.initialize('UA-63142906-4');
+ReactGA.pageview('/');
 
 const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not found</h1>
 
@@ -36,8 +40,9 @@ const App = () => (
         </div>
       </div>
       <Footer />
+      <initializeReactGA/>
     </>
-  </Router>
+  </Router>  
 );
 
 export default App;
