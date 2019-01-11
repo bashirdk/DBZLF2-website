@@ -12,6 +12,7 @@ const Navbar = () => (
           <img 
             src={require('../images/dbzlf2-logo.png')}
             className="h-full"
+            alt="dbz lf2 logo"
           />
           </NavLink>
         </div>
