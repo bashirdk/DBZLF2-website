@@ -3,16 +3,16 @@ import React from "react";
 const MoveList = ({ character }) => {
   
   const moveContainerStyle = "border-b lf2-border-blue sm:flex";
-  const moveHeaderStyle = "border-b lf2-border-blue px-2 py-2 text-white";
-  const moveNameStyle = "lf2-bg-blue-dark text-white w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-2";
-  const moveInputStyle = "w-full text-white block sm:w-1/2 md:w-3/5 px-2 py-2";
+  const moveHeaderStyle = "border-b lf2-border-blue px-2 py-3 text-white";
+  const moveNameStyle = "lf2-bg-blue-dark text-white w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-3";
+  const moveInputStyle = "w-full text-white block sm:w-1/2 md:w-3/5 px-2 py-3";
 
   const subMoveList = ( input ) => {
     if (input.length === 0)
     {
       return (
         <div className={moveContainerStyle}>
-        <div className="px-2 py-2 text-white"> 
+        <div className="px-2 py-3 text-white"> 
           <i> None Available </i>
         </div>
       </div>  
@@ -53,10 +53,10 @@ const MoveList = ({ character }) => {
         <p className="text-right"> <i> Commands for facing right </i> </p>
       </div>     
 
-      <h4 className={'bg-blue ' + moveHeaderStyle } > Basic Moves </h4> {basicMoves}
-      <h4 className={'bg-red ' + moveHeaderStyle}> Special Moves </h4> {specialMoves}
-      <h4 className={'bg-green ' + moveHeaderStyle}> Counter Attacks </h4> {counterAttacks}
-      <h4 className={'bg-yellow-dark ' + moveHeaderStyle}> Transformations </h4> {transformations}
+      <h3 className={'bg-blue ' + moveHeaderStyle } > Basic Moves </h3> {basicMoves}
+      <h3 className={'bg-red ' + moveHeaderStyle}> Special Moves </h3> {specialMoves}
+      <h3 className={'bg-green ' + moveHeaderStyle}> Counter Attacks </h3> {counterAttacks}
+      <h3 className={'bg-yellow-dark ' + moveHeaderStyle}> Transformations </h3> {transformations}
     </div>
   );
 };
