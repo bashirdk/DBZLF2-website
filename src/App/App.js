@@ -1,13 +1,15 @@
 import "./App.css";
 
+import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+
 import ScrollToTop from "../ScrollToTop";
 
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 import Home from "../Home";
 import CharacterList from "../CharacterList";
 import CharacterProfile from "../CharacterProfile";
-import Navbar from "../Navbar";
-import React from "react";
 
 const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not found</h1>
 
@@ -15,7 +17,7 @@ const App = () => (
   <Router>
     <>
       <Navbar />
-      <div className="container mx-auto">
+      <div className="container mx-auto min-h-screen">
         <div className="mx-3">     
           <ScrollToTop>     
             <Switch>            
@@ -27,6 +29,7 @@ const App = () => (
           </ScrollToTop>
         </div>
       </div>
+      <Footer />
     </>
   </Router>
 );
