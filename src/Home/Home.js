@@ -19,8 +19,10 @@ const Home = () => (
       <p className="version-label text-white text-right -mt-5 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.2.8 </p>
     </div>
     
-    <div className="text-center mt-24">
-      <iframe title="trailer" width="560" height="315" src="https://www.youtube.com/embed/qr8AJyuS-VY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div className="text-center mt-24" >
+      <div className="video-responsive">
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/qr8AJyuS-VY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 );
