@@ -11,6 +11,13 @@ import Home from "../Home";
 import CharacterList from "../CharacterList";
 import CharacterProfile from "../CharacterProfile";
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faYoutube, faDiscord, faBlogger } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faCoffee, faYoutube, faDiscord, faBlogger)
+
 const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not found</h1>
 
 const App = () => (

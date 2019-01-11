@@ -2,3 +2,10 @@
   bottom: 10%;
   right: 5%;
 }
+
+.fa-icon path{
+  transition: 0.3s;
+}
+.fa-icon svg:hover path{
+  fill: #5582FF;
+}

@@ -1,6 +1,7 @@
 import "./Footer.css";
 
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Footer = () => (
   <div className="lf2-bg-blue border-t-2 lf2-border-blue mt-12">
@@ -13,9 +14,15 @@ const Footer = () => (
           </div>
           <div class="text-white">
             <ul>
-              <li>Youtube</li>
-              <li>Discord</li>
-              <li>Blogger</li>
+              <a href="https://www.youtube.com/user/dbzlf2" target="_blank" className="fa-icon m-1">
+                <FontAwesomeIcon icon={['fab', "youtube"]} size="2x" color="white" /> 
+              </a>
+              <a href="http://dbzlf2.blogspot.com/" target="_blank" className="fa-icon m-1">
+                <FontAwesomeIcon icon={['fab', "blogger"]} size="2x" color="white" /> 
+              </a>
+              <a href="https://discord.gg/mPR3Vr5" target="_blank" className="fa-icon m-1">
+                <FontAwesomeIcon icon={['fab', "discord"]} size="2x" color="white" /> 
+              </a>          
             </ul>
           </div>
         </div>
