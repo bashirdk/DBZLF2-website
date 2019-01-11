@@ -6,7 +6,7 @@ const CharacterGroup = ({ data: { name, characters } }) => {
     <CharacterCard key={character.id} character={character} />
   ));
 
-  if (cards.length == 0)
+  if (cards.length === 0)
   {
     cards = <p className="text-white italic">Nothing to see here...</p>
   }
