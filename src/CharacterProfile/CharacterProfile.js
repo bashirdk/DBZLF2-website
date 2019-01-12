@@ -25,7 +25,7 @@ class CharacterProfile extends Component {
     {    
       return (
         <div>
-          <h1 className="text-white">Character Profile</h1>
+          <h1 className="text-white text-center md:text-left">Character Profile</h1>
           <h2 className="text-center text-white">{this.state.character.name}</h2>
           <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
             <CharacterBio character={this.state.character} />
