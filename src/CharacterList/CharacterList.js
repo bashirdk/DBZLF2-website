@@ -1,6 +1,7 @@
 import "./CharacterList.css";
 
 import React, { Component } from "react";
+import Helmet from "react-helmet";
 
 import CharacterGroup from "./CharacterGroup";
 import Characters from "../data/characters.json";
@@ -26,6 +27,9 @@ class CharacterList extends Component {
 
     return (
       <div>
+        <Helmet>
+          <title>Characters - Dragon Ball Z Little Fighter 2</title>
+        </Helmet>
         <h1 className="text-white">Character List</h1>
         <div>{groups}</div>
       </div>

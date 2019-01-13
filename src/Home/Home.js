@@ -1,9 +1,13 @@
 import "./Home.css";
 
 import React from "react";
+import Helmet from "react-helmet";
 
 const Home = () => (
   <div>  
+    <Helmet>
+      <title> Dragon Ball Z Little Fighter 2</title>
+    </Helmet>
     <h1 className="text-white">DBZ LF2</h1>
     <div className="relative mb-10">
       <img 
