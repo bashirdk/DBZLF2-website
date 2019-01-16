@@ -7,6 +7,7 @@ const Home = () => (
   <div>  
     <Helmet>
       <title> Dragon Ball Z Little Fighter 2</title>
+      <meta name="description" content={"All about the Dragon Ball Z modficiation of the game Little Fighter 2."} />
     </Helmet>
     <h1 className="text-white">DBZ LF2</h1>
     <div className="relative mb-10">

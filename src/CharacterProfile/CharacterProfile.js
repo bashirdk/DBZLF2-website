@@ -28,6 +28,7 @@ class CharacterProfile extends Component {
         <div>
           <Helmet>
             <title>{this.state.character.name} - Dragon Ball Z Little Fighter 2</title>
+            <meta name="description" content={"Character profile page of " + this.state.character.name + ": stats and moves. "} />
           </Helmet>
           <h1 className="text-white text-center md:text-left">Character Profile</h1>
           <h2 className="text-center text-white">{this.state.character.name}</h2>

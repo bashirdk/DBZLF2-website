@@ -29,6 +29,7 @@ class CharacterList extends Component {
       <div>
         <Helmet>
           <title>Characters - Dragon Ball Z Little Fighter 2</title>
+          <meta name="description" content="List of Characters in DBZ LF2." />
         </Helmet>
         <h1 className="text-white">Character List</h1>
         <div>{groups}</div>
