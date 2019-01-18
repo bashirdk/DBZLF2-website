@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 
-const linkStyle = "text-grey hover:text-white no-underline";
+import "./Navbar.css";
+
+const linkStyle = "navbar-style text-grey hover:text-white no-underline";
 
 const Navbar = () => (
   <div className="pin-t sticky z-50 mb-4 shadow lf2-bg-blue border-b-2 lf2-border-blue">
@@ -18,12 +20,12 @@ const Navbar = () => (
         </div>
         <ul className="list-reset flex m-4">
           <li className="mr-6">
-            <NavLink to="/" className={linkStyle}>
+            <NavLink to="/" exact className={linkStyle}  activeClassName='is-active'>
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/characters/" className={linkStyle}>
+            <NavLink exact to="/characters/" className={linkStyle} activeClassName='is-active'>
               Characters
             </NavLink>
           </li>
