@@ -22,7 +22,7 @@ const MoveList = ({ character }) => {
         if (mappedMove.ultimate)
         {
           var ultimateMove = (
-            <span className="text-xs rounded px-2 py-1 bg-red-dark font-bold text-white">
+            <span className="inline-block text-xs rounded px-2 py-1 bg-red-dark font-bold text-white my-0 md:mt-2 lg:my-0">
               ULTIMATE
             </span>
           )          
