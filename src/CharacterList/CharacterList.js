@@ -1,4 +1,5 @@
 import "./CharacterList.css";
+import LoadingGif from '../images/loading.gif'
 
 import React, { Component, Suspense } from "react";
 import Helmet from "react-helmet";

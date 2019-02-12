@@ -2,6 +2,7 @@ import React, { Component, Suspense } from "react";
 import Helmet from "react-helmet";
 
 import Characters from "../data/characters.json";
+import LoadingGif from '../images/loading.gif'
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 
 const MoveList = React.lazy(() => import('./MoveList/MoveList.js'));
@@ -39,7 +40,7 @@ class CharacterProfile extends Component {
           <div  className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5">
           <Suspense fallback={ <div className="text-center"><LoadingSpinner/></div> }>
             <CharacterBio character={this.state.character} key={this.state.character.id} />
-            </Suspense> 
+            </Suspense> <LoadingSpinner/>
             </div>
           </section>
 
