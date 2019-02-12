@@ -1,3 +1,6 @@
+.navbar-style {
+  transition: 0.2s;
+}
 .navbar-style:hover, .is-active
 {
   color: white;
