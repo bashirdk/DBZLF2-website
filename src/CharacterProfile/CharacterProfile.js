@@ -1,10 +1,13 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import Helmet from "react-helmet";
 
 import Characters from "../data/characters.json";
-import MoveList from "./MoveList/MoveList.js";
-import CharacterBio from "./CharacterBio/CharacterBio.js";
-import CharacterStats from "./CharacterStats/CharacterStats.js";
+import LoadingGif from '../images/loading.gif'
+import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
+
+const MoveList = React.lazy(() => import('./MoveList/MoveList.js'));
+const CharacterBio = React.lazy(() => import('./CharacterBio/CharacterBio.js'));
+const CharacterStats = React.lazy(() => import('./CharacterStats/CharacterStats.js'));
 
 class CharacterProfile extends Component {
   constructor(props) {
@@ -32,15 +35,29 @@ class CharacterProfile extends Component {
           </Helmet>
           <h1 className="text-white text-center md:text-left">Character Profile</h1>
           <h2 className="text-center text-white">{this.state.character.name}</h2>
+
           <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
+          <div  className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5">
+          <Suspense fallback={ <div className="text-center"><LoadingSpinner/></div> }>
             <CharacterBio character={this.state.character} key={this.state.character.id} />
+            </Suspense> <LoadingSpinner/>
+            </div>
           </section>
+
           <section className="inline-block w-full sm:w-2/3 ">
             <section className="my-5">
+            <div className="border-2 lf2-border-blue lf2-bg-blue rounded">
+            <Suspense fallback={ <div className="text-center"><LoadingSpinner/></div> }>
               <CharacterStats character={this.state.character} key={this.state.character.id} />
+              </Suspense>
+            </div>
             </section>
             <section className="my-5">
+            <div className="border-2 lf2-border-blue lf2-bg-blue rounded border-b-0">
+            <Suspense fallback={ <div className="text-center"><LoadingSpinner/></div> }>
               <MoveList character={this.state.character} key={this.state.character.id}/>
+              </Suspense>
+            </div>
             </section>          
           </section>
         </div>

@@ -22,7 +22,7 @@ const CharacterStats = ({ character }) => {
   const kiStat = statContainer("Ki Usage", character.stats.ki);
 
   return  (
-    <div className="border-2 lf2-border-blue lf2-bg-blue rounded">
+    <div >
       <h3 className="p-5 border-b text-white"> Character Stats </h3>
       <div className="py-5 text-white">
         {attackStat}
