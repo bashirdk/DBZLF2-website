@@ -47,7 +47,7 @@ const MoveList = ({ character }) => {
   const transformations = subMoveList(character.moves.transformations);
 
   return (
-    <div >
+    <div className="border-2 lf2-border-blue lf2-bg-blue rounded border-b-0">
       <div className="border-b lf2-border-blue text-white p-2">
         <h3> Move List </h3>
         <p className="text-right"> <i> Commands for facing right </i> </p>
