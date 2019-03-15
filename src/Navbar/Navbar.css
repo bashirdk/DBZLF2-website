@@ -1,0 +1,8 @@
+.navbar-style {
+  transition: 0.2s;
+}
+.navbar-style:hover, .is-active
+{
+  color: white;
+  text-shadow:  0 0 2px black, 0 0 5px #3ffbfd, 0 0 10px white;
+}
