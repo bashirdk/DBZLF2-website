@@ -24,9 +24,14 @@ const Navbar = () => (
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="mr-6">
             <NavLink exact to="/characters/" className={linkStyle} activeClassName='is-active'>
               Characters
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/downloads/" className={linkStyle} activeClassName='is-active'>
+              Downloads
             </NavLink>
           </li>
         </ul>

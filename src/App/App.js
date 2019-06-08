@@ -11,6 +11,7 @@ import Footer from "../Footer";
 import Home from "../Home";
 import CharacterList from "../CharacterList";
 import CharacterProfile from "../CharacterProfile";
+import Downloads from "../Downloads";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -33,6 +34,7 @@ const App = () => (
             <Switch>            
               <Route path="/characters/:saga/:name" component={CharacterProfile} />
               <Route path="/characters/" exact component={CharacterList} />
+              <Route path="/downloads/" exact component={Downloads} />
               <Route path="/" exact component={Home} />
               <Route component={NoMatch} />            
             </Switch>
