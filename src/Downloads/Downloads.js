@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 
 import DownloadsJSON from "../data/downloads.json";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Downloads extends Component {
 	constructor(props) {
@@ -15,6 +16,13 @@ class Downloads extends Component {
 			<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-5 lg:mx-0 text-white">
 				<div class="sm:w-1 md:w-1/2 inline-block align-top"> 
 					<h2> DBZ LF2 {download.version} </h2>
+					<a href={"https://github.com/bashirdk/dbz-lf2/releases/download/" + download.version + "/DBZ.LF2." + download.version + ".zip"}>
+						<button class="download-button">
+						  <FontAwesomeIcon icon="download" color="white" />
+							<span class="mx-2">Download</span>
+						</button>
+					</a>
+					
 					
 				</div>
 				<div class="sm:w-1 md:w-1/2 inline-block text-right align-top">

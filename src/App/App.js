@@ -14,10 +14,17 @@ import CharacterProfile from "../CharacterProfile";
 import Downloads from "../Downloads";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faDiscord, faBlogger } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faCoffee, faYoutube, faDiscord, faBlogger)
+import TagManager from 'react-gtm-module'
+
+library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger)
+
+const tagManagerArgs = {
+  gtmId: 'GTM-N2KK6S5'
+}
+TagManager.initialize(tagManagerArgs)
 
 ReactGA.initialize('UA-63142906-4');
 ReactGA.pageview('/');
