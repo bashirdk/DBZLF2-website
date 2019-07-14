@@ -4,7 +4,9 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 
 import DownloadsJSON from "../data/downloads.json";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import Accordion from "../Components/Accordion/Accordion"
 
 class Downloads extends Component {
 	constructor(props) {
@@ -13,6 +15,13 @@ class Downloads extends Component {
 
 	render() {	
 		var downloadsData = DownloadsJSON.map((download) => (
+			<div>
+
+			<Accordion 
+				title="What is your return policy?"
+				content="deez nuts"
+			/>			
+
 			<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-5 lg:mx-0 text-white">
 				<div class="sm:w-1 md:w-1/2 inline-block align-top"> 
 					<h2> DBZ LF2 {download.version} </h2>
@@ -44,6 +53,8 @@ class Downloads extends Component {
 					<div></div> }
 				</div>
 				
+			</div>
+			
 			</div>
 		));
 
