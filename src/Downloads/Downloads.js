@@ -6,7 +6,7 @@ import Helmet from "react-helmet";
 import DownloadsJSON from "../data/downloads.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Accordion from "../Components/Accordion/Accordion"
+import Accordion from "./Accordion/Accordion"
 
 class Downloads extends Component {
 	constructor(props) {
@@ -18,7 +18,10 @@ class Downloads extends Component {
 			<div>
 
 			<Accordion 
-				title="What is your return policy?"
+				title={download.version}
+				date={download.date}
+				charactersTotal={download.characters.total}
+				charactersNew={download.characters.new}
 				content="deez nuts"
 			/>			
 
@@ -28,7 +31,7 @@ class Downloads extends Component {
 					<a href={"https://github.com/bashirdk/dbz-lf2/releases/download/" + download.version + "/DBZ.LF2." + download.version + ".zip"}>
 						<button class="download-button">
 						  <FontAwesomeIcon icon="download" color="white" />
-							<span class="mx-2">Download</span>
+							<span class="mx-2">DOWNLOAD</span>
 						</button>
 					</a>
 					
@@ -54,7 +57,7 @@ class Downloads extends Component {
 				</div>
 				
 			</div>
-			
+
 			</div>
 		));
 
