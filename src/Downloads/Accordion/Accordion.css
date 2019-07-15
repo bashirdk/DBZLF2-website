@@ -48,11 +48,6 @@
   overflow: hidden;
   transition: 0.6s ease;
 }
-
-/* Style the accordion content text */
-.accordion__text {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  padding: 18px;
+.accordion__content.active {
+  margin-bottom: 1.25rem;
 }
