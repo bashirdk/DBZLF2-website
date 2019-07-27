@@ -35,7 +35,7 @@
 /* Style the accordion chevron icon */
 .accordion__icon {
   transition: transform 0.6s ease;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 /* Style to rotate icon when state is active */
@@ -50,4 +50,28 @@
 }
 .accordion__content.active {
   margin-bottom: 1.25rem;
+}
+
+.downloads-section ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+.downloads-section li:before {
+  content: "●";
+  font-weight: 800;
+  margin-right: 6px;
+}
+.list-plus:before {
+  content: "\002B" !important;
+  color: green;
+  font-weight: 700 !important;
+  margin-right: 4px !important;
+}
+.list-minus:before {
+  content: "−" !important;
+  color: red;
+  font-weight: 800 !important;
+  margin-right: 4px !important;
 }

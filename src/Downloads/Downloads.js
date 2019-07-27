@@ -15,7 +15,7 @@ class Downloads extends Component {
 
 	render() {	
 		var downloadsData = DownloadsJSON.map((download) => (
-			<div>
+			<div className="downloads-section">
 
 			<Accordion 
 				version={download.version}
@@ -23,6 +23,7 @@ class Downloads extends Component {
 				charactersTotal={download.characters.total}
 				charactersNew={download.characters.new}
 				trailer={download.trailer}
+				updates={download.updates}
 			/>			
 
 			</div>

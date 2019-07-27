@@ -21,6 +21,56 @@ function Accordion(props) {
     );
   }
 
+  function updateListStyle(input) {
+    if (input.includes("[+]")) {
+      input = input.split("[+]");
+      return ( <li className="list-plus"> {input} </li> )
+    }
+    else if (input.includes("[-]")) {
+      input = input.split("[-]");
+      return ( <li className="list-minus"> {input} </li> )
+    }
+    else {
+      return ( <li> {input} </li> )
+    }
+  }
+
+  function outputIfExists(header, data) {
+    return (
+       data.length > 0 &&
+        <>
+          <h4 className="my-1"> {header} </h4>
+          <ul>
+            {data}
+          </ul>
+        </>      
+    )
+  }
+
+  function mapUpdatesData(propsData) {
+    if (propsData) {
+      return propsData.map( 
+        (updates) => {
+          return updateListStyle(updates);
+      })
+    }
+    else {
+      return ''
+    }
+  }
+
+
+  let characters = mapUpdatesData(props.updates.major_updates.characters);
+  let backgrounds = mapUpdatesData(props.updates.major_updates.backgrounds);
+  let list_of_major_updates = mapUpdatesData(props.updates.major_updates.list_of_major_updates);
+  let levelSystem = mapUpdatesData(props.updates.major_updates.level_system);
+  let list_of_minor_updates = mapUpdatesData(props.updates.minor_updates.list_of_minor_updates);
+
+  let sprite_changes = mapUpdatesData(props.updates.minor_updates.sprite_changes);
+  let new_moves = mapUpdatesData(props.updates.minor_updates.new_moves);
+  let speed_enhancements = mapUpdatesData(props.updates.minor_updates.speed_enhancements);
+
+
   return (
     <div className="accordion__section border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
       
@@ -60,11 +110,27 @@ function Accordion(props) {
             </a>
           </div>
 
+          <h3 className="mb-1">Major Updates</h3>
+          <div className="mx-3">
+            {outputIfExists("New Characters", characters)}
+            {outputIfExists("Backgrounds", backgrounds)}
+            {outputIfExists("Level System", levelSystem)}
+            {outputIfExists("Other Updates", list_of_major_updates)}                  
+          </div>
+          <br/>
+          <h3 className="mb-1">Minor Updates</h3>
+          <div className="mx-3">
+            {outputIfExists("Sprite Changes", sprite_changes)}
+            {outputIfExists("New Moves", new_moves)}
+            {outputIfExists("Speed Enhancements", speed_enhancements)}
+            {outputIfExists("Other Updates", list_of_minor_updates)}
+          </div>     
+          <br/>
           <div class="text-center">
             { props.trailer ? 
               <div class="download-trailer">
                 <div class="video-responsive">
-                  <iframe width="560" height="315" src={"https://www.youtube.com/embed/" + props.trailer} frameborder="0" 
+                  <iframe width="560" height="315" title={"DBZ LF2 " + props.version + " trailer"} src={"https://www.youtube.com/embed/" + props.trailer} frameborder="0" 
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                   </iframe> 
                 </div>

@@ -10,13 +10,11 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] Trunks (Armour)"
-        ],
-        "backgrounds": [
-          "[+] Added NEW BG: Time Chamber / ROSAT",
-          "[-] Removed BG: Trunks Arrival"
+          "Trunks (Armour)"
         ],
         "list_of_major_updates": [
+          "Added NEW BG: Time Chamber / ROSAT",
+          "Removed BG: Trunks Arrival",
           "Krillin Major Overhaul, Details: https://www.youtube.com/watch?v=SQLIcWp_s2w",
           "Modified EXE art"
         ]
@@ -55,10 +53,10 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] Gohan (Buu) - Level 4",
-          "[+] SS Gohan (Buu) - Level 5",
-          "[+] SS2 Gohan (Buu) - Level 6",
-          "[+] Ultimate Gohan - Level 7"
+          "Gohan (Buu) - Level 4",
+          "SS Gohan (Buu) - Level 5",
+          "SS2 Gohan (Buu) - Level 6",
+          "Ultimate Gohan - Level 7"
         ],
         "list_of_major_updates": [
           "New Face pics: now using anime pictures and shows level, attack and defense indicator",
@@ -89,22 +87,11 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] Vegeta (Namek) - Level 2",
-          "[+] Goku (Buu) - Level 4",
-          "[+] SS Goku (Buu) - Level 5",
-          "[+] SS2 Goku (Buu) - Level 6",
-          "[+] SS3 Goku (Buu) - Level 7"
-        ],
-        "level_system": [
-          "Level 1 = 1.00x attack and 1.50x defense",
-          "Level 2 = 1.10x attack and 1.65x defense",
-          "Level 3 = 1.30x attack and 1.95x defense",
-          "Level 4 = 1.60x attack and 2.40x defense",
-          "Level 5 = 2.00x attack and 3.00x defense",
-          "Level 6 = 2.50x attack and 3.75x defense",
-          "Level 7 = 3.10x attack and 4.65x defense",
-          "Level 8 = 3.80x attack and 5.70x defense",
-          "Level 9 = 5.00x attack and 7.50x defense"
+          "Vegeta (Namek) - Level 2",
+          "Goku (Buu) - Level 4",
+          "SS Goku (Buu) - Level 5",
+          "SS2 Goku (Buu) - Level 6",
+          "SS3 Goku (Buu) - Level 7"
         ],
         "list_of_major_updates": [
 
@@ -135,10 +122,10 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] Vegeta (Android) - Level 3",
-          "[+] SS Vegeta (Android) - Level 4",
-          "[+] Super Vegeta - Level 4.5? (1.8x attack, 1.6x defense)",
-          "[+] Majin Vegeta - Level 6"
+          "Vegeta (Android) - Level 3",
+          "SS Vegeta (Android) - Level 4",
+          "Super Vegeta - Level 4.5? (1.8x attack, 1.6x defense)",
+          "Majin Vegeta - Level 6"
         ],
         "list_of_major_updates": [
           "Compressed some of the BMP files making the extracted game much smaller (side effect includes some loss of quality in SOME of the sprites, but is hardly noticeable at all, especially in the heat of battle)",
@@ -167,18 +154,11 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] Vegeta (Buu) - Level 4",
-          "[+] SS Vegeta (Buu) - Level 5",
-          "[+] SS2 Vegeta (Buu) - Level 6",
-          "[+] Vegito - Level 8",
-          "[+] Super Vegito - Level 9"
-        ],
-        "level_system": [
-          "Level 4 = 1.6x attack and defense modifier",
-          "Level 5 = 2.0x attack and defense modifier",
-          "Level 6 = 2.5x attack and defense modifier",
-          "Level 8 = 3.8x attack and defense modifier",
-          "Level 9 = 5.0x attack and defense modifier"
+          "Vegeta (Buu) - Level 4",
+          "SS Vegeta (Buu) - Level 5",
+          "SS2 Vegeta (Buu) - Level 6",
+          "Vegito - Level 8",
+          "Super Vegito - Level 9"
         ],
         "list_of_major_updates": [
           "Each character has AI at all 4 different difficulty settings"
