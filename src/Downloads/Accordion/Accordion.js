@@ -24,14 +24,14 @@ function Accordion(props) {
   function updateListStyle(input) {
     if (input.includes("[+]")) {
       input = input.split("[+]");
-      return ( <li className="list-plus"> {input} </li> )
+      return ( <li className="list-plus" key={input}> {input} </li> )
     }
     else if (input.includes("[-]")) {
       input = input.split("[-]");
-      return ( <li className="list-minus"> {input} </li> )
+      return ( <li className="list-minus" key={input}> {input} </li> )
     }
     else {
-      return ( <li> {input} </li> )
+      return ( <li key={input}> {input} </li> )
     }
   }
 
@@ -79,12 +79,12 @@ function Accordion(props) {
             <h2 className="inline-block"> DBZ LF2 {props.version} </h2> 
           </div>          
           <div className="w-1/3 text-center">
-          <p class="my-1"> {props.date} </p>
+          <p className="my-1"> {props.date} </p>
           </div>
           <div className="w-1/3 text-right">
-            <p class="my-1"> 
-              Characters: <span class="rounded-lg py-05 px-2 my-2 mr-2 bg-green"> {props.charactersTotal} </span>
-              New: <span class="rounded-lg py-05 px-2 my-2 bg-blue"> {props.charactersNew} </span>
+            <p className="my-1"> 
+              Characters: <span className="rounded-lg py-05 px-2 my-2 mr-2 bg-green"> {props.charactersTotal} </span>
+              New: <span className="rounded-lg py-05 px-2 my-2 bg-blue"> {props.charactersNew} </span>
             </p>  
           </div>
         </div>
@@ -99,9 +99,9 @@ function Accordion(props) {
 
           <div className="text-center">
             <a href={"https://github.com/bashirdk/dbz-lf2/releases/download/" + props.version + "/DBZ.LF2." + props.version + ".zip"}>
-              <button class="download-button">
+              <button className="download-button">
                 <FontAwesomeIcon icon="download" color="white" />
-                <span class="mx-2">DOWNLOAD</span>
+                <span className="mx-2">DOWNLOAD</span>
               </button>
             </a>
           </div>
@@ -123,12 +123,12 @@ function Accordion(props) {
             {outputIfExists("Other Updates", list_of_minor_updates)}
           </div>     
           <br/>
-          <div class="text-center">
+          <div className="text-center">
             { props.trailer ? 
-              <div class="download-trailer">
-                <div class="video-responsive">
-                  <iframe width="560" height="315" title={"DBZ LF2 " + props.version + " trailer"} src={"https://www.youtube.com/embed/" + props.trailer} frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              <div className="download-trailer">
+                <div className="video-responsive">
+                  <iframe width="560" height="315" title={"DBZ LF2 " + props.version + " trailer"} src={"https://www.youtube.com/embed/" + props.trailer} frameBorder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
                   </iframe> 
                 </div>
               </div>

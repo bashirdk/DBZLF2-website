@@ -15,9 +15,9 @@ class Downloads extends Component {
 
 	render() {	
 		var downloadsData = DownloadsJSON.map((download) => (
-			<div className="downloads-section">
+			<div className="downloads-section"  key={download.version}>
 
-			<Accordion 
+			<Accordion 			 
 				version={download.version}
 				date={download.date}
 				charactersTotal={download.characters.total}
@@ -29,7 +29,6 @@ class Downloads extends Component {
 			</div>
 		));
 
-		console.log("THE DATA: " + downloadsData[0].version);
 		return (
 			<div>
 				<Helmet>
