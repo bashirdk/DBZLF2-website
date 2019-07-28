@@ -1,5 +1,5 @@
 .download-trailer {
-  max-width: 560px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -17,5 +17,4 @@
 .download-button:hover
 {
   background-color: #38a169;
-
 }
