@@ -11,12 +11,20 @@ import Footer from "../Footer";
 import Home from "../Home";
 import CharacterList from "../CharacterList";
 import CharacterProfile from "../CharacterProfile";
+import Downloads from "../Downloads";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faDiscord, faBlogger } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faCoffee, faYoutube, faDiscord, faBlogger)
+import TagManager from 'react-gtm-module'
+
+library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger)
+
+const tagManagerArgs = {
+  gtmId: 'GTM-N2KK6S5'
+}
+TagManager.initialize(tagManagerArgs)
 
 ReactGA.initialize('UA-63142906-4');
 ReactGA.pageview('/');
@@ -33,6 +41,7 @@ const App = () => (
             <Switch>            
               <Route path="/characters/:saga/:name" component={CharacterProfile} />
               <Route path="/characters/" exact component={CharacterList} />
+              <Route path="/downloads/" exact component={Downloads} />
               <Route path="/" exact component={Home} />
               <Route component={NoMatch} />            
             </Switch>

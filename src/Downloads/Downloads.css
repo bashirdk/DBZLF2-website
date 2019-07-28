@@ -1,0 +1,20 @@
+.download-trailer {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.download-button {
+  transition: 0.25s;
+  background-color: #68d391;
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: 1px solid #2f855a;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.download-button:hover
+{
+  background-color: #38a169;
+}
