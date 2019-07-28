@@ -59,23 +59,20 @@ function Accordion(props) {
     }
   }
 
-
   let characters = mapUpdatesData(props.updates.major_updates.characters);
   let backgrounds = mapUpdatesData(props.updates.major_updates.backgrounds);
   let list_of_major_updates = mapUpdatesData(props.updates.major_updates.list_of_major_updates);
   let levelSystem = mapUpdatesData(props.updates.major_updates.level_system);
   let list_of_minor_updates = mapUpdatesData(props.updates.minor_updates.list_of_minor_updates);
-
+  let character_changes = mapUpdatesData(props.updates.minor_updates.character_changes);
   let sprite_changes = mapUpdatesData(props.updates.minor_updates.sprite_changes);
   let new_moves = mapUpdatesData(props.updates.minor_updates.new_moves);
-  let speed_enhancements = mapUpdatesData(props.updates.minor_updates.speed_enhancements);
-
+  let speed_adjustments = mapUpdatesData(props.updates.minor_updates.speed_adjustments);
 
   return (
     <div className="accordion__section border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
-      
-      <button className={`accordion ${setActive} px-6 py-5 text-white`} onClick={toggleAccordion}>       
-        
+
+      <button className={`accordion ${setActive} px-6 py-5 text-white`} onClick={toggleAccordion}>        
         <div className="flex w-full">
           <div className="w-1/3 text-left inline-block">
             <Chevron className={`${setRotate}`} width={10} fill={"#fff"} />
@@ -91,9 +88,8 @@ function Accordion(props) {
             </p>  
           </div>
         </div>
-
       </button>
-      
+
       <div
         ref={content}
         style={{ maxHeight: `${setHeight}` }}
@@ -120,9 +116,10 @@ function Accordion(props) {
           <br/>
           <h3 className="mb-1">Minor Updates</h3>
           <div className="mx-3">
+            {outputIfExists("Character Changes", character_changes)}
             {outputIfExists("Sprite Changes", sprite_changes)}
             {outputIfExists("New Moves", new_moves)}
-            {outputIfExists("Speed Enhancements", speed_enhancements)}
+            {outputIfExists("Speed Adjustments", speed_adjustments)}
             {outputIfExists("Other Updates", list_of_minor_updates)}
           </div>     
           <br/>

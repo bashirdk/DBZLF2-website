@@ -27,19 +27,19 @@
           "The bottom of Goku’s shoes are now red like how they should be"
         ],
         "new_moves": [
-          "Vegeta (Android): Big Bang Attack",
-          "SS Vegeta (Android): Final Flash",
-          "Super Vegeta (Android): Final Flash",
-          "SS3 Goku (Buu): Dragonthrow",
-          "Ultimate Gohan: Dragonthrow",
-          "Ultimate Gohan: Burst Rush",
-          "Ultimate Gohan: Ultimate Kamehameha",
-          "TEAM ATTACK: Final Kamehameha (SS Goku and SS Vegeta)"
+          "[+] Vegeta (Android): Big Bang Attack",
+          "[+] SS Vegeta (Android): Final Flash",
+          "[+] Super Vegeta (Android): Final Flash",
+          "[+] SS3 Goku (Buu): Dragonthrow",
+          "[+] Ultimate Gohan: Dragonthrow",
+          "[+] Ultimate Gohan: Burst Rush",
+          "[+] Ultimate Gohan: Ultimate Kamehameha",
+          "[+] TEAM ATTACK: Final Kamehameha (SS Goku and SS Vegeta)"
         ],
-        "speed_enhancements": [
-          "SS Vegeta (Android)’s Final Flash: 13 TU",
-          "Super Vegeta (Android)’s Final Flash: 13 TU",
-          "SS Vegeta (Buu)’s Final Burst Cannon: 6 TU"
+        "speed_adjustments": [
+          "[-] SS Vegeta (Android)’s Final Flash: 13 TU",
+          "[-] Super Vegeta (Android)’s Final Flash: 13 TU",
+          "[-] SS Vegeta (Buu)’s Final Burst Cannon: 6 TU"
         ]
       }
     }
@@ -67,6 +67,12 @@
         ]
       }, 
       "minor_updates": {
+        "character_changes": [
+          "Vegeta (Namek) - Broke down Dirty Fireworks into D^A A (allows for new combos)",
+          "Vegeta (Namek) - Broke down Genocide Breaker into D^J A (in case kick is blocked no need to fly attacking nothing)",
+          "Vegeta (Namek) - Final Crash has been sped up significantly",
+          "Vegeta (Namek) - Final Burst Canon has been sped up a bit"
+        ],
         "list_of_minor_updates": [
           "Common melee attacks now use state 7 in the itr frames. So basically while you are attacking you are also defending to create a small type of “clash”",
           "Jump recovery (flips) now DRAIN ki",
@@ -107,7 +113,7 @@
           "Level 9 = 5.00x attack and 7.50x defense"
         ],
         "list_of_major_updates": [
-
+          "Modified EXE art"
         ]
       },
       "minor_updates": {
