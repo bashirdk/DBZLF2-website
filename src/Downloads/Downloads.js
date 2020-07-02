@@ -20,6 +20,7 @@ class Downloads extends Component {
 			<Accordion 			 
 				version={download.version}
 				date={download.date}
+				download={download.download}
 				charactersTotal={download.characters.total}
 				charactersNew={download.characters.new}
 				trailer={download.trailer}

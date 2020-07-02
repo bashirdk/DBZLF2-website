@@ -1,7 +1,30 @@
 [
   {
+    "version": "v0.2.9",
+    "date": "1/1/2020",
+    "download": "http://download856.mediafire.com/ng2djnh6edyg/x0eyjucwzv7oqwc/DeeBeeZee+LF2+v0.2.9.zip",
+    "characters": {
+      "new": 1,
+      "total": 20
+    },
+    "updates": {
+      "major_updates": {
+        "characters": [
+          "[+] SS Trunks (Armour) - Incomplete"
+        ],
+        "backgrounds": [
+          "[+] Added NEW BG - Incomplete "
+        ]
+      },
+      "minor_updates": {
+        
+      }
+    }
+  }, 
+  {
     "version": "v0.2.8",
     "date": "9/28/2016",
+    "download": "http://download943.mediafire.com/b1vueo618cjg/h7hbt6etstaargg/DeeBeeZee+LF2+v0.2.8.rar",
     "trailer": "qr8AJyuS-VY",
     "characters": {
       "new": 1,

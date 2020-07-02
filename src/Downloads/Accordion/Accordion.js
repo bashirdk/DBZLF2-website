@@ -98,12 +98,21 @@ function Accordion(props) {
         <div className="pb-3" >
 
           <div className="text-center">
-            <a href={"https://github.com/bashirdk/dbz-lf2/releases/download/" + props.version + "/DBZ.LF2." + props.version + ".zip"}>
-              <button className="download-button">
+            { props.download ?
+             <a href={props.download}>
+             <button className="download-button">
                 <FontAwesomeIcon icon="download" color="white" />
                 <span className="mx-2">DOWNLOAD</span>
               </button>
             </a>
+             :
+             <a href={"https://github.com/bashirdk/dbz-lf2/releases/download/" + props.version + "/DBZ.LF2." + props.version + ".zip"}>
+             <button className="download-button">
+                <FontAwesomeIcon icon="download" color="white" />
+                <span className="mx-2">DOWNLOAD</span>
+              </button>
+            </a>}
+              
           </div>
 
           <h3 className="mb-1">Major Updates</h3>
@@ -111,7 +120,7 @@ function Accordion(props) {
             {outputIfExists("New Characters", characters)}
             {outputIfExists("Backgrounds", backgrounds)}
             {outputIfExists("Level System", levelSystem)}
-            {outputIfExists("Other Updates", list_of_major_updates)}                  
+            {outputIfExists("Other Updates", list_of_major_updates)}
           </div>
           <br/>
           <h3 className="mb-1">Minor Updates</h3>
