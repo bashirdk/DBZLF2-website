@@ -283,7 +283,52 @@
         }
       ],
       "transformations": [
-
+        {
+          "name": "Super Saiyan",
+          "input": "DJA J"
+        }
+      ]
+    }
+  },{
+    "id": 83,
+    "url_id": "ss-trunks-a",
+    "name": "Super Saiyan Trunks",
+    "saga": "Android",
+    "race": ["Saiyan", "Human"],
+    "stats": {
+      "attack": 2.99,
+      "defense": 4.49,
+      "speed": 2.99,
+      "ki": 125
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "D J A (A A A...)"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "special": [
+        {
+          "name": "Change the Future",
+          "input": "D v J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D"
+        }
       ]
     }
   },
