@@ -21,10 +21,18 @@ const Home = () => (
         className="block sm:hidden"
         alt="dbz lf2 logo for smaller screens"
       />
-      <p className="version-label text-white text-right -mt-5 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.2.8 </p>
+      <p className="version-label text-white text-right -mt-5 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.2.9 </p>
+    </div>
+
+    <div className="text-center">
+      <a href="https://forms.gle/6F2H4csmaGsn2ejX8" target="_blank"> 
+        <button className="download-button">
+          POLL: Which Character should I work on next? 
+        </button>
+      </a>
     </div>
     
-    <div className="text-center mt-24" >
+    <div className="text-center mt-12" >
       <div className="video-responsive">
         <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/qr8AJyuS-VY" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
