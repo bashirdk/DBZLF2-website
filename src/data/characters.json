@@ -429,11 +429,11 @@
         },
         {
           "name": "Hellzone Grenade",
-          "input": "D > J"
+          "input": "D ^ J"
         },
         {
           "name": "Final Burst Cannon",
-          "input": "D v J"
+          "input": "D > J"
         }
       ],
       "counter": [
