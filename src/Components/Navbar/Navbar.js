@@ -12,7 +12,7 @@ const Navbar = () => (
         <div className="h-full">
           <NavLink to="/">
           <img 
-            src={require('../images/dbzlf2-logo.png')}
+            src={require('../../images/dbzlf2-logo.png')}
             className="h-full"
             alt="dbz lf2 logo"
           />

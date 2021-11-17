@@ -12,12 +12,12 @@ const Home = () => (
     <h1 className="text-white">DBZ LF2</h1>
     <div className="relative mb-10">
       <img 
-        src={require('../images/dbzlf2-logo-horizontal.png')}
+        src={require('../../images/dbzlf2-logo-horizontal.png')}
         className="hidden sm:block"
         alt="dbz lf2 logo for larger screens"
       />
       <img 
-        src={require('../images/dbzlf2-logo.png')}
+        src={require('../../images/dbzlf2-logo.png')}
         className="block sm:hidden"
         alt="dbz lf2 logo for smaller screens"
       />

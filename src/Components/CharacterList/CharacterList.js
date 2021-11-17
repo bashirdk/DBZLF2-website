@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 
 import CharacterGroup from "./CharacterGroup";
-import Characters from "../data/characters.json";
+import Characters from "../../data/characters.json";
 
 class CharacterList extends Component {
 	constructor(props) {

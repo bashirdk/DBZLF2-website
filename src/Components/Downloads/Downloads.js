@@ -3,7 +3,7 @@ import "./Downloads.css";
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 
-import DownloadsJSON from "../data/downloads.json";
+import DownloadsJSON from "../../data/downloads.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Accordion from "./Accordion/Accordion"

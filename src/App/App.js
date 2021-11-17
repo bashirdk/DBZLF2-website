@@ -3,15 +3,15 @@ import "./App.css";
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-import ScrollToTop from "../ScrollToTop";
+import ScrollToTop from "../Components/ScrollToTop";
 import ReactGA from 'react-ga';
 
-import Navbar from "../Navbar";
-import Footer from "../Footer";
-import Home from "../Home";
-import CharacterList from "../CharacterList";
-import CharacterProfile from "../CharacterProfile";
-import Downloads from "../Downloads";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Home from "../Components/Home";
+import CharacterList from "../Components/CharacterList";
+import CharacterProfile from "../Components/CharacterProfile";
+import Downloads from "../Components/Downloads";
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'

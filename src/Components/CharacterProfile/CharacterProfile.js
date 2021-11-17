@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 
-import Characters from "../data/characters.json";
+import Characters from "../../data/characters.json";
 import MoveList from "./MoveList/MoveList.js";
 import CharacterBio from "./CharacterBio/CharacterBio.js";
 import CharacterStats from "./CharacterStats/CharacterStats.js";
