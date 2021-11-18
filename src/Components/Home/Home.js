@@ -3,6 +3,8 @@ import "./Home.css";
 import React from "react";
 import Helmet from "react-helmet";
 
+import DragonBall from "../Logo/DragonBall";
+
 const Home = () => (
   <div>  
     <Helmet>
@@ -10,6 +12,12 @@ const Home = () => (
       <meta name="description" content={"All about the Dragon Ball Z modficiation of the game Little Fighter 2."} />
     </Helmet>
     <h1 className="text-white">DBZ LF2</h1>
+
+    <DragonBall
+      strokeWidth="1"
+      width="100%"
+    />
+
     <div className="relative mb-10">
       <img 
         src={require('../../images/dbzlf2-logo-horizontal.png')}

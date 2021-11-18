@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import React from "react";
 
+import DragonBall from "../Logo/DragonBall";
+
 import "./Navbar.css";
 
 const linkStyle = "navbar-style text-grey hover:text-white no-underline";
@@ -11,6 +13,11 @@ const Navbar = () => (
       <nav className="py-4 h-16 md:h-24  flex items-center justify-between mx-3">
         <div className="h-full">
           <NavLink to="/">
+          <DragonBall
+            strokeWidth="5"
+            width="132"
+            height="35"
+          />
           <img 
             src={require('../../images/dbzlf2-logo.png')}
             className="h-full"
