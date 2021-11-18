@@ -63,7 +63,7 @@ const Home = () => (
     </motion.div>
 
     <div className="text-center">
-      <a href="https://forms.gle/6F2H4csmaGsn2ejX8" target="_blank"> 
+      <a href="https://forms.gle/6F2H4csmaGsn2ejX8" target="_blank" rel="noopener noreferrer"> 
         <button className="download-button">
           POLL: Which Character should I work on next? 
         </button>

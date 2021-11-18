@@ -4,14 +4,10 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 
 import DownloadsJSON from "../../data/downloads.json";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Accordion from "./Accordion/Accordion"
 
 class Downloads extends Component {
-	constructor(props) {
-		super(props);
-	}
 
 	render() {	
 		var downloadsData = DownloadsJSON.map((download) => (
