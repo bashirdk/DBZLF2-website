@@ -1,0 +1,13 @@
+tspan { white-space:pre }
+.shp0 { fill: #000000; } 
+.shp1 { fill: #cc0921; } 
+.shp2 { fill: #ffe114;  paint-order: stroke fill;} 
+.shp3 { fill: #e99c23;stroke-width: 1.377 } 
+.shp4 { fill: #cc081f; } 
+
+/* tspan { white-space:pre }
+.shp0 { fill: #000000;stroke: #000000 } 
+.shp1 { fill: #cc0921;stroke: #cc0921 } 
+.shp2 { fill: #ffe114;stroke: #ffe114 } 
+.shp3 { fill: #e99c23;stroke: #e99c23;stroke-width: 1.377 } 
+.shp4 { fill: #cc081f;stroke: #cc081f }  */

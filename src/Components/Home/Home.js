@@ -3,26 +3,53 @@ import "./Home.css";
 import React from "react";
 import Helmet from "react-helmet";
 
+import DragonBall from "../Logo/DragonBall";
+import LittleFighter2 from "../Logo/LittleFighter2";
+
+import { motion } from 'framer-motion'
+
+const versionVariants = {
+  initial: {
+    opacity: 0,
+    y: -50,
+  }, 
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 3,
+      duration: 1,
+      ease: "easeInOut"
+    }
+  }
+  
+}
+
 const Home = () => (
   <div>  
     <Helmet>
       <title> Dragon Ball Z Little Fighter 2</title>
       <meta name="description" content={"All about the Dragon Ball Z modficiation of the game Little Fighter 2."} />
     </Helmet>
-    <h1 className="text-white">DBZ LF2</h1>
-    <div className="relative mb-10">
-      <img 
-        src={require('../../images/dbzlf2-logo-horizontal.png')}
-        className="hidden sm:block"
-        alt="dbz lf2 logo for larger screens"
+    <h1 className="text-white hidden">DBZ LF2</h1>
+
+    <div className="hero-logos">
+      <DragonBall
+        strokeWidth="1"
       />
-      <img 
-        src={require('../../images/dbzlf2-logo.png')}
-        className="block sm:hidden"
-        alt="dbz lf2 logo for smaller screens"
+      <LittleFighter2
+        strokeWidth="5"
       />
-      <p className="version-label text-white text-right -mt-5 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.2.9 </p>
+
+      <motion.div className="version"
+        initial="initial"
+        animate="animate"
+        variants={versionVariants}
+      >
+        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.2.9 </p>
+      </motion.div>
     </div>
+
 
     <div className="text-center">
       <a href="https://forms.gle/6F2H4csmaGsn2ejX8" target="_blank" rel="noopener noreferrer"> 
