@@ -6,3 +6,25 @@
   color: white;
   text-shadow:  0 0 2px black, 0 0 5px #3ffbfd, 0 0 10px white;
 }
+
+
+.nav-logo .dbz-logo {
+  width: 130px;
+  height: 30px;
+}
+.nav-logo .lf2-logo {
+  width: 140px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .nav-logo .dbz-logo {
+    width: 120px;
+    height: 20px;
+    margin-top: -10px;
+  }
+  .nav-logo .lf2-logo {
+    width: 120px;
+    height: 25px;
+  }
+}

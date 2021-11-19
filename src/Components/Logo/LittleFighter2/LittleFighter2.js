@@ -44,9 +44,9 @@ const LittleFighter2 = (props) => {
 
   return (
     <svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1436 376"
-      width={props.width || 1436} 
-      height={props.height || 376} 
-      style={props.style}
+      width="1436"
+      height="376"
+      className="lf2-logo"
     >
     <title>New Project</title>
 
