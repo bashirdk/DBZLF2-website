@@ -40,7 +40,7 @@ const Home = () => (
         ? 
         {marginBottom: -100 + 'px', marginTop: -100 + 'px' } 
         :
-        {marginBottom: -250 + 'px' }
+        {marginBottom: -250 + 'px', marginTop: -150 + 'px' }
       }
     />
     <LittleFighter2
@@ -50,7 +50,7 @@ const Home = () => (
         ? 
         {marginBottom: -100 + 'px', marginTop: -100 + 'px' } 
         :
-        {marginBottom: -250 + 'px' }
+        {marginBottom: -100 + 'px', marginTop: -30 + 'px' }
       }
     />
 
