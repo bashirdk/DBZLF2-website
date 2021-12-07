@@ -13,7 +13,7 @@ const CharacterCard = ({ character }) => (
       />
       <div className="text-center text-sm px-1 py-2">
         <p>{character.name}</p>
-      </div>      
+      </div>
     </div>
     
   </Link>
