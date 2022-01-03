@@ -29,6 +29,7 @@ class CharacterProfile extends Component {
           <Helmet>
             <title>{this.state.character.name} - Dragon Ball Z Little Fighter 2</title>
             <meta name="description" content={"Character profile page of " + this.state.character.name + ": stats and moves. "} />
+            <link rel="canonical" href={this.state.character.url_id} />
           </Helmet>
           <h1 className="text-white text-center md:text-left">Character Profile</h1>
           <h2 className="text-center text-white">{this.state.character.name}</h2>
@@ -53,9 +54,9 @@ class CharacterProfile extends Component {
             <title> Character not found - Dragon Ball Z Little Fighter 2</title>
           </Helmet>
           <h1 className="text-white text-center my-24">Character not found.</h1>
-        </div>        
+        </div>
       )
-    }    
+    }
   }
 }
 

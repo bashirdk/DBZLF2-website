@@ -31,6 +31,7 @@ class Downloads extends Component {
 				<Helmet>
 					<title>Downloads - Dragon Ball Z Little Fighter 2</title>
 					<meta name="description" content="List of Characters in DBZ LF2." />
+					<link rel="canonical" href="https://dbzlf2.com/downloads" />
 				</Helmet>
 				<h1 className="text-white">Downloads</h1>
 				<div>{downloadsData}</div>
