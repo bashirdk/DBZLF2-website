@@ -100,7 +100,7 @@ function Accordion(props) {
 
           <div className="text-center">
             { props.download ?
-             <a href={props.download}>
+             <a href={props.download} target="_blank">
              <button className="download-button">
                 <FontAwesomeIcon icon="download" color="white" />
                 <span className="mx-2">DOWNLOAD</span>
