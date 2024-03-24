@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0,0,0,0.90);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.lf2-border-blue {
+  border-color: #5A77D8;
+}
+
+.lf2-bg-black {
+  background-color: #000;
+}
+
+.lf2-bg-blue {
+  background-color: #122565;
+}
+.lf2-bg-blue-dark {
+  background-color: #000C53;
+}
+
+.lf2-text-blue {
+  color: #3764FF;
+}
+.lf2-text-blue-light {
+  color: #5582FF;
+}
+
+.arrow-button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 4px 4px 4px 6px;
+  color: white;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  text-align: center;
+  background: rgb(150,150,150);
+  box-shadow: 0px 6px rgb(50,50,50);
+  animation: press_arrow_button 0.5s infinite alternate;
+}
+
+.move-input {
+  word-spacing: 2px;
+}
+.move-input .m-button {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding: 4px 4px 4px 6px;
+  color: white;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  text-align: center;
+}
+
+.defend-button {
+  background: blue;
+  box-shadow: 0px 6px rgb(0,0,80);
+  animation: press_defend_button 0.5s infinite alternate;
+}
+.jump-button {
+  background: green;
+  box-shadow: 0px 6px darkgreen;
+  animation: press_jump_button 0.5s infinite alternate;
+}
+.attack-button {
+  background: red;
+  box-shadow: 0px 6px darkred;
+  padding: 4px !important;
+  animation: press_attack_button 0.5s infinite alternate;
+}
+
+.hold-defend-button {
+  background: blue;
+  /* box-shadow: 0px 0px 10px 5px blue; */
+  padding: 4px !important;
+  box-shadow: 0px 6px rgb(0,0,80);
+  animation: hold_defend_button 3s infinite alternate;
+  /* animation: glow_defend 1s infinite alternate; */
+}
+.hold-jump-button {
+  background: green;
+  /* box-shadow: 0px 0px 10px 5px green; */
+  padding: 4px !important;
+  box-shadow: 0px 6px darkgreen;
+  animation: hold__jump_button 3s infinite alternate;
+  /* animation: glow_jump 1s infinite alternate; */
+}
+.hold-attack-button {
+  background: red;
+  /* box-shadow: 0px 0px 10px 5px red; */
+  padding: 4px !important;
+  box-shadow: 0px 6px darkred;
+  animation: hold_attack_button 3s infinite alternate;
+  /* animation: glow_attack 1s infinite alternate; */
+}
+
+@keyframes press_arrow_button {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px rgb(50,50,50);
+  }
+  50% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px rgb(50,50,50);
+  }
+  100% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px rgb(50,50,50);
+  }
+}
+@keyframes press_attack_button {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px darkred;
+  }
+  50% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px darkred;
+  }
+  100% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px darkred;
+  }
+}
+@keyframes press_jump_button {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px darkgreen;
+  }
+  50% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px darkgreen;
+  }
+  100% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px darkgreen;
+  }
+}
+@keyframes press_defend_button {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px rgb(0,0,80);
+  }
+  50% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px rgb(0,0,80);
+  }
+  100% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px rgb(0,0,80);
+  }
+}
+
+@keyframes hold_attack_button {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px darkred;
+  }
+  15% {
+    transform: translateY(0px);
+    box-shadow: 0px 6px darkred;
+  }
+  30% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px darkred;
+  }
+  100% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px darkred;
+  }
+}
+@keyframes hold_jump_button {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px darkgreen;
+  }
+  100% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px darkgreen;
+  }
+}
+@keyframes hold_defend_button {
+  0% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px rgb(0,0,80);
+  }
+  100% {
+    transform: translateY(4px);
+    box-shadow: 0px 2px rgb(0,0,80);
+  }
+}
+
+@keyframes glow_attack {
+  from {
+    box-shadow: 0 0 10px 0px red;
+  }
+  to {
+    box-shadow: 0 0 10px 5px red;
+  }
+}
+
+@keyframes glow_defend {
+  from {
+    box-shadow: 0 0 10px -5px blue;
+  }
+  to {
+    box-shadow: 0 0 10px 5px blue;
+  }
+}
+
+@keyframes glow_jump {
+  from {
+    box-shadow: 0 0 10px -5px green;
+  }
+  to {
+    box-shadow: 0 0 10px 5px green;
+  }
+}
+
+
+
+
+/* .move-input :nth-child(1) {
+  animation-delay: 0.3s;
+  animation-duration: 0.3s;
+}
+.move-input :nth-child(2) {
+  animation-delay: 0.6s;
+  animation-duration: 0.6s;
+}
+.move-input :nth-child(3) {
+  animation-delay: 0.9s;
+  animation-duration: 0.9s;
+}
+.move-input :nth-child(4) {
+  animation-delay: 1.2s;
+  animation-duration: 1.2s;
+}
+.move-input :nth-child(5) {
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+}
+.move-input :nth-child(6) {
+  animation-delay: 1.8s;
+  animation-duration: 1.8s;
+}
+.move-input :nth-child(7) {
+  animation-delay: 2.1s;
+  animation-duration: 2.1s;
+} */
+
+
+
+
+.input-charge-ki :nth-child(1) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.2s !important;
+}
+.input-charge-ki :nth-child(2) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.4s !important;
+}
+.input-charge-ki :nth-child(3) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.6s !important;
+}
+.input-charge-ki :nth-child(4) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 1s !important;
+}
+
+
+.input-dja-hold :nth-child(1) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.2s !important;
+}
+.input-dja-hold :nth-child(2) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.4s !important;
+}
+.input-dja-hold :nth-child(3) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.6s !important;
+}
+.input-dja-hold :nth-child(4) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.9s !important;
+  animation-duration: 3s !important;
+}
+
+.input-dja-press :nth-child(1) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.2s !important;
+}
+.input-dja-press :nth-child(2) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.4s !important;
+}
+.input-dja-press :nth-child(3) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.6s !important;
+}
+.input-dja-press :nth-child(4) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.9s !important;
+}
+
+
+.input-ddb :nth-child(1) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.3s !important;
+}
+.input-ddb :nth-child(2) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.6s !important;
+}
+.input-ddb :nth-child(3) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.9s !important;
+}
+
+
+.input-ddb-fastb :nth-child(1) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.3s !important;
+}
+.input-ddb-fastb :nth-child(2) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.6s !important;
+}
+.input-ddb-fastb :nth-child(3) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.9s !important;
+}
+.input-ddb-fastb :nth-child(4) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 1.05s !important;
+}
+
+
+.input-ddb-slowb :nth-child(1) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.3s !important;
+}
+.input-ddb-slowb :nth-child(2) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.6s !important;
+}
+.input-ddb-slowb :nth-child(3) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.9s !important;
+}
+.input-ddb-slowb :nth-child(4) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 1.2s !important;
+}
+
+
+.input-ddb-spam :nth-child(1) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.3s !important;
+}
+.input-ddb-spam :nth-child(2) {
+  animation-iteration-count: 1 !important;
+  animation-delay: 0.6s !important;
+}
+.input-ddb-spam :nth-child(3) {
+  animation-duration: 0.2s !important;
+  animation-iteration-count: 16 !important;
+  animation-delay: 1.2s !important;
+}

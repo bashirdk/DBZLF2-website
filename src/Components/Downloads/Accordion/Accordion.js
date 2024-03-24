@@ -113,7 +113,7 @@ function Accordion(props) {
                 <span className="mx-2">DOWNLOAD</span>
               </button>
             </a>}
-            <AdComponent />
+            {/* <AdComponent /> */}
           </div>
 
           <h3 className="mb-1">Major Updates</h3>

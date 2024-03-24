@@ -11,13 +11,15 @@ import { motion } from 'framer-motion'
 const versionVariants = {
   initial: {
     opacity: 0,
-    y: -50,
+    y: 0,
+    fontSize: '0px'
   }, 
   animate: {
     opacity: 1,
-    y: 0,
+    y: -200,
+    fontSize: '40px',
     transition: {
-      delay: 3,
+      delay: 6,
       duration: 1,
       ease: "easeInOut"
     }
@@ -33,22 +35,51 @@ const Home = () => (
       <link rel="canonical" href="https://dbzlf2.com/" />
     </Helmet>
     <h1 className="text-white hidden">DBZ LF2</h1>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+    <br></br>
+    <br></br>
 
+  <div  style={{ textAlign: "center" }}>
     <div className="hero-logos">
       <DragonBall
         strokeWidth="1"
-      />
+      /><br></br>
       <LittleFighter2
         strokeWidth="5"
       />
-
+</div>
       <motion.div className="version"
         initial="initial"
         animate="animate"
         variants={versionVariants}
       >
-        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.3.2 </p>
+      <br></br><br></br><br></br><br></br><br></br><br></br>
+        <h1 variants={versionVariants} className="version-label text-white text-center -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.3.2 </h1>
       </motion.div>
+    </div>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div className="text-center text-white">
+      Project has been revived thanks to <b><i>NetaFelizZz/Excellent Approximation/Rancro</i></b> (updated sprites/data + finished SS Trunks and made Ultra Trunks and will continue the mod with my help in the bg)
+      <br></br><br></br>
+      EXE and cool features thanks to <b><i>darkfiren</i></b>'s exe
     </div>
     
     <div className="text-center mt-12" >
