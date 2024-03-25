@@ -1,5 +1,43 @@
 [
   {
+    "version": "v0.3.2",
+    "date": "3/25/2024",
+    "download": "https://www.mediafire.com/file/airw917zfi5x0uk/DeeBeeZee_LF2_v0.3.2.zip/file",
+    "trailer": "UjgQmvsjQY4",
+    "characters": {
+      "new": 1,
+      "total": 21
+    },
+    "updates": {
+      "major_updates": {
+        "characters": [
+          "[+] Ultra Trunks (Armour)"
+        ],
+        "list_of_major_updates": [
+          "Faster loading times",
+          "New Ki Charge System: NO MORE CARPAL TUNNEL! Charge Ki by holding A to charge rather than spamming A button (DJA A Hold A)",
+          "New Battle Damage System: When character HP drops a certain amount their clothes get damaged! (Currently only on all forms of Goku (Buu))",
+          "New System return to base form after being KOed! (Visual only and currently only on all forms of Goku (Buu))"
+        ]
+      },
+      "minor_updates": {
+        "sprite_changes": [
+          "Updated Super Saiyan Aura visuals",
+          "Updated Charging Ki visuals with new lighting and shading on some characters (Super Saiyans)",
+          "New Vegeta (Android) hair",
+          "New Super Vegeta (Android) hair"
+        ],
+        "new_moves": [
+          "[+] SS Trunks (Android): Rapid Shot",
+          "[+] SS Trunks (Android): Another End",
+          "[+] SS Trunks (Android): Heat Dome Attack"
+        ],
+        "character_changes": [
+          "SS Vegeta (Buu) - Decreased Ki Usage from 125% to 105%"
+        ]
+      }
+    }
+  }, {
     "version": "v0.2.9",
     "date": "1/1/2020",
     "download": "https://www.mediafire.com/file/x0eyjucwzv7oqwc/DeeBeeZee_LF2_v0.2.9.zip/file",

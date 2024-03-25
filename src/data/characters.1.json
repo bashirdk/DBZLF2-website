@@ -15,11 +15,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -73,11 +73,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -99,7 +99,7 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA press_J"
         }
       ]
     }
@@ -120,11 +120,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -167,11 +167,11 @@
       "transformations": [
         {
           "name": "Super Vegeta",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -192,11 +192,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -239,7 +239,7 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -259,11 +259,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -285,7 +285,7 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA press_J"
         }
       ]
     }
@@ -305,11 +305,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -352,11 +352,11 @@
       "transformations": [
         {
           "name": "Ultra Trunks",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -376,11 +376,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -394,7 +394,7 @@
         },
         {
           "name": "Kiai",
-          "input": "D ^ A Hold A to increase power (3 levels)"
+          "input": "D ^ A Hold_A to increase power (3 levels)"
         },
         {
           "name": "Grab",
@@ -410,7 +410,7 @@
         }, 
         {
           "name": "Gigantic Fury",
-          "input": "Grabbing Enemy + D v J Hold A to extend attack"
+          "input": "Grabbing Enemy + D v J Hold_A to extend attack"
         }
       ],
       "counter": [
@@ -422,7 +422,7 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -443,11 +443,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -485,11 +485,11 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Babadi's Mind Control (Majin Vegeta)",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -510,11 +510,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -540,11 +540,11 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -565,11 +565,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -595,7 +595,7 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -616,11 +616,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -679,11 +679,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -722,7 +722,7 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA press_J"
         }
       ]
     }
@@ -743,11 +743,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -805,11 +805,11 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -830,11 +830,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -892,11 +892,11 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -917,11 +917,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -983,7 +983,7 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -1004,11 +1004,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -1030,11 +1030,11 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Ultimate Gohan",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -1055,11 +1055,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -1089,11 +1089,11 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA press_J"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -1114,11 +1114,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -1152,7 +1152,7 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }
@@ -1173,11 +1173,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -1239,11 +1239,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -1297,7 +1297,7 @@
       "transformations": [
         {
           "name": "Super Vegito",
-          "input": "DJA J"
+          "input": "DJA press_J"
         }
       ]
     }
@@ -1318,11 +1318,11 @@
       "basic": [
         {
           "name": "Ki Charge",
-          "input": "DJA A Hold A"
+          "input": "DJA hold_A"
         },
         {
           "name": "Ki Blast",
-          "input": "D > A (A A A...)"
+          "input": "D > spam_A"
         }
       ],
       "special": [
@@ -1369,7 +1369,7 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA press_D"
         }
       ]
     }

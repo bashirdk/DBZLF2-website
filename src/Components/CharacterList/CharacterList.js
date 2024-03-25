@@ -49,7 +49,7 @@ class CharacterList extends Component {
 				<Helmet>
 					<title>Characters - Dragon Ball Z Little Fighter 2</title>
 					<meta name="description" content="List of Characters in DBZ LF2." />
-					<link rel="canonical" href="https://dbzlf2.com/characters" />
+					<link rel="canonical" href="https://dbzlf2.com/characters/" />
 				</Helmet>
 				<h1 className="text-white">Character List</h1>
 
