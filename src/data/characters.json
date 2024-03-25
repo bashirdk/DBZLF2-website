@@ -334,7 +334,11 @@
           "input": "D ^ A"
         },
         {
-          "name": "Haet Dome Attack",
+          "name": "Dragonthrow",
+          "input": "Grab + J Hold J to use Heat Dome Attack"
+        },
+        {
+          "name": "Heat Dome Attack",
           "input": "D ^ J Hold J to extend attack - Can be used while grabbing enemy",
           "ultimate": "yes"
         }
@@ -390,7 +394,7 @@
         },
         {
           "name": "Kiai",
-          "input": "D ^ A"
+          "input": "D ^ A Hold A to increase power (3 levels)"
         },
         {
           "name": "Grab",
