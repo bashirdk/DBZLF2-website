@@ -33,17 +33,34 @@ class CharacterProfile extends Component {
           </Helmet>
           <h1 className="text-white text-center md:text-left">Character Profile</h1>
           <h2 className="text-center text-white">{this.state.character.name}</h2>
+
           <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
             <CharacterBio character={this.state.character} key={this.state.character.id} />
           </section>
+
           <section className="inline-block w-full sm:w-2/3 ">
             <section className="my-5">
               <CharacterStats character={this.state.character} key={this.state.character.id} />
-            </section>
+            </section>   
+
             <section className="my-5">
               <MoveList character={this.state.character} key={this.state.character.id}/>
             </section>
+
+            {
+            this.state.character.moveset_video ?
+              <section className="my-5">
+                <div className="border-2 lf2-border-blue lf2-bg-blue rounded p-5">
+                  <div className="video-responsive">
+                    <iframe title="trailer" width="100%" height="315" src={`https://www.youtube.com/embed/${this.state.character.moveset_video}`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  </div>
+                </div>
+              </section>
+            :
+            ""
+          }
           </section>
+
         </div>
       );
     }

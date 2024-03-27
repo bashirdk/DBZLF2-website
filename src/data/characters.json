@@ -6,6 +6,7 @@
     "saga": "Namek",
     "race": ["Saiyan"],
     "type": { "hero": false, "villain": false, "other": true },
+    "moveset_video": "qkrOFbKV9wM",
     "stats": {
       "attack": 1.8,
       "defense": 2.7,
@@ -65,6 +66,7 @@
     "name": "Vegeta",
     "saga": "Android",
     "race": ["Saiyan"],
+    "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 2.15,
@@ -114,6 +116,7 @@
     "name": "Super Saiyan Vegeta",
     "saga": "Android",
     "race": ["Saiyan"],
+    "moveset_video": "05nkT3ZRiQE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 3.03,
@@ -188,6 +191,7 @@
     "name": "Super Vegeta",
     "saga": "Android",
     "race": ["Saiyan"],
+    "moveset_video": "WZh2Hl-W2_E",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 3.3,
@@ -451,6 +455,7 @@
     "name": "Vegeta",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "83Wmel5BF74",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 2.35,
@@ -520,6 +525,7 @@
     "name": "Super Saiyan Vegeta",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "l7CD_7Mu-Gc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 3.31,
@@ -583,6 +589,7 @@
     "name": "Super Saiyan 2 Vegeta",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "eCWBLmTqWZI",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 4.7,
@@ -636,6 +643,7 @@
     "name": "Majin Vegeta",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "SOrexY9wRf8",
     "type": { "hero": false, "villain": false, "other": true },
     "stats": {
       "attack": 4.8,
@@ -701,6 +709,7 @@
     "name": "Goku",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "4PZ9DezfuL8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 2.4,
@@ -767,6 +776,7 @@
     "name": "Super Saiyan Goku",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "FYfg6hoGAOg",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 3.38,
@@ -862,6 +872,7 @@
     "name": "Super Saiyan 2 Goku",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "SbrAie-PVz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 4.8,
@@ -951,6 +962,7 @@
     "name": "Super Saiyan 3 Goku",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "tiH5FtMDfWs",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 9.6,
@@ -1040,6 +1052,7 @@
     "name": "Gohan",
     "saga": "Buu",
     "race": ["Saiyan", "Human"],
+    "moveset_video": "Du9DUZPSOk0",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 2.2,
@@ -1093,6 +1106,7 @@
     "name": "Super Saiyan Gohan",
     "saga": "Buu",
     "race": ["Saiyan", "Human"],
+    "moveset_video": "wTb9EG5WCp4",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 3.1,
@@ -1154,6 +1168,7 @@
     "name": "Super Saiyan 2 Gohan",
     "saga": "Buu",
     "race": ["Saiyan", "Human"],
+    "moveset_video": "ulvDh2a0mzE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 4.4,
@@ -1215,6 +1230,7 @@
     "name": "Ultimate Gohan",
     "saga": "Buu",
     "race": ["Saiyan", "Human"],
+    "moveset_video": "SebsOJ484WM",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 12.45,
@@ -1283,6 +1299,7 @@
     "name": "Vegito",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "Jhwhj9_PdIc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 15.9,
@@ -1364,6 +1381,7 @@
     "name": "Super Vegito",
     "saga": "Buu",
     "race": ["Saiyan"],
+    "moveset_video": "JqePv_XPXMY",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 22.42,
