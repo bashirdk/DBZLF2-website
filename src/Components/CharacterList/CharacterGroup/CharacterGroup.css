@@ -1,0 +1,23 @@
+.character-count-table {
+  border: 1px solid white;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.character-count-table th {
+  border: 1px solid white;
+  padding: 5px;
+}
+.character-count-table th:nth-child(1) {
+  border: 3px solid white;
+}
+.character-count-table tr {
+  border: 1px solid white;
+}
+.character-count-table td:nth-child(1) {
+  border: 3px solid white;
+}
+.character-count-table td {
+  border: 1px solid white;
+  padding: 5px;
+  text-align: center;
+}

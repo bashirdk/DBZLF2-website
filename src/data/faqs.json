@@ -1,0 +1,6 @@
+[
+  {
+    "question": "I am getting the error \"the application has failed to start because its side-by-side configuration is incorrect. Please see the application event log or use the command-line sxtrace.exe tool for more detail\", how do I resolve this?",
+    "answer": "You will need to download and install \"Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)\". <br> Pick from one of the following links: <ul> <li> <a target=\"blank\" href=\"https://www.lf-empire.de/downloads/offversions/vcredist_x86.zip\"> Link from LFE mainsite  </a> </li> <li> <a target=\"blank\" href=\"https://www.microsoft.com/en-us/download/details.aspx?id=26347\"> Link from Microsoft </a> </li> </ul>"
+  }
+]

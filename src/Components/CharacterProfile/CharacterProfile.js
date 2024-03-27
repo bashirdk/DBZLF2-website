@@ -42,7 +42,7 @@ class CharacterProfile extends Component {
             </section>
             <section className="my-5">
               <MoveList character={this.state.character} key={this.state.character.id}/>
-            </section>          
+            </section>
           </section>
         </div>
       );

@@ -38,9 +38,14 @@ const Navbar = () => (
               Characters
             </NavLink>
           </li>
-          <li>
+          <li className="mr-6">
             <NavLink exact to="/downloads/" className={linkStyle} activeClassName='is-active'>
               Downloads
+            </NavLink>
+          </li>
+          <li>
+            <NavLink exact to="/faqs/" className={linkStyle} activeClassName='is-active'>
+              FAQs
             </NavLink>
           </li>
         </ul>
