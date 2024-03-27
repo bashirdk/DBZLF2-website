@@ -4,9 +4,8 @@ const MoveList = ({ character }) => {
   
   const moveContainerStyle = "border-b lf2-border-blue sm:flex";
   const moveHeaderStyle = "border-b lf2-border-blue px-2 py-3 text-white";
-  const moveNameStyle = "lf2-bg-blue-dark text-white w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-3";
-  const moveNameStyle2 = "lf2-bg-blue-light text-white w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-3";
-  const moveInputStyle = "w-full text-white block sm:w-1/2 md:w-3/5 px-2 py-3";
+  const moveNameStyle = "lf2-bg-blue-dark text-white w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-3 align-middle";
+  const moveInputStyle = "w-full text-white block sm:w-1/2 md:w-3/5 px-2 py-3 align-middle";
 
   const subMoveList = ( input ) => {
     if (input.length === 0)
@@ -50,7 +49,7 @@ const MoveList = ({ character }) => {
         <div className="px-2 py-3 text-white"> 
           <i> None Available </i>
         </div>
-      </div>  
+      </div>
       )
     } else {
       const mapMoves = input.map((mappedMove) => {
@@ -60,18 +59,21 @@ const MoveList = ({ character }) => {
             <span className="inline-block text-xs rounded px-2 py-1 bg-red-dark font-bold text-white my-0 md:mt-2 lg:my-0">
               ULTIMATE
             </span>
-          )          
+          )
         }
         return(
         <div className={moveContainerStyle}>
           <div className={moveNameStyle}> 
             {mappedMove.name}  {ultimateMove}
           </div>
-          <div className={moveNameStyle2}> 
+          <div className={moveInputStyle}> 
+            {mappedMove.input}
+          </div>
+          <div className={moveNameStyle}> 
             {mappedMove.partner}
           </div>
           <div className={moveInputStyle}> 
-            {mappedMove.input}
+            {mappedMove.partner_input}
           </div>
         </div> )
       });

@@ -51,17 +51,3 @@ Race Labels
 .alien-race-label {
   background-color: #b7b7b7;
 }
-
-.profile-pic-container {
-  position: relative;
-}
-
-.profile-bio-bg {
-  
-}
-
-.profile-bio-pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-}

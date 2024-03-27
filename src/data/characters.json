@@ -561,8 +561,9 @@
       "team": [
         {
           "name": "Final Kamehameha",
+          "input": "D > J",
           "partner": "SS Goku [4]",
-          "input": "D > J"
+          "partner_input": "D > J"
         }
       ],
       "counter": [
@@ -844,8 +845,9 @@
       "team": [
         {
           "name": "Final Kamehameha",
+          "input": "D > J",
           "partner": "SS Vegeta [4]",
-          "input": "D > J"
+          "partner_input": "D > J"          
         }
       ],
       "counter": [

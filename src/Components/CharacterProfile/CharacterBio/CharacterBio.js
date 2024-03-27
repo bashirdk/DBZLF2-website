@@ -13,15 +13,19 @@ const CharacterBio = ({ character }) => {
 
   return (
     <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5">
-      <div className="profile-pic-container">
+      <div className="relative">
         <img src={require(`../../../images/profile/${character.saga.toLowerCase()}_bg.png`)}
           alt={`standing pic of ${character.name}`}
-          className="w-full profile-bio-bg"
-        />  
+          className="w-full"
+        />
+      <img src={require(`../../../images/profile/s.png`)}
+        alt={`standing pic of ${character.name}`}
+        className="w-full absolute pin-t pin-l"
+      />
         <img 
           src={require(`../../../images/profile/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.gif`)}
           alt={`standing pic of ${character.name}`}
-          className="w-full profile-bio-pic"
+          className="w-full absolute pin-t pin-l"
         />
       </div>
 
