@@ -2,8 +2,6 @@ import React, { useState, useRef } from "react";
 import Chevron from "./Chevron";
 
 import "./Accordion.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import AdComponent from "../../AdComponent/AdComponent";
 
 function Accordion(props) {
   const [setActive, setActiveState] = useState("");
@@ -36,35 +34,10 @@ function Accordion(props) {
     }
   }
 
-  function outputIfExists(header, data) {
-    return (
-       data.length > 0 &&
-        <>
-          <h4 className="my-1"> {header} </h4>
-          <ul>
-            {data}
-          </ul>
-        </>      
-    )
-  }
-
-  function mapUpdatesData(propsData) {
-    if (propsData) {
-      return propsData.map( 
-        (updates) => {
-          return updateListStyle(updates);
-      })
-    }
-    else {
-      return ''
-    }
-  }
-
-
   return (
     <div className="accordion__section accordion-faqs border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
 
-      <button className={`accordion ${setActive} px-6 py-5 text-white`} onClick={toggleAccordion}>        
+      <button className={`accordion ${setActive} px-6 py-5 text-white`} onClick={toggleAccordion}>
         <div className="flex w-full">
           <div className="text-left inline-block">
             <Chevron className={`${setRotate}`} width={10} fill={"#fff"} />
