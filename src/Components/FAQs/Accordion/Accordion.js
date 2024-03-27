@@ -20,20 +20,6 @@ function Accordion(props) {
     );
   }
 
-  function updateListStyle(input) {
-    if (input.includes("[+]")) {
-      input = input.split("[+]");
-      return ( <li className="list-plus" key={input}> {input} </li> )
-    }
-    else if (input.includes("[-]")) {
-      input = input.split("[-]");
-      return ( <li className="list-minus" key={input}> {input} </li> )
-    }
-    else {
-      return ( <li key={input}> {input} </li> )
-    }
-  }
-
   return (
     <div className="accordion__section accordion-faqs border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
 
