@@ -12,7 +12,7 @@ const CharacterGroup = ({ data: { name, characters } }) => {
   let heroes = 0;
   let villains = 0;
   let other = 0;
-  var loop = characters.forEach(element => {
+  characters.forEach(element => {
     totalCharacters += 1;
     if (element.type) {
       if (element.type.hero) {
