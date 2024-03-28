@@ -49,7 +49,7 @@ const CharacterBio = ({ character }) => {
     <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5">
       <div className="relative">
         <img src={require(`../../../images/profile/${character.saga.toLowerCase()}_bg.png`)}
-          alt={`background image for ${character.saga.toLowerCase()} saga`}
+          alt={`background for ${character.saga.toLowerCase()} saga`}
           className="w-full"
         />
         <img src={require(`../../../images/profile/s.png`)}
@@ -58,7 +58,7 @@ const CharacterBio = ({ character }) => {
         />
         <img 
           src={require(`../../../images/profile/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.gif`)}
-          alt={`standing pic of ${character.name}`}
+          alt={`${character.name} standing`}
           className="w-full absolute pin-t pin-l block"
           id="character_standing"
         />
