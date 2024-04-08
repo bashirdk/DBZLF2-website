@@ -261,6 +261,7 @@
     "name": "Trunks",
     "saga": "Android",
     "race": ["Saiyan", "Human"],
+    "moveset_video": "d2U7HP0-E58",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 2.12,
@@ -309,6 +310,7 @@
     "name": "Super Saiyan Trunks",
     "saga": "Android",
     "race": ["Saiyan", "Human"],
+    "moveset_video": "CsvlsM9f29w",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 2.99,
@@ -386,6 +388,7 @@
     "name": "Ultra Trunks",
     "saga": "Android",
     "race": ["Saiyan", "Human"],
+    "moveset_video": "IiU78GXA-q0",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "attack": 3.36,
