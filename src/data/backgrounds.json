@@ -1,0 +1,55 @@
+[
+  {
+    "id": 10,
+    "url_id": "namek",
+    "name": "Planet Namek",
+    "saga": "Namek",
+    "video": "abRFJUbsc4U"
+  },
+  {
+    "id": 4,
+    "url_id": "budokai",
+    "name": "World Tournament Stage",
+    "saga": "Buu"
+  },
+  {
+    "id": 13,
+    "url_id": "budokai_ro",
+    "name": "World Tournament Stage [Ring Out]",
+    "saga": "Buu",
+    "special": true
+  },
+  {
+    "id": 11,
+    "url_id": "rosat",
+    "name": "Time Chamber",
+    "saga": "Buu",
+    "width": 2800,
+    "zwidth": 150,
+    "video": "LfHhadJkhds",
+    "desc": "The Hyperbolic Time Chamber (or Room of Spirit and Time) is a special dimension where 1 year inside is equivalent to 1 day on Earth. The temperature varies from 50°C to -40°C. The air is 1/4 of Earths while the gravity is 10 times greater than Earth.",
+    "special": false,
+    "fights": [
+      "Vegeta vs. Trunks",
+      "Goku vs. Gohan",
+      "Gotenks vs Super Buu"
+    ]
+  },
+  {
+    "id": 12,
+    "url_id": "rosat_h",
+    "name": "Time Chamber [Hazards]",
+    "saga": "Buu",
+    "width": 2800,
+    "zwidth": 150,
+    "video": "j43mvrDdaG8",
+    "desc": "The Hyperbolic Time Chamber (or Room of Spirit and Time) is a special dimension where 1 year inside is equivalent to 1 day on Earth. The temperature varies from 50°C to -40°C. The air is 1/4 of Earths while the gravity is 10 times greater than Earth.",
+    "special": true,
+    "special_desc": "The special feature of this background is that it runs on a 1 minute cycle. <br> 15 seconds of normal <br> 15 seconds of ice <br> 15 seconds of normal <br> 15 seconds of fire",
+    "fights": [
+      "Vegeta vs. Trunks",
+      "Goku vs. Gohan",
+      "Gotenks vs Super Buu"
+    ]
+  }
+]

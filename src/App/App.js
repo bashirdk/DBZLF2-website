@@ -11,6 +11,8 @@ import Footer from "../Components/Footer";
 import Home from "../Components/Home";
 import CharacterList from "../Components/CharacterList";
 import CharacterProfile from "../Components/CharacterProfile";
+import BackgroundList from "../Components/BackgroundList/BackgroundList";
+import BackgroundProfile from "../Components/BackgroundProfile";
 import Downloads from "../Components/Downloads";
 import FAQs from "../Components/FAQs";
 
@@ -42,10 +44,12 @@ const App = () => (
             <Switch>            
               <Route path="/characters/:saga/:name" component={CharacterProfile} />
               <Route path="/characters/" exact component={CharacterList} />
+              <Route path="/backgrounds/:saga/:name" component={BackgroundProfile} />
+              <Route path="/backgrounds/" exact component={BackgroundList} />
               <Route path="/downloads/" exact component={Downloads} />
               <Route path="/faqs/" exact component={FAQs} />
               <Route path="/" exact component={Home} />
-              <Route component={NoMatch} />            
+              <Route component={NoMatch} />
             </Switch>
           </ScrollToTop>
         </div>
