@@ -1,0 +1,18 @@
+
+.background-stats-table {
+  border: 1px solid white;
+  width: 100%;
+  margin-top: 20px;
+}
+.background-stats-table th {
+  border: 1px solid white;
+  padding: 5px;
+}
+.background-stats-table tr {
+  border: 1px solid white;
+}
+.background-stats-table td {
+  border: 1px solid white;
+  padding: 5px;
+  text-align: center;
+}

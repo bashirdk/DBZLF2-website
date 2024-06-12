@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import React from "react";
+import React from 'react';
 
 import DragonBall from "../Logo/DragonBall";
 import LittleFighter2 from "../Logo/LittleFighter2";
@@ -8,7 +8,49 @@ import "./Navbar.css";
 
 const linkStyle = "navbar-style text-grey hover:text-white no-underline";
 
-const Navbar = () => (
+const Navbar = () => {
+
+  const addOpenClass = () =>{
+    const hamburger = document.getElementById('hamburger');
+    if (hamburger.classList.contains("open")) {
+      hamburger.classList.remove("open");
+    } else {
+      hamburger.classList.add("open");
+    }
+
+    const navMenu = document.getElementById('nav_menu');
+    if (navMenu.classList.contains("open")) {
+      navMenu.classList.remove("open");
+    } else {
+      navMenu.classList.add("open");
+    }
+  }
+
+  const navLinks = [
+    {
+      "title": "Home",
+      "link": "/"
+    },
+    {
+      "title": "Characters",
+      "link": "/characters"
+    },
+    {
+      "title": "Backgrounds",
+      "link": "/backgrounds"
+    },
+    {
+      "title": "Downloads",
+      "link": "/downloads"
+    },
+    {
+      "title": "FAQs",
+      "link": "/faqs"
+    }
+  ]
+
+  return (
+    <>
   <div className="pin-t sticky z-50 mb-4 shadow lf2-bg-blue border-b-2 lf2-border-blue">
     <div className="container mx-auto">
       <nav className="py-4 h-16 md:h-24 flex items-center justify-between mx-3">
@@ -27,31 +69,24 @@ const Navbar = () => (
           />
           </NavLink>
         </div>
-        <ul className="list-reset flex m-4">
-          <li className="mr-6">
-            <NavLink to="/" exact className={linkStyle}  activeClassName='is-active'>
-              Home
-            </NavLink>
-          </li>
-          <li className="mr-6">
-            <NavLink exact to="/characters/" className={linkStyle} activeClassName='is-active'>
-              Characters
-            </NavLink>
-          </li>
-          <li className="mr-6">
-            <NavLink exact to="/downloads/" className={linkStyle} activeClassName='is-active'>
-              Downloads
-            </NavLink>
-          </li>
-          <li>
-            <NavLink exact to="/faqs/" className={linkStyle} activeClassName='is-active'>
-              FAQs
-            </NavLink>
-          </li>
+        <div className="nav-hamburger">
+          <div id="hamburger" className="hamburger" onClick={addOpenClass}></div>
+        </div>
+        <ul className="list-reset flex m-4 lf2-bg-blue" id="nav_menu">
+          { navLinks.map((link) => {
+              return (
+                <li key={link.link} className="mr-6">
+                  <NavLink to={link.link} activeClassName="is-active" className={linkStyle}>
+                    {link.title}
+                  </NavLink>
+                </li>
+              )
+            })}
         </ul>
       </nav>
     </div>
   </div>
-);
+  </>
+)};
 
 export default Navbar;

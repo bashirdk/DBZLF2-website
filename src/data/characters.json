@@ -154,7 +154,7 @@
         },
         {
           "name": "Maximum Flasher",
-          "input": "D v A"
+          "input": "D ^ J"
         },
         {
           "name": "Big Bang Attack Combo",
@@ -1408,7 +1408,7 @@
       "special": [
         {
           "name": "Banshee Blast",
-          "input": "D > JA"
+          "input": "D > AJ"
         },
         {
           "name": "Kamehameha",

@@ -1,0 +1,32 @@
+.background-card
+{
+  transition: 0.3s ease;
+  font-weight: 100;
+  max-width: 288px;
+  width: 100%;
+  color: white;
+}
+
+.background-card div
+{
+  background-color: black;
+  margin-top: -3px;
+  position: relative;
+  z-index: 2;
+}
+
+.background-card:hover
+{
+  font-weight: bolder;
+  box-shadow: 0 0 5px 3px rgba(90, 119, 216, 0.85);
+  color: #5582FF
+}
+
+.background-card img {
+  transition: 0.3s ease;
+}
+
+.background-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
