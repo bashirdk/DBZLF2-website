@@ -34,7 +34,7 @@ class BackgroundList extends Component {
 				console.log("the search term is: ",this.state.searchTerm);
 				let backgrounds = [];
 				for(let background of group.backgrounds) {
-					if(background.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()) && (background.id == 11 || background.id ==12 )) {
+					if(background.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()) && (background.id === 11 || background.id === 12 )) {
 						backgrounds = [ ...backgrounds, background ];
 					} 
 				}
