@@ -80,7 +80,7 @@ class BackgroundProfile extends Component {
             </section>
           </section>
           
-          <section className="sm:pr-5  inline-block align-top w-full sm:w-2/3">
+          <section className="inline-block align-top w-full sm:w-2/3">
             <section className="my-1">
               <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5 text-white">
                 <h3> Description </h3>

@@ -10,7 +10,7 @@ class BackgroundList extends Component {
 	constructor(props) {
 		super(props);
 
-		const groups = ["Saiyan", "Namek", "Android", "Buu"].map((saga) => ({
+		const groups = ["Saiyan", "Namek", "Android", "Buu", "LF2"].map((saga) => ({
 			name: `${saga} Saga`,
 			backgrounds: Backgrounds.filter((background) => background.saga === saga),
 		}));
@@ -34,7 +34,8 @@ class BackgroundList extends Component {
 				console.log("the search term is: ",this.state.searchTerm);
 				let backgrounds = [];
 				for(let background of group.backgrounds) {
-					if(background.name.toLowerCase().includes(this.state.searchTerm.toLowerCase()) && (background.id === 11 || background.id === 12 )) {
+					if (background.id === 10 || background.id === 4 || background.id === 13) {
+					} else if(background.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())) {
 						backgrounds = [ ...backgrounds, background ];
 					} 
 				}

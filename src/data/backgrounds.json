@@ -51,5 +51,85 @@
       "Goku vs. Gohan",
       "Gotenks vs Super Buu"
     ]
+  },
+  {
+    "id": 2,
+    "url_id": "lf",
+    "name": "Lion Forest",
+    "saga": "LF2",
+    "width": 3200,
+    "zwidth": 140,
+    "desc": "Stage 1 of Little Figther 2 Stage Mode.",
+    "fights": ["N/A"]
+  },
+  {
+    "id": 3,
+    "url_id": "sp",
+    "name": "Stanley Prison",
+    "saga": "LF2",
+    "width": 2400,
+    "zwidth": 203,
+    "desc": "Stage 2 of Little Figther 2 Stage Mode.",
+    "fights": ["N/A"]
+  },
+  {
+    "id": 5,
+    "url_id": "gw",
+    "name": "The Great Wall",
+    "saga": "LF2",
+    "width": 2400,
+    "zwidth": 151,
+    "desc": "Stage 3 of Little Figther 2 Stage Mode.",
+    "fights": ["N/A"]
+  },
+  {
+    "id": 6,
+    "url_id": "qi",
+    "name": "Queen's Island",
+    "saga": "LF2",
+    "width": 2400,
+    "zwidth": 210,
+    "desc": "Stage 4 of Little Figther 2 Stage Mode.",
+    "fights": ["N/A"]
+  },
+  {
+    "id": 7,
+    "url_id": "ft",
+    "name": "Forbidden Tower",
+    "saga": "LF2",
+    "width": 2400,
+    "zwidth": 221,
+    "desc": "Stage 5 of Little Figther 2 Stage Mode.",
+    "fights": ["N/A"]
+  },
+  {
+    "id": 9,
+    "url_id": "wl",
+    "name": "Wastelands",
+    "saga": "LF2",
+    "width": 1500,
+    "zwidth": 210,
+    "desc": "Reskin of Brokeback Cliff from Survival Stage of Little Fighter 2 Stage Mode. Recoloured to look like a wastelands style map from Dragon Ball Z.",
+    "fights": ["N/A"]
+  },
+  {
+    "id": 9,
+    "url_id": "cuhk",
+    "name": "CUHK",
+    "saga": "LF2",
+    "width": 1600,
+    "zwidth": 90,
+    "desc": "The Chinese University of Hong Kong.",
+    "fights": ["N/A"]
+  }, 
+  {
+    "id": 0,
+    "url_id": "thv",
+    "name": "Tai Hom Village",
+    "saga": "LF2",
+    "width": 1660,
+    "zwidth": 120,
+    "desc": "",
+    "fights": ["N/A"]
   }
 ]
