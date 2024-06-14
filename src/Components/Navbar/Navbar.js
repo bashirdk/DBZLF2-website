@@ -76,7 +76,7 @@ const Navbar = () => {
           { navLinks.map((link) => {
               return (
                 <li key={link.link} className="mr-6">
-                  <NavLink to={link.link} activeClassName="is-active" className={linkStyle}>
+                  <NavLink to={link.link} activeClassName="is-active" className={linkStyle} onClick={addOpenClass}>
                     {link.title}
                   </NavLink>
                 </li>
