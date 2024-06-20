@@ -7,9 +7,9 @@ const MoveList = ({ character }) => {
   const moveNameStyle = "lf2-bg-blue-dark text-white w-full block sm:w-1/2 md:w-2/5 md:border-b-0 px-2 py-3 align-middle";
   const moveInputStyle = "w-full text-white block sm:w-1/2 md:w-3/5 px-2 py-3 align-middle";
 
-  const comboContainerStyle = "border-b lf2-border-blue block";
-  const comboNameStyle = "lf2-bg-blue-dark text-white w-full block md:border-b-0 px-2 py-3 align-middle";
-  const comboInputStyle = "w-full text-white block px-2 py-3 align-middle";
+  // const comboContainerStyle = "border-b lf2-border-blue block";
+  // const comboNameStyle = "lf2-bg-blue-dark text-white w-full block md:border-b-0 px-2 py-3 align-middle";
+  // const comboInputStyle = "w-full text-white block px-2 py-3 align-middle";
 
   const subMoveList = ( input ) => {
     if (input.length === 0)
