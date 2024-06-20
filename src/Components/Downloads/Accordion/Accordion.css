@@ -75,3 +75,41 @@
   font-weight: 800 !important;
   margin-right: 4px !important;
 }
+
+.downloads-lists {
+  border: 3px solid white;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.downloads-lists tr {
+  width: 100% !important;
+}
+.downloads-lists th {
+  border: 2px solid white;
+}
+
+.downloads-lists td {
+  border: 1px solid white;
+  vertical-align: top;
+}
+.downloads-lists th:nth-child(4), .downloads-lists td:nth-child(4){
+  border-right: 3px solid white;
+}
+.downloads-lists .new {
+  background: red;
+  padding: 2px;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 10px;
+}
+.downloads-lists ol {
+  padding-inline-start: 25px;
+}
+.downloads-lists li {
+  margin-bottom: 2px;
+}
+.downloads-lists li:before {
+  margin-bottom: 2px;
+  content: none !important;
+}

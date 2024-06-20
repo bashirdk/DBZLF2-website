@@ -1,0 +1,128 @@
+[
+  {
+    "version": "v0.1",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": []
+    }
+  }, {
+    "version": "v0.1.3",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": []
+    }
+  }, {
+    "version": "v0.1.7.1",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": [
+        {
+          "name": "Wastelands",
+          "new": true
+        }
+      ]
+    }
+  }, {
+    "version": "v0.2.3",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": [
+        {
+          "name": "Wastelands"
+        }
+      ]
+    }
+  }, {
+    "version": "v0.2.8",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": [
+        {
+          "name": "Time Chamber",
+          "new": true
+        },
+        {
+          "name": "Wastelands"
+        }
+      ]
+    }
+  }, {
+    "version": "v0.2.9",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": [
+        {
+          "name": "Budokai",
+          "new": true
+        },
+        {
+          "name": "Time Chamber"
+        },
+        {
+          "name": "Wastelands"
+        }
+      ]
+    }
+  }, {
+    "version": "v0.3.2",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": [
+        {
+          "name": "Budokai"
+        },
+        {
+          "name": "Time Chamber"
+        },
+        {
+          "name": "Wastelands"
+        }
+      ]
+    }
+  }, {
+    "version": "v0.TBD",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Namek",
+          "new": true
+        }
+      ],
+      "android": [],
+      "buu": [
+        {
+          "name": "Budokai"
+        },
+        {
+          "name": "Mystery BG",
+          "new": true
+        },{
+          "name": "Time Chamber"
+        },{
+          "name": "Time Chamber [Hazards]",
+          "new": true
+        }
+      ],
+      "lf2": [
+        {
+          "name": "Wastelands"
+        }
+      ]
+    }
+  }
+]

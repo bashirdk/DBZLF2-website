@@ -1,0 +1,64 @@
+[
+  {
+    "characterListOrder": {
+      "saiyan": [],
+      "namek": [
+        "Vegeta",
+        "Goku",
+        "SS Goku"
+      ],
+      "android": [
+        "Vegeta",
+        "SS Vegeta",
+        "Super Vegeta",
+        "Trunks",
+        "SS Trunks",
+        "Ultra Trunks"
+      ],
+      "buu": [
+        "Vegeta",
+        "SS Vegeta",
+        "SS2 Vegeta",
+        "Majin Vegeta",
+        "Goku",
+        "SS Goku",
+        "SS2 Goku",
+        "SS3 Goku",
+        "Gohan",
+        "SS Gohan",
+        "SS2 Gohan",
+        "Ultimate Gohan",
+        "Vegito",
+        "Super Vegito"
+      ]
+    }
+  },
+  {
+    "list": [
+      {
+        "version": "v0.1",
+        "characters": {
+          "buu": [
+            "Vegeta",
+            "SS Vegeta",
+            "SS2 Vegeta",
+            "Vegito",
+            "Super Vegito"
+          ]
+        }
+      }, {
+        "version": "v0.1.3",
+        "characters": {
+          "android": [
+            "Vegeta",
+            "SS Vegeta",
+            "Super Vegeta"
+          ],
+          "buu": [
+            "Majin Vegeta"
+          ]
+        }
+      }
+    ] 
+  }
+]
