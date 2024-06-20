@@ -85,39 +85,39 @@ const MoveList = ({ character }) => {
     }
   };
 
-  const comboMoveList = ( input ) => {
-    if (input.length === 0)
-    {
-      return (
-        <div className={moveContainerStyle}>
-        <div className="px-2 py-3 text-white"> 
-          <i> None Available </i>
-        </div>
-      </div>  
-      )
-    } else {
-      const mapMoves = input.map((mappedMove) => {
-        if (mappedMove.ultimate)
-        {
-          var ultimateMove = (
-            <span className="inline-block text-xs rounded px-2 py-1 bg-red-dark font-bold text-white my-0 md:mt-2 lg:my-0">
-              ULTIMATE
-            </span>
-          )          
-        }
-        return(
-        <div className={comboContainerStyle}>
-          <div className={comboNameStyle}> 
-            {mappedMove.name} {ultimateMove}
-          </div>
-          <div className={comboInputStyle}> 
-            {mappedMove.input}
-          </div>
-        </div> )
-      });
-      return mapMoves;
-    }
-  };
+  // const comboMoveList = ( input ) => {
+  //   if (input.length === 0)
+  //   {
+  //     return (
+  //       <div className={moveContainerStyle}>
+  //       <div className="px-2 py-3 text-white"> 
+  //         <i> None Available </i>
+  //       </div>
+  //     </div>  
+  //     )
+  //   } else {
+  //     const mapMoves = input.map((mappedMove) => {
+  //       if (mappedMove.ultimate)
+  //       {
+  //         var ultimateMove = (
+  //           <span className="inline-block text-xs rounded px-2 py-1 bg-red-dark font-bold text-white my-0 md:mt-2 lg:my-0">
+  //             ULTIMATE
+  //           </span>
+  //         )          
+  //       }
+  //       return(
+  //       <div className={comboContainerStyle}>
+  //         <div className={comboNameStyle}> 
+  //           {mappedMove.name} {ultimateMove}
+  //         </div>
+  //         <div className={comboInputStyle}> 
+  //           {mappedMove.input}
+  //         </div>
+  //       </div> )
+  //     });
+  //     return mapMoves;
+  //   }
+  // };
 
   const basicMoves = subMoveList(character.moves.basic);
   const specialMoves = subMoveList(character.moves.special);
