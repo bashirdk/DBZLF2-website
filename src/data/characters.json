@@ -51,12 +51,99 @@
           "input": "Grabbing Enemy + D ^ A"
         }
       ],
+      "combos": [
+        {
+          "name": "Dirty Fireworks + Dash Attack",
+          "input": "D^AA >>A"
+        },
+        {
+        "name": "Dirty Fireworks + Final Burst Cannon",
+        "input": "D^AA DvJ"
+        },
+        {
+          "name": "Dirty Fireworks + Finish Blaster + Final Burst Cannon",
+          "input": "D^AA DvA DvJ"
+          },
+        {
+          "name": "Genocide Breaker + Dirty Fireworks",
+          "input": "D^JA D^AA"
+        }, 
+        {
+          "name": "Genocide Breaker + Dirty Fireworks + Final Burst Cannon",
+          "input": "D^JA D^AA DvJ"
+        },
+        {
+          "name": "Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon",
+          "input": "D^JA D^AA DvA DvJ"
+        },
+        {
+          "name": "Final Galick Cannon + Genocide Breaker",
+          "input": "Grabbing Enemy + D^A D^J"
+        },
+        {
+          "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks",
+          "input": "Grabbing Enemy + D^A D^J D^AA"
+        },
+        {
+          "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks + Final Burst Cannon",
+          "input": "Grabbing Enemy + D^A D^J D^AA DvJ"
+        },
+        {
+          "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon",
+          "input": "Grabbing Enemy + D^A D^J D^AA DvA DvJ",
+          "ultimate": true
+        }
+      ],
       "counter": [
         {
           "name": "Basic Counter",
           "input": "Block attack + A"
         }
       ],
+      "transformations": []
+    }
+  },
+  {
+    "id": 85,
+    "url_id": "goku",
+    "name": "Goku",
+    "saga": "Namek",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "attack": 1.95,
+      "defense": 2.93,
+      "speed": 1.95,
+      "ki": 100
+    },
+    "moves": {
+      "basic": [],
+      "team": [],
+      "special": [],
+      "combos": [],
+      "counter": [],
+      "transformations": []
+    }
+  },
+  {
+    "id": 86,
+    "url_id": "ss-goku",
+    "name": "Super Saiyan Goku",
+    "saga": "Namek",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "attack": 2.76,
+      "defense": 4.14,
+      "speed": 2.76,
+      "ki": 125
+    },
+    "moves": {
+      "basic": [],
+      "team": [],
+      "special": [],
+      "combos": [],
+      "counter": [],
       "transformations": []
     }
   },
@@ -95,6 +182,7 @@
           "input": "D > J"
         }
       ],
+      "combos": [],
       "team": [],
       "counter": [
         {
@@ -162,6 +250,7 @@
           "ultimate": "yes"
         }
       ],
+      "combos": [],
       "team": [],
       "counter": [
         {

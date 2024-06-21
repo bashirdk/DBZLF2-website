@@ -53,7 +53,7 @@ class BackgroundProfile extends Component {
 
           {
             this.state.background.special ?
-            <section className="sm:pr-5  inline-block align-top w-full ">
+            <section className="inline-block align-top w-full ">
             <section className="mb-5">
               <div className="border-2 rounded border-yellow lf2-bg-blue px-5 py-5 text-white">
                 <h3> SPECIAL BACKGROUND </h3>
@@ -65,7 +65,7 @@ class BackgroundProfile extends Component {
             ""
           }
 
-          <section className="sm:pr-5 inline-block align-top w-full sm:w-1/3">
+          <section className="sm:pr-5 inline-block align-top w-full sm:w-1/2">
             <section className="my-1">
               <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5 text-white">
                 <h3> Fights </h3>
@@ -80,7 +80,7 @@ class BackgroundProfile extends Component {
             </section>
           </section>
           
-          <section className="inline-block align-top w-full sm:w-2/3">
+          <section className="inline-block align-top w-full sm:w-1/2">
             <section className="my-1">
               <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5 text-white">
                 <h3> Description </h3>

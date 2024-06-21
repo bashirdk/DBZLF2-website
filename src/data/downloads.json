@@ -1,5 +1,46 @@
 [
   {
+    "version": "v0.TBD",
+    "date": "TBD",
+    "download": false,
+    "characters": {
+      "new": 2,
+      "total": 23
+    },
+    "backgrounds": {
+      "new": 3,
+      "total": 5.5 
+    },
+    "updates": {
+      "major_updates": {
+        "characters": [
+          "[+] Goku (Namek)",
+          "[+] SS Goku (Namek)"
+        ],
+        "backgrounds": [
+          "[+] Planet Namek",
+          "[+] Time Chamber [Hazards]",
+          "[+] MYSTERIOUS NEW BG"
+        ],
+        "list_of_major_updates": [
+          "Updated Backgrounds",
+          "New WIDESCREEN and FULLSCREEN",
+          "New Character HUD frames and bars scouter design"
+        ]
+      },
+      "minor_updates": {
+        "sprite_changes": [
+        ],
+        "new_moves": [
+          "[+] Vegeta (Namek): Bang Beam",
+          "[+] SS Gohan (Buu): Kiai"
+        ],
+        "character_changes": [
+          "Majin Vegeta (Buu): Final Explosion Complete Revamp"
+        ]
+      }
+    }
+  },{
     "version": "v0.3.2",
     "date": "3/25/2024",
     "download": "https://www.mediafire.com/file/airw917zfi5x0uk/DeeBeeZee_LF2_v0.3.2.zip/file",
@@ -7,6 +48,10 @@
     "characters": {
       "new": 1,
       "total": 21
+    },
+    "backgrounds": {
+      "new": 0,
+      "total": 2.5 
     },
     "updates": {
       "major_updates": {
@@ -45,6 +90,10 @@
       "new": 1,
       "total": 20
     },
+    "backgrounds": {
+      "new": 0.5,
+      "total": 2.5 
+    },
     "updates": {
       "major_updates": {
         "characters": [
@@ -67,6 +116,10 @@
     "characters": {
       "new": 1,
       "total": 19
+    },
+    "backgrounds": {
+      "new": 1,
+      "total": 2
     },
     "updates": {
       "major_updates": {
@@ -113,6 +166,10 @@
       "new": 4,
       "total": 18
     },
+    "backgrounds": {
+      "new": 0,
+      "total": 1
+    },
     "updates": {
       "major_updates": {
         "characters": [
@@ -152,6 +209,10 @@
     "characters": {
       "new": 5,
       "total": 14
+    },
+    "backgrounds": {
+      "new": 1,
+      "total": 1
     },
     "updates": {
       "major_updates": {
@@ -199,6 +260,10 @@
       "new": 4,
       "total": 9
     },
+    "backgrounds": {
+      "new": 0,
+      "total": 0
+    },
     "updates": {
       "major_updates": {
         "characters": [
@@ -230,6 +295,10 @@
     "characters": {
       "new": 5,
       "total": 5
+    },
+    "backgrounds": {
+      "new": 0,
+      "total": 0
     },
     "updates": {
       "major_updates": {

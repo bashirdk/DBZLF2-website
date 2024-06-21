@@ -1,0 +1,376 @@
+[
+  {
+    "version": "v0.1",
+    "characters": {
+      "saiyan": [],
+      "namek": [],
+      "android": [],
+      "buu": [
+        {
+          "name": "Vegeta",
+          "new": true
+        },{
+          "name": "SS Vegeta",
+          "new": true
+        },{
+          "name": "SS2 Vegeta",
+          "new": true
+        },{
+          "name": "Vegito",
+          "new": true
+        },{
+          "name": "Super Vegito",
+          "new": true
+        }
+      ]
+    }
+  }, {
+    "version": "v0.1.3",
+    "characters": {
+      "saiyan": [],
+      "namek": [],
+      "android": [
+        {
+          "name": "Vegeta",
+          "new": true
+        },{
+          "name": "SS Vegeta",
+          "new": true
+        },{
+          "name": "Super Vegeta",
+          "new": true
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta",
+          "new": true
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }]
+    }
+  }, {
+    "version": "v0.1.7.1",
+    "characters": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Vegeta",
+          "new": true
+        }
+      ],
+      "android": [
+        {
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "Super Vegeta"
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta"
+        },{
+          "name": "Goku",
+          "new": true
+        },{
+          "name": "SS Goku",
+          "new": true
+        },{
+          "name": "SS2 Goku",
+          "new": true
+        },{
+          "name": "SS3 Goku",
+          "new": true
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }]
+    }
+  }, {
+    "version": "v0.2.3",
+    "characters": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Vegeta"
+        }
+      ],
+      "android": [
+        {
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "Super Vegeta"
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta"
+        },{
+          "name": "Goku"
+        },{
+          "name": "SS Goku"
+        },{
+          "name": "SS2 Goku"
+        },{
+          "name": "SS3 Goku"
+        },{
+          "name": "Gohan",
+          "new": true
+        },{
+          "name": "SS Gohan",
+          "new": true
+        },{
+          "name": "SS2 Gohan",
+          "new": true
+        },{
+          "name": "Ultimtate Gohan",
+          "new": true
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }]
+    }
+  }, {
+    "version": "v0.2.8",
+    "characters": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Vegeta"
+        }
+      ],
+      "android": [
+        {
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "Super Vegeta"
+        }, {
+          "name": "Trunks [A]",
+          "new": true
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta"
+        },{
+          "name": "Goku"
+        },{
+          "name": "SS Goku"
+        },{
+          "name": "SS2 Goku"
+        },{
+          "name": "SS3 Goku"
+        },{
+          "name": "Gohan"
+        },{
+          "name": "SS Gohan"
+        },{
+          "name": "SS2 Gohan"
+        },{
+          "name": "Ultimtate Gohan"
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }]
+    }
+  }, {
+    "version": "v0.2.9",
+    "characters": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Vegeta"
+        }
+      ],
+      "android": [
+        {
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "Super Vegeta"
+        }, {
+          "name": "Trunks [A]"
+        }, {
+          "name": "SS Trunks [A]",
+          "new": true
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta"
+        },{
+          "name": "Goku"
+        },{
+          "name": "SS Goku"
+        },{
+          "name": "SS2 Goku"
+        },{
+          "name": "SS3 Goku"
+        },{
+          "name": "Gohan"
+        },{
+          "name": "SS Gohan"
+        },{
+          "name": "SS2 Gohan"
+        },{
+          "name": "Ultimtate Gohan"
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }]
+    }
+  }, {
+    "version": "v0.3.2",
+    "characters": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Vegeta"
+        }
+      ],
+      "android": [
+        {
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "Super Vegeta"
+        }, {
+          "name": "Trunks [A]"
+        }, {
+          "name": "SS Trunks [A]"
+        }, {
+          "name": "Ultra Trunks [A]",
+          "new": true
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta"
+        },{
+          "name": "Goku"
+        },{
+          "name": "SS Goku"
+        },{
+          "name": "SS2 Goku"
+        },{
+          "name": "SS3 Goku"
+        },{
+          "name": "Gohan"
+        },{
+          "name": "SS Gohan"
+        },{
+          "name": "SS2 Gohan"
+        },{
+          "name": "Ultimtate Gohan"
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }]
+    }
+  }, {
+    "version": "v0.TBD",
+    "characters": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Vegeta"
+        }, {
+          "name": "Goku",
+          "new": true
+        }, {
+          "name": "SS Goku",
+          "new": true
+        }
+      ],
+      "android": [
+        {
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "Super Vegeta"
+        }, {
+          "name": "Trunks [A]"
+        }, {
+          "name": "SS Trunks [A]"
+        }, {
+          "name": "Ultra Trunks [A]"
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta"
+        },{
+          "name": "Goku"
+        },{
+          "name": "SS Goku"
+        },{
+          "name": "SS2 Goku"
+        },{
+          "name": "SS3 Goku"
+        },{
+          "name": "Gohan"
+        },{
+          "name": "SS Gohan"
+        },{
+          "name": "SS2 Gohan"
+        },{
+          "name": "Ultimtate Gohan"
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }]
+    }
+  }
+]

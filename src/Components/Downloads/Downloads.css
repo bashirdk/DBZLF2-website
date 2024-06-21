@@ -18,3 +18,12 @@
 {
   background-color: #38a169;
 }
+
+.download-button:disabled{
+  background-color: gray;
+  border: 1px solid black;
+  cursor: not-allowed;
+}
+.download-button:disabled:hover{
+  background-color: gray;
+}

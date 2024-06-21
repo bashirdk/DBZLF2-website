@@ -4,25 +4,38 @@ import React, { Component } from "react";
 import Helmet from "react-helmet";
 
 import DownloadsJSON from "../../data/downloads.json";
+import DownloadsCharListJSON from "../../data/downloadsCharList.json";
+import DownloadsBgListJSON from "../../data/downloadsBgList.json";
 
 import Accordion from "./Accordion/Accordion"
 
 class Downloads extends Component {
 
-	render() {	
+	render() {
+		let downloadsCharacterList = {};
+		DownloadsCharListJSON.map((list)=> {
+			return downloadsCharacterList[list.version] = { ...list.characters }
+		})
+		let downloadsBackgroundList = {};
+		DownloadsBgListJSON.map((list)=> {
+			return downloadsBackgroundList[list.version] = { ...list.backgrounds }
+		})
+
 		var downloadsData = DownloadsJSON.map((download) => (
 			<div className="downloads-section"  key={download.version}>
-
-			<Accordion 			 
-				version={download.version}
-				date={download.date}
-				download={download.download}
-				charactersTotal={download.characters.total}
-				charactersNew={download.characters.new}
-				trailer={download.trailer}
-				updates={download.updates}
-			/>
-
+				<Accordion
+					version={download.version}
+					date={download.date}
+					download={download.download}
+					charactersTotal={download.characters.total}
+					charactersNew={download.characters.new}
+					backgroundsTotal={download.backgrounds.total}
+					backgroundsNew={download.backgrounds.new}
+					trailer={download.trailer}
+					updates={download.updates}
+					characterList={downloadsCharacterList[download.version]}
+					backgroundList={downloadsBackgroundList[download.version]}
+				/>
 			</div>
 		));
 
