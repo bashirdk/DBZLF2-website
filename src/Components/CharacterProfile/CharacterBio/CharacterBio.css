@@ -51,3 +51,10 @@ Race Labels
 .alien-race-label {
   background-color: #b7b7b7;
 }
+
+/*
+Release Labels
+*/
+.release-label {
+  background-color: gray;
+}

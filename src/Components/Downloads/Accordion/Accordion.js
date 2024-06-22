@@ -62,7 +62,6 @@ function Accordion(props) {
 
   function downloadsCharBgList(propsData) {
     if (propsData) {
-      console.log('propsData', propsData)
       return propsData.map(
         (char) => {
           return (

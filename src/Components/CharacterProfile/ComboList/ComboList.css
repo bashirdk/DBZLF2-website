@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+
+/* Style the accordion section */
+.combo_accordion__section {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.combo-accordion-button h3 {
+
+}
+.combo-accordion-button p {
+  
+}
+
+.combo-accordion a {
+  color: red;
+}
+
+.combo-accordion-content {
+  
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.combo-accordion-button {
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  transition: 0.6s ease;
+}
+.combo-accordion-button div{
+  width: 100%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.combo-accordion-button.active {
+  border-bottom: none;  
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.combo-accordion-button:focus {
+  outline: none;
+}
+
+/* Style the accordion content title */
+.accordion__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  transition: transform 0.7s ease-in-out;
+  margin-right: 10px;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+  transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.combo_accordion__content {
+  overflow: hidden;
+  transition: 0.7s ease-in-out;
+}
+.combo_accordion__content.active {
+  /* margin-bottom: 1.25rem; */
+}
+
+
+.sticky-bio {
+  position: sticky;
+  top: 110px;
+}

@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 
 import Characters from "../../data/characters.json";
 import MoveList from "./MoveList/MoveList.js";
+import ComboList from "./ComboList/ComboList.js";
 import CharacterBio from "./CharacterBio/CharacterBio.js";
 import CharacterStats from "./CharacterStats/CharacterStats.js";
 
@@ -19,7 +20,11 @@ class CharacterProfile extends Component {
           character.url_id.toLowerCase() === name.toLowerCase()
       ),
     };
+
   }
+
+
+
 
   render() {
     if (this.state.character)
@@ -34,7 +39,7 @@ class CharacterProfile extends Component {
           <h1 className="text-white text-center md:text-left">Character Profile</h1>
           <h2 className="text-center text-white">{this.state.character.name}</h2>
 
-          <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3">
+          <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3" id="char-bio-section">
             <CharacterBio character={this.state.character} key={this.state.character.id} />
           </section>
 
@@ -46,6 +51,17 @@ class CharacterProfile extends Component {
             <section className="my-5">
               <MoveList character={this.state.character} key={this.state.character.id}/>
             </section>
+
+            {
+              this.state.character && this.state.character.combos ?
+              <section className="my-5">
+                <ComboList character={this.state.character} key={this.state.character.id}/>
+              </section>
+              :
+              <section className="my-5">
+                <ComboList character={false} />
+              </section>
+            }
 
             {
             this.state.character.moveset_video ?
