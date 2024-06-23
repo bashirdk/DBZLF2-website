@@ -9,6 +9,7 @@
     "type": { "hero": false, "villain": false, "other": true },
     "moveset_video": "qkrOFbKV9wM",
     "stats": {
+      "power_level": 4860,
       "attack": 1.8,
       "defense": 2.7,
       "speed": 1.8,
@@ -67,10 +68,10 @@
         [4, 2], [2, 1], [1, 3]
       ],
       "basic": [
-        [53], [54, 1], [1, 52]
+        [53], { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "AAA AJ A + D v J" }, [1, 52]
       ],
       "special": [
-        [4, 2, 1, 3]
+        [1, 3],[2, 1, 3],[4, 2, 1, 3]
       ],
       "counter": []
     }
@@ -84,6 +85,7 @@
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 5714,
       "attack": 1.95,
       "defense": 2.93,
       "speed": 1.95,
@@ -93,7 +95,6 @@
       "basic": [],
       "team": [],
       "special": [],
-      "combos": [],
       "counter": [],
       "transformations": []
     }
@@ -107,6 +108,7 @@
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 11417,
       "attack": 2.76,
       "defense": 4.14,
       "speed": 2.76,
@@ -116,7 +118,6 @@
       "basic": [],
       "team": [],
       "special": [],
-      "combos": [],
       "counter": [],
       "transformations": []
     }
@@ -131,6 +132,7 @@
     "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 6945,
       "attack": 2.15,
       "defense": 3.23,
       "speed": 2.15,
@@ -160,7 +162,6 @@
           "input": "D > J"
         }
       ],
-      "combos": [],
       "team": [],
       "counter": [
         {
@@ -186,9 +187,10 @@
     "moveset_video": "05nkT3ZRiQE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "attack": 3.03,
-      "defense": 4.55,
-      "speed": 3.03,
+      "power_level": 13865,
+      "attack": 3.04,
+      "defense": 4.56,
+      "speed": 3.04,
       "ki": 125
     },
     "moves": {
@@ -231,7 +233,6 @@
           "ultimate": "yes"
         }
       ],
-      "combos": [],
       "team": [],
       "counter": [
         {
@@ -256,7 +257,7 @@
     },
     "combos": {
       "links": [
-        [2, 1], {"name": "poop + peep", "input": "DvA + D^A"}
+        [2, 1]
       ],
       "basic": [
       ],
@@ -275,6 +276,7 @@
     "moveset_video": "WZh2Hl-W2_E",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 16654,
       "attack": 3.3,
       "defense": 5,
       "speed": 3.3,
@@ -345,6 +347,7 @@
     "moveset_video": "d2U7HP0-E58",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 6742,
       "attack": 2.12,
       "defense": 3.18,
       "speed": 2.12,
@@ -395,6 +398,7 @@
     "moveset_video": "CsvlsM9f29w",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 13492,
       "attack": 2.99,
       "defense": 4.49,
       "speed": 2.99,
@@ -478,7 +482,8 @@
     "moveset_video": "IiU78GXA-q0",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "attack": 3.36,
+      "power_level": 20232,
+      "attack": 3.67,
       "defense": 5.51,
       "speed": 2.1,
       "ki": 175
@@ -537,6 +542,14 @@
           "input": "DJA D"
         }
       ]
+    }, "combos": {
+      "links": [ {"name": "Gigantic Spike and Drag -> Eraser Blow", "input": "Grabbing Enemy + D > J + Hold J"}
+      ],
+      "basic": [
+      ],
+      "special": [
+      ],
+      "counter": []
     }
   },
   {
@@ -549,6 +562,7 @@
     "moveset_video": "83Wmel5BF74",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 8296,
       "attack": 2.35,
       "defense": 3.53,
       "speed": 2.35,
@@ -620,6 +634,7 @@
     "moveset_video": "l7CD_7Mu-Gc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 16584,
       "attack": 3.31,
       "defense": 4.97,
       "speed": 3.31,
@@ -686,6 +701,7 @@
     "moveset_video": "eCWBLmTqWZI",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 33135,
       "attack": 4.7,
       "defense": 7.05,
       "speed": 4.7,
@@ -741,6 +757,7 @@
     "moveset_video": "SOrexY9wRf8",
     "type": { "hero": false, "villain": false, "other": true },
     "stats": {
+      "power_level": 34560,
       "attack": 4.8,
       "defense": 7.2,
       "speed": 4.8,
@@ -808,6 +825,7 @@
     "moveset_video": "4PZ9DezfuL8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 8640,
       "attack": 2.4,
       "defense": 3.6,
       "speed": 2.4,
@@ -876,6 +894,7 @@
     "moveset_video": "FYfg6hoGAOg",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 17276,
       "attack": 3.38,
       "defense": 5.07,
       "speed": 3.38,
@@ -974,6 +993,7 @@
     "moveset_video": "SbrAie-PVz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 34560,
       "attack": 4.8,
       "defense": 7.2,
       "speed": 4.8,
@@ -1065,6 +1085,7 @@
     "moveset_video": "tiH5FtMDfWs",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 138240,
       "attack": 9.6,
       "defense": 14.4,
       "speed": 9.6,
@@ -1157,6 +1178,7 @@
     "moveset_video": "Du9DUZPSOk0",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 7260,
       "attack": 2.2,
       "defense": 3.3,
       "speed": 2.2,
@@ -1212,6 +1234,7 @@
     "moveset_video": "wTb9EG5WCp4",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 14530,
       "attack": 3.1,
       "defense": 4.65,
       "speed": 3.1,
@@ -1275,6 +1298,7 @@
     "moveset_video": "ulvDh2a0mzE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 29040,
       "attack": 4.4,
       "defense": 6.6,
       "speed": 4.4,
@@ -1338,8 +1362,9 @@
     "moveset_video": "SebsOJ484WM",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 232350,
       "attack": 12.45,
-      "defense": 18.68,
+      "defense": 18.67,
       "speed": 12.45,
       "ki": 100
     },
@@ -1356,7 +1381,7 @@
       ],
       "special": [
         {
-          "name": "Electric Kamehameha",
+          "name": "Electric Kamehameha", "combo_id": 1,
           "input": "D > J"
         },
         {
@@ -1373,7 +1398,7 @@
           "input": "D v AA J J"
         },
         {
-          "name": "Air Throw",
+          "name": "Air Throw", "combo_id": 2,
           "input": "Grabbing Enemy + D ^ A"
         },
         {
@@ -1398,6 +1423,20 @@
         }
       ],
       "transformations": []
+    }, "combos": {
+      "links": [ 
+        [2, 1]
+      ],
+      "basic": [ 
+        [51, 50],
+        {"name": "Air Throw Combo", "input": "Grabbing Enemy + D ^ A + J"},
+        [2, 50]
+      ],
+      "special": [
+      ],
+      "counter": [
+        {"name": "Burst Rush Combo", "input": "Block attack + J A J"}
+      ]
     }
   },
   {
@@ -1410,6 +1449,7 @@
     "moveset_video": "Jhwhj9_PdIc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 379215,
       "attack": 15.9,
       "defense": 23.85,
       "speed": 15.9,
@@ -1493,8 +1533,9 @@
     "moveset_video": "JqePv_XPXMY",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "attack": 22.42,
-      "defense": 33.63,
+      "power_level": 758453,
+      "attack": 22.49,
+      "defense": 33.73,
       "speed": 22.42,
       "ki": 125
     },
@@ -1523,15 +1564,15 @@
           "input": "D v A"
         },
         {
-          "name": "Spirit Sword",
+          "name": "Spirit Sword", "combo_id": 3,
           "input": "D ^ A"
         },
         {
-          "name": "Explosive Wave",
+          "name": "Explosive Wave", "combo_id": 1,
           "input": "D ^ J"
         },
         {
-          "name": "Vanishing Explosive Ki Blast",
+          "name": "Vanishing Explosive Ki Blast", "combo_id": 2,
           "input": "Rowing + J"
         },
         {
@@ -1557,6 +1598,25 @@
           "input": "DJA D"
         }
       ]
+    }, "combos": {
+      "links": [ 
+        [2, 1], [2, 3]
+      ],
+      "basic": [ 
+        {"name": "Basic Combo + Run Attack", "input": "AAAA A + >>A" },
+        {"name": "Basic Combo + Dash Attack", "input": "AAAA A + >>JA" },
+        {"name": "Kamehameha Combo Finisher", "input": "AAAA A + D < J" },
+        {"name": "Big Bang Attack Combo Finisher", "input": "AAAA A + D v A" },
+        {"name": "Spirit Sword Combo Finisher", "input": "AAAA A + D ^ A" },
+        {"name": "Basic Combo + Neck Snapper + Explosive Blast", "input": "AAAA A A A A"},
+        {"name": "Cocky Kicks", "input": "AAA AJ" },
+        {"name": "Cocky Kicks + Sweeper", "input": "AAA AJ J"},
+        {"name": "Cocky Kicks + Sweeper + Spirit Smash", "input": "AAA AJ J A"},
+        {"name": "Cocky Kicks + Sweeper + Neck Snapper + Explosive Blast", "input": "AAA AJ J J A A"}
+      ],
+      "special": [
+      ],
+      "counter": []
     }
   }
 ]

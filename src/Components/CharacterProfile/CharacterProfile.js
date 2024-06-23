@@ -24,8 +24,6 @@ class CharacterProfile extends Component {
   }
 
 
-
-
   render() {
     if (this.state.character)
     {    

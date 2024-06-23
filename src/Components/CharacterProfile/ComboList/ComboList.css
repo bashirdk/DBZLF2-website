@@ -70,8 +70,9 @@
   /* margin-bottom: 1.25rem; */
 }
 
-
-.sticky-bio {
-  position: sticky;
-  top: 110px;
+@media (min-width: 576px) {
+  .sticky-bio {
+    position: sticky;
+    top: 110px;
+  }
 }

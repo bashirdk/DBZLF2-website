@@ -45,22 +45,24 @@ const CharacterBio = ({ character }) => {
     }
   }
 
-  window.onscroll = function() {myFunction()};
+  React.useEffect(() => {
+    window.onscroll = function() {myFunction()};
 
-  var header = document.getElementById("char-bio-section");
-  var sticky = 84;
-
-  console.log('header', header)
-  console.log('sticky', sticky);
-
-  function myFunction() {
-    // console.log('window.pageYOffset', window.pageYOffset);
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky-bio");
-    } else {
-      header.classList.remove("sticky-bio");
+    var header = document.getElementById("char-bio-section");
+    var sticky = 84;
+  
+    console.log('header', header)
+    console.log('sticky', sticky);
+  
+    function myFunction() {
+      // console.log('window.pageYOffset', window.pageYOffset);
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky-bio");
+      } else {
+        header.classList.remove("sticky-bio");
+      }
     }
-  }
+  }, [])
 
   return (
     <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5">

@@ -21,12 +21,11 @@
       "saiyan": [],
       "namek": [],
       "android": [],
-      "buu": [
-        {
-          "name": "Wastelands",
-          "new": true
-        }
-      ]
+      "buu": [],
+      "lf2": [{
+        "name": "Wastelands",
+        "new": true
+      }]
     }
   }, {
     "version": "v0.2.3",
@@ -50,11 +49,10 @@
         {
           "name": "Time Chamber",
           "new": true
-        },
-        {
-          "name": "Wastelands"
         }
-      ]
+      ], "lf2": [{
+        "name": "Wastelands"
+      }]
     }
   }, {
     "version": "v0.2.9",
@@ -69,11 +67,10 @@
         },
         {
           "name": "Time Chamber"
-        },
-        {
-          "name": "Wastelands"
         }
-      ]
+      ], "lf2": [{
+        "name": "Wastelands"
+      }]
     }
   }, {
     "version": "v0.3.2",
@@ -87,11 +84,10 @@
         },
         {
           "name": "Time Chamber"
-        },
-        {
-          "name": "Wastelands"
         }
-      ]
+      ], "lf2": [{
+        "name": "Wastelands"
+      }]
     }
   }, {
     "version": "v0.TBD",

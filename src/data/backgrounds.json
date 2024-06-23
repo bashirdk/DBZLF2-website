@@ -1,6 +1,7 @@
 [
   {
     "id": 10,
+    "release": "TBD",
     "url_id": "namek",
     "name": "Planet Namek",
     "saga": "Namek",
@@ -49,12 +50,14 @@
   },
   {
     "id": 4,
+    "release": "v0.2.9",
     "url_id": "budokai",
     "name": "World Tournament Stage",
     "saga": "Buu"
   },
   {
     "id": 13,
+    "release": "TBD",
     "url_id": "budokai_ro",
     "name": "World Tournament Stage [Ring Out]",
     "saga": "Buu",
@@ -62,6 +65,7 @@
   },
   {
     "id": 11,
+    "release": "v0.2.8",
     "url_id": "rosat",
     "name": "Time Chamber",
     "saga": "Buu",
@@ -78,6 +82,7 @@
   },
   {
     "id": 12,
+    "release": "TBD",
     "url_id": "rosat_h",
     "name": "Time Chamber [Hazards]",
     "saga": "Buu",
@@ -95,6 +100,7 @@
   },
   {
     "id": 2,
+    "release": "v0.1",
     "url_id": "lf",
     "name": "Lion Forest",
     "saga": "LF2",
@@ -105,6 +111,7 @@
   },
   {
     "id": 3,
+    "release": "v0.1",
     "url_id": "sp",
     "name": "Stanley Prison",
     "saga": "LF2",
@@ -115,6 +122,7 @@
   },
   {
     "id": 5,
+    "release": "v0.1",
     "url_id": "gw",
     "name": "The Great Wall",
     "saga": "LF2",
@@ -125,6 +133,7 @@
   },
   {
     "id": 6,
+    "release": "v0.1",
     "url_id": "qi",
     "name": "Queen's Island",
     "saga": "LF2",
@@ -135,6 +144,7 @@
   },
   {
     "id": 7,
+    "release": "v0.1",
     "url_id": "ft",
     "name": "Forbidden Tower",
     "saga": "LF2",
@@ -145,6 +155,7 @@
   },
   {
     "id": 9,
+    "release": "v0.1.7",
     "url_id": "wl",
     "name": "Wastelands",
     "saga": "LF2",
@@ -155,6 +166,7 @@
   },
   {
     "id": 9,
+    "release": "v0.1",
     "url_id": "cuhk",
     "name": "CUHK",
     "saga": "LF2",
@@ -165,6 +177,7 @@
   }, 
   {
     "id": 0,
+    "release": "v0.1",
     "url_id": "thv",
     "name": "Tai Hom Village",
     "saga": "LF2",
