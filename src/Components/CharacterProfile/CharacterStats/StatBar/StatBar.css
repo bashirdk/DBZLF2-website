@@ -18,3 +18,36 @@
   0% { transform: scaleX(0); }
   100% { transform: scaleX(1); }
 }
+
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+.power-level-value {
+  counter-reset: num var(--num);
+  --num: 0;
+  font: 800 2.25rem system-ui;
+  line-height: 1;
+  color: yellow;
+  animation-name: counter;
+  animation-duration: 5s;
+  animation-delay: 0.2s;
+  transition: --num 5s ease-in-out;
+  animation-fill-mode: forwards;
+  background-color: green;
+}
+.power-level-value::before {
+  content: counter(num);
+}
+
+@keyframes counter {
+  0% {
+    --num: 0;
+  }
+  100% {
+    --num: var(--power-level-value);
+  }
+}

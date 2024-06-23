@@ -18,19 +18,21 @@ const CharacterStats = ({ character }) => {
 
   const powerLevelContainer = (statName, stat) => (
     <div className="flex">
-      <div className="block w-24 px-1 py-3 text-right">
+      <div className="block w-24 px-1 py-3 mr-3 text-right">
         <p>{statName}</p>
       </div>
-      <div className="w-full block py-2 pr-5 ml-3 sm:pr-8 flex-auto text-4xl">
-        {
+      <div className="w-full block py-2 pr-5 pl-3 mr-6  sm:pr-8 flex-auto text-4xl power-level-value rounded">
+        {/* {
           character.stats.power_level ?
           character.stats.power_level.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
           :
           Math.round(stat.attack * stat.defense * 1000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-        }
+        } */}
       </div>
     </div> 
   )
+
+  document.documentElement.style.setProperty('--power-level-value', character.stats.power_level);
 
   const powerLevelStat = powerLevelContainer("Power Level", character.stats);
   const attackStat     = statContainer("Attack", character.stats.attack);
@@ -42,7 +44,7 @@ const CharacterStats = ({ character }) => {
     <div className="border-2 lf2-border-blue lf2-bg-blue rounded">
       <h3 className="p-5 border-b text-white"> Character Stats </h3>
       <div className="py-5 text-white">
-        {powerLevelStat}
+        {powerLevelStat} <br></br>
         {attackStat}
         {defenseStat}
         {speedStat}

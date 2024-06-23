@@ -1603,8 +1603,8 @@
         [2, 1], [2, 3]
       ],
       "basic": [ 
-        {"name": "Basic Combo + Run Attack", "input": "AAAA A + >>A" },
-        {"name": "Basic Combo + Dash Attack", "input": "AAAA A + >>JA" },
+        {"name": "Basic Combo + Run Attack", "input": "AAAA A + >> A" },
+        {"name": "Basic Combo + Dash Attack", "input": "AAAA A + >> JA" },
         {"name": "Kamehameha Combo Finisher", "input": "AAAA A + D < J" },
         {"name": "Big Bang Attack Combo Finisher", "input": "AAAA A + D v A" },
         {"name": "Spirit Sword Combo Finisher", "input": "AAAA A + D ^ A" },
