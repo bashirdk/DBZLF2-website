@@ -132,7 +132,7 @@ const ComboList = ({ character }) => {
             <div
               ref={content}
               style={{ maxHeight: `${setHeight}` }}
-              className={`combo_accordion__content combo-accordion-content ${setActive} lf2-border-blue lf2-bg-blue mx-5 lg:mx-0 text-white`}
+              className={`combo_accordion__content combo-accordion-content ${setActive} lf2-border-blue lf2-bg-blue mx-0 text-white`}
             >
             
               <h3 className={'bg-grey ' + moveHeaderStyle } > Combo Links </h3> {comboLinks}

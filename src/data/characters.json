@@ -97,7 +97,12 @@
       "special": [],
       "counter": [],
       "transformations": []
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    }    
   },
   {
     "id": 86,
@@ -120,7 +125,12 @@
       "special": [],
       "counter": [],
       "transformations": []
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 67,
@@ -175,7 +185,12 @@
           "input": "DJA J"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 68,
@@ -336,7 +351,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },{
     "id": 82,
     "release": "v0.2.8",
@@ -387,7 +407,12 @@
           "input": "DJA J"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },{
     "id": 83,
     "release": "v0.2.9",
@@ -471,7 +496,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },{
     "id": 84,
     "release": "v0.3.2",
@@ -622,7 +652,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 71,
@@ -689,7 +724,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 72,
@@ -745,7 +785,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 73,
@@ -813,7 +858,12 @@
         }
       ],
       "transformations": []
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 74,
@@ -882,7 +932,12 @@
           "input": "DJA J"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 75,
@@ -981,7 +1036,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 76,
@@ -1073,7 +1133,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 77,
@@ -1166,7 +1231,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 78,
@@ -1222,7 +1292,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 79,
@@ -1286,7 +1361,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 80,
@@ -1350,7 +1430,12 @@
           "input": "DJA D"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 81,
@@ -1521,7 +1606,12 @@
           "input": "DJA J"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 24,

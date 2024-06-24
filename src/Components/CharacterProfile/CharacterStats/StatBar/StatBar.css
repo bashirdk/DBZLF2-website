@@ -26,18 +26,53 @@
   inherits: false;
 }
 
+.scouter-model-back {
+  background: rgb(180,180,180);
+  margin-left: 10px;
+  border-radius: 30px 10px 10px 50px;
+  height: 120px;
+  border-right: 10px solid rgb(80, 80, 80);
+  border-left: 3px solid rgb(140, 140, 140);
+  margin-right: -10px;
+}
+.scouter-model{
+  background: rgb(220,220,220);
+  color: black;
+  border-radius: 20px 0 0 20px;
+  border-left: 3px solid red;
+  height: 100%;
+  font: 800 16px system-ui;
+  width: 70px;
+  height: 50px;
+  margin-top: 20px;
+  line-height: 1;
+  box-shadow: -2px 5px 5px rgb(0,0,0,0.5);
+}
+.scouter-model p {
+  margin-top: -5px;
+}
+.scouter-container {
+  width: 150px;
+}
 .power-level-value {
   counter-reset: num var(--num);
   --num: 0;
-  font: 800 2.25rem system-ui;
+  font: 800 32px system-ui;
   line-height: 1;
   color: yellow;
   animation-name: counter;
-  animation-duration: 5s;
+  animation-duration: var(--power-level-anim-time);
   animation-delay: 0.2s;
   transition: --num 5s ease-in-out;
   animation-fill-mode: forwards;
   background-color: green;
+  border-radius: 0 10px 20px 40px;
+  text-align: center;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.power-level-value p {
+  margin-left: 10px;
 }
 .power-level-value::before {
   content: counter(num);
