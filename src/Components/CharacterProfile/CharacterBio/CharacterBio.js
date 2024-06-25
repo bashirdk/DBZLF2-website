@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import './CharacterBio.css'
-import CharacterStats from "../CharacterStats/CharacterStats";
 
 import Characters from "../../../data/characters.json";
 
@@ -132,10 +131,10 @@ const CharacterBio = ({ character }) => {
   let powerups = [];
   let powerdowns = [];
   character.moves.transformations.forEach(transformation => {
-    if (transformation.direction == 1) {
+    if (transformation.direction === 1) {
       powerups.push(transformation);
     }
-    if (transformation.direction == 0) {
+    if (transformation.direction === 0) {
       powerdowns.push(transformation);
     }
   });
@@ -147,7 +146,7 @@ const CharacterBio = ({ character }) => {
   const getPath = (transformation) => {
     console.log('getPath power up', transformation.id);
     const newChar = Characters.find( (character) => (
-      character.id == transformation.id
+      character.id === transformation.id
     ));
     return newChar ? `/characters/${newChar.saga.toLowerCase()}/${newChar.url_id.toLowerCase()}` : '';
   }

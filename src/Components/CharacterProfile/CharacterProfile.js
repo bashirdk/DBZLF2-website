@@ -1,5 +1,5 @@
-import React, { useState, Component } from "react";
-import { Link, useParams, withRouter } from "react-router-dom";
+import React, { useState } from "react";
+import { withRouter } from "react-router-dom";
 import Helmet from "react-helmet";
 
 import Characters from "../../data/characters.json";
@@ -36,7 +36,7 @@ const CharacterProfile = ( props ) => {
     //       character.url_id.toLowerCase() === name.toLowerCase()
     //   ),
     // };
-  }, [name])
+  }, [name, saga])
 
   // console.log('character profile', character);
   // console.log('character state', character);
