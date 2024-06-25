@@ -9,13 +9,34 @@
               inset -0px -2px 3px 0 rgba(0,0,0,0.3);
 }
 
+.attack-stat .stat-bar { animation-name: statBarAnimationAttack; }
+.defense-stat .stat-bar { animation-name: statBarAnimationDefense; }
+.speed-stat .stat-bar { animation-name: statBarAnimationSpeed; }
+.ki-stat .stat-bar { animation-name: statBarAnimationKi; }
+
 .stat-bar-container
 {
   box-shadow: inset 0px -2px 1px 0 rgba(0,0,0,0.5);
 }
 
-@keyframes statBarAnimation {
+@keyframes statBarAnimation{
   0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationAttack {
+  0% { transform: scaleX(var(--startingBarPositionAttack)); }
+  100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationDefense {
+  0% { transform: scaleX(var(--startingBarPositionDefense)); }
+  100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationSpeed {
+  0% { transform: scaleX(var(--startingBarPositionSpeed)); }
+  100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationKi {
+  0% { transform: scaleX(var(--startingBarPositionKi)); }
   100% { transform: scaleX(1); }
 }
 
@@ -57,11 +78,11 @@
   margin-top: -5px;
 }
 .scouter-container {
-  width: 10px;
+  width: 100px;
 }
 .power-level-value {
   counter-reset: num var(--num);
-  --num: 0;
+  --num: var(--power-level-start-value);
   font: 800 18px system-ui;
   line-height: 1;
   color: yellow;
@@ -87,7 +108,7 @@
 
 @keyframes counter {
   0% {
-    --num: 0;
+    --num: var(--power-level-start-value);
   }
   100% {
     --num: var(--power-level-value);

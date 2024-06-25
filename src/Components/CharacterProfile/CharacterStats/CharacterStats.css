@@ -1,0 +1,47 @@
+.bio-power-up {
+  position: absolute;
+  z-index: 5;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+  opacity: 0.8;
+  transition: font-size 0.3s;
+
+  top: 0px;
+}
+.bio-power-up:hover {
+  font-size: 25px;
+  opacity: 1;
+}
+.power-up-ss {
+  color: yellow;
+  right: 5px;
+}
+.power-up-ultimate {
+  color: white;
+  right: 30px;
+}
+.power-up-majin {
+  color: purple;
+  right: 30px;
+}
+
+.bio-power-down {
+  position: absolute;
+  z-index: 5;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 800;
+  opacity: 0.8;
+  transition: font-size 0.3s;
+
+  bottom: 2px;
+}
+.bio-power-down:hover {
+  font-size: 25px;
+  opacity: 1;
+}
+.power-down-base {
+  color: white;
+  right: 5px;
+}

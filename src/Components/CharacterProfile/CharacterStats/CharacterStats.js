@@ -1,25 +1,34 @@
 import React from "react";
+import { useLocation } from 'react-router-dom'
 
 import './CharacterStats.css'
 import StatBar from "./StatBar/StatBar.js";
 
 const CharacterStats = ({ character }) => {  
+  const location = useLocation();
 
-  const statContainer = (statName, stat) => (
+  console.log('location', location);
+
+  if (location.state) {
+    const {changeCharacterStats} = location.state;
+    console.log(' changeCharacterStats', changeCharacterStats);
+  } 
+
+  const statContainer = (statName, stat, statClass) => (
     <div className="flex">
-    <div className="block w-24 px-1 py-3 text-right">
-      <p>{statName}</p>
-    </div>
-    <div className="w-full block py-2 pr-5 sm:pr-8 flex-auto">
-      <StatBar statName={statName} stat={stat} />
-    </div>
+      <div className="block w-24 px-1 py-3 text-right">
+        <p>{statName}</p>
+      </div>
+      <div className={`w-full block py-2 pr-5 sm:pr-8 flex-auto ${statClass}`}>
+        <StatBar statName={statName} stat={stat} />
+      </div>
     </div>
   );
 
-  const attackStat     = statContainer("Attack", character.stats.attack);
-  const defenseStat    = statContainer("Defense", character.stats.defense);
-  const speedStat      = statContainer("Speed", character.stats.speed);
-  const kiStat         = statContainer("Ki Usage", character.stats.ki);
+  const attackStat  = statContainer("Attack", character.stats.attack, "attack-stat");
+  const defenseStat = statContainer("Defense", character.stats.defense, "defense-stat");
+  const speedStat   = statContainer("Speed", character.stats.speed, "speed-stat");
+  const kiStat      = statContainer("Ki Usage", character.stats.ki, "ki-stat");
 
   return  (
     <div className="border-2 lf2-border-blue lf2-bg-blue rounded">

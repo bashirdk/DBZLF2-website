@@ -182,7 +182,8 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 68, "direction": 1, "type": "ss"
         }
       ]
     },"combos": {
@@ -262,11 +263,13 @@
       "transformations": [
         {
           "name": "Super Vegeta",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 69, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 67, "direction": 0, "type": "base"
         }
       ]
     },
@@ -348,7 +351,8 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 67, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -404,7 +408,8 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 83, "direction": 1, "type": "ss"
         }
       ]
     },"combos": {
@@ -492,11 +497,13 @@
       "transformations": [
         {
           "name": "Ultra Trunks",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 84, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 82, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -577,7 +584,8 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 82, "direction": 0, "type": "base"
         }
       ]
     }, "combos": {
@@ -586,13 +594,12 @@
       ],
       "basic": [
         {"name": "Burning Barrage", "input": "Super Punch + J" },
-        {"name": "Burning Barrage + Gigantic Spike and Drag", "input": "Super Punch J + Hold A"},
-        {"name": "Gigantic Fury + Burning Barrage", "input": "Grabbing Enemy + D v J Hold J + J" },
-        {"name": "Gigantic Fury + Burning Barrage + Gigantic Spike and Drag + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J + J + Hold A + Hold J", "ultimate": true}
-
+        {"name": "Burning Barrage + Gigantic Spike and Drag", "input": "Super Punch + J + Hold A"}
       ],
       "special": [
-        {"name": "Gigantic Fury + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J"}
+        {"name": "Gigantic Fury + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J"},
+        {"name": "Gigantic Fury + Burning Barrage", "input": "Grabbing Enemy + D v J Hold J + J" },
+        {"name": "Gigantic Fury + Burning Barrage + Gigantic Spike and Drag + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J + J + Hold A + Hold J", "ultimate": true}
       ],
       "counter": []
     }
@@ -660,11 +667,13 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 71, "direction": 1, "type": "ss"
         },
         {
           "name": "Babadi's Mind Control (Majin Vegeta)",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 73, "direction": 1, "type": "majin"
         }
       ]
     },"combos": {
@@ -732,11 +741,13 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 72, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 70, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -797,7 +808,8 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 70, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -948,7 +960,8 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 75, "direction": 1, "type": "ss"
         }
       ]
     },"combos": {
@@ -969,9 +982,9 @@
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 17276,
-      "attack": 3.38,
-      "defense": 5.07,
-      "speed": 3.38,
+      "attack": 3.39,
+      "defense": 5.09,
+      "speed": 3.39,
       "ki": 105
     },
     "moves": {
@@ -1048,11 +1061,13 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 76, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 74, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -1145,11 +1160,13 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 77, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 74, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -1247,7 +1264,8 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 74, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -1304,11 +1322,13 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 79, "direction": 1, "type": "ss"
         },
         {
           "name": "Ultimate Gohan",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 81, "direction": 1, "type": "ultimate"
         }
       ]
     },"combos": {
@@ -1373,11 +1393,13 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 80, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 78, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -1446,7 +1468,8 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 78, "direction": 0, "type": "base"
         }
       ]
     },"combos": {
@@ -1622,7 +1645,8 @@
       "transformations": [
         {
           "name": "Super Vegito",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 24, "direction": 1, "type": "ss"
         }
       ]
     },"combos": {
@@ -1704,7 +1728,8 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 23, "direction": 0, "type": "base"
         }
       ]
     }, "combos": {
