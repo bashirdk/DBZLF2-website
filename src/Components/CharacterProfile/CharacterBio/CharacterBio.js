@@ -64,9 +64,38 @@ const CharacterBio = ({ character }) => {
     }
   }, [])
 
+  const powerLevelContainer = (statName, stat) => (
+    <div className="flex scouter-full-container">
+    <div className="scouter-model-back">
+      <div className="block w-24 px-1 py-3 ml-3 text-right scouter-model">
+        <p>{statName}</p>
+      </div>
+    </div>
+      <div className="scouter-container">
+      <div className="w-full block py-2 mr-6 sm:pr-8 flex-auto text-4xl power-level-value">
+        {/* {
+          character.stats.power_level ?
+          character.stats.power_level.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+          :
+          Math.round(stat.attack * stat.defense * 1000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+        } */} <br></br>
+        <p>FIGHT</p>
+      </div>
+      </div>
+    </div> 
+  )
+
+  const pl_digits = character.stats.power_level.toString().length;
+  document.documentElement.style.setProperty('--power-level-padding', `-${pl_digits * 2 + (pl_digits/2 * 10)}px`)
+  document.documentElement.style.setProperty('--power-level-anim-time', `${pl_digits/2}s`); // time of animation = number of digits of power level / 2
+  document.documentElement.style.setProperty('--power-level-value', character.stats.power_level); // set the css content value of power level to character power level
+
+  const powerLevelStat = powerLevelContainer("Power Level", character.stats);
+
   return (
     <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5">
       <div className="relative">
+      {powerLevelStat}
         <img src={require(`../../../images/profile/${character.saga.toLowerCase()}_bg.png`)}
           alt={`background for ${character.saga.toLowerCase()} saga`}
           className="w-full"

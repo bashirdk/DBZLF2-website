@@ -68,7 +68,7 @@
         [4, 2], [2, 1], [1, 3]
       ],
       "basic": [
-        [53], { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "AAA AJ A + D v J" }, [1, 52]
+        [53], { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
       ],
       "special": [
         [1, 3],[2, 1, 3],[4, 2, 1, 3]
@@ -409,7 +409,9 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -460,7 +462,8 @@
         },
         {
           "name": "Ultra Rapid Punches",
-          "input": "D v J + D ^ A when catching enemy"
+          "input": "D v J + D ^ A when catching enemy",
+          "added": "v0.3.2"
         },
         {
           "name": "Another End",
@@ -470,7 +473,7 @@
         {
           "name": "Dragonthrow",
           "input": "Grab + J Hold J to use Heat Dome Attack",
-          "added": "v0.2.8"
+          "added": "v0.3.2"
         },
         {
           "name": "Heat Dome Attack",
@@ -498,7 +501,12 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Burn Break", "input": "Super Punch + J"},
+        {"name": "Burning Breaker", "input": "Super Punch + J A"},
+        {"name": "Burning Another Broken End", "input": "Super Punch + J A A"},
+        {"name": "Ultra Rapid Burning Breaker", "input": "Super Punch + J A J"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -543,19 +551,19 @@
           "input": "D ^ A Hold A to increase power (3 levels)"
         },
         {
-          "name": "Grab",
+          "name": "Grab", "combo_id": 1,
           "input": "D ^ J"
         },
         {
-          "name": "Eraser Blow",
+          "name": "Eraser Blow", "combo_id": 2,
           "input": "Grabbing Enemy + J"
         },
         {
-          "name": "Gigantic Spike and Drag",
+          "name": "Gigantic Spike and Drag", "combo_id": 3,
           "input": "Grabbing Enemy + D > J"
         }, 
         {
-          "name": "Gigantic Fury",
+          "name": "Gigantic Fury", "combo_id": 4,
           "input": "Grabbing Enemy + D v J Hold A to extend attack"
         }
       ],
@@ -573,11 +581,18 @@
         }
       ]
     }, "combos": {
-      "links": [ {"name": "Gigantic Spike and Drag -> Eraser Blow", "input": "Grabbing Enemy + D > J + Hold J"}
+      "links": [ [1,2], [1,3], [1,4],
+        {"name": "Gigantic Spike and Drag -> Eraser Blow", "input": "Grabbing Enemy + D > J + Hold J"}
       ],
       "basic": [
+        {"name": "Burning Barrage", "input": "Super Punch + J" },
+        {"name": "Burning Barrage + Gigantic Spike and Drag", "input": "Super Punch J + Hold A"},
+        {"name": "Gigantic Fury + Burning Barrage", "input": "Grabbing Enemy + D v J Hold J + J" },
+        {"name": "Gigantic Fury + Burning Barrage + Gigantic Spike and Drag + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J + J + Hold A + Hold J", "ultimate": true}
+
       ],
       "special": [
+        {"name": "Gigantic Fury + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J"}
       ],
       "counter": []
     }
@@ -860,7 +875,11 @@
       "transformations": []
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J A"},
+        {"name": "Basic Combo Finisher", "input": "Super Punch + J A J A"},
+        {"name": "Final Flash Combo", "input": "Super Punch + J + D < J"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -1693,16 +1712,16 @@
         [2, 1], [2, 3]
       ],
       "basic": [ 
-        {"name": "Basic Combo + Run Attack", "input": "AAAA A + >> A" },
-        {"name": "Basic Combo + Dash Attack", "input": "AAAA A + >> JA" },
-        {"name": "Kamehameha Combo Finisher", "input": "AAAA A + D < J" },
-        {"name": "Big Bang Attack Combo Finisher", "input": "AAAA A + D v A" },
-        {"name": "Spirit Sword Combo Finisher", "input": "AAAA A + D ^ A" },
-        {"name": "Basic Combo + Neck Snapper + Explosive Blast", "input": "AAAA A A A A"},
-        {"name": "Cocky Kicks", "input": "AAA AJ" },
-        {"name": "Cocky Kicks + Sweeper", "input": "AAA AJ J"},
-        {"name": "Cocky Kicks + Sweeper + Spirit Smash", "input": "AAA AJ J A"},
-        {"name": "Cocky Kicks + Sweeper + Neck Snapper + Explosive Blast", "input": "AAA AJ J J A A"}
+        {"name": "Basic Combo + Run Attack", "input": "Super Punch + A + >> A" },
+        {"name": "Basic Combo + Dash Attack", "input": "Super Punch + A + >> JA" },
+        {"name": "Kamehameha Combo Finisher", "input": "Super Punch + A + D < J" },
+        {"name": "Big Bang Attack Combo Finisher", "input": "Super Punch + A + D v A" },
+        {"name": "Spirit Sword Combo Finisher", "input": "Super Punch + A + D ^ A" },
+        {"name": "Basic Combo + Neck Snapper + Explosive Blast", "input": "Super Punch + A A A A"},
+        {"name": "Cocky Kicks", "input": "Super Punch + J" },
+        {"name": "Cocky Kicks + Sweeper", "input": "Super Punch + J J"},
+        {"name": "Cocky Kicks + Sweeper + Spirit Smash", "input": "Super Punch + J J A"},
+        {"name": "Cocky Kicks + Sweeper + Neck Snapper + Explosive Blast", "input": "Super Punch + J J J A A"}
       ],
       "special": [
       ],

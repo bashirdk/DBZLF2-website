@@ -37,9 +37,9 @@ const ComboList = ({ character }) => {
     }, {
       name: "Dash Attack", input: ">> JA", combo_id: 52
     }, {
-      name: "Basic Combo", input: "AAA AJ", combo_id: 53
+      name: "Basic Combo", input: "Super Punch + J", combo_id: 53
     }, {
-      name: "Basic Combo", input: "AAA AJ A", combo_id: 54
+      name: "Basic Combo", input: "Super Punch + J A", combo_id: 54
     }
   ]}
 
@@ -89,11 +89,18 @@ const ComboList = ({ character }) => {
       )
     } else {
       const mapMoves = input.map((mappedMove) => {
-        console.log('mappedMove', mappedMove);
+        if (mappedMove.ultimate)
+        {
+          var ultimateMove = (
+            <span className="inline-block text-xs rounded px-2 py-1 bg-red-dark font-bold text-white my-0 md:mt-2 lg:my-0">
+              ULTIMATE
+            </span>
+          )
+        }
         return(
         <div className={comboContainerStyle}>
           <div className={comboNameStyle}> 
-            {loopCombo(mappedMove, 'name', connector)}
+            {loopCombo(mappedMove, 'name', connector)} {ultimateMove}
           </div>
           <div className={comboInputStyle}> 
           {loopCombo(mappedMove, 'input', connector)}

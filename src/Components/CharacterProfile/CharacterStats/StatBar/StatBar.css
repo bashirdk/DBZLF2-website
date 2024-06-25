@@ -26,12 +26,17 @@
   inherits: false;
 }
 
+.scouter-full-container {
+  position: absolute;
+  left: -25px;
+  top: 2px;
+}
 .scouter-model-back {
   background: rgb(180,180,180);
   margin-left: 10px;
   border-radius: 30px 10px 10px 50px;
-  height: 120px;
-  border-right: 10px solid rgb(80, 80, 80);
+  height: 75px;
+  border-right: 6px solid rgb(80, 80, 80);
   border-left: 3px solid rgb(140, 140, 140);
   margin-right: -10px;
 }
@@ -41,10 +46,10 @@
   border-radius: 20px 0 0 20px;
   border-left: 3px solid red;
   height: 100%;
-  font: 800 16px system-ui;
-  width: 70px;
-  height: 50px;
-  margin-top: 20px;
+  font: 800 10px system-ui;
+  width: 55px;
+  height: 40px;
+  margin-top: 8px;
   line-height: 1;
   box-shadow: -2px 5px 5px rgb(0,0,0,0.5);
 }
@@ -52,12 +57,12 @@
   margin-top: -5px;
 }
 .scouter-container {
-  width: 150px;
+  width: 10px;
 }
 .power-level-value {
   counter-reset: num var(--num);
   --num: 0;
-  font: 800 32px system-ui;
+  font: 800 18px system-ui;
   line-height: 1;
   color: yellow;
   animation-name: counter;
@@ -65,16 +70,18 @@
   animation-delay: 0.2s;
   transition: --num 5s ease-in-out;
   animation-fill-mode: forwards;
-  background-color: green;
-  border-radius: 0 10px 20px 40px;
-  text-align: center;
-  padding-left: 20px;
-  margin-top: 20px;
+  background-color: rgba(0, 120, 0, 0.5);
+  border-radius: 0 10px 20px 30px;
+  text-align: left;
+  padding-left: 60px;
+  margin-top: 8px;
+  margin-left: 4px;
 }
 .power-level-value p {
-  margin-left: 10px;
+  margin-left: -35px;
 }
 .power-level-value::before {
+  margin-left: var(--power-level-padding);
   content: counter(num);
 }
 
