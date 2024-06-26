@@ -36,7 +36,6 @@ const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not
 
 const characterKey = window.location.pathname;
 
-
 const App = () => (
   <Router>
     <>

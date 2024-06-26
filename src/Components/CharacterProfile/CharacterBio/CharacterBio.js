@@ -48,6 +48,13 @@ const CharacterBio = ({ character }) => {
     }
   }
 
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
   function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -69,14 +76,18 @@ const CharacterBio = ({ character }) => {
     console.log("window.location.href", window.location.pathname);
     if (getCookie('previousUrl') !== window.location.pathname) {
       const aura = document.getElementById('ss-aura-flash');
+      console.log('aura', aura);
       if (getCookie('previousUrl') === '/characters') {
-
+        console.log('previous page was CHARS LIST');
       } else {
+        console.log('previous page was another character profile');
         aura.classList.add('bio-ss-aura');
         aura.classList.add('bio-ss-aura-flash');
       }
       
-      document.cookie = `previousUrl=${window.location.pathname}`;
+      // document.cookie = `previousUrl=${window.location.pathname}`;
+      setCookie('previousUrl', window.location.pathname, 1);
+      console.log('get cookie', getCookie('previousUrl'));
     }
 
     window.onscroll = function() {stickyScroll()};
@@ -136,6 +147,7 @@ const CharacterBio = ({ character }) => {
   const pl_digits = character.stats.power_level.toString().length;
   document.documentElement.style.setProperty('--power-level-padding', `-${pl_digits * 2 + (pl_digits/2 * 10)}px`)
   document.documentElement.style.setProperty('--power-level-anim-time', `${pl_digits/2}s`); // time of animation = number of digits of power level / 2
+  document.documentElement.style.setProperty('--stat-bar-anim-time', `${pl_digits/2 + 0.4}s`); // time of animation = number of digits of power level / 2 + add animation delay
   document.documentElement.style.setProperty('--power-level-start-value', startingPowerLevel);
   document.documentElement.style.setProperty('--power-level-value', character.stats.power_level); // set the css content value of power level to character power level
 

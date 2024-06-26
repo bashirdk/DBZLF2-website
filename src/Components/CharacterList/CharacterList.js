@@ -6,9 +6,16 @@ import Helmet from "react-helmet";
 import CharacterGroup from "./CharacterGroup";
 import Characters from "../../data/characters.json";
 
+function setCookie(cname, cvalue, exdays) {
+	const d = new Date();
+	d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	let expires = "expires="+ d.toUTCString();
+	document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
 class CharacterList extends Component {
 	constructor(props) {
-		document.cookie = `previousUrl=${window.location.pathname}`;
+		setCookie('previousUrl', window.location.pathname, 1);
 
 		super(props);
 
