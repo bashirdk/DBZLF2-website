@@ -2,7 +2,7 @@
 {
   transform: scaleX(0);
   animation-name: statBarAnimation;
-  animation-duration: 1s;
+  animation-duration: var(--power-level-anim-time);
   animation-fill-mode: forwards;
   transform-origin: left;
   box-shadow: inset 0px 2px 3px 0 rgba(255,255,255,0.6),
