@@ -188,7 +188,9 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -278,10 +280,16 @@
         [2, 1]
       ],
       "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"},
+        {"name": "Ultimate Big Bang Combo", "input": "Super Punch + J + A + D v A", "ultimate": true}
       ],
       "special": [
+        [2, 1]
       ],
-      "counter": []
+      "counter": [
+        {"name": "Amazing Impact + Aerial Shrafe", "input": "Block attack + J + A"},
+        {"name": "Amazing Impact + Aerial Shrafe + Big Bang Attack", "input": "Block attack + J + A + D v A", "ultimate": true}
+      ]
     }
   },
   {
@@ -357,9 +365,21 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
-      "special": [],
-      "counter": []
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"},
+        {"name": "Basic Combo + Saiyan Energy Attack", "input": "Super Punch + J + D v A"},
+        {"name": "Basic Combo + Full Power Final Flash", "input": "Super Punch + J + D ^ J", "ultimate": true}
+      ],
+      "special": [
+        {"name": "Atomic Blast + Full Power Final Flash", "input": "AAA + D^A + J + D ^ J", "ultimate": true}
+      ],
+      "counter": [
+        {"name": "Special Counter Attack + Run Attack", "input": "Block attack + J + >> A"},
+        {"name": "Special Counter Attack + Dash Attack", "input": "Block attack + J + >> JA"},
+        {"name": "Special Counter Attack Finisher", "input": "Block attack + J + A"},
+        {"name": "Saiyan Energy Attack Counter Attack", "input": "Block attack + J + D v A" },
+        {"name": "Full Power Final Flash Counter Attack", "input": "Block attack + J + D ^ J", "ultimate": true}
+      ]
     } 
   },{
     "id": 82,
