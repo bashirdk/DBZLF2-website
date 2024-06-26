@@ -8,6 +8,8 @@ import Characters from "../../data/characters.json";
 
 class CharacterList extends Component {
 	constructor(props) {
+		document.cookie = `previousUrl=${window.location.pathname}`;
+
 		super(props);
 
 		const groups = ["Saiyan", "Namek", "Android", "Buu"].map((saga) => ({

@@ -48,16 +48,43 @@ const CharacterBio = ({ character }) => {
     }
   }
 
+  function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+
   React.useEffect(() => {
-    window.onscroll = function() {myFunction()};
+    console.log("getCookie('previousUrl')", getCookie('previousUrl'));
+    console.log("window.location.href", window.location.pathname);
+    if (getCookie('previousUrl') !== window.location.pathname) {
+      const aura = document.getElementById('ss-aura-flash');
+      if (getCookie('previousUrl') === '/characters') {
+
+      } else {
+        aura.classList.add('bio-ss-aura');
+        aura.classList.add('bio-ss-aura-flash');
+      }
+      
+      document.cookie = `previousUrl=${window.location.pathname}`;
+    }
+
+    window.onscroll = function() {stickyScroll()};
 
     var header = document.getElementById("char-bio-section");
     var sticky = 84;
-  
-    console.log('header', header)
-    console.log('sticky', sticky);
-  
-    function myFunction() {
+
+    function stickyScroll() {
       // console.log('window.pageYOffset', window.pageYOffset);
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky-bio");
@@ -158,6 +185,11 @@ const CharacterBio = ({ character }) => {
         <img src={require(`../../../images/profile/${character.saga.toLowerCase()}_bg.png`)}
           alt={`background for ${character.saga.toLowerCase()} saga`}
           className="w-full"
+        />
+        <img src={require(`../../../images/profile/superauraflash.png`)}
+          alt={`background for ${character.saga.toLowerCase()} saga`}
+          className={`w-full`}
+          id="ss-aura-flash"
         />
         <img src={require(`../../../images/profile/s.png`)}
           alt={`shadow`}
