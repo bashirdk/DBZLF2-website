@@ -2,19 +2,115 @@
 {
   transform: scaleX(0);
   animation-name: statBarAnimation;
-  animation-duration: 1s;
+  animation-duration: var(--stat-bar-anim-time);
   animation-fill-mode: forwards;
   transform-origin: left;
   box-shadow: inset 0px 2px 3px 0 rgba(255,255,255,0.6),
               inset -0px -2px 3px 0 rgba(0,0,0,0.3);
 }
 
+.attack-stat .stat-bar { animation-name: statBarAnimationAttack; }
+.defense-stat .stat-bar { animation-name: statBarAnimationDefense; }
+.speed-stat .stat-bar { animation-name: statBarAnimationSpeed; }
+.ki-stat .stat-bar { animation-name: statBarAnimationKi; }
+
 .stat-bar-container
 {
   box-shadow: inset 0px -2px 1px 0 rgba(0,0,0,0.5);
 }
 
-@keyframes statBarAnimation {
+@keyframes statBarAnimation{
   0% { transform: scaleX(0); }
   100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationAttack {
+  0% { transform: scaleX(var(--startingBarPositionAttack)); }
+  100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationDefense {
+  0% { transform: scaleX(var(--startingBarPositionDefense)); }
+  100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationSpeed {
+  0% { transform: scaleX(var(--startingBarPositionSpeed)); }
+  100% { transform: scaleX(1); }
+}
+@keyframes statBarAnimationKi {
+  0% { transform: scaleX(var(--startingBarPositionKi)); }
+  100% { transform: scaleX(1); }
+}
+
+
+@property --num {
+  syntax: '<integer>';
+  initial-value: 0;
+  inherits: false;
+}
+
+.scouter-full-container {
+  position: absolute;
+  left: -25px;
+  top: 2px;
+}
+.scouter-model-back {
+  background: rgb(180,180,180);
+  margin-left: 10px;
+  border-radius: 30px 10px 10px 50px;
+  height: 75px;
+  border-right: 6px solid rgb(80, 80, 80);
+  border-left: 3px solid rgb(140, 140, 140);
+  margin-right: -10px;
+}
+.scouter-model{
+  background: rgb(220,220,220);
+  color: black;
+  border-radius: 20px 0 0 20px;
+  border-left: 3px solid red;
+  height: 100%;
+  font: 800 10px system-ui;
+  width: 55px;
+  height: 40px;
+  margin-top: 8px;
+  line-height: 1;
+  box-shadow: -2px 5px 5px rgb(0,0,0,0.5);
+}
+.scouter-model p {
+  margin-top: -5px;
+}
+.scouter-container {
+  width: 100px;
+}
+.power-level-value {
+  counter-reset: num var(--num);
+  --num: var(--power-level-start-value);
+  font: 800 18px system-ui;
+  line-height: 1;
+  color: yellow;
+  animation-name: counter;
+  animation-duration: var(--power-level-anim-time);
+  animation-delay: 0.2s;
+  transition: --num 5s ease-in-out;
+  animation-fill-mode: forwards;
+  background-color: rgba(0, 120, 0, 0.5);
+  border-radius: 0 10px 20px 30px;
+  text-align: left;
+  padding-left: 60px;
+  margin-top: 8px;
+  margin-left: 4px;
+}
+.power-level-value p {
+  margin-left: -35px;
+}
+.power-level-value::before {
+  margin-left: var(--power-level-padding);
+  content: counter(num);
+}
+
+@keyframes counter {
+  0% {
+    --num: var(--power-level-start-value);
+  }
+  100% {
+    --num: var(--power-level-value);
+  }
 }

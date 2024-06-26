@@ -43,10 +43,12 @@ class BackgroundProfile extends Component {
               <tr>
                 <th>Width</th>
                 <th>Z Width</th>
+                <th>Released </th>
               </tr>
               <tr>
                 <td>{this.state.background.width}</td>
                 <td>{this.state.background.zwidth}</td>
+                <td>{this.state.background.release} </td>
               </tr>
             </table>
           </section>

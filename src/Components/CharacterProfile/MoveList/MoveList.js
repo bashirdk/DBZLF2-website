@@ -23,6 +23,9 @@ const MoveList = ({ character }) => {
       )
     } else {
       const mapMoves = input.map((mappedMove) => {
+        let moveRelease = "Added: ";
+        moveRelease = mappedMove.added ? moveRelease + mappedMove.added : moveRelease + character.release;
+        moveRelease = mappedMove.updated ? moveRelease + ", Updated: " + mappedMove.updated : moveRelease;
         if (mappedMove.ultimate)
         {
           var ultimateMove = (
@@ -33,7 +36,7 @@ const MoveList = ({ character }) => {
         }
         return(
         <div className={moveContainerStyle}>
-          <div className={moveNameStyle}> 
+          <div className={moveNameStyle} title={moveRelease}> 
             {mappedMove.name}  {ultimateMove}
           </div>
           <div className={moveInputStyle}> 

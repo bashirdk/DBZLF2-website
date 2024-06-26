@@ -1,6 +1,7 @@
 [
   {
     "id": 66,
+    "release": "v0.1.7",
     "url_id": "vegeta",
     "name": "Vegeta",
     "saga": "Namek",
@@ -8,6 +9,7 @@
     "type": { "hero": false, "villain": false, "other": true },
     "moveset_video": "qkrOFbKV9wM",
     "stats": {
+      "power_level": 4860,
       "attack": 1.8,
       "defense": 2.7,
       "speed": 1.8,
@@ -27,71 +29,30 @@
       "team": [],
       "special": [
         {
-          "name": "Super Energy Wave Volley",
+          "name": "Super Energy Wave Volley", 
           "input": "D > AJ"
         },
         {
-          "name": "Dirty Fireworks",
-          "input": "D ^ A A"
+          "name": "Dirty Fireworks", "combo_id": 1,
+          "input": "D ^ A A",
+          "updated": "v0.2.3"
         },
         {
-          "name": "Genocide Breaker",
-          "input": "D ^ JA"
+          "name": "Genocide Breaker", "combo_id": 2,
+          "input": "D ^ JA",
+          "updated": "v0.2.3"
         },
         {
           "name": "Final Crash",
           "input": "D > J"
         },
         {
-          "name": "Final Burst Cannon",
+          "name": "Final Burst Cannon", "combo_id": 3,
           "input": "D v J"
         },
         {
-          "name": "Final Galick Cannon",
+          "name": "Final Galick Cannon", "combo_id": 4,
           "input": "Grabbing Enemy + D ^ A"
-        }
-      ],
-      "combos": [
-        {
-          "name": "Dirty Fireworks + Dash Attack",
-          "input": "D^AA >>A"
-        },
-        {
-        "name": "Dirty Fireworks + Final Burst Cannon",
-        "input": "D^AA DvJ"
-        },
-        {
-          "name": "Dirty Fireworks + Finish Blaster + Final Burst Cannon",
-          "input": "D^AA DvA DvJ"
-          },
-        {
-          "name": "Genocide Breaker + Dirty Fireworks",
-          "input": "D^JA D^AA"
-        }, 
-        {
-          "name": "Genocide Breaker + Dirty Fireworks + Final Burst Cannon",
-          "input": "D^JA D^AA DvJ"
-        },
-        {
-          "name": "Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon",
-          "input": "D^JA D^AA DvA DvJ"
-        },
-        {
-          "name": "Final Galick Cannon + Genocide Breaker",
-          "input": "Grabbing Enemy + D^A D^J"
-        },
-        {
-          "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks",
-          "input": "Grabbing Enemy + D^A D^J D^AA"
-        },
-        {
-          "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks + Final Burst Cannon",
-          "input": "Grabbing Enemy + D^A D^J D^AA DvJ"
-        },
-        {
-          "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon",
-          "input": "Grabbing Enemy + D^A D^J D^AA DvA DvJ",
-          "ultimate": true
         }
       ],
       "counter": [
@@ -101,16 +62,30 @@
         }
       ],
       "transformations": []
+    },
+    "combos": {
+      "links": [
+        [4, 2], [2, 1], [1, 3]
+      ],
+      "basic": [
+        [53], { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
+      ],
+      "special": [
+        [1, 3],[2, 1, 3],[4, 2, 1, 3]
+      ],
+      "counter": []
     }
   },
   {
     "id": 85,
+    "release": "TBD",
     "url_id": "goku",
     "name": "Goku",
     "saga": "Namek",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 5714,
       "attack": 1.95,
       "defense": 2.93,
       "speed": 1.95,
@@ -120,19 +95,25 @@
       "basic": [],
       "team": [],
       "special": [],
-      "combos": [],
       "counter": [],
       "transformations": []
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    }    
   },
   {
     "id": 86,
+    "release": "TBD",
     "url_id": "ss-goku",
     "name": "Super Saiyan Goku",
     "saga": "Namek",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 11417,
       "attack": 2.76,
       "defense": 4.14,
       "speed": 2.76,
@@ -142,13 +123,18 @@
       "basic": [],
       "team": [],
       "special": [],
-      "combos": [],
       "counter": [],
       "transformations": []
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 67,
+    "release": "v0.1.3",
     "url_id": "vegeta",
     "name": "Vegeta",
     "saga": "Android",
@@ -156,6 +142,7 @@
     "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 6945,
       "attack": 2.15,
       "defense": 3.23,
       "speed": 2.15,
@@ -176,13 +163,15 @@
         {
           "name": "Super Energy Wave Volley",
           "input": "D > AJ"
-        },
-        {
+        },{
+          "name": "Big Bang Attack",
+          "input": "D v A",
+          "added": "v0.2.8"
+        },{
           "name": "Maximum Flasher",
           "input": "D > J"
         }
       ],
-      "combos": [],
       "team": [],
       "counter": [
         {
@@ -193,13 +182,22 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 68, "direction": 1, "type": "ss"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"}
+      ],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 68,
+    "release": "v0.1.3",
     "url_id": "ss-vegeta",
     "name": "Super Saiyan Vegeta",
     "saga": "Android",
@@ -207,9 +205,10 @@
     "moveset_video": "05nkT3ZRiQE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "attack": 3.03,
-      "defense": 4.55,
-      "speed": 3.03,
+      "power_level": 13865,
+      "attack": 3.04,
+      "defense": 4.56,
+      "speed": 3.04,
       "ki": 125
     },
     "moves": {
@@ -227,30 +226,31 @@
         {
           "name": "Super Energy Wave Volley",
           "input": "D > AJ"
-        },
-        {
-          "name": "Big Bang Attack",
+        },{
+          "name": "Big Bang Attack", "combo_id": 1,
           "input": "D v A"
-        },
-        {
+        },{
+          "name": "Aerial Shrafe", "combo_id": 2,
+          "input": "D v J"
+        },{
           "name": "Final Flash",
           "input": "D > J"
-        },
-        {
+        },{
+          "name": "Super Final Flash",
+          "input": "D > JA",
+          "added": "v0.2.8"
+        },{
           "name": "Photon Bomber",
           "input": "D ^ A"
-        },
-        {
+        },{
           "name": "Maximum Flasher",
           "input": "D ^ J"
-        },
-        {
+        },{
           "name": "Big Bang Attack Combo",
           "input": "Super Punch + J A, D v A",
           "ultimate": "yes"
         }
       ],
-      "combos": [],
       "team": [],
       "counter": [
         {
@@ -258,24 +258,43 @@
           "input": "Block attack + A"
         },
         {
-          "name": "Amazing Impact",
+          "name": "Amazing Impact", "combo_id": 3,
           "input": "Block attack + J"
         }
       ],
       "transformations": [
         {
           "name": "Super Vegeta",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 69, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 67, "direction": 0, "type": "base"
         }
+      ]
+    },
+    "combos": {
+      "links": [
+        [2, 1]
+      ],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"},
+        {"name": "Ultimate Big Bang Combo", "input": "Super Punch + J + A + D v A", "ultimate": true}
+      ],
+      "special": [
+        [2, 1]
+      ],
+      "counter": [
+        {"name": "Amazing Impact + Aerial Shrafe", "input": "Block attack + J + A"},
+        {"name": "Amazing Impact + Aerial Shrafe + Big Bang Attack", "input": "Block attack + J + A + D v A", "ultimate": true}
       ]
     }
   },
   {
     "id": 69,
+    "release": "v0.1.3",
     "url_id": "super-vegeta",
     "name": "Super Vegeta",
     "saga": "Android",
@@ -283,6 +302,7 @@
     "moveset_video": "WZh2Hl-W2_E",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 16654,
       "attack": 3.3,
       "defense": 5,
       "speed": 3.3,
@@ -303,24 +323,23 @@
         {
           "name": "Super Energy Wave Volley",
           "input": "D > AJ"
-        },
-        {
+        },{
           "name": "Final Flash",
           "input": "D > J"
-        },
-        {
+        },{
+          "name": "Super Final Flash",
+          "input": "D > JA",
+          "added": "v0.2.8"
+        },{
           "name": "Big Bang Attack",
           "input": "D v A"
-        },
-        {
+        },{
           "name": "Atomic Blast",
           "input": "D ^ A"
-        },
-        {
+        },{
           "name": "Saiyan Energy Attack",
           "input": "Super Punch + J, D v A"
-        },
-        {
+        },{
           "name": "Full Power Final Flash",
           "input": "Super Punch + J, D ^ J",
           "ultimate": "yes"
@@ -340,12 +359,31 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 67, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"},
+        {"name": "Basic Combo + Saiyan Energy Attack", "input": "Super Punch + J + D v A"},
+        {"name": "Basic Combo + Full Power Final Flash", "input": "Super Punch + J + D ^ J", "ultimate": true}
+      ],
+      "special": [
+        {"name": "Atomic Blast + Full Power Final Flash", "input": "AAA + D^A + J + D ^ J", "ultimate": true}
+      ],
+      "counter": [
+        {"name": "Special Counter Attack + Run Attack", "input": "Block attack + J + >> A"},
+        {"name": "Special Counter Attack + Dash Attack", "input": "Block attack + J + >> JA"},
+        {"name": "Special Counter Attack Finisher", "input": "Block attack + J + A"},
+        {"name": "Saiyan Energy Attack Counter Attack", "input": "Block attack + J + D v A" },
+        {"name": "Full Power Final Flash Counter Attack", "input": "Block attack + J + D ^ J", "ultimate": true}
+      ]
+    } 
   },{
     "id": 82,
+    "release": "v0.2.8",
     "url_id": "trunks-a",
     "name": "Trunks",
     "saga": "Android",
@@ -353,6 +391,7 @@
     "moveset_video": "d2U7HP0-E58",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 6742,
       "attack": 2.12,
       "defense": 3.18,
       "speed": 2.12,
@@ -389,12 +428,21 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 83, "direction": 1, "type": "ss"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"}
+      ],
+      "special": [],
+      "counter": []
+    } 
   },{
     "id": 83,
+    "release": "v0.2.9",
     "url_id": "ss-trunks-a",
     "name": "Super Saiyan Trunks",
     "saga": "Android",
@@ -402,6 +450,7 @@
     "moveset_video": "CsvlsM9f29w",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 13492,
       "attack": 2.99,
       "defense": 4.49,
       "speed": 2.99,
@@ -429,7 +478,8 @@
         },
         {
           "name": "Rapid Shot",
-          "input": "D v A"
+          "input": "D v A",
+          "added": "v0.3.2"
         },
         {
           "name": "Change the Future",
@@ -437,20 +487,24 @@
         },
         {
           "name": "Ultra Rapid Punches",
-          "input": "D v J + D ^ A when catching enemy"
+          "input": "D v J + D ^ A when catching enemy",
+          "added": "v0.3.2"
         },
         {
           "name": "Another End",
-          "input": "D ^ A"
+          "input": "D ^ A",
+          "added": "v0.3.2"
         },
         {
           "name": "Dragonthrow",
-          "input": "Grab + J Hold J to use Heat Dome Attack"
+          "input": "Grab + J Hold J to use Heat Dome Attack",
+          "added": "v0.3.2"
         },
         {
           "name": "Heat Dome Attack",
           "input": "D ^ J Hold J to extend attack - Can be used while grabbing enemy",
-          "ultimate": "yes"
+          "ultimate": "yes",
+          "added": "v0.3.2"
         }
       ],
       "team": [],
@@ -463,16 +517,29 @@
       "transformations": [
         {
           "name": "Ultra Trunks",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 84, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 82, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [
+        {"name": "Burn Break", "input": "Super Punch + J"},
+        {"name": "Burning Breaker", "input": "Super Punch + J A"},
+        {"name": "Burning Another Broken End", "input": "Super Punch + J A A"},
+        {"name": "Ultra Rapid Burning Breaker", "input": "Super Punch + J A J"}
+      ],
+      "special": [],
+      "counter": []
+    } 
   },{
     "id": 84,
+    "release": "v0.3.2",
     "url_id": "ultra-trunks-a",
     "name": "Ultra Trunks",
     "saga": "Android",
@@ -480,7 +547,8 @@
     "moveset_video": "IiU78GXA-q0",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "attack": 3.36,
+      "power_level": 20232,
+      "attack": 3.67,
       "defense": 5.51,
       "speed": 2.1,
       "ki": 175
@@ -510,19 +578,19 @@
           "input": "D ^ A Hold A to increase power (3 levels)"
         },
         {
-          "name": "Grab",
+          "name": "Grab", "combo_id": 1,
           "input": "D ^ J"
         },
         {
-          "name": "Eraser Blow",
+          "name": "Eraser Blow", "combo_id": 2,
           "input": "Grabbing Enemy + J"
         },
         {
-          "name": "Gigantic Spike and Drag",
+          "name": "Gigantic Spike and Drag", "combo_id": 3,
           "input": "Grabbing Enemy + D > J"
         }, 
         {
-          "name": "Gigantic Fury",
+          "name": "Gigantic Fury", "combo_id": 4,
           "input": "Grabbing Enemy + D v J Hold A to extend attack"
         }
       ],
@@ -536,13 +604,29 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 82, "direction": 0, "type": "base"
         }
       ]
+    }, "combos": {
+      "links": [ [1,2], [1,3], [1,4],
+        {"name": "Gigantic Spike and Drag -> Eraser Blow", "input": "Grabbing Enemy + D > J + Hold J"}
+      ],
+      "basic": [
+        {"name": "Burning Barrage", "input": "Super Punch + J" },
+        {"name": "Burning Barrage + Gigantic Spike and Drag", "input": "Super Punch + J + Hold A"}
+      ],
+      "special": [
+        {"name": "Gigantic Fury + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J"},
+        {"name": "Gigantic Fury + Burning Barrage", "input": "Grabbing Enemy + D v J Hold J + J" },
+        {"name": "Gigantic Fury + Burning Barrage + Gigantic Spike and Drag + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J + J + Hold A + Hold J", "ultimate": true}
+      ],
+      "counter": []
     }
   },
   {
     "id": 70,
+    "release": "v0.1",
     "url_id": "vegeta",
     "name": "Vegeta",
     "saga": "Buu",
@@ -550,6 +634,7 @@
     "moveset_video": "83Wmel5BF74",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 8296,
       "attack": 2.35,
       "defense": 3.53,
       "speed": 2.35,
@@ -602,17 +687,25 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 71, "direction": 1, "type": "ss"
         },
         {
           "name": "Babadi's Mind Control (Majin Vegeta)",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 73, "direction": 1, "type": "majin"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 71,
+    "release": "v0.1",
     "url_id": "ss-vegeta",
     "name": "Super Saiyan Vegeta",
     "saga": "Buu",
@@ -620,6 +713,7 @@
     "moveset_video": "l7CD_7Mu-Gc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 16584,
       "attack": 3.31,
       "defense": 4.97,
       "speed": 3.31,
@@ -667,17 +761,25 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 72, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 70, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 72,
+    "release": "v0.1",
     "url_id": "ss2-vegeta",
     "name": "Super Saiyan 2 Vegeta",
     "saga": "Buu",
@@ -685,6 +787,7 @@
     "moveset_video": "eCWBLmTqWZI",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 33135,
       "attack": 4.7,
       "defense": 7.05,
       "speed": 4.7,
@@ -725,13 +828,20 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 70, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 73,
+    "release": "v0.1.3",
     "url_id": "majin-vegeta",
     "name": "Majin Vegeta",
     "saga": "Buu",
@@ -739,6 +849,7 @@
     "moveset_video": "SOrexY9wRf8",
     "type": { "hero": false, "villain": false, "other": true },
     "stats": {
+      "power_level": 34560,
       "attack": 4.8,
       "defense": 7.2,
       "speed": 4.8,
@@ -794,10 +905,20 @@
         }
       ],
       "transformations": []
-    }
+    },"combos": {
+      "links": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J A"},
+        {"name": "Basic Combo Finisher", "input": "Super Punch + J A J A"},
+        {"name": "Final Flash Combo", "input": "Super Punch + J + D < J"}
+      ],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 74,
+    "release": "v0.1.7",
     "url_id": "goku",
     "name": "Goku",
     "saga": "Buu",
@@ -805,6 +926,7 @@
     "moveset_video": "4PZ9DezfuL8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 8640,
       "attack": 2.4,
       "defense": 3.6,
       "speed": 2.4,
@@ -858,13 +980,20 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 75, "direction": 1, "type": "ss"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 75,
+    "release": "v0.1.7",
     "url_id": "ss-goku",
     "name": "Super Saiyan Goku",
     "saga": "Buu",
@@ -872,9 +1001,10 @@
     "moveset_video": "FYfg6hoGAOg",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "attack": 3.38,
-      "defense": 5.07,
-      "speed": 3.38,
+      "power_level": 17276,
+      "attack": 3.39,
+      "defense": 5.09,
+      "speed": 3.39,
       "ki": 105
     },
     "moves": {
@@ -951,17 +1081,25 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 76, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 74, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 76,
+    "release": "v0.1.7",
     "url_id": "ss2-goku",
     "name": "Super Saiyan 2 Goku",
     "saga": "Buu",
@@ -969,6 +1107,7 @@
     "moveset_video": "SbrAie-PVz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 34560,
       "attack": 4.8,
       "defense": 7.2,
       "speed": 4.8,
@@ -1041,17 +1180,25 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 77, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 74, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 77,
+    "release": "v0.1.7",
     "url_id": "ss3-goku",
     "name": "Super Saiyan 3 Goku",
     "saga": "Buu",
@@ -1059,6 +1206,7 @@
     "moveset_video": "tiH5FtMDfWs",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 138240,
       "attack": 9.6,
       "defense": 14.4,
       "speed": 9.6,
@@ -1114,7 +1262,8 @@
         },
         {
           "name": "Dragonthrow",
-          "input": "Grab + J"
+          "input": "Grab + J",
+          "added": "v0.2.8"
         },
         {
           "name": "Instant Transmission (Enemy)",
@@ -1135,13 +1284,20 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 74, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 78,
+    "release": "v0.2.3",
     "url_id": "gohan",
     "name": "Gohan",
     "saga": "Buu",
@@ -1149,6 +1305,7 @@
     "moveset_video": "Du9DUZPSOk0",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 7260,
       "attack": 2.2,
       "defense": 3.3,
       "speed": 2.2,
@@ -1185,17 +1342,25 @@
       "transformations": [
         {
           "name": "Super Saiyan",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 79, "direction": 1, "type": "ss"
         },
         {
           "name": "Ultimate Gohan",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 81, "direction": 1, "type": "ultimate"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 79,
+    "release": "v0.2.3",
     "url_id": "ss-gohan",
     "name": "Super Saiyan Gohan",
     "saga": "Buu",
@@ -1203,6 +1368,7 @@
     "moveset_video": "wTb9EG5WCp4",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 14530,
       "attack": 3.1,
       "defense": 4.65,
       "speed": 3.1,
@@ -1247,17 +1413,25 @@
       "transformations": [
         {
           "name": "Super Saiyan 2",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 80, "direction": 1, "type": "ss"
         },
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 78, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 80,
+    "release": "v0.2.3",
     "url_id": "ss2-gohan",
     "name": "Super Saiyan 2 Gohan",
     "saga": "Buu",
@@ -1265,6 +1439,7 @@
     "moveset_video": "ulvDh2a0mzE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 29040,
       "attack": 4.4,
       "defense": 6.6,
       "speed": 4.4,
@@ -1313,13 +1488,20 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 78, "direction": 0, "type": "base"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 81,
+    "release": "v0.2.3",
     "url_id": "ultimate-gohan",
     "name": "Ultimate Gohan",
     "saga": "Buu",
@@ -1327,8 +1509,9 @@
     "moveset_video": "SebsOJ484WM",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 232350,
       "attack": 12.45,
-      "defense": 18.68,
+      "defense": 18.67,
       "speed": 12.45,
       "ki": 100
     },
@@ -1345,12 +1528,13 @@
       ],
       "special": [
         {
-          "name": "Electric Kamehameha",
+          "name": "Electric Kamehameha", "combo_id": 1,
           "input": "D > J"
         },
         {
           "name": "Ultimate Kamehameha",
-          "input": "D > JA"
+          "input": "D > JA",
+          "added": "v0.2.8"
         },
         {
           "name": "Ultimate Knuckle",
@@ -1361,7 +1545,7 @@
           "input": "D v AA J J"
         },
         {
-          "name": "Air Throw",
+          "name": "Air Throw", "combo_id": 2,
           "input": "Grabbing Enemy + D ^ A"
         },
         {
@@ -1381,14 +1565,30 @@
         },
         {
           "name": "Burst Rush",
-          "input": "Block attack + J J"
+          "input": "Block attack + J J",
+          "added": "v0.2.8"
         }
       ],
       "transformations": []
+    }, "combos": {
+      "links": [ 
+        [2, 1]
+      ],
+      "basic": [ 
+        [51, 50],
+        {"name": "Air Throw Combo", "input": "Grabbing Enemy + D ^ A + J"},
+        [2, 50]
+      ],
+      "special": [
+      ],
+      "counter": [
+        {"name": "Burst Rush Combo", "input": "Block attack + J A J"}
+      ]
     }
   },
   {
     "id": 23,
+    "release": "v0.1",
     "url_id": "vegito",
     "name": "Vegito",
     "saga": "Buu",
@@ -1396,6 +1596,7 @@
     "moveset_video": "Jhwhj9_PdIc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
+      "power_level": 379215,
       "attack": 15.9,
       "defense": 23.85,
       "speed": 15.9,
@@ -1464,13 +1665,20 @@
       "transformations": [
         {
           "name": "Super Vegito",
-          "input": "DJA J"
+          "input": "DJA J",
+          "id": 24, "direction": 1, "type": "ss"
         }
       ]
-    }
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 24,
+    "release": "v0.1",
     "url_id": "super-vegito",
     "name": "Super Vegito",
     "saga": "Buu",
@@ -1478,8 +1686,9 @@
     "moveset_video": "JqePv_XPXMY",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "attack": 22.42,
-      "defense": 33.63,
+      "power_level": 758453,
+      "attack": 22.49,
+      "defense": 33.73,
       "speed": 22.42,
       "ki": 125
     },
@@ -1508,15 +1717,15 @@
           "input": "D v A"
         },
         {
-          "name": "Spirit Sword",
+          "name": "Spirit Sword", "combo_id": 3,
           "input": "D ^ A"
         },
         {
-          "name": "Explosive Wave",
+          "name": "Explosive Wave", "combo_id": 1,
           "input": "D ^ J"
         },
         {
-          "name": "Vanishing Explosive Ki Blast",
+          "name": "Vanishing Explosive Ki Blast", "combo_id": 2,
           "input": "Rowing + J"
         },
         {
@@ -1539,9 +1748,29 @@
       "transformations": [
         {
           "name": "Base Form",
-          "input": "DJA D"
+          "input": "DJA D",
+          "id": 23, "direction": 0, "type": "base"
         }
       ]
+    }, "combos": {
+      "links": [ 
+        [2, 1], [2, 3]
+      ],
+      "basic": [ 
+        {"name": "Basic Combo + Run Attack", "input": "Super Punch + A + >> A" },
+        {"name": "Basic Combo + Dash Attack", "input": "Super Punch + A + >> JA" },
+        {"name": "Kamehameha Combo Finisher", "input": "Super Punch + A + D < J" },
+        {"name": "Big Bang Attack Combo Finisher", "input": "Super Punch + A + D v A" },
+        {"name": "Spirit Sword Combo Finisher", "input": "Super Punch + A + D ^ A" },
+        {"name": "Basic Combo + Neck Snapper + Explosive Blast", "input": "Super Punch + A A A A"},
+        {"name": "Cocky Kicks", "input": "Super Punch + J" },
+        {"name": "Cocky Kicks + Sweeper", "input": "Super Punch + J J"},
+        {"name": "Cocky Kicks + Sweeper + Spirit Smash", "input": "Super Punch + J J A"},
+        {"name": "Cocky Kicks + Sweeper + Neck Snapper + Explosive Blast", "input": "Super Punch + J J J A A"}
+      ],
+      "special": [
+      ],
+      "counter": []
     }
   }
 ]

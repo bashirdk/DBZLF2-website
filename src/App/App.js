@@ -1,7 +1,7 @@
 import "./App.css";
 
 import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch, withRouter } from "react-router-dom";
 
 import ScrollToTop from "../Components/ScrollToTop";
 import ReactGA from 'react-ga';
@@ -34,16 +34,18 @@ ReactGA.pageview('/');
 
 const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not found</h1>
 
+const characterKey = window.location.pathname;
+
 const App = () => (
   <Router>
     <>
       <Navbar />
       <div className="container mx-auto min-h-screen">
-        <div className="mx-3">     
-          <ScrollToTop>     
-            <Switch>            
-              <Route path="/characters/:saga/:name" component={CharacterProfile} />
-              <Route path="/characters/" exact component={CharacterList} />
+        <div className="mx-3">
+          <ScrollToTop>
+            <Switch>
+              <Route exact path="/characters/:saga/:name" component={withRouter(CharacterProfile)} key={characterKey} />
+              <Route exact path="/characters/" component={CharacterList} />
               <Route path="/backgrounds/:saga/:name" component={BackgroundProfile} />
               <Route path="/backgrounds/" exact component={BackgroundList} />
               <Route path="/downloads/" exact component={Downloads} />
@@ -57,7 +59,7 @@ const App = () => (
       <Footer />
       <initializeReactGA/>
     </>
-  </Router>  
+  </Router>
 );
 
 export default App;
