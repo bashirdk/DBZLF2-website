@@ -986,8 +986,12 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
-      "special": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J"}
+      ],
+      "special": [
+        {"name": "Spirit Bomb Combo", "input": "Super Punch + J + D ^ J"}
+      ],
       "counter": []
     } 
   },
@@ -1092,7 +1096,11 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J + A"},
+        {"name": "Flash Kick Combo", "input": "D ^ A + D v A"},
+        {"name": "Flash Kick + Basic Combo", "input": "D ^ A + J + A"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -1179,7 +1187,7 @@
       ],
       "transformations": [
         {
-          "name": "Super Saiyan 2",
+          "name": "Super Saiyan 3",
           "input": "DJA J",
           "id": 77, "direction": 1, "type": "ss"
         },
@@ -1191,8 +1199,12 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
-      "special": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J + A + A"}
+      ],
+      "special": [
+        { "name": "Meteor Blast", "input": "D v A, D > J, D ^ J" }
+      ],
       "counter": []
     } 
   },
@@ -1290,8 +1302,14 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
-      "special": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J + A"},
+        {"name": "Kiai Basic Combo", "input": "AAA AJ (INSANE PRECISION REQUIRED) + J + A"}
+      ],
+      "special": [
+        {"name": "Basic Combo + Instant Kamehameha", "input": "Super Punch + J + A + J"},
+        {"name": "Kiai Basic Combo + Instant Kamehameha", "input": "AAA AJ (INSANE PRECISION REQUIRED) + J + A + J"}
+      ],
       "counter": []
     } 
   },
