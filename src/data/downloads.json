@@ -1,7 +1,7 @@
 [
   {
-    "version": "v0.TBD",
-    "date": "TBD",
+    "version": "v0.4.3",
+    "date": "9/28/2024",
     "download": false,
     "characters": {
       "new": 2,
@@ -33,6 +33,8 @@
         ],
         "new_moves": [
           "[+] Vegeta (Namek): Bang Beam",
+          "[+] Majin Vegeta (Buu): Energy Rings",
+          "[+] Majin Vegeta (Buu): Piledriver",
           "[+] SS Gohan (Buu): Kiai"
         ],
         "character_changes": [
