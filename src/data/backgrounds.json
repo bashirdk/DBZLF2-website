@@ -1,7 +1,7 @@
 [
   {
     "id": 10,
-    "release": "TBD",
+    "release": "v0.4.3",
     "url_id": "namek",
     "name": "Planet Namek",
     "saga": "Namek",
@@ -53,15 +53,41 @@
     "release": "v0.2.9",
     "url_id": "budokai",
     "name": "World Tournament Stage",
-    "saga": "Buu"
+    "saga": "Buu",
+    "width": 978,
+    "zwidth": 160,
+    "desc": "The World Martial Arts Tournament is a Martial Arts fighting tournament that happens on May 7 every few years on Papaya Island. The tournament features some of the Earth's strongest fighters from all over the globe. <ul> <li> 21st - Date: Age 750 - Winner: Jackie Chun </li> <li> 22nd - Date: Age 753 - Winner: Tien Shinhan</li> <li> 23rd - Date: Age 756 - Winner: Goku </li> <li> 24th - Date: Age 767 - Winners: Videl & Hercule </li> <li> 25th - Date: Age 774 - Winners: Trunks & Hercule </li> </ul>",
+    "fights": [
+      "Goten vs. Trunks",
+      "Krillin vs. Pintar",
+      "Videl vs Spopovich",
+      "Hercule vs. 18 vs. Mighty Mask (Goten & Trunks) vs. Killa vs Jewel",
+      "18 vs. Mighty Mask (Goten & Trunks)",
+      "18 vs. Hercule",
+      "Goku vs Majin Vegeta"
+    ]
   },
   {
     "id": 13,
-    "release": "TBD",
+    "release": "v0.4.3",
     "url_id": "budokai_ro",
-    "name": "World Tournament Stage [Ring Out]",
+    "name": "World Tournament Stage [Ringout]",
     "saga": "Buu",
-    "special": true
+    "width": 1178,
+    "zwidth": 150,
+    "video": "pm33pm3m7_k",
+    "desc": "The World Martial Arts Tournament is a Martial Arts fighting tournament that happens on May 7 every few years on Papaya Island. The tournament features some of the Earth's strongest fighters from all over the globe. <ul> <li> 21st - Date: Age 750 - Winner: Jackie Chun </li> <li> 22nd - Date: Age 753 - Winner: Tien Shinhan</li> <li> 23rd - Date: Age 756 - Winner: Goku </li> <li> 24th - Date: Age 767 - Winners: Videl & Hercule </li> <li> 25th - Date: Age 774 - Winners: Trunks & Hercule </li> </ul>",
+    "special": true,
+    "special_desc": "Special Features of this background include <ul> <li> Ready... Fight! starting </li> <li> Lively Crowd </li> <li> 3D effect during camera panning (particularly on the stairs) </li> <li> Fully voiced and dynamic play by play announcer </li> <li> Ringout feature allowing you to knock out enemies by hitting them out of bounds </li> </ul>",
+    "fights": [
+      "Goten vs. Trunks",
+      "Krillin vs. Pintar",
+      "Videl vs Spopovich",
+      "Hercule vs. 18 vs. Mighty Mask (Goten & Trunks) vs. Killa vs Jewel",
+      "18 vs. Mighty Mask (Goten & Trunks)",
+      "18 vs. Hercule",
+      "Goku vs Majin Vegeta"
+    ]
   },
   {
     "id": 11,
@@ -82,7 +108,7 @@
   },
   {
     "id": 12,
-    "release": "TBD",
+    "release": "v0.4.3",
     "url_id": "rosat_h",
     "name": "Time Chamber [Hazards]",
     "saga": "Buu",
