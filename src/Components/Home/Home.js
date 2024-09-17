@@ -87,7 +87,7 @@ const Home = () => (
       <p className="mb-5 text-3xl"> DBZ LF2 v0.4.3 RELEASE </p>
       <p className="mb-5 text-4xl"> September 28, 2024 </p>
       <p className="mb-5 text-4xl"> AVAILABLE IN </p>
-      <h3 className="mb-5 text-5xl" id="counter"></h3>
+      <h3 className="mb-5 text-5xl" id="counter">COUNTDOWN</h3>
     </div>
     
 
