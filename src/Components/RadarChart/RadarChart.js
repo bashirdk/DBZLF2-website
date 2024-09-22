@@ -1,8 +1,8 @@
 import React from "react";
 import { Radar } from "react-chartjs-2";
-import { Bar } from "react-chartjs-2"
-import { Chart as ChartJS } from 'chart.js/auto'
-import { rgba } from "style-value-types";
+// import { Bar } from "react-chartjs-2"
+// import { Chart as ChartJS } from 'chart.js/auto'
+// import { rgba } from "style-value-types";
 
 function RadarChart({chartData}) {
   console.log('chartData', chartData);

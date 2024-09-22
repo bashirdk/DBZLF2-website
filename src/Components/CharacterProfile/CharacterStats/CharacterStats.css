@@ -85,3 +85,22 @@
   margin: 10px;
   z-index: -1;
 }
+
+
+@media (max-width: 768px) {
+  .stats-radar {
+    display: none;
+  }
+  .stats-bars {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .stats-radar {
+    display: block;
+  }
+  .stats-bars {
+    display: none;
+  }
+}
