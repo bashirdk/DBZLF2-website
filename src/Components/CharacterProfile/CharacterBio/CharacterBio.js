@@ -28,6 +28,20 @@ const CharacterBio = ({ character }) => {
     }
   }
 
+  const hasOldLook = () => {
+    try {
+      return (
+      <img 
+        src={require(`../../../images/profile/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}-old.gif`)}
+        alt={`standing pic of ${character.name}`}
+        className="w-full absolute pin-t pin-l hidden"
+        id="character_standing_old"
+      /> )
+    } catch(err) {
+      return false;
+    }
+  }
+
   const swapDamage = () => {
     const char = document.querySelector('#character_standing');
     const charDamage = document.querySelector('#character_standing_damage');
@@ -45,6 +59,26 @@ const CharacterBio = ({ character }) => {
       char.classList.remove('block');
       charDamage.classList.add('block');
       charDamage.classList.remove('hidden');
+    }
+  }
+
+  const swapOld = () => {
+    const char = document.querySelector('#character_standing');
+    const charOld = document.querySelector('#character_standing_old');
+    const buttonDamage = document.querySelector('#btn_old_look');
+
+    if (char && char.classList && char.classList.contains('hidden')) {
+      buttonDamage.innerHTML = 'View Old Look';
+      char.classList.add('block');
+      char.classList.remove('hidden');
+      charOld.classList.add('hidden');
+      charOld.classList.remove('block');
+    } else {
+      buttonDamage.innerHTML = 'View New Look';
+      char.classList.add('hidden');
+      char.classList.remove('block');
+      charOld.classList.add('block');
+      charOld.classList.remove('hidden');
     }
   }
 
@@ -214,13 +248,14 @@ const CharacterBio = ({ character }) => {
           id="character_standing"
         />
         { hasBattleDamage() }
+        { hasOldLook() }
 
         { powerups.map((power) => (
-       <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`bio-power-up power-up-${power.type}`} title={`Power up to ${power.name}`}> ▲ </Link>
+       <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`arrow-up power-up-${power.type}`} title={`Power up to ${power.name}`}>  </Link>
          ))
         }        
         { powerdowns.map((power) => (
-          <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`bio-power-down power-down-${power.type}`} title={`Power down to ${power.name}`}> ▼ </Link>
+          <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`arrow-down power-down-${power.type}`} title={`Power down to ${power.name}`}> ▼ </Link>
             ))
            }
       </div>
@@ -231,6 +266,11 @@ const CharacterBio = ({ character }) => {
         : ""}
      </div>
 
+     <div>
+       { hasOldLook() ? 
+        <p class="text-white text-center"><button onClick={swapOld} class="text-white" id="btn_old_look">View Old Version</button></p>
+        : ""}
+     </div>
 
 
       <div className="mt-3">
