@@ -114,3 +114,21 @@
     --num: var(--power-level-value);
   }
 }
+
+@-webkit-keyframes counter {
+  0% {
+    --num: var(--power-level-start-value);
+  }
+  100% {
+    --num: var(--power-level-value);
+  }
+}
+
+@-moz-keyframes counter {
+  0% {
+    --num: var(--power-level-start-value);
+  }
+  100% {
+    --num: var(--power-level-value);
+  }
+}
