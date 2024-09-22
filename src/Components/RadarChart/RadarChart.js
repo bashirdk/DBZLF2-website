@@ -4,6 +4,9 @@ import { Radar } from "react-chartjs-2";
 // import { Chart as ChartJS } from 'chart.js/auto'
 // import { rgba } from "style-value-types";
 
+import { Chart, registerables } from 'chart.js';
+Chart.register(...registerables);
+
 function RadarChart({chartData}) {
   console.log('chartData', chartData);
 
