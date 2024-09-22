@@ -36,6 +36,11 @@
           "input": "D > AJ"
         },
         {
+          "name": "Bang Beam", 
+          "input": "D > AD A A A...",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Dirty Fireworks", "combo_id": 1,
           "input": "D ^ A A",
           "updated": "v0.2.3"
@@ -44,6 +49,11 @@
           "name": "Genocide Breaker", "combo_id": 2,
           "input": "D ^ JA",
           "updated": "v0.2.3"
+        },
+        {
+          "name": "Finish Blaster", "combo_id": 5,
+          "input": "D v A (Hold A to increase power up to 3 levels)",
+          "added": "v0.4.3"
         },
         {
           "name": "Final Crash",
@@ -68,13 +78,19 @@
     },
     "combos": {
       "links": [
-        [4, 2], [2, 1], [1, 3]
+        [4, 2], [2, 1], [1, 3], { "name": "Dirty Fireworks -> Finish Blaster", "input": "D ^ A A -> D v A" }
       ],
       "basic": [
-        [53], { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
+        [53], 
+        { "name": "Basic Combo Knee Stomp Finisher", "input": "Super Punch + J + D v A" },
+        { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
       ],
       "special": [
-        [1, 3],[2, 1, 3],[4, 2, 1, 3]
+        [1, 3],
+        { "name": "Dirty Fireworks + Final Burst Cannon + Finish Blaster", "input": "D ^ A A + D v A + D v J" },
+        [2, 1, 3],
+        { "name": "Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon", "input": "D ^ JA + D ^ A A + D v A + D v J" },
+        [4, 2, 1, 3]
       ],
       "counter": []
     }
@@ -1212,6 +1228,11 @@
           "input": "D > AJ"
         },
         {
+          "name": "Energy Rings",
+          "input": "D > AD",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Final Flash",
           "input": "D > J"
         },
@@ -1228,9 +1249,15 @@
           "input": "D ^ A"
         },
         {
+          "name": "Piledriver",
+          "input": "Grab + D ^ A",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Final Explosion",
           "input": "D ^ J DJA",
-          "ultimate": "yes"
+          "ultimate": "yes",
+          "updated": "v0.4.3"
         }
       ],
       "team": [],
@@ -1250,9 +1277,14 @@
       "basic": [
         {"name": "Basic Combo", "input": "Super Punch + J A"},
         {"name": "Basic Combo Finisher", "input": "Super Punch + J A J A"},
-        {"name": "Final Flash Combo", "input": "Super Punch + J + D < J"}
+        {"name": "Final Flash Combo", "input": "Super Punch + J + D < J"},
+        {"name": "Big Bang Attack Combo", "input": "Super Punch + J + D v A"},
+        {"name": "Final Impact Combo", "input": "Super Punch + J + D v J"},
+        {"name": "Piledriver Combo", "input": "Super Punch + J + D ^ A"}
       ],
-      "special": [],
+      "special": [
+        {"name": "Piledriver Finisher", "input": "Piledriver + hold A + D < J"}
+      ],
       "counter": []
     } 
   },
@@ -1771,8 +1803,14 @@
           "input": "D > JA"
         },
         {
+          "name": "Kiai",
+          "input": "D ^ A",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Double Homing Blast",
-          "input": "D ^ A"
+          "input": "D v A",
+          "updated": "v0.4.3"
         },
         {
           "name": "Explosive Combination (can also be used when grabbing enemy)",
@@ -2119,7 +2157,8 @@
         {
           "name": "Final Kamehameha",
           "input": "D v J",
-          "ultimate": "yes"
+          "ultimate": "yes",
+          "updated": "v0.4.3"
         }
       ],
       "team": [],
