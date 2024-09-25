@@ -531,7 +531,7 @@
       "speed": 3.3,
       "ki": 150,
       "hp_regen": 2,
-      "ki_regen": 2,
+      "ki_regen": 4,
       "ki_charge": 6
     },
     "moves": {
@@ -2196,6 +2196,8 @@
         {"name": "Cocky Kicks + Sweeper + Neck Snapper + Explosive Blast", "input": "Super Punch + J J J A A"}
       ],
       "special": [
+        {"name": "Final Kamehameha + Omega Finishing Blow", "input": "D v J + hold A"},
+        {"name": "Final Kamehameha + Omega Finishing Blow + Big Bang Attack (Kakarot)", "input": "D v J + hold A + hold J + D v A"}
       ],
       "counter": []
     }
