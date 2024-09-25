@@ -100,8 +100,8 @@ const CharacterProfile = ( props ) => {
             } */}
           </section>
 
-          <section className="inline-block w-full sm:w-2/3 ">
-            <section className="my-5">
+          <section className="inline-block w-full sm:w-2/3 relative">
+            <section className="my-5 relative">
               <CharacterStats character={selCharacter} key={selCharacter.id} />
             </section>
 

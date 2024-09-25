@@ -13,7 +13,10 @@
       "attack": 1.8,
       "defense": 2.7,
       "speed": 1.8,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -33,6 +36,11 @@
           "input": "D > AJ"
         },
         {
+          "name": "Bang Beam", 
+          "input": "D > AD A A A...",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Dirty Fireworks", "combo_id": 1,
           "input": "D ^ A A",
           "updated": "v0.2.3"
@@ -41,6 +49,11 @@
           "name": "Genocide Breaker", "combo_id": 2,
           "input": "D ^ JA",
           "updated": "v0.2.3"
+        },
+        {
+          "name": "Finish Blaster", "combo_id": 5,
+          "input": "D v A (Hold A to increase power up to 3 levels)",
+          "added": "v0.4.3"
         },
         {
           "name": "Final Crash",
@@ -65,72 +78,276 @@
     },
     "combos": {
       "links": [
-        [4, 2], [2, 1], [1, 3]
+        [4, 2], [2, 1], [1, 3], { "name": "Dirty Fireworks -> Finish Blaster", "input": "D ^ A A -> D v A" }
       ],
       "basic": [
-        [53], { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
+        [53], 
+        { "name": "Basic Combo Knee Stomp Finisher", "input": "Super Punch + J + D v A" },
+        { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
       ],
       "special": [
-        [1, 3],[2, 1, 3],[4, 2, 1, 3]
+        [1, 3],
+        { "name": "Dirty Fireworks + Final Burst Cannon + Finish Blaster", "input": "D ^ A A + D v A + D v J" },
+        [2, 1, 3],
+        { "name": "Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon", "input": "D ^ JA + D ^ A A + D v A + D v J" },
+        [4, 2, 1, 3]
       ],
       "counter": []
     }
   },
   {
     "id": 85,
-    "release": "TBD",
+    "release": "v0.4.3",
     "url_id": "goku",
     "name": "Goku",
     "saga": "Namek",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 5714,
+      "power_level": 5700,
       "attack": 1.95,
       "defense": 2.93,
       "speed": 1.95,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
-      "basic": [],
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
       "team": [],
-      "special": [],
-      "counter": [],
-      "transformations": []
-    },"combos": {
-      "links": [],
-      "basic": [],
-      "special": [],
-      "counter": []
-    }    
+      "special": [
+        {
+          "name": "Twin Dragon Shot", 
+          "input": "D > AJ"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D > J"
+        },
+        {
+          "name": "Elbow Blow", "combo_id": 1,
+          "input": "D v J + A"
+        },
+        {
+          "name": "Break Dance", "combo_id": 2,
+          "input": "D v A"
+        },
+        {
+          "name": "Double Kiai", "combo_id": 3,
+          "input": "D ^ A"
+        },
+        {
+          "name": "Kaioken x20",
+          "input": "D ^ J"
+        },
+		{
+          "name": "Kaioken x20 Kamehameha",
+          "input": "D ^ JJ, fly until you reach the enemy"
+        },
+		{
+          "name": "Kaioken x20 Cancel", "combo_id": 4,
+          "input": "D ^ JJ + D"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Dodge Counter", "combo_id": 6,
+          "input": "Block attack + A"
+        },
+		{
+          "name": "Break Dance Counter", "combo_id": 5,
+          "input": "Block attack + J"
+        }
+      ],
+      "transformations": [
+		{
+		  "name": "Super Saiyan",
+      "input": "DJA + J",
+      "id": 86, "direction": 1, "type": "ss"
+		},
+				{
+		  "name": "Angry Super Saiyan",
+		  "input": "Condition: Allied Z-Fighter dies"
+		}
+	  ]
+    },	
+"combos": {
+      "links": [
+        [2, 3],[4, 2]
+      ],
+      "basic": [
+        [53], { "name": "Spirit Bomb", "input": "Super Punch + J + D ^ J" },
+		{"name": "Burter Combo", "combo_id": 10, "input": "Super Punch + J + hold A + hold J"},
+		{"name": "Burter Combo + Kaioken x20 Kamehameha", "combo_id": 11, "input": "Super Punch + J + hold A + hold J + hold A"},
+		{"name": "Elbow Blow + Burter Combo", "input": "D v J + A + Super Punch + J + hold A + hold J"},
+		{"name": "Elbow Blow + Burter Combo + Kaioken x20 Kamehameha", "input": "D v J + A + Super Punch + J + hold A + hold J + hold A"}
+      ],
+      "special": [
+        [4, 2, 3]
+      ],
+      "counter": [
+	  [5,3],
+	  {"name": "Dodge Counter + Burter Combo", "input": "Block attack + A + J + hold J"},
+	  {"name": "Dodge Counter + Burter Combo + Kaioken x20 Kamehameha", "input": "Block attack + A + J + hold J + hold A"}
+	  ]
+    }
   },
+
   {
     "id": 86,
-    "release": "TBD",
+    "release": "v0.4.3",
     "url_id": "ss-goku",
     "name": "Super Saiyan Goku",
     "saga": "Namek",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 11417,
+      "power_level": 11400,
       "attack": 2.76,
       "defense": 4.14,
       "speed": 2.76,
-      "ki": 125
+      "ki": 125,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 7
     },
     "moves": {
-      "basic": [],
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
       "team": [],
-      "special": [],
-      "counter": [],
-      "transformations": []
-    },"combos": {
-      "links": [],
-      "basic": [],
-      "special": [],
-      "counter": []
-    } 
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        },
+		    {
+          "name": "Kiai", "combo_id": 1,
+          "input": "D > AD (A A A...)"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D > J"
+        },
+		    {
+          "name": "Super Kamehameha",
+          "input": "D > JA"
+        },
+        {
+          "name": "Dragonthrow", "combo_id": 12,
+          "input": "Grabbing Enemy + J (Hold < to change direction)"
+        },
+		    {
+          "name": "Diagonal Kamehameha", "combo_id": 13,
+          "input": "Grabbing Enemy + J + Hold J"
+        },
+        {
+          "name": "NOW IM MAD Rush", "combo_id": 2,
+          "input": "D ^ J + A, fly until you reach the enemy"
+        },
+	    	{
+          "name": "Kiai NOW IM MAD Rush", "combo_id": 9,
+          "input": "D > AD + D, fly until you reach the enemy"
+        },
+        {
+          "name": "Meteor Flying", "combo_id": 3,
+          "input": "D ^ J + J, press D to stop"
+        },
+		    {
+          "name": "Fast Meteor Flying", "combo_id": 7,
+          "input": "Super Punch + hold A"
+        },
+	    	{
+          "name": "Kiai Meteor Flying", "combo_id": 8,
+          "input": "D > AD + J"
+        },
+        {
+          "name": "Scissor Kick", "combo_id": 4,
+          "input": "D v A"
+        },
+	    	{
+          "name": "Meteor Finisher", "combo_id": 5,
+          "input": "D ^ AA"
+        },
+	    	{
+          "name": "Flipping Recovery", "combo_id": 6,
+          "input": "D v A while falling"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + AA"
+        },
+	    	{
+          "name": "Special Counter", "combo_id": 10,
+          "input": "Block attack + J"
+        },
+	    	{
+          "name": "Counter Stance", "combo_id": 11,
+          "input": "D v J"
+        },
+		    { 
+          "name": "SLAPS", "combo_id": 14,
+		      "input": "Block attack + J (A A A...)" },
+	    	{
+          "name": "Angry Kamehameha",
+          "input": "D v JA"
+        }
+      ],
+      "transformations": [
+		{
+		  "name": "Base Form",
+      "input": "DJA + D",
+      "id": 85, "direction": 0, "type": "base"
+		}
+	  ]
+    },	
+"combos": {
+      "links": [
+        [4, 5], [6, 5]
+      ],
+      "basic": [
+        { "name": "Basic Combo", "input": "Super Punch + JAA" },
+		{ "name": "Dragonthrow Combo", "input": "Super Punch + JAJ"},
+		{ "name": "Diagonal Kamehameha Combo", "input": "Super Punch + JAJ + Hold J"}
+      ],
+      "special": [
+        { "name": "NOW IM MAD Dragonthrow", "input": "D ^ J + A, fly until you reach the enemy + hold J" },
+		{ "name": "Kiai NOW IM MAD Dragonthrow", "input": "D > AD + D, fly until you reach the enemy + hold J" },
+		{ "name": "Scissor kick combo", "input": "D ^ J + J + J before or after hitting an enemy" },
+		{ "name": "Meteor Smash", "input": "D ^ J + J + J after hitting an enemy + D ^ AA" },
+		{ "name": "Meteor Smash v2", "input": "Super Punch + hold A + J after hitting an enemy + D ^ AA" },
+		{ "name": "Kiai Meteor Smash", "input": "D > AD + J + J after hitting an enemy + D ^ AA" },
+		{ "name": "Short Meteor Smash", "input": "D v A + D ^ AA" }
+      ],
+      "counter": [
+	  [10,12], [10,13],
+	  { "name": "SLAPS + Meteor Smash", "input": "Block attack + J (A A A...) + Super Punch + hold A + J after hitting an enemy + D ^ AA"},
+	  { "name": "SLAPS + Diagonal Kamehameha Combo", "input": "Block attack + J (A A A...) + Super Punch + JAJ + Hold J"},
+	  { "name": "Counter Stance + Meteor Smash", "input": "D v J + Super Punch + hold A + J after hitting an enemy + D ^ AA"},
+	  { "name": "Counter Stance + Diagonal Kamehameha Combo", "input": "D v J + Super Punch + JAJ + Hold J"},
+	  [11,12],
+	  [11,13]
+	  ]
+    }
   },
   {
     "id": 67,
@@ -142,11 +359,14 @@
     "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 6945,
+      "power_level": 6950,
       "attack": 2.15,
       "defense": 3.23,
       "speed": 2.15,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -205,11 +425,14 @@
     "moveset_video": "05nkT3ZRiQE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 13865,
+      "power_level": 13900,
       "attack": 3.04,
       "defense": 4.56,
       "speed": 3.04,
-      "ki": 125
+      "ki": 125,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -302,11 +525,14 @@
     "moveset_video": "WZh2Hl-W2_E",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 16654,
+      "power_level": 16680,
       "attack": 3.3,
       "defense": 5,
       "speed": 3.3,
-      "ki": 150
+      "ki": 150,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -391,11 +617,14 @@
     "moveset_video": "d2U7HP0-E58",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 6742,
+      "power_level": 6740,
       "attack": 2.12,
       "defense": 3.18,
       "speed": 2.12,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -450,11 +679,14 @@
     "moveset_video": "CsvlsM9f29w",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 13492,
-      "attack": 2.99,
-      "defense": 4.49,
+      "power_level": 13480,
+      "attack": 3.00,
+      "defense": 4.50,
       "speed": 2.99,
-      "ki": 125
+      "ki": 125,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -516,9 +748,14 @@
       ],
       "transformations": [
         {
-          "name": "Ultra Trunks",
+          "name": "Super Trunks",
           "input": "DJA J",
-          "id": 84, "direction": 1, "type": "ss"
+          "id": 89, "direction": 1, "type": "ss"
+        },
+        {
+          "name": "Ultra Trunks",
+          "input": "DJA J hold J",
+          "id": 84, "direction": 1, "type": "2ss"
         },
         {
           "name": "Base Form",
@@ -531,12 +768,116 @@
       "basic": [
         {"name": "Burn Break", "input": "Super Punch + J"},
         {"name": "Burning Breaker", "input": "Super Punch + J A"},
-        {"name": "Burning Another Broken End", "input": "Super Punch + J A A"},
-        {"name": "Ultra Rapid Burning Breaker", "input": "Super Punch + J A J"}
+        {"name": "Burning Another Broken End", "input": "Super Punch + J A A"}
       ],
       "special": [],
       "counter": []
     } 
+  },{
+    "id": 89,
+    "release": "v0.4.3",
+    "url_id": "super-trunks-a",
+    "name": "Super Trunks",
+    "saga": "Android",
+    "race": ["Saiyan", "Human"],
+    "moveset_video": "",
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 16180,
+      "attack": 3.28,
+      "defense": 4.93,
+      "speed": 2.99,
+      "ki": 125,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 6
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        },
+        {
+          "name": "Super Buster Cannon",
+          "input": "D > J"
+        },
+        {
+          "name": "Rapid Shot",
+          "input": "D v A"
+        },
+        {
+          "name": "Super Rapid Punches",
+          "input": "D ^ A, fly until you reach the enemy + hold A"
+        },
+		    {
+          "name": "Manual Change the Future",
+          "input": "D ^ A + J"
+        },
+        {
+          "name": "Aura Stance",
+          "input": "D v J, D to cancel"
+        },
+        {
+          "name": "Flying Punch",
+          "input": "D v J + J, D to cancel"
+        },
+	    	{
+          "name": "Upwards Flying and Smash",
+          "input": "D v J + A + A + A"
+        },
+		    {
+          "name": "True Rapid Shot",
+          "input": "D v J + A + hold J, then press A for a finisher blast"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+		{
+		  "name": "Ultra Trunks",
+      "input": "DJA + J",
+      "id": 84, "direction": 1, "type": "ss"
+		},
+		{
+		  "name": "Base Form",
+      "input": "DJA + D",
+      "id": 82, "direction": 0, "type": "base"
+		}
+	  ]
+    },
+	
+	
+"combos": {
+      "links": [
+      ],
+      "basic": [
+        [53], 
+		{"name": "Advanced Combo", "input": "Super Punch + JA"},
+		{"name": "Aerial Super Rapid Punches", "input": "Super Punch + JAJ + hold A"},
+		{"name": "True Rapid Shot Combo", "input": "Super Punch + JA + hold J, then press A for a finisher blast"}
+      ],
+      "special": [
+	 	{"name": "Rapid Shot Combo", "input": "D v J + A + A + A + A"}
+      ],
+      "counter": [
+	  ]
+  }
   },{
     "id": 84,
     "release": "v0.3.2",
@@ -547,11 +888,14 @@
     "moveset_video": "IiU78GXA-q0",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 20232,
+      "power_level": 20200,
       "attack": 3.67,
       "defense": 5.51,
       "speed": 2.1,
-      "ki": 175
+      "ki": 175,
+      "hp_regen": 2,
+      "ki_regen": 2,
+      "ki_charge": 9
     },
     "moves": {
       "basic": [
@@ -634,11 +978,14 @@
     "moveset_video": "83Wmel5BF74",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 8296,
+      "power_level": 8300,
       "attack": 2.35,
       "defense": 3.53,
       "speed": 2.35,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -713,11 +1060,14 @@
     "moveset_video": "l7CD_7Mu-Gc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 16584,
+      "power_level": 16600,
       "attack": 3.31,
       "defense": 4.97,
       "speed": 3.31,
-      "ki": 105
+      "ki": 105,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -787,11 +1137,14 @@
     "moveset_video": "eCWBLmTqWZI",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 33135,
+      "power_level": 33200,
       "attack": 4.7,
       "defense": 7.05,
       "speed": 4.7,
-      "ki": 150
+      "ki": 150,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -853,7 +1206,10 @@
       "attack": 4.8,
       "defense": 7.2,
       "speed": 4.8,
-      "ki": 140
+      "ki": 140,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -872,6 +1228,11 @@
           "input": "D > AJ"
         },
         {
+          "name": "Energy Rings",
+          "input": "D > AD",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Final Flash",
           "input": "D > J"
         },
@@ -888,9 +1249,15 @@
           "input": "D ^ A"
         },
         {
+          "name": "Piledriver",
+          "input": "Grab + D ^ A",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Final Explosion",
           "input": "D ^ J DJA",
-          "ultimate": "yes"
+          "ultimate": "yes",
+          "updated": "v0.4.3"
         }
       ],
       "team": [],
@@ -910,9 +1277,14 @@
       "basic": [
         {"name": "Basic Combo", "input": "Super Punch + J A"},
         {"name": "Basic Combo Finisher", "input": "Super Punch + J A J A"},
-        {"name": "Final Flash Combo", "input": "Super Punch + J + D < J"}
+        {"name": "Final Flash Combo", "input": "Super Punch + J + D < J"},
+        {"name": "Big Bang Attack Combo", "input": "Super Punch + J + D v A"},
+        {"name": "Final Impact Combo", "input": "Super Punch + J + D v J"},
+        {"name": "Piledriver Combo", "input": "Super Punch + J + D ^ A"}
       ],
-      "special": [],
+      "special": [
+        {"name": "Piledriver Finisher", "input": "Piledriver + hold A + D < J"}
+      ],
       "counter": []
     } 
   },
@@ -930,7 +1302,10 @@
       "attack": 2.4,
       "defense": 3.6,
       "speed": 2.4,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -1005,11 +1380,14 @@
     "moveset_video": "FYfg6hoGAOg",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 17276,
+      "power_level": 17280,
       "attack": 3.39,
       "defense": 5.09,
       "speed": 3.39,
-      "ki": 105
+      "ki": 105,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -1119,7 +1497,10 @@
       "attack": 4.8,
       "defense": 7.2,
       "speed": 4.8,
-      "ki": 150
+      "ki": 150,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -1218,11 +1599,14 @@
     "moveset_video": "tiH5FtMDfWs",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 138240,
-      "attack": 9.6,
-      "defense": 14.4,
+      "power_level": 103680,
+      "attack": 8.31,
+      "defense": 12.47,
       "speed": 9.6,
-      "ki": 200
+      "ki": 200,
+      "hp_regen": 2,
+      "ki_regen": 2,
+      "ki_charge": 10
     },
     "moves": {
       "basic": [
@@ -1327,7 +1711,10 @@
       "attack": 2.2,
       "defense": 3.3,
       "speed": 2.2,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -1386,11 +1773,14 @@
     "moveset_video": "wTb9EG5WCp4",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 14530,
+      "power_level": 14520,
       "attack": 3.1,
       "defense": 4.65,
       "speed": 3.1,
-      "ki": 105
+      "ki": 105,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -1413,8 +1803,14 @@
           "input": "D > JA"
         },
         {
+          "name": "Kiai",
+          "input": "D ^ A",
+          "added": "v0.4.3"
+        },
+        {
           "name": "Double Homing Blast",
-          "input": "D ^ A"
+          "input": "D v A",
+          "updated": "v0.4.3"
         },
         {
           "name": "Explosive Combination (can also be used when grabbing enemy)",
@@ -1461,7 +1857,10 @@
       "attack": 4.4,
       "defense": 6.6,
       "speed": 4.4,
-      "ki": 150
+      "ki": 150,
+      "hp_regen": 2,
+      "ki_regen": 4,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -1527,11 +1926,14 @@
     "moveset_video": "SebsOJ484WM",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 232350,
-      "attack": 12.45,
-      "defense": 18.67,
+      "power_level": 174280,
+      "attack": 10.78,
+      "defense": 16.17,
       "speed": 12.45,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -1614,11 +2016,14 @@
     "moveset_video": "Jhwhj9_PdIc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 379215,
-      "attack": 15.9,
-      "defense": 23.85,
+      "power_level": 244000,
+      "attack": 12.75,
+      "defense": 19.13,
       "speed": 15.9,
-      "ki": 100
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -1704,11 +2109,14 @@
     "moveset_video": "JqePv_XPXMY",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 758453,
-      "attack": 22.49,
-      "defense": 33.73,
+      "power_level": 488000,
+      "attack": 18.03,
+      "defense": 27.05,
       "speed": 22.42,
-      "ki": 125
+      "ki": 125,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
     },
     "moves": {
       "basic": [
@@ -1749,7 +2157,8 @@
         {
           "name": "Final Kamehameha",
           "input": "D v J",
-          "ultimate": "yes"
+          "ultimate": "yes",
+          "updated": "v0.4.3"
         }
       ],
       "team": [],
@@ -1787,6 +2196,8 @@
         {"name": "Cocky Kicks + Sweeper + Neck Snapper + Explosive Blast", "input": "Super Punch + J J J A A"}
       ],
       "special": [
+        {"name": "Final Kamehameha + Omega Finishing Blow", "input": "D v J + hold A"},
+        {"name": "Final Kamehameha + Omega Finishing Blow + Big Bang Attack (Kakarot)", "input": "D v J + hold A + hold J + D v A"}
       ],
       "counter": []
     }
