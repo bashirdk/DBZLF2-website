@@ -339,6 +339,9 @@
         }, {
           "name": "SS Trunks [A]"
         }, {
+          "name": "Super Trunks [A]",
+          "new": true
+        }, {
           "name": "Ultra Trunks [A]"
         }
       ],
