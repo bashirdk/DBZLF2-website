@@ -15,30 +15,48 @@
       "major_updates": {
         "characters": [
           "[+] Goku (Namek)",
-          "[+] SS Goku (Namek)"
+          "[+] SS Goku (Namek)",
+          "[+] Super Trunks (Armour)(Android)"
         ],
         "backgrounds": [
           "[+] Planet Namek",
           "[+] Time Chamber [Hazards]",
-          "[+] MYSTERIOUS NEW BG"
+          "[+] World Tournament Stage [Ringout]",
+          "World Tournament Stage (added audience)"
         ],
         "list_of_major_updates": [
-          "Updated Backgrounds",
           "New WIDESCREEN and FULLSCREEN",
-          "New Character HUD frames and bars scouter design"
+          "Updated Backgrounds",
+          "New Character HUD frames and bars scouter design",
+          "Completely Revamped Character Select Menu",
+          "Updated Face pics with new radar chart stats",
+          "New air recovery",
+          "Revamped Ki system: New ki regeneration system and ki charge speeds",
+          "Characters with negative ki regeneration will go back to base form after all ki is depleted"
         ]
       },
       "minor_updates": {
         "sprite_changes": [
+          "New Super Vegeta Hair"
         ],
         "new_moves": [
+          "[+] Vegeta [2]: Knee Stomp (Combo Finisher)",
           "[+] Vegeta (Namek): Bang Beam",
+          "[+] Vegeta (Namek): Finish Blaster",
+          "[+] SS Gohan (Buu): Kiai",
           "[+] Majin Vegeta (Buu): Energy Rings",
           "[+] Majin Vegeta (Buu): Piledriver",
-          "[+] SS Gohan (Buu): Kiai"
+          "[+] Super Vegito (Buu): Kakarot Combo"
         ],
         "character_changes": [
-          "Majin Vegeta (Buu): Final Explosion Complete Revamp"
+          "SS Trunks (Armour)(Android): Removed Aerial Super Rapid Punches",
+          "SS Trunks (Armour)(Android): Nerfed Super Rapid Punches",
+          "SS Trunks (Armour)(Android): Nerfed Heat Dome Attack",
+          "Ultra Trunks (Armour)(Android): Attack Speed and Damage Buffs",
+          "Majin Vegeta (Buu): Faster Big Bang Attack",
+          "Majin Vegeta (Buu): Final Explosion Complete Revamp",
+          "Super Vegito (Buu): Final Kamhehameha Complete Revamp"
+
         ]
       }
     }
@@ -58,7 +76,7 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] Ultra Trunks (Armour)"
+          "[+] Ultra Trunks (Armour)(Android)"
         ],
         "list_of_major_updates": [
           "Faster loading times",
@@ -75,11 +93,11 @@
           "New Super Vegeta (Android) hair"
         ],
         "new_moves": [
-          "[+] SS Trunks (Android): Dragonthrow",
-          "[+] SS Trunks (Android): Another End",
-          "[+] SS Trunks (Android): Ultra Rapid Punches",
-          "[+] SS Trunks (Android): Rapid Shot",
-          "[+] SS Trunks (Android): Heat Dome Attack"
+          "[+] SS Trunks (Armour)(Android): Dragonthrow",
+          "[+] SS Trunks (Armour)(Android): Another End",
+          "[+] SS Trunks (Armour)(Android): Ultra Rapid Punches",
+          "[+] SS Trunks (Armour)(Android): Rapid Shot",
+          "[+] SS Trunks (Armour)(Android): Heat Dome Attack"
         ],
         "character_changes": [
           "SS Vegeta (Buu) - Decreased Ki Usage from 125% to 105%"
@@ -101,7 +119,7 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] SS Trunks (Armour) - Incomplete"
+          "[+] SS Trunks (Armour)(Android) - Incomplete"
         ],
         "backgrounds": [
           "[+] Added NEW BG - Incomplete "
@@ -128,7 +146,7 @@
     "updates": {
       "major_updates": {
         "characters": [
-          "[+] Trunks (Armour)"
+          "[+] Trunks (Armour)(Android)"
         ],
         "backgrounds": [
           "[+] Added NEW BG: Time Chamber / ROSAT",
