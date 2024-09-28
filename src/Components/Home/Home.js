@@ -79,16 +79,16 @@ const Home = () => (
         animate="animate"
         variants={versionVariants}
       >
-        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.3.2 </p>
+        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.4.3 </p>
       </motion.div>
     </div>
 
-    <div className="text-center text-white">
+    {/* <div className="text-center text-white">
       <p className="mb-5 text-3xl"> DBZ LF2 v0.4.3 RELEASE </p>
       <p className="mb-5 text-4xl"> September 28, 2024 </p>
       <p className="mb-5 text-4xl"> AVAILABLE IN </p>
       <h3 className="mb-5 text-5xl" id="counter">COUNTDOWN</h3>
-    </div>
+    </div> */}
     
 
     {/* <p className="text-white text-center"> Project has been revived thanks to <b><i>NetaFelizZz/Excellent Approximation/Rancro</i></b> (updated sprites/data + finished SS Trunks and made Ultra Trunks and will continue the mod with my help on the side) </p>

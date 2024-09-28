@@ -103,6 +103,7 @@
     "saga": "Namek",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
+    "moveset_video": "j3X7jFo2lHM",
     "stats": {
       "power_level": 5700,
       "attack": 1.95,
@@ -211,6 +212,7 @@
     "saga": "Namek",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
+    "moveset_video": "HIwAOJjWxlU",
     "stats": {
       "power_level": 11400,
       "attack": 2.76,
@@ -580,6 +582,10 @@
         {
           "name": "Special Counter Attack",
           "input": "Block attack + J"
+        }, {
+          "name": "Spirit Breaking Cannon",
+          "input": "Block attack + Hold J",
+          "added": "v0.4.3"
         }
       ],
       "transformations": [
@@ -780,7 +786,7 @@
     "name": "Super Trunks",
     "saga": "Android",
     "race": ["Saiyan", "Human"],
-    "moveset_video": "",
+    "moveset_video": "udy9RvyTL5A",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 16180,
@@ -867,8 +873,8 @@
       "links": [
       ],
       "basic": [
-        [53], 
-		{"name": "Advanced Combo", "input": "Super Punch + JA"},
+    {"name": "Burn Break", "input": "Super Punch + J"},
+		{"name": "Burning Breaker", "input": "Super Punch + JA"},
 		{"name": "Aerial Super Rapid Punches", "input": "Super Punch + JAJ + hold A"},
 		{"name": "True Rapid Shot Combo", "input": "Super Punch + JA + hold J, then press A for a finisher blast"}
       ],

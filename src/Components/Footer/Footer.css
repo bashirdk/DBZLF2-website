@@ -9,3 +9,7 @@
 .fa-icon svg:hover path{
   fill: #5582FF;
 }
+
+.footer-links a {
+  color: white;
+}
