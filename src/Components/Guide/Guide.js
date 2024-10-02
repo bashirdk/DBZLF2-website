@@ -185,14 +185,48 @@ class Guide extends Component {
 						<h3 id="counter_attack">Counter Attack</h3>
 						<h3 id="air_recover">Air Recover</h3>
 						<h3 id="ki_charge">Ki Charge</h3>
-						<div className="guide-video-container">
-							<video className="guide-video" autoPlay loop muted playsInline>
+						<div className="relative">
+						<div className="guide-video-container ">
+							<p>MP4 VIDEO:  528x298 resolution, Data rate: 784kbps, Total bitrate: 901kpbs, Frane rate: 29.97 fps</p>
+							<p> FILE SIZE: 559 KB </p>
+							<video className="guide-video " autoPlay loop muted playsInline>
 								<source src={require(`../../images/guide/ki_charge.mp4`)} />
 							</video>
 						</div>
+
+						<br></br><br></br>
+						<div className="guide-video-container ">
+						<p>webp image: 528x298 resolution, Horizontal/Vertical resolution: 72 dpi, Frane rate: 33 fps</p>
+						<p> FILE SIZE: 277 KB </p>
+						<p>Made by converting the MP4 video above into webp</p>
+						<img 
+							src={require(`../../images/guide/kicharge.webp`)}
+							alt="control settings"
+							className="guide-video"
+						/>
+						</div>
+						
+						<br></br><br></br>
+						<div className="guide-video-container ">
+						<p>webp image: 600x338 resolution, Horizontal/Vertical resolution: 72 dpi, Frane rate: 33 fps</p>
+						<p> FILE SIZE: 312 KB </p>
+						<p>made by converting the original MP4 video 1920x1080 and reducing resolution to 600x338 webp</p>
+						<img 
+							src={require(`../../images/guide/kicharge2.webp`)}
+							alt="control settings"
+							className="guide-video"
+						/>
+						</div>
+						</div>
 						<p> You can charge your Ki bar by pressing DJA A and holding A. The higher your Ki Charge Speed the faster you will charge. </p>
 						<h3 id="ki_blast">Ki Blast</h3>
+
 						<h3 id="special_moves">Special Moves</h3>
+						<img 
+							src={require(`../../images/guide/kicharge.webp`)}
+							alt="control settings"
+							className="guide-img stats-img"
+						/>
 					</div>
 
 				</div>

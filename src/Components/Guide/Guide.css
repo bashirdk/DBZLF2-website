@@ -18,6 +18,15 @@ h2:target, h3:target{
   padding-top: 100px;
 }
 
+@media (max-width: 1000px) {
+  .guide-page h2 { font-size: 1.8em; }
+  .guide-page h3 { font-size: 1.6em; }
+  .guide-page h4 { font-size: 1.4em; }
+  .guide-page h5 { font-size: 1.2em;}
+  .guide-page p  { font-size: 1em;  }
+  .guide-page li { font-size: 1em; }
+}
+
 
 .guide-page h2 { font-size: 1.85em; text-align: center; }
 .guide-page h3 { font-size: 1.7em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
@@ -50,12 +59,14 @@ h2:target, h3:target{
 
 .guide-video-container{
   padding: 20px 50px;
+  filter: drop-shadow(0px 0px 6.75px black);
 }
 .guide-video {
   width: 100%;
-  border: 10px solid teal;
+  border: 10px solid white;
+  border-style: groove;
+  box-shadow: 0 0 10px white;
   border-radius: 50px;
-  filter: drop-shadow(0px 0px 6.75px black);
   /* image-rendering: pixelated; */
 }
 
