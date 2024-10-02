@@ -32,6 +32,10 @@ const Navbar = () => {
       "link": "/"
     },
     {
+      "title": "Guide",
+      "link": "/guide"
+    },
+    {
       "title": "Characters",
       "link": "/characters"
     },

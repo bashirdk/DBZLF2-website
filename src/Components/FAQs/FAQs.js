@@ -29,6 +29,7 @@ class FAQs extends Component {
 					<link rel="canonical" href="https://dbzlf2.com/faqs/" />
 				</Helmet>
 				<h1 className="text-white">Frequently Asked Questions</h1>
+				<p className="text-white my-4">Click or Tap a question to see the answer.</p>
 				<div>{faqsData}</div>
 			</div>
 		);
