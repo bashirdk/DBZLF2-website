@@ -237,12 +237,13 @@ class Guide extends Component {
 
 						<p> Each character has their own unique stats which are determined by their power and abilities based on the manga and anime </p>
 						<ol>
-							<li><b>Attack (ATK) </b> This increases the damage output of all attacks. </li>
-							<li><b>Defense (DEF) </b> This increases the defense allowing you to take less damage.</li>
-							<li><b>HP Regeneration (HP-R) </b> The higher the stat the faster HP regenerates over time. Dark HP can't be regenerated over time except by Buu. </li>
-							<li><b>Ki Regeneration (KI-R) </b> Higher ki regeneration allows you to recover ki gradually over time. 
-								Some characters don't have any ki regeneration so the only way to increase ki is to charge and some characters have negative ki regen so they gradually lose ki over time.</li>
-							<li><b>Ki Charge Speed (KI-C) </b> Higher ki charge speed allows you to charge your ki faster using the DJA A input. </li>
+							<li><b>Attack (ATK): </b> This increases the damage output of all attacks. </li>
+							<li><b>Defense (DEF): </b> This increases the defense allowing the character to take less damage.</li>
+							<li><b>HP Regeneration (HP-R): </b> This increases the speed HP regenerates gradually over time. Dark HP can't be regenerated over time except by some characters like Majin Buu. </li>
+							<li><b>Ki Regeneration (KI-R): </b> This increases the speed Ki regenerates gradually over time.
+								Some characters don't have any Ki Regeneration so the only way to increase Ki is to Charge Ki.
+								Some characters have negative Ki Regeneration so they gradually lose Ki over time, to compensate, they have higher Ki Charge Speed.</li>
+							<li><b>Ki Charge Speed (KI-C): </b> This increases the speed Ki Charges when using the DJA A input. </li>
 						</ol>
 
 						<h3 id="normal_attack">Normal Attack </h3>
@@ -300,7 +301,8 @@ class Guide extends Component {
 								<source src="../../images/guide/ki_charge.mp4" />
 							</video>
 						</div>
-						<p>After performing an <i>Air Recovery</i> hold the <b>Left</b> or <b>Right</b> button to perform a dash in mid-air. You can also hold <b>Up</b> or <b>Down</b> to move on the z-axis.</p>
+						<p>After performing an <i>Air Recovery</i> hold the <b>Left</b> or <b>Right</b> directional keys to perform a dash in mid-air. 
+						You can also hold the <b>Up</b> or <b>Down</b> directional keys to move on the z-axis.</p>
 
 						<h3 id="basic_combo">Basic Combo</h3>
 						<div className="guide-video-container ">
@@ -308,7 +310,9 @@ class Guide extends Component {
 								<source src="../../images/guide/ki_charge.mp4" />
 							</video>
 						</div>
-						<p>After performing a <i>Heavy Attack</i> press the <b>Jump</b> button to initiate a basic combo. Some characters can continue to combo further by pressing the <b>Attack</b> or <b>Jump</b> button.</p>
+						<p>After performing a <i>Heavy Attack</i> press the <b>Jump</b> button to initiate a basic combo. 
+						Some characters can continue to combo further by pressing the <b>Attack</b> or <b>Jump</b> button.
+						To see a complete combo list for each character check the characters page <a href="/characters">HERE</a></p>
 
 						<h3 id="ki_charge">Ki Charge</h3>
 						<div className="guide-video-container ">
@@ -321,7 +325,7 @@ class Guide extends Component {
 						<h3 id="ki_blast">Ki Blast</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+							<source src={require(`../../images/guide/kicharge.webm`)} />
 							</video>
 						</div>
 						<p>Can be performed with the key inputs <b>Defend Forwards Attack</b> and keep pressing <b>Attack</b> button to continuously shoot ki blasts.</p>
@@ -342,6 +346,7 @@ class Guide extends Component {
 							<li>D v A </li>
 							<li>D v J </li>
 						</ul>
+						<p> <b><i><u>NOTE:</u></i></b> Not all moves are available to all characters. To see a complete movelist for each character check the characters page <a href="/characters">HERE</a></p>
 					</div>
 
 				</div>

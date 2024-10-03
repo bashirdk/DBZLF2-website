@@ -41,7 +41,8 @@ h2:target, h3:target{
   width: 100%;
   border: 10px solid white;
   border-style: groove;
-  box-shadow: 0 0 10px white;
+  border-color: #44CAE4 #b449e6 #b449e6 #44CAE4;
+  box-shadow: 5px 5px 20px #b449e6, -5px -5px 20px #44CAE4;
   border-radius: 50px;
   /* image-rendering: pixelated; */
 }
@@ -104,13 +105,5 @@ h2:target, h3:target{
   }
   .guide-img {
     border-radius: 30px;
-  }
-  .guide-video {
-    width: 100%;
-    border: 10px solid white;
-    border-style: groove;
-    box-shadow: 0 0 10px white;
-    border-radius: 50px;
-    image-rendering: auto;
   }
 }
