@@ -1,5 +1,6 @@
 import "./Guide.css";
 
+import { NavLink } from "react-router-dom";
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 
@@ -84,7 +85,7 @@ class Guide extends Component {
 
 					</div>
 					
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 mb-1 px-6 pt-5 pb-10 mx-0">
 						<h2 id="ui" className="text-center"> UI </h2>
 						<h3 id="character_select">Character Select</h3>
 						<p>Press 'Attack' button to join the battle.</p>
@@ -96,7 +97,7 @@ class Guide extends Component {
 							className="w-full guide-img nmb-5"
 						/>
 						<h4>Stats</h4>
-						<p>You can see the stats of each character. To get more details on each stat check <a href="#stats">HERE.</a> </p>
+						<p>You can see the stats of each character. To get more details on each stat check <NavLink to="#stats" >HERE.</NavLink> </p>
 						<h4>Team</h4>
 						<p>Here you can select the team the character is on. There are 4 different teams and also independent if you want to play by yourself. </p>
 
@@ -135,10 +136,10 @@ class Guide extends Component {
 						<p>This is the current game mode being played.</p>
 						
 						<h4>Difficulty</h4>
-						<p> This is the current game difficulty, in general the AI/com player differently depending on the difficulty selected.</p>
+						<p> This is the current game difficulty, in general the AI/com player differently depending on the difficulty selected. To unlock CRAZY! difficulty type in "lf2.net" in the character select screen.</p>
 					</div>
 
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
 						<h2 id="game_modes" className="text-center"> Game Modes </h2>
 
 						<h3 id="vs_mode">VS Mode</h3>
@@ -173,19 +174,19 @@ class Guide extends Component {
 						<p>Fight in 1 on 1 battles to determine who is the World Champion!
 						There are a total of 7 matches. 4 quarter-final matches, 2 semi-final matches and 1 final match.
 						You always start every match with a full HP bar, however your Max HP is based on your Dark HP from the previous match.
-						The default background is the World Tournament Stage (Ringout) however you can change it any other background.</p>
+						The default background is the World Tournament Stage (Ringout) however you can change it to any other background.</p>
 						
 						<h3 id="2v2">2 on 2 Championship</h3>
-						<p>Fight in 1 on 1 battles to determine who are the Tag-team World Champions!
+						<p>Fight in 2 on 2 battles to determine who are the Tag-team World Champions!
 						There are a total of 3 matches. 2 semi-final matches and 1 final match.
 						You always start every match with a full HP bar, however your Max HP is based on your Dark HP from the previous match.
-						The default background is the World Tournament Stage (Ringout) however you can change it any other background.</p>
+						The default background is the World Tournament Stage (Ringout) however you can change it to any other background.</p>
 						
 						<h3 id="battle_mode">Battle Mode</h3>
 						<p> Battle mode is currently not available and will cause the game to crash.</p>
 					</div>
 
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
 						<h2 id="gameplay_mechanics" className="text-center">Gameplay Mechanics</h2>
 						<h3 id="stats">Stats</h3>
 						<div className="text-center">
@@ -213,8 +214,10 @@ class Guide extends Component {
 						<p>Pressing the <b>Attack</b> button near an enemy that is <i>staggered</i> or has their <i>Defense Broken</i> will result in a <i>Heavy Attack.</i> </p>
 
 						<h3 id="stagger">Stagger (Dance of Pain)</h3>
+						<p>Three <i>Normal Attacks</i> that </p>
 
 						<h3 id="grab">Grab (Catching)</h3>
+						<p></p>
 
 						<h3 id="counter_attack">Counter Attack</h3>
 
@@ -229,8 +232,34 @@ class Guide extends Component {
 
 						<h3 id="ki_charge">Ki Charge</h3>
 						<div className="relative">
+
+						<p>AUTO</p>
 						<div className="guide-video-container ">
 							<video className="guide-video " autoPlay loop muted playsInline>
+								<source src={require(`../../images/guide/ki_charge.mp4`)} />
+							</video>
+						</div>
+						<br></br><br></br>
+
+						<p>SMOOTH</p>
+						<div className="guide-video-container ">
+							<video className="guide-video guide-video2" autoPlay loop muted playsInline>
+								<source src={require(`../../images/guide/ki_charge.mp4`)} />
+							</video>
+						</div>
+						<br></br><br></br>
+
+						<p>CRISP EDGES</p>
+						<div className="guide-video-container ">
+							<video className="guide-video guide-video3" autoPlay loop muted playsInline>
+								<source src={require(`../../images/guide/ki_charge.mp4`)} />
+							</video>
+						</div>
+						<br></br><br></br>
+
+						<p>PIXELATED</p>
+						<div className="guide-video-container ">
+							<video className="guide-video guide-video4" autoPlay loop muted playsInline>
 								<source src={require(`../../images/guide/ki_charge.mp4`)} />
 							</video>
 						</div>

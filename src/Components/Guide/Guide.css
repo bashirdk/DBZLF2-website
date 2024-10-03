@@ -18,7 +18,6 @@ h2:target, h3:target{
   padding-top: 100px;
 }
 
-
 .guide-page h2 { font-size: 1.8em; text-align: center; }
 .guide-page h3 { font-size: 1.6em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
 .guide-page h4 { font-size: 1.4em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
@@ -32,15 +31,17 @@ h2:target, h3:target{
   border-style: dotted dashed dashed dotted;
 }
 
-
-@media (min-width: 768px) {
-.guide-page h2 { font-size: 1.85em;  }
-.guide-page h3 { font-size: 1.7em; }
-.guide-page h4 { font-size: 1.55em;}
-.guide-page h5 { font-size: 1.4em; }
-.guide-page p  { font-size: 1.25em; }
-.guide-page li { font-size: 1.25em; }
-.guide-page hr { margin: 40px 100px; }
+.guide-video-container{
+  padding: 20px 0px;
+  filter: drop-shadow(0px 0px 6.75px black);
+}
+.guide-video {
+  width: 100%;
+  border: 10px solid white;
+  border-style: groove;
+  box-shadow: 0 0 10px white;
+  border-radius: 50px;
+  /* image-rendering: pixelated; */
 }
 
 .guide-page h2 {
@@ -65,19 +66,6 @@ h2:target, h3:target{
   filter: drop-shadow(0px 0px 6.75px black);
 }
 
-.guide-video-container{
-  padding: 20px 50px;
-  filter: drop-shadow(0px 0px 6.75px black);
-}
-.guide-video {
-  width: 100%;
-  border: 10px solid white;
-  border-style: groove;
-  box-shadow: 0 0 10px white;
-  border-radius: 50px;
-  /* image-rendering: pixelated; */
-}
-
 .nmb-5 {
   margin-bottom: -5px;
 }
@@ -94,5 +82,42 @@ h2:target, h3:target{
 
 .stats-img{
   width: 50%;
-  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+
+
+@media (min-width: 768px) {
+  .guide-page h2 { font-size: 1.85em;  }
+  .guide-page h3 { font-size: 1.7em; }
+  .guide-page h4 { font-size: 1.55em;}
+  .guide-page h5 { font-size: 1.4em; }
+  .guide-page p  { font-size: 1.25em; }
+  .guide-page li { font-size: 1.25em; }
+  .guide-page hr { margin: 40px 100px; }
+
+  .guide-video-container{
+    padding: 20px 50px;
+    filter: drop-shadow(0px 0px 6.75px black);
+  }
+  .guide-video {
+    width: 100%;
+    border: 10px solid white;
+    border-style: groove;
+    box-shadow: 0 0 10px white;
+    border-radius: 50px;
+    image-rendering: auto;
+  }
+
+  .guide-video2{
+    image-rendering: smooth;
+  }
+
+  .guide-video3{
+    image-rendering: crisp-edges;
+  }
+
+  .guide-video4{
+    image-rendering: pixelated;
+  }
 }
