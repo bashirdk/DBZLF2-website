@@ -18,22 +18,30 @@ h2:target, h3:target{
   padding-top: 100px;
 }
 
-@media (max-width: 1000px) {
-  .guide-page h2 { font-size: 1.8em; }
-  .guide-page h3 { font-size: 1.6em; }
-  .guide-page h4 { font-size: 1.4em; }
-  .guide-page h5 { font-size: 1.2em;}
-  .guide-page p  { font-size: 1em;  }
-  .guide-page li { font-size: 1em; }
+
+.guide-page h2 { font-size: 1.8em; text-align: center; }
+.guide-page h3 { font-size: 1.6em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
+.guide-page h4 { font-size: 1.4em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
+.guide-page h5 { font-size: 1.2em; text-align: left; }
+.guide-page p  { font-size: 1em; text-align: justify; }
+.guide-page li { font-size: 1em; }
+
+.guide-page hr {
+  margin: 40px 40px;
+  border: 3px dotted white;
+  border-style: dotted dashed dashed dotted;
 }
 
 
-.guide-page h2 { font-size: 1.85em; text-align: center; }
-.guide-page h3 { font-size: 1.7em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
-.guide-page h4 { font-size: 1.55em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
-.guide-page h5 { font-size: 1.4em; text-align: left; }
-.guide-page p  { font-size: 1.25em; text-align: justify; }
+@media (min-width: 768px) {
+.guide-page h2 { font-size: 1.85em;  }
+.guide-page h3 { font-size: 1.7em; }
+.guide-page h4 { font-size: 1.55em;}
+.guide-page h5 { font-size: 1.4em; }
+.guide-page p  { font-size: 1.25em; }
 .guide-page li { font-size: 1.25em; }
+.guide-page hr { margin: 40px 100px; }
+}
 
 .guide-page h2 {
   text-transform: uppercase;
@@ -79,7 +87,7 @@ h2:target, h3:target{
 }
 
 .guide-page hr {
-  margin: 40px 100px;
+  margin: 40px 40px;
   border: 3px dotted white;
   border-style: dotted dashed dashed dotted;
 }

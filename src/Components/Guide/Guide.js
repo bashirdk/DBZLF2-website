@@ -20,7 +20,7 @@ class Guide extends Component {
 
 				<h1 className="text-white">DBZ LF2 Game Guide</h1>
 
-				<div className="text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 py-5 mx-5">
+				<div className="text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 py-5 mx-0 lg:mx-3">
 					<ul>
 						<li><a href="#controls">Controls </a></li>
 						<li><a href="#ui">UI</a></li>
@@ -45,6 +45,8 @@ class Guide extends Component {
 							<li><a href="#grab">Grab (Catching)</a></li>
 							<li><a href="#counter_attack">Counter Attack</a></li>
 							<li><a href="#air_recover">Air Recover</a></li>
+							<li><a href="#air_recover_dash">Air Recover Dash</a></li>
+							<li><a href="#basic_combo">Basic Combo</a></li>
 							<li><a href="#ki_charge">Ki Charge</a></li>
 							<li><a href="#ki_blast">Ki Blast</a></li>
 							<li><a href="#special_moves">Special Moves</a></li>
@@ -54,7 +56,7 @@ class Guide extends Component {
 
 				<div className="text-white guide-page">
 					
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-5 lg:mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
 						<h2 id="controls" className="text-center"> Controls</h2>
 						<p>You can setup the Key Configuration by choosing "Control Settings" in the main menu. <i>But the following setup is superior:</i></p>
 						<img 
@@ -82,7 +84,7 @@ class Guide extends Component {
 
 					</div>
 					
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-5 lg:mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
 						<h2 id="ui" className="text-center"> UI </h2>
 						<h3 id="character_select">Character Select</h3>
 						<p>Press 'Attack' button to join the battle.</p>
@@ -113,9 +115,9 @@ class Guide extends Component {
 						<p>This is the characters max HP that they can heal to. Most characters cannot regenerate Dark HP; however, some characters like Majin Buu can also regenerate Dark HP.</p>
 
 						<h4>Ki Gauge</h4>
-						<p>The colour of the ki bar is dependent on the colour of the characters ki; however 30+ bars are always a light blue colour. </p>
-						<p>Characters with natural ki regeneration will only automatically regenerate to 10 ki bars.</p>
-						<p>You can overcharge your ki as much as you want, but visually you will only see up to 50 bars of ki </p>
+						<p>The colour of the ki bar is dependent on the colour of the characters ki; however 30+ bars are always a light blue colour.
+						Characters with natural ki regeneration will only automatically regenerate to 10 ki bars.
+						You can overcharge your ki as much as you want, but visually you will only see up to 50 bars of ki </p>
 						
 						<h4>Power Level</h4>
 						<p>This is the characters power level which is based on the characters stats. The higher the power level the stronger the character.</p>
@@ -136,28 +138,54 @@ class Guide extends Component {
 						<p> This is the current game difficulty, in general the AI/com player differently depending on the difficulty selected.</p>
 					</div>
 
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-5 lg:mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
 						<h2 id="game_modes" className="text-center"> Game Modes </h2>
+
 						<h3 id="vs_mode">VS Mode</h3>
-						<p>This is the main fighting mode. You can have up to 8 fighters. (minimum 1 player, maximum 4 players, minimum 1 COM and maximum 7 COMs).</p>
-						<p></p>
+						<p>This is the main fighting mode. You can have up to 8 fighters. (minimum 1 player, maximum 4 players, minimum 1 COM and maximum 7 COMs).
+							Each fighter can be either independent, or in 1 of 4 teams. 
+						</p>
+						<p><b> "Training Mode"</b> - Select any fighter (preferably Super Vegito) as a 2nd human player and you can fight against him as a training dummy with no COM fighters.</p>
+						
 						<h3 id="stage_mode">Stage Mode</h3>
-						<p>This mode you advance through different phases fighting weak </p>
+						<div className="text-center">
+							<img 
+								src={require(`../../images/guide/stagemode.PNG`)}
+								alt="control settings"
+								className="guide-img"
+							/>
+						</div>
+						<p>This mode you advance through different phases fighting weak enemies. There are several phases per sub-stage. 
+							Occasionally you will come across some boss fights. If there are any minions with the boss they generally will continually respawn till the boss has been defeated.
+							In Easy difficulty, the enemies have 25% less HP and in CRAZY! difficulty the enemies have 50% more HP. 
+							After completion of a sub-stage, HP is healed and you get bonus health depending on difficulty.
+							Easy: 200, Normal: 150, Difficult: 100 and CRAZY!: 50.
+						</p>
+						
 						<h3 id="1v1">1 on 1 Championship</h3>
-						<p>Fight in 1 on 1 battles to determine who is the World Chanpion!</p>
-						<p>There are a total of 7 matches. 4 quarter-final matches, 2 semi-final matches and 1 final match.</p>
-						<p>You always start every match with a full HP bar, however your Max HP is based on your Dark HP from the previous match. </p>
-						<p>The default background is the World Tournament Stage (Ringout) however you can change it any other background.</p>
+						<div className="text-center">
+							<img 
+								src={require(`../../images/guide/1v1.PNG`)}
+								alt="control settings"
+								className="guide-img"
+							/>
+						</div>
+						<p>Fight in 1 on 1 battles to determine who is the World Champion!
+						There are a total of 7 matches. 4 quarter-final matches, 2 semi-final matches and 1 final match.
+						You always start every match with a full HP bar, however your Max HP is based on your Dark HP from the previous match.
+						The default background is the World Tournament Stage (Ringout) however you can change it any other background.</p>
+						
 						<h3 id="2v2">2 on 2 Championship</h3>
-						<p>Fight in 1 on 1 battles to determine who are the Tag-team World Chanpions!</p>
-						<p>There are a total of 3 matches. 2 semi-final matches and 1 final match.</p>
-						<p>You always start every match with a full HP bar, however your Max HP is based on your Dark HP from the previous match. </p>
-						<p>The default background is the World Tournament Stage (Ringout) however you can change it any other background.</p>
+						<p>Fight in 1 on 1 battles to determine who are the Tag-team World Champions!
+						There are a total of 3 matches. 2 semi-final matches and 1 final match.
+						You always start every match with a full HP bar, however your Max HP is based on your Dark HP from the previous match.
+						The default background is the World Tournament Stage (Ringout) however you can change it any other background.</p>
+						
 						<h3 id="battle_mode">Battle Mode</h3>
 						<p> Battle mode is currently not available and will cause the game to crash.</p>
 					</div>
 
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-5 lg:mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
 						<h2 id="gameplay_mechanics" className="text-center">Gameplay Mechanics</h2>
 						<h3 id="stats">Stats</h3>
 						<div className="text-center">
@@ -178,55 +206,41 @@ class Guide extends Component {
 							<li><b>Ki Charge Speed (KI-C) </b> Higher ki charge speed allows you to charge your ki faster using the DJA A input. </li>
 						</ol>
 
-						<h3>Normal Attack </h3>
-						<h3>Heavy Attack (Super Punch)</h3>
+						<h3 id="normal_attack">Normal Attack </h3>
+						<p>Press the <b>Attack</b> button </p>
+
+						<h3 id="heavy_attack">Heavy Attack (Super Punch)</h3>
+						<p>Pressing the <b>Attack</b> button near an enemy that is <i>staggered</i> or has their <i>Defense Broken</i> will result in a <i>Heavy Attack.</i> </p>
+
 						<h3 id="stagger">Stagger (Dance of Pain)</h3>
+
 						<h3 id="grab">Grab (Catching)</h3>
+
 						<h3 id="counter_attack">Counter Attack</h3>
+
 						<h3 id="air_recover">Air Recover</h3>
+						<p> When you are falling and reach the  </p>
+
+						<h3 id="air_recover_dash">Air Recover Dash</h3>
+						<p>After performing an <i>Air Recovery</i> hold the <b>Left</b> or <b>Right</b> button to perform a dash in mid-air. You can also hold <b>Up</b> or <b>Down</b> to move on the z-axis.</p>
+
+						<h3 id="basic_combo">Basic Combo</h3>
+						<p>After performing a <i>Heavy Attack</i> press the <b>Jump</b> button to initiate a basic combo. Some characters can continue to combo further by pressing the <b>Attack</b> or <b>Jump</b> button.</p>
+
 						<h3 id="ki_charge">Ki Charge</h3>
 						<div className="relative">
 						<div className="guide-video-container ">
-							<p>MP4 VIDEO:  528x298 resolution, Data rate: 784kbps, Total bitrate: 901kpbs, Frane rate: 29.97 fps</p>
-							<p> FILE SIZE: 559 KB </p>
 							<video className="guide-video " autoPlay loop muted playsInline>
 								<source src={require(`../../images/guide/ki_charge.mp4`)} />
 							</video>
 						</div>
+						</div>
+						<p> You can charge your Ki bar by pressing <b>DJA A</b> and <b>holding A</b>. The higher your <i>Ki Charge Speed</i> the faster you will charge. </p>
 
-						<br></br><br></br>
-						<div className="guide-video-container ">
-						<p>webp image: 528x298 resolution, Horizontal/Vertical resolution: 72 dpi, Frane rate: 33 fps</p>
-						<p> FILE SIZE: 277 KB </p>
-						<p>Made by converting the MP4 video above into webp</p>
-						<img 
-							src={require(`../../images/guide/kicharge.webp`)}
-							alt="control settings"
-							className="guide-video"
-						/>
-						</div>
-						
-						<br></br><br></br>
-						<div className="guide-video-container ">
-						<p>webp image: 600x338 resolution, Horizontal/Vertical resolution: 72 dpi, Frane rate: 33 fps</p>
-						<p> FILE SIZE: 312 KB </p>
-						<p>made by converting the original MP4 video 1920x1080 and reducing resolution to 600x338 webp</p>
-						<img 
-							src={require(`../../images/guide/kicharge2.webp`)}
-							alt="control settings"
-							className="guide-video"
-						/>
-						</div>
-						</div>
-						<p> You can charge your Ki bar by pressing DJA A and holding A. The higher your Ki Charge Speed the faster you will charge. </p>
 						<h3 id="ki_blast">Ki Blast</h3>
 
 						<h3 id="special_moves">Special Moves</h3>
-						<img 
-							src={require(`../../images/guide/kicharge.webp`)}
-							alt="control settings"
-							className="guide-img stats-img"
-						/>
+
 					</div>
 
 				</div>
