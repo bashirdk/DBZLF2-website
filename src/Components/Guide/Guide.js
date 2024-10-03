@@ -21,15 +21,16 @@ class Guide extends Component {
 
 				<h1 className="text-white">DBZ LF2 Game Guide</h1>
 
-				<div className="text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 py-5 mx-0 lg:mx-3">
+
+				{/* <div className="text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 py-5 mx-0 lg:mx-3 guide-page">
 					<ul>
-						<li><a href="#controls">Controls </a></li>
-						<li><a href="#ui">UI</a></li>
+						<li><h2><a href="#controls" className="guide-blue">Controls </a></h2></li>
+						<li><a href="#ui" className="guide-blue">UI</a></li>
 						<ul>
 							<li><a href="#characer_select">Character Select</a></li>
 							<li><a href="#hud">HUD</a></li>
 						</ul>
-						<li><a href="#game_modes">Game Modes</a></li>
+						<li><a href="#game_modes" className="guide-blue">Game Modes</a></li>
 						<ul>
 							<li><a href="#vs_mode">VS Mode</a></li>
 							<li><a href="#stage_mode">Stage Mode</a></li>
@@ -37,7 +38,7 @@ class Guide extends Component {
 							<li><a href="#2v2">2 on 2 Championship</a></li>
 							<li><a href="#battle_mode">Battle Mode</a></li>
 						</ul>
-						<li><a href="#gameplay_mechanics">Gameplay Mechanics</a></li>
+						<li><a href="#gameplay_mechanics" className="guide-blue">Gameplay Mechanics</a></li>
 						<ul>
 							<li><a href="#stats">Stats</a></li>
 							<li><a href="#normal_attack">Normal Attack</a></li>
@@ -53,11 +54,49 @@ class Guide extends Component {
 							<li><a href="#special_moves">Special Moves</a></li>
 						</ul>
 					</ul>
+				</div> */}
+
+				<div className="guide-summary text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 pr-5 pt-5 pb-10 mx-0 lg:mx-3">
+					<ul>
+						<li><h2><a href="#controls" className="guide-blue">Controls </a></h2></li>
+						<ul>
+							<li><h3><a href="#function_keys">Special Function Keys</a></h3></li>
+							<li><h3><a href="#unlocks">Special Unlocks</a></h3></li>
+						</ul>
+						<li><h2><a href="#ui" className="guide-blue">UI</a></h2></li>
+						<ul>
+							<li><h3><a href="#characer_select">Character Select</a></h3></li>
+							<li><h3><a href="#hud">HUD</a></h3></li>
+						</ul>
+						<li><h2><a href="#game_modes" className="guide-blue">Game Modes</a></h2></li>
+						<ul>
+							<li><h3><a href="#vs_mode">VS Mode</a></h3></li>
+							<li><h3><a href="#stage_mode">Stage Mode</a></h3></li>
+							<li><h3><a href="#1v1">1 on 1 Championship</a></h3></li>
+							<li><h3><a href="#2v2">2 on 2 Championship</a></h3></li>
+							<li><h3><a href="#battle_mode">Battle Mode</a></h3></li>
+						</ul>
+						<li><h2><a href="#gameplay_mechanics" className="guide-blue">Gameplay Mechanics</a></h2></li>
+						<ul>
+							<li><h3><a href="#stats">Stats</a></h3></li>
+							<li><h3><a href="#normal_attack">Normal Attack</a></h3></li>
+							<li><h3><a href="#heavy_attack">Heavy Attack (Super Punch)</a></h3></li>
+							<li><h3><a href="#stagger">Stagger (Dance of Pain)</a></h3></li>
+							<li><h3><a href="#grab">Grab (Catching)</a></h3></li>
+							<li><h3><a href="#counter_attack">Counter Attack</a></h3></li>
+							<li><h3><a href="#air_recover">Air Recover</a></h3></li>
+							<li><h3><a href="#air_recover_dash">Air Recover Dash</a></h3></li>
+							<li><h3><a href="#basic_combo">Basic Combo</a></h3></li>
+							<li><h3><a href="#ki_charge">Ki Charge</a></h3></li>
+							<li><h3><a href="#ki_blast">Ki Blast</a></h3></li>
+							<li><h3><a href="#special_moves">Special Moves</a></h3></li>
+						</ul>
+					</ul>
 				</div>
 
 				<div className="text-white guide-page">
 					
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 py-5 mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
 						<h2 id="controls" className="text-center"> Controls</h2>
 						<p>You can setup the Key Configuration by choosing "Control Settings" in the main menu. <i>But the following setup is superior:</i></p>
 						<img 
@@ -69,7 +108,7 @@ class Guide extends Component {
 						<p>"A" stands for Attack button, "J" stands for Jump button, "D" stands Defend button</p>
 						<p>"^" stands for the Up button, "v" stands for the down button, "&lt;" stands for the left button, ">" stands for the right button</p>
 
-						<h3> Special Function Keys</h3>
+						<h3 id="function_keys"> Special Function Keys</h3>
 						<p><b>F1:</b> Pause/Unpause the game</p>
 						<p><b>F2:</b> Pause and skip a frame</p>
 						<p><b>F3:</b> Lock Function Keys: F6 and F7</p>
@@ -79,10 +118,9 @@ class Guide extends Component {
 						<p><b>F7:</b> Set All HP and MP to 500 (fully heal) (VS Mode only)</p>
 						<p><b>F11:</b> Lower volume</p>
 						<p><b>F12:</b> Raise volume</p>
-						<br></br>
 
-
-
+						<h3 id="unlocks">Special Unlocks</h3>
+						<p>Type in "lf2.net" when in game to unlock the "CRAZY!" difficulty and all the locked characters. </p>
 					</div>
 					
 					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 mb-1 px-6 pt-5 pb-10 mx-0">
@@ -208,68 +246,102 @@ class Guide extends Component {
 						</ol>
 
 						<h3 id="normal_attack">Normal Attack </h3>
-						<p>Press the <b>Attack</b> button </p>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
+						<p>Press the <b>Attack</b> button. </p>
 
 						<h3 id="heavy_attack">Heavy Attack (Super Punch)</h3>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
 						<p>Pressing the <b>Attack</b> button near an enemy that is <i>staggered</i> or has their <i>Defense Broken</i> will result in a <i>Heavy Attack.</i> </p>
 
 						<h3 id="stagger">Stagger (Dance of Pain)</h3>
-						<p>Three <i>Normal Attacks</i> that </p>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
+						<p>Generally it takes about 3 uninterrupted consective <i>Normal Attacks</i> to cause an enemy to be <i>Staggered</i> and enter into a dance of pain leaving them wide open to attacks for about 1 second.  </p>
 
 						<h3 id="grab">Grab (Catching)</h3>
-						<p></p>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
+						<p>To grab an enemy simply press the <b>Direction</b> key to <i>Walk</i> into them when they are <i>Staggered.</i> </p>
 
 						<h3 id="counter_attack">Counter Attack</h3>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
+						<p>To perform a <i>Counter Attack</i> you must press the <b>Attack</b> button when <b>Defending</b> an attack that doesn't break your guard. 
+						Counter attacks can only land on an enemy if you are close to them, however, characters with Teleportation techniques such as the Instant Transmission can <i>Counter Attack</i> no matter how far the enemy is.</p>
 
 						<h3 id="air_recover">Air Recover</h3>
-						<p> When you are falling and reach the  </p>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
+						<p> When the character is <i>Falling</i> and they are in a horizontal position parallel to the ground you can press to <b>Jump</b> button to do an <i>Air Recovery</i> which costs <u>3 bars of ki</u>.  </p>
 
 						<h3 id="air_recover_dash">Air Recover Dash</h3>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
 						<p>After performing an <i>Air Recovery</i> hold the <b>Left</b> or <b>Right</b> button to perform a dash in mid-air. You can also hold <b>Up</b> or <b>Down</b> to move on the z-axis.</p>
 
 						<h3 id="basic_combo">Basic Combo</h3>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
 						<p>After performing a <i>Heavy Attack</i> press the <b>Jump</b> button to initiate a basic combo. Some characters can continue to combo further by pressing the <b>Attack</b> or <b>Jump</b> button.</p>
 
 						<h3 id="ki_charge">Ki Charge</h3>
-						<div className="relative">
-
-						<p>AUTO</p>
 						<div className="guide-video-container ">
-							<video className="guide-video " autoPlay loop muted playsInline>
+							<video className="guide-video" autoPlay loop muted playsInline>
 								<source src={require(`../../images/guide/ki_charge.mp4`)} />
 							</video>
-						</div>
-						<br></br><br></br>
-
-						<p>SMOOTH</p>
-						<div className="guide-video-container ">
-							<video className="guide-video guide-video2" autoPlay loop muted playsInline>
-								<source src={require(`../../images/guide/ki_charge.mp4`)} />
-							</video>
-						</div>
-						<br></br><br></br>
-
-						<p>CRISP EDGES</p>
-						<div className="guide-video-container ">
-							<video className="guide-video guide-video3" autoPlay loop muted playsInline>
-								<source src={require(`../../images/guide/ki_charge.mp4`)} />
-							</video>
-						</div>
-						<br></br><br></br>
-
-						<p>PIXELATED</p>
-						<div className="guide-video-container ">
-							<video className="guide-video guide-video4" autoPlay loop muted playsInline>
-								<source src={require(`../../images/guide/ki_charge.mp4`)} />
-							</video>
-						</div>
 						</div>
 						<p> You can charge your Ki bar by pressing <b>DJA A</b> and <b>holding A</b>. The higher your <i>Ki Charge Speed</i> the faster you will charge. </p>
 
 						<h3 id="ki_blast">Ki Blast</h3>
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
+						<p>Can be performed with the key inputs <b>Defend Forwards Attack</b> and keep pressing <b>Attack</b> button to continuously shoot ki blasts.</p>
 
 						<h3 id="special_moves">Special Moves</h3>
-
+						<div className="guide-video-container ">
+							<video className="guide-video" autoPlay loop muted playsInline>
+								<source src="../../images/guide/ki_charge.mp4" />
+							</video>
+						</div>
+						<p>Can be performed by pressing the <b>Defend</b> button followed by any <b>Directional</b> key and then by either pressing the <b>Attack</b> or <b>Jump</b> button. </p>
+						<p>The list of potential moves are: </p>
+						<ul>
+							<li>D > A --- D > AJ --- D > AD</li>
+							<li>D > J --- D > JA </li>
+							<li>D ^ A </li>
+							<li>D ^ J </li>
+							<li>D v A </li>
+							<li>D v J </li>
+						</ul>
 					</div>
 
 				</div>
