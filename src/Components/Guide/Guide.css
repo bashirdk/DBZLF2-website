@@ -15,10 +15,11 @@ h2:target, h3:target{
   padding-top: 100px;
 }
 
-.guide-summary h2>a { font-size: 1em; color: #44CAE4 !important; text-transform: uppercase; }
-.guide-summary h3>a { font-size: 1em; color: #b449e6 !important; }
-.guide-summary h4>a { font-size: 1em; color: white;}
-.guide-summary h5>a { font-size: 1em; }
+.guide-summary a:hover { opacity: 75%; }
+.guide-summary h2>a { font-size: 1em; text-decoration: none; color: #44CAE4 !important; text-transform: uppercase; text-decoration: none; }
+.guide-summary h3>a { font-size: 1em; text-decoration: none; color: #b449e6 !important; }
+.guide-summary h4>a { font-size: 1em; text-decoration: none; color: white;}
+.guide-summary h5>a { font-size: 1em; text-decoration: none; }
 
 .guide-page h2 { font-size: 1.8em; text-align: center; color: #44CAE4 !important; }
 .guide-page h3 { font-size: 1.6em; text-align: center; color: #b449e6 !important; margin-top: 30px; margin-bottom: 0px;}

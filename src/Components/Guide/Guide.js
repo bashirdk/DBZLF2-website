@@ -100,7 +100,7 @@ class Guide extends Component {
 						<h2 id="controls" className="text-center"> Controls</h2>
 						<p>You can setup the Key Configuration by choosing "Control Settings" in the main menu. <i>But the following setup is superior:</i></p>
 						<img 
-							src={require(`../../images/guide/controls.PNG`)}
+							src={require(`../../images/guide/controls.png`)}
 							alt="control settings"
 							className="w-full guide-img"
 						/>
@@ -127,7 +127,7 @@ class Guide extends Component {
 						<h2 id="ui" className="text-center"> UI </h2>
 						<h3 id="character_select">Character Select</h3>
 						<p>Press 'Attack' button to join the battle.</p>
-						<p>You can only press Left and Right to move. The Character Grid on the bottom is only for visual purposes only. Pressing Down doesn't do anything and pressing Up button will take you back to Random.</p>
+						<p>The Character Grid on the bottom is for visual purposes only. You can only press Left and Right to move. Pressing Down doesn't do anything and pressing Up button will take you back to Random.</p>
 						<p>After picking all the human players, you will be given the option to pick the number of COM players.</p>
 						<img 
 							src={require(`../../images/guide/charselect.PNG`)}
@@ -294,7 +294,7 @@ class Guide extends Component {
 							</video>
 						</div>
 						<p> When the character is <i>Falling</i> and they are in a horizontal position parallel to the ground you can press to <b>Jump</b> button to do an <i>Air Recovery</i> which costs <u>3 bars of ki</u>. 
-						You are vulnerable after the rolling frames are over so becareful when you use it. If you are in the middle of being comboed and attempt to break free, it is possible to end up back inside the enemy's combo.
+						You are vulnerable after the rolling frames are over so be careful when you use it. If you are in the middle of being comboed and attempt to break free, it is possible to end up back inside the enemy's combo.
 						It is also very dangerous to use when being attacked by a continous Ki Beam attack as it will continue to hit unless you also move Up or Down on the z-axis to dodge.   </p>
 
 						<h3 id="air_recover_dash">Air Recover Dash</h3>
