@@ -100,7 +100,7 @@ class Guide extends Component {
 						<h2 id="controls" className="text-center"> Controls</h2>
 						<p>You can setup the Key Configuration by choosing "Control Settings" in the main menu. <i>But the following setup is superior:</i></p>
 						<img 
-							src={require(`../../images/guide/controls.png`)}
+							src={require(`../../images/guide/controlsettings.png`)}
 							alt="control settings"
 							className="w-full guide-img"
 						/>
@@ -130,7 +130,7 @@ class Guide extends Component {
 						<p>The Character Grid on the bottom is for visual purposes only. You can only press Left and Right to move. Pressing Down doesn't do anything and pressing Up button will take you back to Random.</p>
 						<p>After picking all the human players, you will be given the option to pick the number of COM players.</p>
 						<img 
-							src={require(`../../images/guide/charselect.PNG`)}
+							src={require(`../../images/guide/characterselection.png`)}
 							alt="control settings"
 							className="w-full guide-img nmb-5"
 						/>
