@@ -249,7 +249,7 @@ class Guide extends Component {
 						<h3 id="normal_attack">Normal Attack </h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+								<source src={require(`../../images/guide/nattack.webm`)} />
 							</video>
 						</div>
 						<p>Press the <b>Attack</b> button. </p>
@@ -257,7 +257,7 @@ class Guide extends Component {
 						<h3 id="heavy_attack">Heavy Attack (Super Punch)</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+								<source src={require(`../../images/guide/hattack.webm`)} />
 							</video>
 						</div>
 						<p>Pressing the <b>Attack</b> button near an enemy that is <i>staggered</i> or has their <i>Defense Broken</i> will result in a <i>Heavy Attack.</i> </p>
@@ -265,7 +265,7 @@ class Guide extends Component {
 						<h3 id="stagger">Stagger (Dance of Pain)</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+								<source src={require(`../../images/guide/stagger.webm`)} />
 							</video>
 						</div>
 						<p>Generally it takes about 3 uninterrupted consective <i>Normal Attacks</i> to cause an enemy to be <i>Staggered</i> and enter into a dance of pain leaving them wide open to attacks for about 1 second.  </p>
@@ -273,7 +273,7 @@ class Guide extends Component {
 						<h3 id="grab">Grab (Catching)</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+								<source src={require(`../../images/guide/grab.webm`)} />
 							</video>
 						</div>
 						<p>To grab an enemy simply press the <b>Direction</b> key to <i>Walk</i> into them when they are <i>Staggered.</i> </p>
@@ -281,7 +281,7 @@ class Guide extends Component {
 						<h3 id="counter_attack">Counter Attack</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+								<source src={require(`../../images/guide/counterattack.webm`)} />
 							</video>
 						</div>
 						<p>To perform a <i>Counter Attack</i> you must press the <b>Attack</b> button when <b>Defending</b> an attack that doesn't break your guard. 
@@ -290,24 +290,27 @@ class Guide extends Component {
 						<h3 id="air_recover">Air Recover</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+								<source src={require(`../../images/guide/airrecover.webm`)} />
 							</video>
 						</div>
-						<p> When the character is <i>Falling</i> and they are in a horizontal position parallel to the ground you can press to <b>Jump</b> button to do an <i>Air Recovery</i> which costs <u>3 bars of ki</u>.  </p>
+						<p> When the character is <i>Falling</i> and they are in a horizontal position parallel to the ground you can press to <b>Jump</b> button to do an <i>Air Recovery</i> which costs <u>3 bars of ki</u>. 
+						You are vulnerable after the rolling frames are over so becareful when you use it. If you are in the middle of being comboed and attempt to break free, it is possible to end up back inside the enemy's combo.
+						It is also very dangerous to use when being attacked by a continous Ki Beam attack as it will continue to hit unless you also move Up or Down on the z-axis to dodge.   </p>
 
 						<h3 id="air_recover_dash">Air Recover Dash</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+							<source src={require(`../../images/guide/airrecoverdash.webm`)} />
 							</video>
 						</div>
 						<p>After performing an <i>Air Recovery</i> hold the <b>Left</b> or <b>Right</b> directional keys to perform a dash in mid-air. 
-						You can also hold the <b>Up</b> or <b>Down</b> directional keys to move on the z-axis.</p>
+						You can also hold the <b>Up</b> or <b>Down</b> directional keys to move on the z-axis.
+						This is particularly very useful in the World Tournament Stage (Ringout) battle stage to avoid being knocked out of bounds.</p>
 
 						<h3 id="basic_combo">Basic Combo</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+							<source src={require(`../../images/guide/basiccombo.webm`)} />
 							</video>
 						</div>
 						<p>After performing a <i>Heavy Attack</i> press the <b>Jump</b> button to initiate a basic combo. 
@@ -317,7 +320,7 @@ class Guide extends Component {
 						<h3 id="ki_charge">Ki Charge</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src={require(`../../images/guide/ki_charge.mp4`)} />
+							<source src={require(`../../images/guide/kicharge.webm`)} />
 							</video>
 						</div>
 						<p> You can charge your Ki bar by pressing <b>DJA A</b> and <b>holding A</b>. The higher your <i>Ki Charge Speed</i> the faster you will charge. </p>
@@ -325,7 +328,7 @@ class Guide extends Component {
 						<h3 id="ki_blast">Ki Blast</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-							<source src={require(`../../images/guide/kicharge.webm`)} />
+							<source src={require(`../../images/guide/kiblast.webm`)} />
 							</video>
 						</div>
 						<p>Can be performed with the key inputs <b>Defend Forwards Attack</b> and keep pressing <b>Attack</b> button to continuously shoot ki blasts.</p>
@@ -333,7 +336,7 @@ class Guide extends Component {
 						<h3 id="special_moves">Special Moves</h3>
 						<div className="guide-video-container ">
 							<video className="guide-video" autoPlay loop muted playsInline>
-								<source src="../../images/guide/ki_charge.mp4" />
+							<source src={require(`../../images/guide/specialmove.webm`)} />
 							</video>
 						</div>
 						<p>Can be performed by pressing the <b>Defend</b> button followed by any <b>Directional</b> key and then by either pressing the <b>Attack</b> or <b>Jump</b> button. </p>
