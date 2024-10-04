@@ -89,7 +89,21 @@ const CharacterProfile = ( props ) => {
             <link rel="canonical" href={selCharacter.url_id} />
           </Helmet>
           <h1 className="text-white text-center md:text-left">Character Profile</h1>
-          <h2 className="text-center text-white">{selCharacter.name}</h2>
+
+          <section className="mt-5">
+            <div className="border-2 lf2-border-blue-light lf2-bg-blue-dark rounded p-3 pb-2 text-white relative char-profile-pixel">
+            <div className="char-profile-pixel-img">
+              <img 
+                src={require(`../../images/face/${selCharacter.saga.toLowerCase()}/${selCharacter.url_id.toLowerCase()}.bmp`)}
+                alt={`face pic of ${selCharacter.name}`}
+                className=""
+              />
+            </div>
+            <div className="char-profile-pixel-header">
+            <h2>{selCharacter.name}</h2>
+            </div>
+            </div>
+          </section>
 
           <section className="sm:pr-5 my-5 inline-block align-top w-full sm:w-1/3" id="char-bio-section">
             <CharacterBio character={selCharacter} key={selCharacter.id} />

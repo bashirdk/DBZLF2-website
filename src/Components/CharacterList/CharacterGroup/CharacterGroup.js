@@ -3,9 +3,9 @@ import React from "react";
 
 import './CharacterGroup.css'
 
-const CharacterGroup = ({ data: { name, characters } }) => {
+const CharacterGroup = ({ data: { name, characters }, faceSwap }) => {
   var cards = characters.map((character) => (
-    <CharacterCard key={character.id} character={character} />
+    <CharacterCard key={character.id} character={character} faceSwap={faceSwap} />
   ));
 
   let totalCharacters = 0;

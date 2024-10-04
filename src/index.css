@@ -18,6 +18,9 @@ code {
 .lf2-border-blue {
   border-color: #5A77D8;
 }
+.lf2-border-blue-light {
+  border-color: #7390f0;
+}
 
 .lf2-bg-black {
   background-color: #000;

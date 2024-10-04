@@ -80,3 +80,21 @@
   opacity: 0;
   transform: translateY(100%);
 }
+
+.char-profile-pixel {
+  display: flex;
+}
+.char-profile-pixel-img img {
+  height: 100px;
+  image-rendering: pixelated;
+}
+.char-profile-pixel-header {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pixelated{
+  image-rendering: pixelated;
+}
