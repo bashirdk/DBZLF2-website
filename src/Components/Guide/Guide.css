@@ -1,0 +1,110 @@
+.guide-contents {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  overflow-y: auto;
+}
+@media (max-width: 1700px) {
+  .guide-contents {
+    position: relative;
+    top: 0px;
+  }
+}
+
+h2:target, h3:target{
+  padding-top: 100px;
+}
+
+.guide-summary a:hover { opacity: 75%; }
+.guide-summary h2>a { font-size: 1em; text-decoration: none; color: #44CAE4 !important; text-transform: uppercase; text-decoration: none; }
+.guide-summary h3>a { font-size: 1em; text-decoration: none; color: #b449e6 !important; }
+.guide-summary h4>a { font-size: 1em; text-decoration: none; color: white;}
+.guide-summary h5>a { font-size: 1em; text-decoration: none; }
+
+.guide-page h2 { font-size: 1.8em; text-align: center; color: #44CAE4 !important; }
+.guide-page h3 { font-size: 1.6em; text-align: center; color: #b449e6 !important; margin-top: 30px; margin-bottom: 0px;}
+.guide-page h4 { font-size: 1.4em; text-align: center; margin-top: 20px; margin-bottom: 10px;}
+.guide-page h5 { font-size: 1.2em; text-align: left; }
+.guide-page p  { font-size: 1em; text-align: justify; }
+.guide-page li { font-size: 1em; }
+
+.guide-page hr {
+  margin: 40px 40px;
+  border: 3px dotted white;
+  border-style: dotted dashed dashed dotted;
+}
+
+.guide-video-container{
+  padding: 20px 0px;
+  filter: drop-shadow(0px 0px 6.75px black);
+}
+.guide-video {
+  width: 100%;
+  border: 10px solid white;
+  border-style: groove;
+  border-color: #44CAE4 #b449e6 #b449e6 #44CAE4;
+  box-shadow: 5px 5px 20px #b449e6, -5px -5px 20px #44CAE4;
+  border-radius: 50px;
+  /* image-rendering: pixelated; */
+}
+
+.guide-page h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.guide-page table, th, tr {
+  border: 1px solid;
+  padding: 5px;
+}
+
+.guide-anchor {
+  position: absolute;
+  top: -100px;
+  visibility: hidden;
+}
+
+.guide-img {
+  margin: 20px 0;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 6.75px black);
+}
+
+.nmb-5 {
+  margin-bottom: -5px;
+}
+
+.guide-page a {
+  color: white;
+}
+
+.guide-page hr {
+  margin: 40px 40px;
+  border: 3px dotted white;
+  border-style: dotted dashed dashed dotted;
+}
+
+.stats-img{
+  width: 50%;
+  image-rendering: pixelated;
+}
+
+
+
+@media (min-width: 768px) {
+  .guide-page h2 { font-size: 1.8em;  }
+  .guide-page h3 { font-size: 1.7em; }
+  .guide-page h4 { font-size: 1.5em;}
+  .guide-page h5 { font-size: 1.3em; }
+  .guide-page p  { font-size: 1.25em; }
+  .guide-page li { font-size: 1.25em; }
+  .guide-page hr { margin: 40px 100px; }
+
+  .guide-video-container{
+    padding: 20px 50px;
+    filter: drop-shadow(0px 0px 6.75px black);
+  }
+  .guide-img {
+    border-radius: 30px;
+  }
+}

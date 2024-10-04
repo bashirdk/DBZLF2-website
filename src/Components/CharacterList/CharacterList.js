@@ -18,7 +18,7 @@ class CharacterList extends Component {
 		setCookie('previousUrl', window.location.pathname, 1);
 
 		super(props);
-
+		
 		const groups = ["Saiyan", "Namek", "Android", "Buu"].map((saga) => ({
 			name: `${saga} Saga`,
 			characters: Characters.filter((character) => character.saga === saga),
@@ -29,12 +29,17 @@ class CharacterList extends Component {
 		this.state = {
 			groups,
 			characters,
-			searchTerm: ''
+			searchTerm: '',
+			faceSwap: this.swapRef
 		};
 	}
 
 	updateSearch(event) {
 		this.setState({searchTerm: event.target.value.substr(0, 20)});
+	}
+
+	updateSwap(event) {
+		this.setState({faceSwap: event.target.checked});
 	}
 
 	render() {
@@ -50,7 +55,7 @@ class CharacterList extends Component {
 				let g = {};
 				g.name = group.name; 
 				g.characters = characters;
-				return <CharacterGroup key={g.name} data={g} />
+				return <CharacterGroup key={g.name} data={g} faceSwap={this.state.faceSwap}/>
 			});
 
 		return (
@@ -60,7 +65,18 @@ class CharacterList extends Component {
 					<meta name="description" content="List of Characters in DBZ LF2." />
 					<link rel="canonical" href="https://dbzlf2.com/characters/" />
 				</Helmet>
-				<h1 className="text-white">Character List</h1>
+				<div>
+					<h1 className="text-white inline-block">Character List</h1>
+
+					<div className="float-right">
+						<span className="text-white"> Swap Face Pics </span>
+						<label className="switch">
+							
+							<input type="checkbox" id="face_swap" ref={this.swapRef} onChange={this.updateSwap.bind(this)} />
+							<span className="slider round"></span>
+						</label>
+					</div>
+				</div>
 
 					<input
 						type="text"

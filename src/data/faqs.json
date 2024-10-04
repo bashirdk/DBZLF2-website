@@ -1,6 +1,22 @@
 [
   {
+    "question": "My antivirus is detecting the game as a virus and deleting it, what do I do?",
+    "answer": "This is a false positive. Some antivirus programs read the exe as a threat. "
+  },
+  {
     "question": "I am getting the error \"the application has failed to start because its side-by-side configuration is incorrect. Please see the application event log or use the command-line sxtrace.exe tool for more detail\", how do I resolve this?",
     "answer": "You will need to download and install \"Microsoft Visual C++ 2005 SP1 Redistributable Package (x86)\". <br> Pick from one of the following links: <ul> <li> <a target=\"blank\" href=\"https://www.lf-empire.de/downloads/offversions/vcredist_x86.zip\"> Link from LFE mainsite  </a> </li> <li> <a target=\"blank\" href=\"https://www.microsoft.com/en-us/download/details.aspx?id=26347\"> Link from Microsoft </a> </li> </ul>"
+  },
+  {
+    "question": "Is this game on Mobile/Android? Can you make it for Mobile/Android?",
+    "answer": "No, unfortunately this game is not on mobile or android devices. <br> This game is a mod of the 1999 freeware game Little Fighter 2 which is a Windows game only. <br> If you can somehow emulate a Windows PC on your mobile device then maybe you can play the game on your mobile device."
+  },
+  {
+    "question": "Can you please add [CHARACTER] to the game?",
+    "answer": "We have our own list of characters that we plan on adding to the game in our own schedule. <br> Stayed tuned and continue to follow for updates to see which characters will be coming next! "
+  },
+  {
+    "question": "How do you use [MOVE]?",
+    "answer": "You can see a complete list of moves and combos for all characters <a href='/characters'> HERE</a>"
   }
 ]

@@ -15,6 +15,7 @@ import BackgroundList from "../Components/BackgroundList/BackgroundList";
 import BackgroundProfile from "../Components/BackgroundProfile";
 import Downloads from "../Components/Downloads";
 import FAQs from "../Components/FAQs";
+import Guide from "../Components/Guide"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
@@ -50,6 +51,7 @@ const App = () => (
               <Route path="/backgrounds/" exact component={BackgroundList} />
               <Route path="/downloads/" exact component={Downloads} />
               <Route path="/faqs/" exact component={FAQs} />
+              <Route path="/guide/" exact component={Guide} />
               <Route path="/" exact component={Home} />
               <Route component={NoMatch} />
             </Switch>

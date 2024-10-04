@@ -28,6 +28,38 @@
   transform: translate(-50%, -50%);
 }
 
+.character-card .name-swap
+{
+  background-color: black;
+  margin-top: -3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  font-size: 20px;
+}
+.name-swap p {
+  margin-left: 0;
+  margin-right: -40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.name-swap {
+  opacity: 0;
+  transition: 0.5s ease;
+  height: 66px;
+  transform: translateY(100%);
+}
+.character-card:hover .name-swap {
+  opacity: 1;
+  transform: translateY(-0%);
+}
+
+
 .character-card:hover
 {
   font-weight: bolder;
@@ -79,4 +111,22 @@
 .character-card:hover .card-text {
   opacity: 0;
   transform: translateY(100%);
+}
+
+.char-profile-pixel {
+  display: flex;
+}
+.char-profile-pixel-img img {
+  height: 100px;
+  image-rendering: pixelated;
+}
+.char-profile-pixel-header {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pixelated{
+  image-rendering: pixelated;
 }
