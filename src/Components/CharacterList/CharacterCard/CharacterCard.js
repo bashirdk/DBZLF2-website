@@ -35,6 +35,9 @@ const CharacterCard = ({ character, faceSwap }) => (
             alt={`face pic of ${character.name}`}
             className="w-full anime-face pixelated"
           />
+          <div className="name-swap name-swap text-center text-sm px-1">
+            <p>{character.name}</p>
+          </div>  
         </>
     }
 
