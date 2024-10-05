@@ -62,6 +62,7 @@ class Guide extends Component {
 						<ul>
 							<li><h3><a href="#function_keys">Special Function Keys</a></h3></li>
 							<li><h3><a href="#unlocks">Special Unlocks</a></h3></li>
+							<li><h3><a href="#commands">Special Commands</a></h3></li>
 						</ul>
 						<li><h2><a href="#ui" className="guide-blue">UI</a></h2></li>
 						<ul>
@@ -105,8 +106,16 @@ class Guide extends Component {
 							className="w-full guide-img"
 						/>
 						<p> Above are the default controls the game comes with. </p>
-						<p>"A" stands for Attack button, "J" stands for Jump button, "D" stands Defend button</p>
-						<p>"^" stands for the Up button, "v" stands for the down button, "&lt;" stands for the left button, ">" stands for the right button</p>
+						<p>The follow abbreviations will be used all over the website for different inputs, moves and commands. Learn and understand them!</p>
+						<ul>
+							<li>"A" = <b>Attack</b> button</li>
+							<li>"J" = <b>Jump</b> button</li>
+							<li>"D" = <b>Defend</b> button</li>
+							<li>"^" = <b>Up</b> button</li>
+							<li>"v" = <b>Down</b> button</li>
+							<li>"&lt;" = <b>Left</b> button</li>
+							<li>"&gt;" = <b>Right</b> button </li>
+						</ul>
 
 						<h3 id="function_keys"> Special Function Keys</h3>
 						<p><b>F1:</b> Pause/Unpause the game</p>
@@ -121,6 +130,22 @@ class Guide extends Component {
 
 						<h3 id="unlocks">Special Unlocks</h3>
 						<p>Type in "lf2.net" when in game to unlock the "CRAZY!" difficulty and all the locked characters. </p>
+
+						<h3 id="commands">Special Commands</h3>
+						<div className="text-center p-2">
+							<img 
+								src={require(`../../images/guide/commands.png`)}
+								alt="control settings"
+								className="text-center"
+							/>
+						</div>
+
+						<p>You can command your COM allies on your team with the following  </p>
+						<ul>
+							<li>Move!: DADA</li>
+							<li>Come!: DJDJ</li>
+							<li>Stay!: DDDD</li>
+						</ul>
 					</div>
 					
 					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 mb-1 px-6 pt-5 pb-10 mx-0">
@@ -293,7 +318,7 @@ class Guide extends Component {
 								<source src={require(`../../images/guide/airrecover.webm`)} />
 							</video>
 						</div>
-						<p> When the character is <i>Falling</i> and they are in a horizontal position parallel to the ground you can press to <b>Jump</b> button to do an <i>Air Recovery</i> which costs <u>3 bars of ki</u>. 
+						<p> When the character is <i>Falling</i> and they are in a horizontal position parallel to the ground you can press the <b>Jump</b> button to do an <i>Air Recovery</i> which costs <u>3 bars of ki</u>. 
 						You are vulnerable after the rolling frames are over so be careful when you use it. If you are in the middle of being comboed and attempt to break free, it is possible to end up back inside the enemy's combo.
 						It is also very dangerous to use when being attacked by a continous Ki Beam attack as it will continue to hit unless you also move Up or Down on the z-axis to dodge.   </p>
 

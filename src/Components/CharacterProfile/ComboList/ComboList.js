@@ -126,11 +126,11 @@ const ComboList = ({ character }) => {
   if (character) {
     return (
 
-          <div className="combo_accordion__section combo-accordion border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
+          <div className="combo_accordion__section combo-accordion border-2 lf2-border-blue lf2-bg-blue-light my-5 rounded text-white">
 
             <button className={`combo-accordion-button ${setActive} text-white`} onClick={toggleAccordion}>
               <div className="border-b lf2-border-blue text-white p-2">
-                <h3 className="inline-block float-left"> Combo List &nbsp; <Chevron className={`${setRotate}`} width={10} fill={"#fff"} /> </h3> 
+                <h3 className="inline-block float-left"> COMBO LIST &nbsp; <Chevron className={`${setRotate}`} width={10} fill={"#fff"} /> </h3> 
                 <br></br>
                 <p className="text-right"> <i> Commands for facing right </i> </p>
               </div>

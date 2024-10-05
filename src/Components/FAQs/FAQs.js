@@ -13,7 +13,8 @@ class FAQs extends Component {
 		var faqsData = FAQsJSON.map((faq) => (
 			<div className="downloads-section"  key={faq.question}>
 
-			<Accordion 			 
+			<Accordion
+				id={faq.id}
 				question={faq.question}
 				answer={faq.answer}
 			/>

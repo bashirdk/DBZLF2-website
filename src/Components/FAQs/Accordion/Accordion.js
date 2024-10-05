@@ -10,7 +10,18 @@ function Accordion(props) {
 
   const content = useRef(null);
 
+ var hash = window.location.hash;
+
+  React.useEffect(() => {
+    if(hash) {
+      let hashId = document.getElementById(hash.split("#")[1]);
+      hashId.click();
+    }
+  }, [hash])
+
   function toggleAccordion() {
+    window.location.hash ? window.scrollBy(0,100) : window.scrollBy(0,0);
+
     setActiveState(setActive === "" ? "active" : "");
     setHeightState(
       setActive === "active" ? "0px" : `${content.current.scrollHeight}px`
@@ -23,7 +34,7 @@ function Accordion(props) {
   return (
     <div className="accordion__section accordion-faqs border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
 
-      <button className={`accordion ${setActive} px-6 py-5 text-white`} onClick={toggleAccordion}>
+      <button id={props.id} className={`accordion ${setActive} px-6 py-5 text-white`} onClick={toggleAccordion}>
         <div className="flex w-full">
           <div className="text-left inline-block">
             <Chevron className={`${setRotate}`} width={10} fill={"#fff"} />
@@ -38,7 +49,6 @@ function Accordion(props) {
         className={`accordion__content accordion-faqs-content ${setActive} lf2-border-blue lf2-bg-blue rounded px-6 mx-5 lg:mx-0 text-white`}
       >
         <div className="pb-3" >
-
           <div dangerouslySetInnerHTML={{ __html: props.answer }}>
           </div>
       </div>
