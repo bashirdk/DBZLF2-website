@@ -92,6 +92,11 @@ class Guide extends Component {
 							<li><h3><a href="#ki_blast">Ki Blast</a></h3></li>
 							<li><h3><a href="#special_moves">Special Moves</a></h3></li>
 						</ul>
+						<li><h2><a href="#multiplayer" className="guide-blue">Multiplayer (Online)</a></h2></li>
+						<ul>
+							<li><h3><a href="#parsec"> Parsec </a></h3></li>
+							<li><h3><a href="#lobby"> LF2 Lobby </a></h3></li>
+						</ul>
 					</ul>
 				</div>
 
@@ -375,6 +380,51 @@ class Guide extends Component {
 							<li>D v J </li>
 						</ul>
 						<p> <b><i><u>NOTE:</u></i></b> Not all moves are available to all characters. To see a complete movelist for each character check the characters page <a href="/characters">HERE</a></p>
+					</div>
+
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
+						<h2 id="multiplayer" className="text-center"> Multiplayer (Online)</h2>
+
+						<p> There are a few ways to play Little Fighter 2 online such as Parsec, LF2 Lobby, Hamachi, etc. We will only be focusing on Parsec and LF2 Lobby in this guide. </p>
+
+						<h3 id="parsec"> Parsec</h3>
+						<p>Parsec is a proprietary remote desktop application primarily used for playing games through video streaming. 
+							Using Parsec, a user can stream video game footage through an Internet connection, allowing one to run a game on one computer but play it remotely through another device. 
+							You can download Parsec <a href="https://parsec.app/downloads" target="_blank" rel="noreferrer">HERE.</a></p>
+						<br></br>
+						<p>Maximum: 4 players (since you are remote connecting into someone's computer)</p>
+
+						<h4>Pros</h4>
+						<ul>
+							<li>Normal gameplay speed (30fps) <i>(THIS IS A HUGE PRO)</i></li>
+						</ul>
+						<h4>Cons</h4>
+						<ul>
+							<li>Because you are remote connecting into someone else's computer, you can't have controls that overlap with each other.</li>
+							<li>Depending on latency, there can be some input delay</li>
+						</ul>
+
+						<h3 id="lobby"> LF2 Lobby</h3>
+						<p>LF2 Lobby comes prepackaged with the game. 
+							To learn more about LF2 Lobby and the development you can check the website <a href="http://www.lf2lobby.com/" target="_blank" rel="noreferrer">HERE</a> and 
+							join the <a href="https://discord.gg/pEsXGkQ" target="_blank" rel="noreferrer">Discord Server</a> to get all the latest and greatest updates!</p>
+							<br></br>
+							<p>Maximum: 4 players (Special Mode: 8 players (check website))</p>
+						<img 
+							src={require(`../../images/guide/lobbyservers.png`)}
+							alt="control settings"
+							className="w-full guide-img"
+						/>
+						<p> <b>IMPORTANT: </b> Pick the server where the ping is low for all players that are playing online.</p>
+						<h4>Pros</h4>
+						<ul>
+							<li>You can use whatever controls you want.</li>
+							<li>No input delay.</li>
+						</ul>
+						<h4>Cons</h4>
+						<ul>
+							<li>Depending on each persons connection to the server, the frame rate can be abysmal (as low as 5 fps) <i>(THIS IS A HUGE CON)</i></li>
+						</ul>
 					</div>
 
 				</div>
