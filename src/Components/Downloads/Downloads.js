@@ -49,8 +49,8 @@ class Downloads extends Component {
 					<link rel="canonical" href="https://dbzlf2.com/downloads/" />
 				</Helmet>
 				<h1 className="text-white">Downloads</h1>
-				<h2 className="text-white text-center"> DLC </h2>
-				<AccordionDLC />
+				{/* <h2 className="text-white text-center"> DLC </h2>
+				<AccordionDLC /> */}
 
 				<h2 className="text-white text-center"> Game </h2>
 				<div>{downloadsData}</div>

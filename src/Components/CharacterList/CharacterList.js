@@ -114,12 +114,12 @@ class CharacterList extends Component {
 					<h1 className="text-white inline-block">Character List</h1>
 
 					<div className="float-right">
-						<span className="text-white"> DLC Characters </span>
+						{/* <span className="text-white"> DLC Characters </span>
 						<label className="switch">
 							
 							<input type="checkbox" id="face_swap" onChange={this.showDLC.bind(this)} />
 							<span className="slider round"></span>
-						</label>
+						</label> */}
 
 						<span className="text-white"> Swap Face Pics </span>
 						<label className="switch">
