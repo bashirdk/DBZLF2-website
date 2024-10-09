@@ -8,7 +8,7 @@ import DownloadsCharListJSON from "../../data/downloadsCharList.json";
 import DownloadsBgListJSON from "../../data/downloadsBgList.json";
 
 import Accordion from "./Accordion/Accordion"
-import AccordionDLC from "./AccordionDLC/AccordionDLC"
+// import AccordionDLC from "./AccordionDLC/AccordionDLC"
 
 class Downloads extends Component {
 
