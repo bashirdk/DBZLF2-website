@@ -9,7 +9,7 @@
     "saga": "Super",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
-    "moveset_video": "qkrOFbKV9wM",
+    "moveset_video": "qFFzlYAMVxo",
     "stats": {
       "power_level": 10790,
       "attack": 2.68,
@@ -82,7 +82,7 @@
     "saga": "Super",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
-    "moveset_video": "qkrOFbKV9wM",
+    "moveset_video": "qFFzlYAMVxo",
     "stats": {
       "power_level": 21580,
       "attack": 3.79,
@@ -146,7 +146,7 @@
     "saga": "Super",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
-    "moveset_video": "qkrOFbKV9wM",
+    "moveset_video": "qFFzlYAMVxo",
     "stats": {
       "power_level": 151060,
       "attack": 10.04,
@@ -218,7 +218,7 @@
     "saga": "Super",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
-    "moveset_video": "qkrOFbKV9wM",
+    "moveset_video": "qFFzlYAMVxo",
     "stats": {
       "power_level": 11260,
       "attack": 2.74,
@@ -295,7 +295,7 @@
     "saga": "Super",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
-    "moveset_video": "qkrOFbKV9wM",
+    "moveset_video": "qFFzlYAMVxo",
     "stats": {
       "power_level": 22520,
       "attack": 3.87,
@@ -395,7 +395,7 @@
     "saga": "Super",
     "race": ["Saiyan"],
     "type": { "hero": true, "villain": false, "other": false },
-    "moveset_video": "qkrOFbKV9wM",
+    "moveset_video": "qFFzlYAMVxo",
     "stats": {
       "power_level": 540480,
       "attack": 18.98,

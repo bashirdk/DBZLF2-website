@@ -42,22 +42,18 @@ class CharacterList extends Component {
 		};
 	}
 
-	updateSearch(event) {
-		this.setState({searchTerm: event.target.value.substr(0, 20)});
-	}
-
-	updateSwap(event) {
-		this.setState({faceSwap: event.target.checked});
-	}
-
-	showDLC(event) {
-		this.setState({showDLC: event.target.checked});
-	}
+	updateSearch(event) { this.setState({searchTerm: event.target.value.substr(0, 20)}); }
+	updateSwap(event)   {	this.setState({faceSwap: event.target.checked}); }
+	showDLC(event) 		  { this.setState({showDLC: event.target.checked}); }
 
 	render() {
+		let totalCharacters = 0;
+		let heroes = 0;
+		let villains = 0;
+		let other = 0;
+
 		const groups = this.state.groups.map(
 			(group) => {
-				console.log("the search term is: ",this.state.searchTerm);
 				let characters = [];
 				for(let character of group.characters) {
 					if(character.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())) {
@@ -67,6 +63,16 @@ class CharacterList extends Component {
 				let g = {};
 				g.name = group.name; 
 				g.characters = characters;
+				
+				characters.forEach(element => {
+					totalCharacters += 1;
+					if (element.type) {
+						if (element.type.hero) { heroes += 1; }
+						if (element.type.villain) {	villains += 1; }
+						if (element.type.other) {	other += 1;	}
+					}
+				});
+
 				return <CharacterGroup key={g.name} data={g} faceSwap={this.state.faceSwap}/>
 			});
 
@@ -82,10 +88,19 @@ class CharacterList extends Component {
 					g.categories = group.categories;
 					g.name = group.name; 
 					g.characters = characters;
-					return <div> 
-							<h3 className="text-white text-center text-3xl">{g.categories}</h3> 
-							<CharacterGroup key={g.name} data={g} faceSwap={this.state.faceSwap}/> 
-						</div>
+
+					if(this.state.showDLC) {
+						characters.forEach(element => {
+							totalCharacters += 1;
+							if (element.type) {
+								if (element.type.hero) {	heroes += 1; }
+								if (element.type.villain) {	villains += 1; }
+								if (element.type.other) {	other += 1;	}
+							}
+						});
+					}
+
+					return <div> <CharacterGroup key={g.name} data={g} faceSwap={this.state.faceSwap}/> </div>
 				});
 
 		return (
@@ -115,13 +130,33 @@ class CharacterList extends Component {
 					</div>
 				</div>
 
-					<input
-						type="text"
-						name="search"
-						placeholder="filter by name..."
-            onChange={this.updateSearch.bind(this)}
-            className="mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
-					/>
+				<input
+					type="text"
+					name="search"
+					placeholder="filter by name..."
+					onChange={this.updateSearch.bind(this)}
+					className="mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+				/>
+
+				<br></br><br></br>
+				<div className="text-white">
+					{totalCharacters > 0 ? 
+					<table className="character-count-table">
+						<tr>
+							<th>Characters</th>
+							<th>Heroes</th>
+							<th>Villains</th>
+							<th>Other</th>
+						</tr>
+						<tr>
+							<td>{totalCharacters}</td>
+							<td>{heroes}</td>
+							<td>{villains}</td>
+							<td>{other}</td>
+						</tr>
+					</table>
+					: ''}
+				</div>
 
 				<div>{groups}</div>
 

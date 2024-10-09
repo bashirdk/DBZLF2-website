@@ -53,7 +53,6 @@ const ComboList = ({ character }) => {
       })
     })
     if (!move) {
-      console.log(move);
       move = getCombo(id, type, defaultCombos);
     }
     return move;
@@ -77,7 +76,6 @@ const ComboList = ({ character }) => {
   }
 
   const comboMoveList = ( input, connector = ' + ') => {
-    console.log('input', input);
     if (input.length === 0)
     {
       return (

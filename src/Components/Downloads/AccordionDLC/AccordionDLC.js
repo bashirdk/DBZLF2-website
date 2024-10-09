@@ -43,36 +43,34 @@ function AccordionDLC(props) {
   // ));
 
   var dlcDownloads = Object.groupBy(DLCDownloadsJSON, ({ version }) => version);
-    console.log('dlcDownloads', dlcDownloads);
-
     var dlcDownloadsData;
 
     let allDownloads = [];
-  for (const [key] of Object.entries(dlcDownloads)) {
-    var versionGroup = <h2> {key} </h2>;
-    allDownloads.push(versionGroup);
+    for (const [key] of Object.entries(dlcDownloads)) {
+      var versionGroup = <h2> {key} </h2>;
+      allDownloads.push(versionGroup);
 
-    dlcDownloadsData = DLCDownloadsJSON.map((download) => {
-      return download.version === key ?
-      <div className="downloads-section"  key={download.version}>
-        <Accordion
-          version={download.version}
-          title={download.title}
-          subtitle={download.subtitle}
-          date={download.date}
-          download={download.download}
-          charactersTotal={download.characters.total}
-          charactersNew={download.characters.new}
-          backgroundsTotal={download.backgrounds.total}
-          backgroundsNew={download.backgrounds.new}
-          trailer={download.trailer}
-          updates={download.updates}
-          dlc={download.dlc}
-        />
-      </div>
-      : ''
-    });
-    allDownloads.push(dlcDownloadsData);
+      dlcDownloadsData = DLCDownloadsJSON.map((download) => {
+        return download.version === key ?
+        <div className="downloads-section"  key={download.version}>
+          <Accordion
+            version={download.version}
+            title={download.title}
+            subtitle={download.subtitle}
+            date={download.date}
+            download={download.download}
+            charactersTotal={download.characters.total}
+            charactersNew={download.characters.new}
+            backgroundsTotal={download.backgrounds.total}
+            backgroundsNew={download.backgrounds.new}
+            trailer={download.trailer}
+            updates={download.updates}
+            dlc={download.dlc}
+          />
+        </div>
+        : ''
+      });
+      allDownloads.push(dlcDownloadsData);
     }
 
 

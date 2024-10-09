@@ -11,11 +11,8 @@ import RadarChart from "../../RadarChart";
 const CharacterStats = ({ character }) => {  
   const location = useLocation();
 
-  console.log('location', location);
-
   if (location.state) {
     const {changeCharacterStats} = location.state;
-    console.log(' changeCharacterStats', changeCharacterStats);
   } 
 
   const statContainer = (statName, stat, statClass) => (

@@ -107,22 +107,16 @@ const CharacterBio = ({ character }) => {
   }
 
   React.useEffect(() => {
-    console.log("getCookie('previousUrl')", getCookie('previousUrl'));
-    console.log("window.location.href", window.location.pathname);
     if (getCookie('previousUrl') !== window.location.pathname) {
       const aura = document.getElementById('ss-aura-flash');
-      console.log('aura', aura);
       if (getCookie('previousUrl') === '/characters') {
-        console.log('previous page was CHARS LIST');
       } else {
-        console.log('previous page was another character profile');
         aura.classList.add('bio-ss-aura');
         aura.classList.add('bio-ss-aura-flash');
       }
       
       // document.cookie = `previousUrl=${window.location.pathname}`;
       setCookie('previousUrl', window.location.pathname, 1);
-      console.log('get cookie', getCookie('previousUrl'));
     }
 
     window.onscroll = function() {stickyScroll()};
@@ -131,7 +125,6 @@ const CharacterBio = ({ character }) => {
     var sticky = 84;
 
     function stickyScroll() {
-      // console.log('window.pageYOffset', window.pageYOffset);
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky-bio");
       } else {

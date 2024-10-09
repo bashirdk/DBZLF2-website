@@ -31,7 +31,6 @@ class BackgroundList extends Component {
 	render() {
 		const groups = this.state.groups.map(
 			(group) => {
-				console.log("the search term is: ",this.state.searchTerm);
 				let backgrounds = [];
 				for(let background of group.backgrounds) {
 					if(background.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())) {

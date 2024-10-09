@@ -101,7 +101,6 @@ const MoveList = ({ character }) => {
 
   const resetAnimation = (cssClass, time) => {
       var el = document.getElementsByClassName(cssClass);
-      console.log(el);
       if (el.length>0) {
         for (let item of el[0].children) {
           item.style.animation = 'none';
