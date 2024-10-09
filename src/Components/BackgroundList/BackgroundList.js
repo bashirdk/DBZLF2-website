@@ -58,7 +58,7 @@ class BackgroundList extends Component {
 						name="search"
 						placeholder="filter by name..."
             onChange={this.updateSearch.bind(this)}
-            class="mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+            className="mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
 					/>
 
 				<div>{groups}</div>

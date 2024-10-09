@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import './CharacterBio.css'
 
 import Characters from "../../../data/characters.json";
+import CharactersDLC from "../../../data/dlcCharacters.json";
 
 const CharacterBio = ({ character }) => {  
 
@@ -212,63 +213,79 @@ const CharacterBio = ({ character }) => {
     }
   });
 
-
-  console.log('powerups', powerups);
-  console.log(character.moves.transformations);
-
   const getPath = (transformation) => {
-    console.log('getPath power up', transformation.id);
-    const newChar = Characters.find( (character) => (
-      character.id === transformation.id
-    ));
-    return newChar ? `/characters/${newChar.saga.toLowerCase()}/${newChar.url_id.toLowerCase()}` : '';
+    let newChar;
+    let saga;
+    if(character.dlc) {
+      newChar = CharactersDLC.find( (character) => (
+        character.id === transformation.id
+      ));
+      saga = newChar.saga.toLowerCase() + "/" + newChar.subsaga.toLowerCase();
+    } else {
+      newChar = Characters.find( (character) => (
+        character.id === transformation.id
+      ));
+      saga = newChar.saga.toLowerCase();
+    }
+
+    return newChar ? `/characters/${saga}/${newChar.url_id.toLowerCase()}` : '';
+  }
+
+  const subSaga = (character) => {
+    return character.subsaga ? "/" + character.subsaga.toLowerCase() : '';
+  }
+
+  const subSagaName = (subsaga) => {
+    if (subsaga === "BoG") {
+      return "Battle of Gosh";
+    } else {
+      return subsaga;
+    }
   }
   
   return (
     <div className="border-2 rounded lf2-bg-blue lf2-border-blue px-5 py-5">
       <div className="relative">
       {powerLevelStat}
-        <img src={require(`../../../images/profile/${character.saga.toLowerCase()}_bg.png`)}
-          alt={`background for ${character.saga.toLowerCase()} saga`}
-          className="w-full"
-        />
-        <img src={require(`../../../images/profile/superauraflash.png`)}
-          alt={`background for ${character.saga.toLowerCase()} saga`}
-          className={`w-full`}
-          id="ss-aura-flash"
-        />
-        <img src={require(`../../../images/profile/s.png`)}
-          alt={`shadow`}
-          className="w-full absolute pin-t pin-l"
-        />
-        <img 
-          src={require(`../../../images/profile/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.gif`)}
-          alt={`${character.name} standing`}
-          className="w-full absolute pin-t pin-l block"
-          id="character_standing"
-        />
-        { hasBattleDamage() }
-        { hasOldLook() }
+      <img src={require(`../../../images/profile/${character.saga.toLowerCase()}_bg.png`)}
+        alt={`background for ${character.saga.toLowerCase()} saga`}
+        className="w-full"
+      />
+      <img src={require(`../../../images/profile/superauraflash.png`)}
+        alt={`background for ${character.saga.toLowerCase()} saga`}
+        className={`w-full`}
+        id="ss-aura-flash"
+      />
+      <img src={require(`../../../images/profile/s.png`)}
+        alt={`shadow`}
+        className="w-full absolute pin-t pin-l"
+      />
+      <img 
+        src={require(`../../../images/profile/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}.gif`)}
+        alt={`${character.name} standing`}
+        className="w-full absolute pin-t pin-l block"
+        id="character_standing"
+      />
+      { hasBattleDamage() }
+      { hasOldLook() }
 
-        { powerups.map((power) => (
-       <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`arrow-up power-up-${power.type}`} title={`Power up to ${power.name}`}>  </Link>
-         ))
-        }        
-        { powerdowns.map((power) => (
-          <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`arrow-down power-down-${power.type}`} title={`Power down to ${power.name}`}> ▼ </Link>
-            ))
-           }
+      { powerups.map((power) => (
+        <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`arrow-up power-up-${power.type}`} title={`Power up to ${power.name}`}> </Link> ))
+      }        
+      { powerdowns.map((power) => (
+        <Link to={{ pathname: getPath(power), state: { changeCharacterStats } }} className={`arrow-down power-down-${power.type}`} title={`Power down to ${power.name}`}> ▼ </Link>  ))
+      }
       </div>
 
      <div>
        { hasBattleDamage() ? 
-        <p class="text-white text-center"><button onClick={swapDamage} class="text-white" id="btn_battle_damage">View Battle Damage Outfit</button></p>
+        <p className="text-white text-center"><button onClick={swapDamage} id="btn_battle_damage">View Battle Damage Outfit</button></p>
         : ""}
      </div>
 
      <div>
        { hasOldLook() ? 
-        <p class="text-white text-center"><button onClick={swapOld} class="text-white" id="btn_old_look">View Old Version</button></p>
+        <p className="text-white text-center"><button onClick={swapOld} id="btn_old_look">View Old Version</button></p>
         : ""}
      </div>
 
@@ -283,6 +300,14 @@ const CharacterBio = ({ character }) => {
         <hr className={hrStyle} />
         <span className={`${labelStyle} ${character.saga.toLowerCase()}-saga-label`}> {character.saga} </span>
       </div>
+      { character.subsaga ?
+        <div className="mt-3">
+          <h4 className="text-white"> Sub Saga </h4> 
+          <hr className={hrStyle} />
+          <span className={`${labelStyle} ${character.subsaga.toLowerCase()}-saga-label`}> {subSagaName(character.subsaga)} </span>
+        </div>
+        : ''
+      }
       <div className="mt-3">
         <h4 className="text-white"> First Appearance </h4> 
         <hr className={hrStyle} />

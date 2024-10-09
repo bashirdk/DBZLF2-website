@@ -45,6 +45,7 @@ const App = () => (
         <div className="mx-3">
           <ScrollToTop>
             <Switch>
+              <Route exact path="/characters/:saga/:subsaga/:name" component={withRouter(CharacterProfile)} key={characterKey} />
               <Route exact path="/characters/:saga/:name" component={withRouter(CharacterProfile)} key={characterKey} />
               <Route exact path="/characters/" component={CharacterList} />
               <Route path="/backgrounds/:saga/:name" component={BackgroundProfile} />

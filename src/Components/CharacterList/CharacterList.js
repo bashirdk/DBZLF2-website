@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 
 import CharacterGroup from "./CharacterGroup";
 import Characters from "../../data/characters.json";
+import CharactersDLC from "../../data/dlcCharacters.json";
 
 function setCookie(cname, cvalue, exdays) {
 	const d = new Date();
@@ -24,10 +25,17 @@ class CharacterList extends Component {
 			characters: Characters.filter((character) => character.saga === saga),
 		}));
 
+		const groupsDLC = ["Super"].map((saga) => ({
+			categories: saga,
+			name: `${saga} Saga`,
+			characters: CharactersDLC.filter((character) => character.saga === saga),
+		}));
+
 		const characters = Characters.filter((character) => character.name);
 
 		this.state = {
 			groups,
+			groupsDLC,
 			characters,
 			searchTerm: '',
 			faceSwap: this.swapRef
@@ -40,6 +48,10 @@ class CharacterList extends Component {
 
 	updateSwap(event) {
 		this.setState({faceSwap: event.target.checked});
+	}
+
+	showDLC(event) {
+		this.setState({showDLC: event.target.checked});
 	}
 
 	render() {
@@ -58,6 +70,24 @@ class CharacterList extends Component {
 				return <CharacterGroup key={g.name} data={g} faceSwap={this.state.faceSwap}/>
 			});
 
+			const groupsDLC = this.state.groupsDLC.map(
+				(group) => {
+					let characters = [];
+					for(let character of group.characters) {
+						if(character.name.toLowerCase().includes(this.state.searchTerm.toLowerCase())) {
+							characters = [ ...characters, character ];
+						} 
+					}
+					let g = {};
+					g.categories = group.categories;
+					g.name = group.name; 
+					g.characters = characters;
+					return <div> 
+							<h3 className="text-white text-center text-3xl">{g.categories}</h3> 
+							<CharacterGroup key={g.name} data={g} faceSwap={this.state.faceSwap}/> 
+						</div>
+				});
+
 		return (
 			<div>
 				<Helmet>
@@ -69,10 +99,17 @@ class CharacterList extends Component {
 					<h1 className="text-white inline-block">Character List</h1>
 
 					<div className="float-right">
+						<span className="text-white"> DLC Characters </span>
+						<label className="switch">
+							
+							<input type="checkbox" id="face_swap" onChange={this.showDLC.bind(this)} />
+							<span className="slider round"></span>
+						</label>
+
 						<span className="text-white"> Swap Face Pics </span>
 						<label className="switch">
 							
-							<input type="checkbox" id="face_swap" ref={this.swapRef} onChange={this.updateSwap.bind(this)} />
+							<input type="checkbox" id="face_swap" onChange={this.updateSwap.bind(this)} />
 							<span className="slider round"></span>
 						</label>
 					</div>
@@ -83,10 +120,20 @@ class CharacterList extends Component {
 						name="search"
 						placeholder="filter by name..."
             onChange={this.updateSearch.bind(this)}
-            class="mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
+            className="mt-3 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
 					/>
 
 				<div>{groups}</div>
+
+				{ this.state.showDLC ?
+				<>	
+					<h2 className="text-white text-center text-4xl">DLC Characters</h2> <br></br>
+					{groupsDLC}
+				</>
+				:
+				''
+				}
+
 			</div>
 		);
 	}

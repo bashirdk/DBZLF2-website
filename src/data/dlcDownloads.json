@@ -1,0 +1,36 @@
+[
+  {
+    "version": "v0.4.3",
+    "dlc": true,
+    "title": "DBS Expansion 1",
+    "subtitle": "Battle of Gosh Expansion Pack",
+    "date": "10/09/2024",
+    "download": "https://www.mediafire.com/file/dnsey2r7bnbuc7r/DeeBeeZee+LF2+v0.4.3.zip/file",
+    "characters": {
+      "new": 6,
+      "total": 6
+    },
+    "backgrounds": {
+      "new": 0,
+      "total": 0 
+    },
+    "updates": {
+      "major_updates": {
+        "characters": [
+          "[+] Vegeta (Battle of Gosh)",
+          "[+] SS Vegeta (Battle of Gosh)",
+          "[+] SS2E Vegeta (Battle of Gosh)",
+          "[+] Goku (Battle of Gosh)",
+          "[+] SS Goku (Battle of Gosh)",
+          "[+] SSR Goku (Battle of Gosh)"
+        ],
+        "backgrounds": [
+        ],
+        "list_of_major_updates": [
+        ]
+      },
+      "minor_updates": {
+      }
+    }
+  }
+]
