@@ -1,5 +1,4 @@
 import React from "react";
-import { useLocation } from 'react-router-dom'
 
 import './CharacterStats.css'
 import StatBar from "./StatBar/StatBar.js";
@@ -9,11 +8,6 @@ import RadarChart from "../../RadarChart";
 // import {UserData} from './../../../data/data';
 
 const CharacterStats = ({ character }) => {  
-  const location = useLocation();
-
-  if (location.state) {
-    const {changeCharacterStats} = location.state;
-  } 
 
   const statContainer = (statName, stat, statClass) => (
     <div className="flex">

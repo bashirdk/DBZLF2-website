@@ -272,13 +272,13 @@ const CharacterBio = ({ character }) => {
 
      <div>
        { hasBattleDamage() ? 
-        <p className="text-white text-center"><button onClick={swapDamage} id="btn_battle_damage">View Battle Damage Outfit</button></p>
+        <p className="text-white text-center"><button onClick={swapDamage} id="btn_battle_damage" className="text-white font-bold">View Battle Damage Outfit</button></p>
         : ""}
      </div>
 
      <div>
        { hasOldLook() ? 
-        <p className="text-white text-center"><button onClick={swapOld} id="btn_old_look">View Old Version</button></p>
+        <p className="text-white text-center"><button onClick={swapOld} id="btn_old_look" className="text-white font-bold">View Old Version</button></p>
         : ""}
      </div>
 
