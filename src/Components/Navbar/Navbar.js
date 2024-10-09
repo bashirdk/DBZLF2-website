@@ -28,10 +28,6 @@ const Navbar = () => {
 
   const navLinks = [
     {
-      "title": "Home",
-      "link": "/"
-    },
-    {
       "title": "Guide",
       "link": "/guide"
     },
@@ -77,6 +73,11 @@ const Navbar = () => {
           <div id="hamburger" className="hamburger" onClick={addOpenClass}></div>
         </div>
         <ul className="list-reset flex m-4 lf2-bg-blue" id="nav_menu">
+          <li key="/" className="mr-6">
+            <NavLink to="/" activeClassName="is-active" exact className={linkStyle} onClick={addOpenClass}>
+              Home
+            </NavLink>
+          </li>
           { navLinks.map((link) => {
               return (
                 <li key={link.link} className="mr-6">
