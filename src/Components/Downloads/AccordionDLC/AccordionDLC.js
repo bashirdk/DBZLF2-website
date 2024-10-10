@@ -57,6 +57,7 @@ function AccordionDLC(props) {
             version={download.version}
             title={download.title}
             subtitle={download.subtitle}
+            author={download.author}
             date={download.date}
             download={download.download}
             charactersTotal={download.characters.total}

@@ -166,6 +166,10 @@ function Accordion(props) {
         <h3 className="text-center text-2xl">{props.title} - {props.subtitle}</h3>
         : ''
         }
+        { props.author ?
+        <h3 className="text-center">By {props.author}</h3>
+        : ''
+        }
 
           <div className="text-center">
             { props.download ?
