@@ -132,7 +132,7 @@ function Accordion(props) {
             <Chevron className={`${setRotate}`} width={10} fill={"#fff"} />
             { props.dlc 
             ?
-             <h2 className="inline-block"> {props.title} </h2> 
+             <h2 className="inline-block text-xl"> {props.title} </h2> 
              :
              <h2 className="inline-block"> DBZ LF2 {props.version} </h2> 
             }

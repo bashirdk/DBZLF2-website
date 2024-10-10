@@ -47,7 +47,7 @@ function AccordionDLC(props) {
 
     let allDownloads = [];
     for (const [key] of Object.entries(dlcDownloads)) {
-      var versionGroup = <h2> {key} </h2>;
+      var versionGroup = <h2> DLC for DBZ LF2 {key} </h2>;
       allDownloads.push(versionGroup);
 
       dlcDownloadsData = DLCDownloadsJSON.map((download) => {

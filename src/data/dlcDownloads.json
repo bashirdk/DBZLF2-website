@@ -1,11 +1,11 @@
 [
   {
-    "version": "v0.4.3",
+    "version": "v0.4.3.1",
     "dlc": true,
-    "title": "DBS Expansion 1",
+    "title": "DBS Expansion v1",
     "subtitle": "Battle of Gosh Expansion Pack",
-    "date": "10/09/2024",
-    "download": "https://www.mediafire.com/file/dnsey2r7bnbuc7r/DeeBeeZee+LF2+v0.4.3.zip/file",
+    "date": "10/10/2024",
+    "download": "https://www.mediafire.com/file/56nb38uwp562pvi/DBS_Expansion_v1_for_v0.4.3.1.zip/file",
     "characters": {
       "new": 6,
       "total": 6
