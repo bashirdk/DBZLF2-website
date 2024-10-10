@@ -1,8 +1,9 @@
 [
   {
-    "version": "v0.4.3",
+    "version": "v0.4.3.1",
     "date": "9/28/2024",
-    "download": "https://www.mediafire.com/file/dnsey2r7bnbuc7r/DeeBeeZee+LF2+v0.4.3.zip/file",
+    "download": "https://www.mediafire.com/file/bpdib1kbekr4o2q/DeeBeeZee_LF2_v0.4.3.1.zip/file",
+    "trailer": "6moqrHUK_6s",
     "characters": {
       "new": 3,
       "total": 24
@@ -32,7 +33,8 @@
           "Updated Face pics with new radar chart stats",
           "New air recovery",
           "Revamped Ki system: New ki regeneration system and ki charge speeds",
-          "Characters with negative ki regeneration will go back to base form after all ki is depleted"
+          "Characters with negative ki regeneration will go back to base form after all ki is depleted",
+          "BRAND NEW TRAINING MODE!"
         ]
       },
       "minor_updates": {

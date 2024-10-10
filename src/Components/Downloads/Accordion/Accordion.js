@@ -44,7 +44,7 @@ function Accordion(props) {
           <ul>
             {data}
           </ul>
-        </>      
+        </>
     )
   }
 
@@ -66,9 +66,9 @@ function Accordion(props) {
         (char) => {
           return (
             char.new ?
-            <li> {char.name} <span className="new"> NEW </span> </li>
+            <li key={char.name}> {char.name} <span className="new"> NEW </span> </li>
             :
-            <li> {char.name} </li>
+            <li key={char.name}> {char.name} </li>
           )
         }
       )
@@ -88,16 +88,40 @@ function Accordion(props) {
   let new_moves = mapUpdatesData(props.updates.minor_updates.new_moves);
   let speed_adjustments = mapUpdatesData(props.updates.minor_updates.speed_adjustments);
 
-  let characterListSaiyan = downloadsCharBgList(props.characterList.saiyan);
-  let characterListNamek = downloadsCharBgList(props.characterList.namek);
-  let characterListAndroid = downloadsCharBgList(props.characterList.android);
-  let characterListBuu = downloadsCharBgList(props.characterList.buu);
+  // let characterListSaiyan = downloadsCharBgList(props.characterList.saiyan);
+  // let characterListNamek = downloadsCharBgList(props.characterList.namek);
+  // let characterListAndroid = downloadsCharBgList(props.characterList.android);
+  // let characterListBuu = downloadsCharBgList(props.characterList.buu);
 
-  let backgroundListSaiyan = downloadsCharBgList(props.backgroundList.saiyan);
-  let backgroundListNamek = downloadsCharBgList(props.backgroundList.namek);
-  let backgroundListAndroid = downloadsCharBgList(props.backgroundList.android);
-  let backgroundListBuu = downloadsCharBgList(props.backgroundList.buu);
-  let backgroundListLf2 = downloadsCharBgList(props.backgroundList.lf2);
+  // let backgroundListSaiyan = downloadsCharBgList(props.backgroundList.saiyan);
+  // let backgroundListNamek = downloadsCharBgList(props.backgroundList.namek);
+  // let backgroundListAndroid = downloadsCharBgList(props.backgroundList.android);
+  // let backgroundListBuu = downloadsCharBgList(props.backgroundList.buu);
+  // let backgroundListLf2 = downloadsCharBgList(props.backgroundList.lf2);
+
+  let characterListSaiyan;
+  let characterListNamek;
+  let characterListAndroid;
+  let characterListBuu;
+
+  let backgroundListSaiyan;
+  let backgroundListNamek;
+  let backgroundListAndroid;
+  let backgroundListBuu;
+  let backgroundListLf2;
+
+  if(!props.dlc) {
+    characterListSaiyan = downloadsCharBgList(props.characterList.saiyan);
+    characterListNamek = downloadsCharBgList(props.characterList.namek);
+    characterListAndroid = downloadsCharBgList(props.characterList.android);
+    characterListBuu = downloadsCharBgList(props.characterList.buu);
+  
+    backgroundListSaiyan = downloadsCharBgList(props.backgroundList.saiyan);
+    backgroundListNamek = downloadsCharBgList(props.backgroundList.namek);
+    backgroundListAndroid = downloadsCharBgList(props.backgroundList.android);
+    backgroundListBuu = downloadsCharBgList(props.backgroundList.buu);
+    backgroundListLf2 = downloadsCharBgList(props.backgroundList.lf2);
+  }
 
   return (
     <div className="accordion__section border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
@@ -106,7 +130,12 @@ function Accordion(props) {
         <div className="sm:inline-block lg:flex w-full">
           <div className="lg:w-1/3 text-left inline-block float-left">
             <Chevron className={`${setRotate}`} width={10} fill={"#fff"} />
-            <h2 className="inline-block"> DBZ LF2 {props.version} </h2> 
+            { props.dlc 
+            ?
+             <h2 className="inline-block text-xl"> {props.title} </h2> 
+             :
+             <h2 className="inline-block"> DBZ LF2 {props.version} </h2> 
+            }
           </div>          
           <div className="lg:w-1/3 text-center inline-block">
             <p className="my-2"> {props.date} </p>
@@ -133,6 +162,11 @@ function Accordion(props) {
       >      
         <div className="pb-3" >
 
+        { props.dlc ?
+        <h3 className="text-center text-2xl">{props.title} - {props.subtitle}</h3>
+        : ''
+        }
+
           <div className="text-center">
             { props.download ?
              <a href={props.download} target="_blank" rel="noreferrer">
@@ -157,43 +191,58 @@ function Accordion(props) {
             {/* <AdComponent /> */}
           </div>
 
-          <table className="hidden lg:table downloads-lists">
-            <tr>
-              <th colspan="4" className="text-lg py-1">Characters</th>
-            </tr>
-            <tr>
-              <th width="25%">Saiyan</th>
-              <th width="25%">Namek</th>
-              <th width="25%">Android</th>
-              <th width="25%">Buu</th>
-            </tr>
-            <tr>
-              <td> {characterListSaiyan.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListSaiyan}</ol>} </td>
-              <td> {characterListNamek.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListNamek}</ol>} </td>
-              <td> {characterListAndroid.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListAndroid}</ol>} </td>
-              <td> {characterListBuu.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListBuu}</ol>} </td>
-            </tr>
+          {!props.dlc ? 
+          <>
+            <table className="hidden lg:table downloads-lists">
+            <thead>
+              <tr>
+                <th colSpan="4" className="text-lg py-1">Characters</th>
+              </tr>
+              <tr>
+                <th width="25%">Saiyan</th>
+                <th width="25%">Namek</th>
+                <th width="25%">Android</th>
+                <th width="25%">Buu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> {characterListSaiyan.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListSaiyan}</ol>} </td>
+                <td> {characterListNamek.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListNamek}</ol>} </td>
+                <td> {characterListAndroid.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListAndroid}</ol>} </td>
+                <td> {characterListBuu.length === 0 ? <p className="text-center">N/A</p> : <ol> {characterListBuu}</ol>} </td>
+              </tr>
+            </tbody>
           </table>
 
           <table className="hidden lg:table downloads-lists">
-            <tr>
-              <th colspan="5" className="text-lg py-1">Backgrounds</th>
-            </tr>
-            <tr>
-              <th width="20%">Saiyan</th>
-              <th width="20%">Namek</th>
-              <th width="20%">Android</th>
-              <th width="20%">Buu</th>
-              <th width="20%">LF2</th>
-            </tr>
-            <tr>
-              <td> {backgroundListSaiyan.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListSaiyan}</ol>} </td>
-              <td> {backgroundListNamek.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListNamek}</ol>} </td>
-              <td> {backgroundListAndroid.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListAndroid}</ol>} </td>
-              <td> {backgroundListBuu.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListBuu}</ol>} </td>
-              <td> {backgroundListLf2.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListLf2}</ol>} </td>
-            </tr>
+            <thead>
+              <tr>
+                <th colSpan="5" className="text-lg py-1">Backgrounds</th>
+              </tr>
+              <tr>
+                <th width="20%">Saiyan</th>
+                <th width="20%">Namek</th>
+                <th width="20%">Android</th>
+                <th width="20%">Buu</th>
+                <th width="20%">LF2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> {backgroundListSaiyan.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListSaiyan}</ol>} </td>
+                <td> {backgroundListNamek.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListNamek}</ol>} </td>
+                <td> {backgroundListAndroid.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListAndroid}</ol>} </td>
+                <td> {backgroundListBuu.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListBuu}</ol>} </td>
+                <td> {backgroundListLf2.length === 0 ? <p className="text-center">N/A</p> : <ol> {backgroundListLf2}</ol>} </td>
+              </tr>
+            </tbody>
           </table>
+        </>
+        : 
+        ''
+          }
+          
 
           <h3 className="mb-1">Major Updates</h3>
           <div className="mx-3">

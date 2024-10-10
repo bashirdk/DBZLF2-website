@@ -3,19 +3,24 @@ import "./CharacterCard.css";
 import { Link } from "react-router-dom";
 import React from "react";
 
+const subSaga = (character) => {
+  return character.subsaga ? "/" + character.subsaga.toLowerCase() : '';
+}
+
 const CharacterCard = ({ character, faceSwap }) => (
-  <Link to={`/characters/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}`}>
+  
+  <Link to={`/characters/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}`}>
     <div className="character-card inline-block mx-1 my-1 w-48 overflow-hidden relative">
       { !faceSwap
       ?
         <>
           <img 
-            src={require(`../../../images/face/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.png`)}
+            src={require(`../../../images/face/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}.png`)}
             alt={`face pic of ${character.name}`}
             className="w-full anime-face"
           />
           <img 
-            src={require(`../../../images/face/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.bmp`)}
+            src={require(`../../../images/face/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}.bmp`)}
             alt={`face pic of ${character.name}`}
             className="w-full pixel-face"
           />
@@ -26,12 +31,12 @@ const CharacterCard = ({ character, faceSwap }) => (
           :
         <>
           <img 
-            src={require(`../../../images/face/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.png`)}
+            src={require(`../../../images/face/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}.png`)}
             alt={`face pic of ${character.name}`}
             className="w-full pixel-face"
           />
           <img 
-            src={require(`../../../images/face/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.bmp`)}
+            src={require(`../../../images/face/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}.bmp`)}
             alt={`face pic of ${character.name}`}
             className="w-full anime-face pixelated"
           />

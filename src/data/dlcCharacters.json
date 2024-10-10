@@ -1,0 +1,483 @@
+[
+  {
+    "id": 470,
+    "release": "v0.4.3.1",
+    "dlc": true,
+    "url_id": "vegeta",
+    "name": "Vegeta",
+    "subsaga": "BoG",
+    "saga": "Super",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 10790,
+      "attack": 2.68,
+      "defense": 4.02,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        },
+        {
+          "name": "Galick Gun",
+          "input": "D > J"
+        },
+        {
+          "name": "Bingo Dance",
+          "input": "D v J DJA"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan",
+          "input": "DJA J",
+          "id": 471, "direction": 1, "type": "ss"
+        }, 
+        {
+          "name": "Super Saiyan 2 Enraged",
+          "input": "DJA D",
+          "id": 472, "direction": 1, "type": "2ss"
+        }
+      ]
+    },
+    "combos": {
+      "links": [
+      ],
+      "basic": [
+      ],
+      "special": [
+      ],
+      "counter": []
+    }
+  }, {
+    "id": 471,
+    "release": "v0.4.3.1",
+    "dlc": true,
+    "url_id": "ss-vegeta",
+    "name": "Super Saiyan Vegeta",
+    "subsaga": "BoG",
+    "saga": "Super",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 21580,
+      "attack": 3.79,
+      "defense": 5.69,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        },
+        {
+          "name": "Galick Gun",
+          "input": "D > J"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D",
+          "id": 470, "direction": 0, "type": "base"
+        }
+      ]
+    },
+    "combos": {
+      "links": [
+      ],
+      "basic": [
+      ],
+      "special": [
+      ],
+      "counter": []
+    }
+  }, {
+    "id": 472,
+    "release": "v0.4.3.1",
+    "dlc": true,
+    "url_id": "ss2e-vegeta",
+    "name": "Super Saiyan 2 Enraged Vegeta",
+    "subsaga": "BoG",
+    "saga": "Super",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 151060,
+      "attack": 10.04,
+      "defense": 15.06,
+      "hp_regen": 2,
+      "ki_regen": 2,
+      "ki_charge": 10
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        },
+        {
+          "name": "Furious Galick Gun",
+          "input": "D > J"
+        },
+        {
+          "name": "Dark Impact Combo",
+          "input": "D ^ A A"
+        },
+        {
+          "name": "Heat Dome Attack",
+          "input": "D ^ J Hold J to extend attack - Can be used while grabbing enemy"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D",
+          "id": 470, "direction": 0, "type": "base"
+        }
+      ]
+    },
+    "combos": {
+      "links": [
+      ],
+      "basic": [
+      ],
+      "special": [
+      ],
+      "counter": []
+    }
+  }, {
+    "id": 94,
+    "release": "v0.4.3.1",
+    "dlc": true,
+    "url_id": "goku",
+    "name": "Goku",
+    "subsaga": "BoG",
+    "saga": "Super",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 11260,
+      "attack": 2.74,
+      "defense": 4.11,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Kamehameha",
+          "input": "D > J"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D v J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D v JJ"
+        },
+        {
+          "name": "Instant Transmission Attack",
+          "input": "D v J Hold A"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Super Saiyan",
+          "input": "DJA J",
+          "id": 95, "direction": 1, "type": "ss"
+        }, 
+        {
+          "name": "Super Saiyan Red",
+          "input": "DJA D",
+          "id": 98, "direction": 1, "type": "2ss"
+        }
+      ]
+    },
+    "combos": {
+      "links": [
+      ],
+      "basic": [
+      ],
+      "special": [
+      ],
+      "counter": []
+    }
+  }, {
+    "id": 95,
+    "release": "v0.4.3.1",
+    "dlc": true,
+    "url_id": "ss-goku",
+    "name": "Super Saiyan Goku",
+    "subsaga": "BoG",
+    "saga": "Super",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 22520,
+      "attack": 3.87,
+      "defense": 5.81,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Mini Kamehameha",
+          "input": "D > AD"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D > J"
+        },
+        {
+          "name": "Super Kamehameha",
+          "input": "D > JA"
+        },
+        {
+          "name": "Instant Kamehameha (In Front)",
+          "input": "D > J, D > A"
+        },
+        {
+          "name": "Instant Kamehameha (Behind)",
+          "input": "D > J, D < A"
+        },
+        {
+          "name": "Instant Super Kamehameha (In Front)",
+          "input": "D > JA, D > A"
+        },
+        {
+          "name": "Instant Super Kamehameha (Behind)",
+          "input": "D > JA, D < A"
+        },
+        {
+          "name": "Explosive Wave",
+          "input": "D ^ J"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D v J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D v JJ"
+        },
+        {
+          "name": "Instant Transmission Attack",
+          "input": "D v J Hold A"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D",
+          "id": 94, "direction": 0, "type": "base"
+        }
+      ]
+    },
+    "combos": {
+      "links": [
+      ],
+      "basic": [
+      ],
+      "special": [
+      ],
+      "counter": []
+    }
+  }, {
+    "id": 98,
+    "release": "v0.4.3.1",
+    "dlc": true,
+    "url_id": "ssr-goku",
+    "name": "Super Saiyan Red Goku",
+    "subsaga": "BoG",
+    "saga": "Super",
+    "race": ["Saiyan"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 540480,
+      "attack": 18.98,
+      "defense": 28.47,
+      "hp_regen": 2,
+      "ki_regen": 2,
+      "ki_charge": 10
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        },
+        {
+          "name": "Mini Kamehameha",
+          "input": "D > AD"
+        },
+        {
+          "name": "Kamehameha",
+          "input": "D > J"
+        },
+        {
+          "name": "Super Kamehameha",
+          "input": "D > JA"
+        },
+        {
+          "name": "Instant Kamehameha (In Front)",
+          "input": "D > J, D > A"
+        },
+        {
+          "name": "Instant Kamehameha (Behind)",
+          "input": "D > J, D < A"
+        },
+        {
+          "name": "Instant Super Kamehameha (In Front)",
+          "input": "D > JA, D > A"
+        },
+        {
+          "name": "Instant Super Kamehameha (Behind)",
+          "input": "D > JA, D < A"
+        },
+        {
+          "name": "Explosive Wave",
+          "input": "D ^ J"
+        },
+        {
+          "name": "Instant Transmission (Enemy)",
+          "input": "D v J"
+        },
+        {
+          "name": "Instant Transmission (Ally)",
+          "input": "D v JJ"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [
+        {
+          "name": "Base Form",
+          "input": "DJA D",
+          "id": 94, "direction": 0, "type": "base"
+        }
+      ]
+    },
+    "combos": {
+      "links": [
+      ],
+      "basic": [
+      ],
+      "special": [
+      ],
+      "counter": []
+    }
+  }
+]

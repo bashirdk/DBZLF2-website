@@ -21,41 +21,6 @@ class Guide extends Component {
 
 				<h1 className="text-white">DBZ LF2 Game Guide</h1>
 
-
-				{/* <div className="text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 py-5 mx-0 lg:mx-3 guide-page">
-					<ul>
-						<li><h2><a href="#controls" className="guide-blue">Controls </a></h2></li>
-						<li><a href="#ui" className="guide-blue">UI</a></li>
-						<ul>
-							<li><a href="#characer_select">Character Select</a></li>
-							<li><a href="#hud">HUD</a></li>
-						</ul>
-						<li><a href="#game_modes" className="guide-blue">Game Modes</a></li>
-						<ul>
-							<li><a href="#vs_mode">VS Mode</a></li>
-							<li><a href="#stage_mode">Stage Mode</a></li>
-							<li><a href="#1v1">1 on 1 Championship</a></li>
-							<li><a href="#2v2">2 on 2 Championship</a></li>
-							<li><a href="#battle_mode">Battle Mode</a></li>
-						</ul>
-						<li><a href="#gameplay_mechanics" className="guide-blue">Gameplay Mechanics</a></li>
-						<ul>
-							<li><a href="#stats">Stats</a></li>
-							<li><a href="#normal_attack">Normal Attack</a></li>
-							<li><a href="#heavy_attack">Heavy Attack (Super Punch)</a></li>
-							<li><a href="#stagger">Stagger (Dance of Pain)</a></li>
-							<li><a href="#grab">Grab (Catching)</a></li>
-							<li><a href="#counter_attack">Counter Attack</a></li>
-							<li><a href="#air_recover">Air Recover</a></li>
-							<li><a href="#air_recover_dash">Air Recover Dash</a></li>
-							<li><a href="#basic_combo">Basic Combo</a></li>
-							<li><a href="#ki_charge">Ki Charge</a></li>
-							<li><a href="#ki_blast">Ki Blast</a></li>
-							<li><a href="#special_moves">Special Moves</a></li>
-						</ul>
-					</ul>
-				</div> */}
-
 				<div className="guide-summary text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 pr-5 pt-5 pb-10 mx-0 lg:mx-3">
 					<ul>
 						<li><h2><a href="#controls" className="guide-blue">Controls </a></h2></li>
@@ -111,7 +76,7 @@ class Guide extends Component {
 							className="w-full guide-img"
 						/>
 						<p> Above are the default controls the game comes with. </p>
-						<p>The follow abbreviations will be used all over the website for different inputs, moves and commands. Learn and understand them!</p>
+						<p>The following abbreviations will be used all over the website for different inputs, moves and commands. Learn and understand them!</p>
 						<ul>
 							<li>"A" = <b>Attack</b> button</li>
 							<li>"J" = <b>Jump</b> button</li>
@@ -214,7 +179,13 @@ class Guide extends Component {
 						<p>This is the main fighting mode. You can have up to 8 fighters. (minimum 1 player, maximum 4 players, minimum 1 COM and maximum 7 COMs).
 							Each fighter can be either independent, or in 1 of 4 teams. 
 						</p>
-						<p><b> "Training Mode"</b> - Select any fighter (preferably Super Vegito) as a 2nd human player and you can fight against him as a training dummy with no COM fighters.</p>
+						<h4>Training Mode</h4>
+						<p>Training mode can be selected in VS mode. To enter training mode you can use either player or COM enemies and pick the "TRAINING MODE" background. 
+							In Training mode attacks do 0 damage and the only way to end is by pressing F4 special function key. 
+							If you are fighting COM enemies then you can make them <i>stop</i> fighting with the <b>Stop!</b> command and you can also make them come to your location with the <b>Come!</b> command.
+							To make them start fighting again you just use the <b>Move!</b> command.
+							To see how to use special commands, check <a href="#commands"> HERE.</a>
+							</p>
 						
 						<h3 id="stage_mode">Stage Mode</h3>
 						<div className="text-center">

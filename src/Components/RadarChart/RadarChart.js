@@ -8,7 +8,6 @@ import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
 function RadarChart({chartData}) {
-  console.log('chartData', chartData);
 
   const labels = [
     // "Ki R.",
@@ -93,8 +92,6 @@ function RadarChart({chartData}) {
   let attackRange = {};
   let defenseRange = {};
 
-  console.log('attackRange', attackRange);
-
   let attack = chartData.stats.attack;
   let defense = chartData.stats.defense;
 
@@ -119,9 +116,6 @@ function RadarChart({chartData}) {
     i++;
   }
   while (i < 4)
-
-  console.log('attackRange', attackRange);
-  console.log('defenseRange', defenseRange);
 
   const bluePower = {
     label: '',
