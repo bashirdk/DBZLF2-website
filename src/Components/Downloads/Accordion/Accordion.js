@@ -3,7 +3,7 @@ import Chevron from "./Chevron";
 
 import "./Accordion.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import AdComponent from "../../AdComponent/AdComponent";
+import AdComponent from "../../AdComponent/AdComponent";
 
 function Accordion(props) {
   const [setActive, setActiveState] = useState("");
@@ -192,7 +192,7 @@ function Accordion(props) {
                 <span className="mx-2">DOWNLOAD</span>
               </button>
             </a>}
-            {/* <AdComponent /> */}
+            <AdComponent />
           </div>
 
           {!props.dlc ? 
