@@ -8,6 +8,7 @@ import MoveList from "./MoveList/MoveList.js";
 import ComboList from "./ComboList/ComboList.js";
 import CharacterBio from "./CharacterBio/CharacterBio.js";
 import CharacterStats from "./CharacterStats/CharacterStats.js";
+import AdComponent from "../AdComponent/AdComponent.js";
 
 const CharacterProfile = ( props ) => {
 
@@ -81,6 +82,8 @@ const CharacterProfile = ( props ) => {
               <ComboList character={false} />
             </section>
           }
+
+          <AdComponent />
 
           {
           selCharacter.moveset_video ?

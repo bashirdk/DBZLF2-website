@@ -10,6 +10,8 @@ import DownloadsBgListJSON from "../../data/downloadsBgList.json";
 import Accordion from "./Accordion/Accordion"
 import AccordionDLC from "./AccordionDLC/AccordionDLC"
 
+import AdComponent from "../AdComponent/AdComponent";
+
 class Downloads extends Component {
 
 	render() {
@@ -67,6 +69,8 @@ class Downloads extends Component {
 
 				<h2 className="text-white text-center"> DLC </h2>
 				<AccordionDLC />
+
+				<AdComponent/>
 
 				<h2 className="text-white text-center"> Previous Game Versions </h2>
 				<div>{downloadsData}</div>
