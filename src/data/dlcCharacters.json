@@ -40,7 +40,7 @@
         },
         {
           "name": "Bingo Dance",
-          "input": "D v J DJA"
+          "input": "D v A DJA"
         }
       ],
       "counter": [
@@ -65,7 +65,7 @@
     "combos": {
       "links": [
       ],
-      "basic": [
+      "basic": [ [53]
       ],
       "special": [
       ],
@@ -128,7 +128,7 @@
     "combos": {
       "links": [
       ],
-      "basic": [
+      "basic": [{"name": "Basic Combo", "input": "Super Punch + J + A"}
       ],
       "special": [
       ],
@@ -200,6 +200,7 @@
       "links": [
       ],
       "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J + A + A"}
       ],
       "special": [
       ],
@@ -275,7 +276,7 @@
     "combos": {
       "links": [
       ],
-      "basic": [
+      "basic": [[53]
       ],
       "special": [
       ],
@@ -375,6 +376,7 @@
       "links": [
       ],
       "basic": [
+        { "name": "Basic Combo", "input": "Super Punch + J + A" }
       ],
       "special": [
       ],
@@ -474,6 +476,7 @@
       "links": [
       ],
       "basic": [
+        { "name": "Basic Combo", "input": "Super Punch + J + A" }
       ],
       "special": [
       ],

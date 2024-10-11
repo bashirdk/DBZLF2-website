@@ -1051,7 +1051,9 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        [53]
+      ],
       "special": [],
       "counter": []
     } 
@@ -1128,7 +1130,9 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J + A"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -1175,6 +1179,10 @@
         {
           "name": "Infinite Break (Can also be used when grabbing enemy)",
           "input": "D v J"
+        },
+        {
+          "name": "Atomic Blaster",
+          "input": "Grab + D ^ A"
         }
       ],
       "team": [],
@@ -1193,7 +1201,9 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Basic Combo", "input": "Super Punch + J + A + J"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -1764,7 +1774,7 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [ [53]],
       "special": [],
       "counter": []
     } 
@@ -1844,8 +1854,10 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
-      "special": [],
+      "basic": [[53]],
+      "special": [
+        {"name": "Basic Combo + Explosive Combination", "input": "Super Punch + J + J"}
+      ],
       "counter": []
     } 
   },
@@ -1917,7 +1929,9 @@
       ]
     },"combos": {
       "links": [],
-      "basic": [],
+      "basic": [
+        {"name": "Basic Combo (Infinite)", "input": "Super Punch + J (J J J...)"}
+      ],
       "special": [],
       "counter": []
     } 
@@ -2001,6 +2015,7 @@
         [2, 1]
       ],
       "basic": [ 
+        [53],
         [51, 50],
         {"name": "Air Throw Combo", "input": "Grabbing Enemy + D ^ A + J"},
         [2, 50]
