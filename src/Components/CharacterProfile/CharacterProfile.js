@@ -83,7 +83,11 @@ const CharacterProfile = ( props ) => {
             </section>
           }
 
+          <div className="text-white text-center">
+          <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
           <AdComponent />
+          <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+          </div>
 
           {
           selCharacter.moveset_video ?

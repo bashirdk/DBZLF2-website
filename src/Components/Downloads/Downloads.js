@@ -70,7 +70,12 @@ class Downloads extends Component {
 				<h2 className="text-white text-center"> DLC </h2>
 				<AccordionDLC />
 
-				<AdComponent/>
+				<div className="text-white text-center">
+          <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+          <AdComponent />
+          <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<br></br>
+				</div>
 
 				<h2 className="text-white text-center"> Previous Game Versions </h2>
 				<div>{downloadsData}</div>
