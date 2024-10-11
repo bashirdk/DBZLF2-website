@@ -7,11 +7,12 @@ export default class AdComponent extends React.Component {
 
 render () {
     return (
-      <ins className="adsbygoogle"
-        style={{ display: 'block', minHeight: '90px' }}
-        data-ad-client='ca-pub-9061009934750007'
-        data-ad-slot='1256806030'
-        data-full-width-responsive='true'/>
+      <ins class="adsbygoogle"
+        style={{display:"block"}}
+        data-ad-format="fluid"
+        data-ad-layout-key="-f5+4w+7r-eg+48"
+        data-ad-client="ca-pub-9061009934750007"
+        data-ad-slot="7645899843"/>
     );
   }
 }
