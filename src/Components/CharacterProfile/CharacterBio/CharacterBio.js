@@ -21,7 +21,7 @@ const CharacterBio = ({ character }) => {
       <img 
         src={require(`../../../images/profile/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}-damage.gif`)}
         alt={`standing pic of ${character.name}`}
-        className="w-full absolute pin-t pin-l hidden"
+        className="w-full pixel absolute pin-t pin-l hidden"
         id="character_standing_damage"
       /> )
     } catch(err) {
@@ -35,7 +35,7 @@ const CharacterBio = ({ character }) => {
       <img 
         src={require(`../../../images/profile/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}-old.gif`)}
         alt={`standing pic of ${character.name}`}
-        className="w-full absolute pin-t pin-l hidden"
+        className="w-full pixel absolute pin-t pin-l hidden"
         id="character_standing_old"
       /> )
     } catch(err) {
@@ -242,21 +242,21 @@ const CharacterBio = ({ character }) => {
       {powerLevelStat}
       <img src={require(`../../../images/profile/${character.saga.toLowerCase()}_bg.png`)}
         alt={`background for ${character.saga.toLowerCase()} saga`}
-        className="w-full"
+        className="w-full pixel"
       />
       <img src={require(`../../../images/profile/superauraflash.png`)}
         alt={`background for ${character.saga.toLowerCase()} saga`}
-        className={`w-full`}
+        className={`w-full pixel`}
         id="ss-aura-flash"
       />
       <img src={require(`../../../images/profile/s.png`)}
         alt={`shadow`}
-        className="w-full absolute pin-t pin-l"
+        className="w-full pixel absolute pin-t pin-l"
       />
       <img 
         src={require(`../../../images/profile/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}.gif`)}
         alt={`${character.name} standing`}
-        className="w-full absolute pin-t pin-l block"
+        className="w-full pixel absolute pin-t pin-l block"
         id="character_standing"
       />
       { hasBattleDamage() }

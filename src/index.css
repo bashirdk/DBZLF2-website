@@ -42,3 +42,7 @@ code {
 .lf2-text-blue-light {
   color: #5582FF;
 }
+
+.pixel {
+  image-rendering: pixelated;
+}
