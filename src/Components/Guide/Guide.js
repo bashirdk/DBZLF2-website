@@ -74,6 +74,7 @@ class Guide extends Component {
 							src={require(`../../images/guide/controlsettings.png`)}
 							alt="control settings"
 							className="w-full guide-img"
+							loading="lazy"
 						/>
 						<p> Above are the default controls the game comes with. </p>
 						<p>The following abbreviations will be used all over the website for different inputs, moves and commands. Learn and understand them!</p>
@@ -107,6 +108,7 @@ class Guide extends Component {
 								src={require(`../../images/guide/commands.png`)}
 								alt="control settings"
 								className="text-center"
+								loading="lazy"
 							/>
 						</div>
 
@@ -128,6 +130,7 @@ class Guide extends Component {
 							src={require(`../../images/guide/characterselection.png`)}
 							alt="control settings"
 							className="w-full guide-img nmb-5"
+							loading="lazy"
 						/>
 						<h4>Stats</h4>
 						<p>You can see the stats of each character. To get more details on each stat check <NavLink to="#stats" >HERE.</NavLink> </p>
@@ -141,6 +144,7 @@ class Guide extends Component {
 							src={require(`../../images/guide/hud.png`)}
 							alt="control settings"
 							className="w-full guide-img nmb-5"
+							loading="lazy"
 						/>
 						<h4>HP Gauge</h4>
 						<h5>HP</h5>
@@ -182,7 +186,7 @@ class Guide extends Component {
 						<h4>Training Mode</h4>
 						<p>Training mode can be selected in VS mode. To enter training mode you can use either player or COM enemies and pick the "TRAINING MODE" background. 
 							In Training mode attacks do 0 damage and the only way to end is by pressing F4 special function key. 
-							If you are fighting COM enemies then you can make them <i>stop</i> fighting with the <b>Stop!</b> command and you can also make them come to your location with the <b>Come!</b> command.
+							If you are fighting COM enemies then you can make them <i>stop</i> fighting with the <b>Stay!</b> command and you can also make them come to your location with the <b>Come!</b> command.
 							To make them start fighting again you just use the <b>Move!</b> command.
 							To see how to use special commands, check <a href="#commands"> HERE.</a>
 							</p>
@@ -193,6 +197,7 @@ class Guide extends Component {
 								src={require(`../../images/guide/stagemode.PNG`)}
 								alt="control settings"
 								className="guide-img"
+								loading="lazy"
 							/>
 						</div>
 						<p>This mode you advance through different phases fighting weak enemies. There are several phases per sub-stage. 
@@ -208,6 +213,7 @@ class Guide extends Component {
 								src={require(`../../images/guide/1v1.PNG`)}
 								alt="control settings"
 								className="guide-img"
+								loading="lazy"
 							/>
 						</div>
 						<p>Fight in 1 on 1 battles to determine who is the World Champion!
@@ -233,6 +239,7 @@ class Guide extends Component {
 							src={require(`../../images/guide/stats.png`)}
 							alt="control settings"
 							className="guide-img stats-img"
+							loading="lazy"
 						/>
 						</div>
 
@@ -385,6 +392,7 @@ class Guide extends Component {
 							src={require(`../../images/guide/lobbyservers.png`)}
 							alt="control settings"
 							className="w-full guide-img"
+							loading="lazy"
 						/>
 						<p> <b>IMPORTANT: </b> Pick the server where the ping is low for all players that are playing online.</p>
 						<h4>Pros</h4>
