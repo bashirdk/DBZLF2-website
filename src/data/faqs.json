@@ -12,7 +12,7 @@
   {
     "id": "mobileandroid",
     "question": "Is this game on Mobile/Android? Can you make it for Mobile/Android?",
-    "answer": "No, unfortunately this game is not on mobile or android devices. <br> This game is a mod of the 1999 freeware game Little Fighter 2 which is a Windows game only. <br> If you can somehow emulate a Windows PC on your mobile device then maybe you can play the game on your mobile device."
+    "answer": "No, unfortunately this game is not on mobile or android devices. <br> This game is a mod of the 1999 freeware game Little Fighter 2 which is a Windows game only. <br> We can't change what platforms the game is available on as we are only making a mod and we didn't create the actual base game which is only available on Windows. <br> If you can somehow emulate a Windows PC on your mobile device then maybe you can play the game on your mobile device."
   },
   {
     "id": "addcharacter",
