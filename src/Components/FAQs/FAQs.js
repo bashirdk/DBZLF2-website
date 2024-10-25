@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 import FAQsJSON from "../../data/faqs.json";
 
 import Accordion from "./Accordion/Accordion"
+import AdComponent from ".././AdComponent/AdComponent"
 
 class FAQs extends Component {
 
@@ -15,6 +16,7 @@ class FAQs extends Component {
 
 			<Accordion
 				id={faq.id}
+				ad={faq.ad}
 				question={faq.question}
 				answer={faq.answer}
 			/>
@@ -32,6 +34,11 @@ class FAQs extends Component {
 				<h1 className="text-white">Frequently Asked Questions</h1>
 				<p className="text-white my-4">Click or Tap a question to see the answer.</p>
 				<div>{faqsData}</div>
+				<div className="text-white text-center">
+            <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+            <AdComponent />
+            <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+          </div>
 			</div>
 		);
 	}

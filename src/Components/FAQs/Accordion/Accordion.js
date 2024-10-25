@@ -3,6 +3,8 @@ import Chevron from "./Chevron";
 
 import "./Accordion.css";
 
+import AdComponent from "../../AdComponent/AdComponent";
+
 function Accordion(props) {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
@@ -52,6 +54,17 @@ function Accordion(props) {
           <div dangerouslySetInnerHTML={{ __html: props.answer }}>
           </div>
       </div>
+
+      {props.ad ? 
+        <div className="text-white text-center">
+          <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+          <AdComponent />
+          <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+        </div>
+        :
+        ""
+      }
+
 
     </div>
     </div>
