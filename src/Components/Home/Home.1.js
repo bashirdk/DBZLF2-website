@@ -77,7 +77,7 @@ const Home = () => (
     <br></br>
 
     <div className="text-center text-white">
-      Project has been revived thanks to <b><i>NetaFelizZz/Excellent Approximation/Rancro</i></b> (updated sprites/data + finished SS Trunks and made Ultra Trunks and will continue the mod with my help in the bg)
+      Project has been revived thanks to <b><i>Excellent Approximation</i></b> (updated sprites/data + finished SS Trunks and made Ultra Trunks and will continue the mod with my help in the bg)
       <br></br><br></br>
       EXE and cool features thanks to <b><i>darkfiren</i></b>'s exe
     </div>
