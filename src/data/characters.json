@@ -52,7 +52,7 @@
         },
         {
           "name": "Finish Blaster", "combo_id": 5,
-          "input": "D v A (Hold A to increase power up to 3 levels)",
+          "input": "D v A (Hold A to increase power up to 3 levels) (Hold ^ to shoot in the sky)",
           "added": "v0.4.3"
         },
         {
@@ -90,7 +90,7 @@
         { "name": "Dirty Fireworks + Final Burst Cannon + Finish Blaster", "input": "D ^ A A + D v A + D v J" },
         [2, 1, 3],
         { "name": "Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon", "input": "D ^ JA + D ^ A A + D v A + D v J" },
-        [4, 2, 1, 3]
+        { "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks + Final Burst Cannon" , "input": "Grabbing Enemy + D ^ A + A + D ^ JA + D ^ A A + D v J"}
       ],
       "counter": []
     }
