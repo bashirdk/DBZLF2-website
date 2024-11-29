@@ -24,5 +24,10 @@
     "id": "usemove",
     "question": "How do you use [MOVE]?",
     "answer": "You can see a complete list of moves and combos for all characters <a href='/characters'> HERE</a>"
+  }, 
+  {
+    "id": "support",
+    "question": "Is there a way to support you guys and the game/mod?",
+    "answer": "<p> The easiest way to support us is to subscribe to our YouTube channel and like our videos and LEAVE COMMENTS on the videos and most importantly... SHARE THE VIDEOS so the game and community grows further! </p>  <p> You can also support us by whitelisting the website from your adblocker. </p> <p> We have also opened up a Patreon page for people that want to support us. It is completely optional and not required, everyone will be able to play the game for free. This is just for the select few people that have been asking. You can find us on Patreon <a href='https://www.patreon.com/DBZLF2' target='_blank'> HERE. </a> </p>"
   }
 ]

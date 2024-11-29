@@ -19,11 +19,11 @@ import Guide from "../Components/Guide"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
-import { faYoutube, faDiscord, faBlogger } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube, faDiscord, faBlogger, faPatreon } from '@fortawesome/free-brands-svg-icons'
 
 import TagManager from 'react-gtm-module'
 
-library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger)
+library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger, faPatreon)
 
 const tagManagerArgs = {
   gtmId: 'GTM-N2KK6S5'
