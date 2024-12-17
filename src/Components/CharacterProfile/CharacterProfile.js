@@ -21,6 +21,7 @@ const CharacterProfile = ( props ) => {
       setCharacter(CharactersDLC.find(
         (character) =>
           character.saga.toLowerCase() === saga.toLowerCase() &&
+          character.subsaga.toLowerCase() === subsaga.toLowerCase() &&
           character.url_id.toLowerCase() === name.toLowerCase()
       ));
     } else {
