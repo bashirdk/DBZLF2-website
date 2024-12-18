@@ -2,6 +2,51 @@
   {
     "version": "v0.4.3.1",
     "dlc": true,
+    "title": "DBS Expansion v2",
+    "subtitle": "Resurrection 'F' Expansion Pack",
+    "author": "Remie, Rubens and Matheus Ale",
+    "date": "12/18/2024",
+    "download": "https://www.mediafire.com/file/3bh02wh8sl3mbcm/DBS_Expansion_V2_for_v0.4.3.1.rar/file",
+    "trailer": "_AFq_V2dEro",
+    "characters": {
+      "new": 10,
+      "total": 16
+    },
+    "backgrounds": {
+      "new": 0,
+      "total": 0 
+    },
+    "updates": {
+      "major_updates": {
+        "characters": [
+          "[+] Vegeta (Resurrection 'F')",
+          "[+] SS Vegeta (Resurrection 'F')",
+          "[+] SSB Vegeta (Resurrection 'F')",
+          "[+] Goku (Resurrection 'F')",
+          "[+] SS Goku (Resurrection 'F')",
+          "[+] SSR Goku (Resurrection 'F')",
+          "[+] SSB Goku (Resurrection 'F')",
+          "[+] SSBKK Goku (Resurrection 'F')",
+          "[+] Duplicate Vegeta (Future Trunks)",
+          "[+] SSB Duplicate Vegeta (Future Trunks)"
+        ],
+        "backgrounds": [
+        ],
+        "list_of_major_updates": [
+        ]
+      },
+      "minor_updates": {
+        "character_changes": [
+          "SS2E Vegeta (5) Heat Dome is now tall enough visually to reach all the way up to the sky.",
+          "SS Vegeta (5), SS2E Vegeta (5), SS Goku (5) now uses the correct ki blasts.",
+          "SSR Goku (5)'s scouter number position slightly moved.",
+          "SS Goku (5) and SSR Goku (5) counter explosive wave deals as much as his explosive wave attack."
+        ]
+      }
+    }
+  }, {
+    "version": "v0.4.3.1",
+    "dlc": true,
     "title": "DBS Expansion v1",
     "subtitle": "Battle of Gosh Expansion Pack",
     "author": "Remie and Rubens",
