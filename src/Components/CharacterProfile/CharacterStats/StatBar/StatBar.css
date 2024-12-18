@@ -51,6 +51,7 @@
   position: absolute;
   left: -25px;
   top: 2px;
+  z-index: 1;
 }
 .scouter-model-back {
   background: rgb(180,180,180);
@@ -85,7 +86,7 @@
   --num: var(--power-level-start-value);
   font: 800 18px system-ui;
   line-height: 1;
-  color: yellow;
+  color: rgba(255,255,0,0.8);
   animation-name: counter;
   animation-duration: var(--power-level-anim-time);
   animation-delay: 0.2s;

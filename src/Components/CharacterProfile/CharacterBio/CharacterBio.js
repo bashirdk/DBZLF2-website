@@ -231,6 +231,10 @@ const CharacterBio = ({ character }) => {
   const subSagaName = (subsaga) => {
     if (subsaga === "BoG") {
       return "Battle of Gosh";
+    } else if (subsaga === "RF") {
+      return "Resurrection 'F'";
+    } else if (subsaga === "FT") {
+      return "Future Trunks";
     } else {
       return subsaga;
     }
