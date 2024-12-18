@@ -83,7 +83,8 @@ function AccordionDLC(props) {
         <div className="w-full">
           <div className="text-left inline-block">
             <Chevron className={`${setRotate}`} width={10} fill={"#fff"} />
-            <h2 className="inline-block text-center float-center"> DOWNLOADABLE CONTENT </h2> 
+            <h2 className="inline-block text-center float-center"> DOWNLOADABLE CONTENT <span className="inline-block rounded-lg py-1 px-3 mr-2 mt-1 mb-1 text-white font-bold text-shadow-label android-race-label"> NEW </span> 
+            <span className="text-sm"> (12/18/2024) </span> </h2> 
           </div>
         </div>
       </button>
