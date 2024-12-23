@@ -42,8 +42,11 @@ Race Labels
 .android-race-label {
   background-color: #ff0000;
 }
+.bio-android-race-label {
+  background-image: linear-gradient(90deg, #FFED4A, #45a329, #00b0f0, #cc0099 );
+}
 
-.demon-race-label {
+.majin-race-label {
   background-color: #ff99ff;
 }
 
