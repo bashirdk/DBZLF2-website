@@ -1,97 +1,31 @@
 [
   {
-    "id": 66,
-    "release": "v0.1.7",
+    "id": 92,
+    "release": "v0.5.5",
     "url_id": "vegeta",
     "name": "Vegeta",
-    "saga": "Namek",
+    "saga": "Saiyan",
     "race": ["Saiyan"],
-    "type": { "hero": false, "villain": false, "other": true },
-    "moveset_video": "qkrOFbKV9wM",
+    "type": { "hero": false, "villain": true, "other": false },
     "stats": {
-      "power_level": 4860,
-      "attack": 1.8,
-      "defense": 2.7,
-      "speed": 1.8,
-      "ki": 100,
+      "power_level": 2160,
+      "attack": 1.2,
+      "defense": 1.8,
       "hp_regen": 2,
       "ki_regen": 6,
       "ki_charge": 7
     },
     "moves": {
-      "basic": [
-        {
-          "name": "Ki Charge",
-          "input": "DJA A Hold A"
-        },
-        {
-          "name": "Ki Blast",
-          "input": "D > A (A A A...)"
-        }
-      ],
+      "basic": [],
       "team": [],
-      "special": [
-        {
-          "name": "Super Energy Wave Volley", 
-          "input": "D > AJ"
-        },
-        {
-          "name": "Bang Beam", 
-          "input": "D > AD A A A...",
-          "added": "v0.4.3"
-        },
-        {
-          "name": "Dirty Fireworks", "combo_id": 1,
-          "input": "D ^ A A",
-          "updated": "v0.2.3"
-        },
-        {
-          "name": "Genocide Breaker", "combo_id": 2,
-          "input": "D ^ JA",
-          "updated": "v0.2.3"
-        },
-        {
-          "name": "Finish Blaster", "combo_id": 5,
-          "input": "D v A (Hold A to increase power up to 3 levels) (Hold ^ to shoot in the sky)",
-          "added": "v0.4.3"
-        },
-        {
-          "name": "Final Crash",
-          "input": "D > J"
-        },
-        {
-          "name": "Final Burst Cannon", "combo_id": 3,
-          "input": "D v J"
-        },
-        {
-          "name": "Final Galick Cannon", "combo_id": 4,
-          "input": "Grabbing Enemy + D ^ A"
-        }
-      ],
-      "counter": [
-        {
-          "name": "Basic Counter",
-          "input": "Block attack + A"
-        }
-      ],
+      "special": [],
+      "counter": [],
       "transformations": []
     },
     "combos": {
-      "links": [
-        [4, 2], [2, 1], [1, 3], { "name": "Dirty Fireworks -> Finish Blaster", "input": "D ^ A A -> D v A" }
-      ],
-      "basic": [
-        [53], 
-        { "name": "Basic Combo Knee Stomp Finisher", "input": "Super Punch + J + D v A" },
-        { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
-      ],
-      "special": [
-        [1, 3],
-        { "name": "Dirty Fireworks + Final Burst Cannon + Finish Blaster", "input": "D ^ A A + D v A + D v J" },
-        [2, 1, 3],
-        { "name": "Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon", "input": "D ^ JA + D ^ A A + D v A + D v J" },
-        { "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks + Final Burst Cannon" , "input": "Grabbing Enemy + D ^ A + A + D ^ JA + D ^ A A + D v J"}
-      ],
+      "links": [],
+      "basic": [],
+      "special": [],
       "counter": []
     }
   },
@@ -351,6 +285,132 @@
 	  ]
     }
   },
+  {
+    "id": 66,
+    "release": "v0.1.7",
+    "url_id": "vegeta",
+    "name": "Vegeta",
+    "saga": "Namek",
+    "race": ["Saiyan"],
+    "type": { "hero": false, "villain": false, "other": true },
+    "moveset_video": "qkrOFbKV9wM",
+    "stats": {
+      "power_level": 4860,
+      "attack": 1.8,
+      "defense": 2.7,
+      "speed": 1.8,
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "team": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        },
+        {
+          "name": "Bang Beam", 
+          "input": "D > AD A A A...",
+          "added": "v0.4.3"
+        },
+        {
+          "name": "Dirty Fireworks", "combo_id": 1,
+          "input": "D ^ A A",
+          "updated": "v0.2.3"
+        },
+        {
+          "name": "Genocide Breaker", "combo_id": 2,
+          "input": "D ^ JA",
+          "updated": "v0.2.3"
+        },
+        {
+          "name": "Finish Blaster", "combo_id": 5,
+          "input": "D v A (Hold A to increase power up to 3 levels) (Hold ^ to shoot in the sky)",
+          "added": "v0.4.3"
+        },
+        {
+          "name": "Final Crash",
+          "input": "D > J"
+        },
+        {
+          "name": "Final Burst Cannon", "combo_id": 3,
+          "input": "D v J"
+        },
+        {
+          "name": "Final Galick Cannon", "combo_id": 4,
+          "input": "Grabbing Enemy + D ^ A"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": []
+    },
+    "combos": {
+      "links": [
+        [4, 2], [2, 1], [1, 3], { "name": "Dirty Fireworks -> Finish Blaster", "input": "D ^ A A -> D v A" }
+      ],
+      "basic": [
+        [53], 
+        { "name": "Basic Combo Knee Stomp Finisher", "input": "Super Punch + J + D v A" },
+        { "name": "Basic Combo + Dirty Fireworks + Final Burst Cannon", "input": "Super Punch + J A + D v J" }, [1, 52]
+      ],
+      "special": [
+        [1, 3],
+        { "name": "Dirty Fireworks + Final Burst Cannon + Finish Blaster", "input": "D ^ A A + D v A + D v J" },
+        [2, 1, 3],
+        { "name": "Genocide Breaker + Dirty Fireworks + Finish Blaster + Final Burst Cannon", "input": "D ^ JA + D ^ A A + D v A + D v J" },
+        { "name": "Final Galick Cannon + Genocide Breaker + Dirty Fireworks + Final Burst Cannon" , "input": "Grabbing Enemy + D ^ A + A + D ^ JA + D ^ A A + D v J"}
+      ],
+      "counter": []
+    }
+  },
+    {
+      "id": 61,
+      "release": "v0.5.5",
+      "url_id": "frieza",
+      "name": "Frieza",
+      "saga": "Namek",
+      "race": ["Frieza"],
+      "type": { "hero": false, "villain": true, "other": false },
+      "stats": {
+        "power_level": 8460,
+        "attack": 2.3,
+        "defense": 3.68,
+        "hp_regen": 2,
+        "ki_regen": 4,
+        "ki_charge": 7
+      },
+      "moves": {
+        "basic": [],
+        "team": [],
+        "special": [],
+        "counter": [],
+        "transformations": []
+      },
+      "combos": {
+        "links": [],
+        "basic": [],
+        "special": [],
+        "counter": []
+      }
+    },
   {
     "id": 67,
     "release": "v0.1.3",
@@ -971,6 +1031,36 @@
         {"name": "Gigantic Fury + Burning Barrage", "input": "Grabbing Enemy + D v J Hold J + J" },
         {"name": "Gigantic Fury + Burning Barrage + Gigantic Spike and Drag + Eraser Blow", "input": "Grabbing Enemy + D v J Hold J + J + Hold A + Hold J", "ultimate": true}
       ],
+      "counter": []
+    }
+  },
+  {
+    "id": 60,
+    "release": "v0.5.5",
+    "url_id": "perfect-cell",
+    "name": "Perfect Cell",
+    "saga": "Android",
+    "race": ["Bio-Android"],
+    "type": { "hero": false, "villain": true, "other": false },
+    "stats": {
+      "power_level": 27280,
+      "attack": 4.0,
+      "defense": 6.2,
+      "hp_regen": 4,
+      "ki_regen": 6,
+      "ki_charge": 7
+    },
+    "moves": {
+      "basic": [],
+      "team": [],
+      "special": [],
+      "counter": [],
+      "transformations": []
+    },
+    "combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
       "counter": []
     }
   },
@@ -2220,6 +2310,35 @@
         {"name": "Final Kamehameha + Omega Finishing Blow", "input": "D v J + hold A"},
         {"name": "Final Kamehameha + Omega Finishing Blow + Big Bang Attack (Kakarot)", "input": "D v J + hold A + hold J + D v A"}
       ],
+      "counter": []
+    }
+  }, {
+    "id": 88,
+    "release": "v0.5.5",
+    "url_id": "majin-buu",
+    "name": "Majin Buu",
+    "saga": "Buu",
+    "race": ["Majin"],
+    "type": { "hero": false, "villain": true, "other": false },
+    "stats": {
+      "power_level": 101250,
+      "attack": 8.0,
+      "defense": 6.4,
+      "hp_regen": 10,
+      "ki_regen": 8,
+      "ki_charge": 4
+    },
+    "moves": {
+      "basic": [],
+      "team": [],
+      "special": [],
+      "counter": [],
+      "transformations": []
+    },
+    "combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
       "counter": []
     }
   }

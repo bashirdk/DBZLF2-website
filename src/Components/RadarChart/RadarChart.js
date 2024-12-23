@@ -115,7 +115,13 @@ function RadarChart({chartData}) {
     }
     i++;
   }
-  while (i < 4)
+  while (i < 5)
+
+  const purplePower = {
+    label: '',
+    data: [ 0, 0, attackRange[4], defenseRange[4], chartData.stats.hp_regen],
+    backgroundColor: 'rgba(128, 0, 128, 0.8)',
+  }
 
   const bluePower = {
     label: '',
@@ -160,6 +166,7 @@ function RadarChart({chartData}) {
     labels: labels,
     datasets: [
     whiteOutline, 
+    purplePower,
     bluePower,
     greenPower,
     yellowPower,
