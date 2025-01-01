@@ -85,14 +85,12 @@ const Home = () => (
 
     <div className="text-center text-white">
       <p className="mb-5 text-3xl"> DBZ LF2 v0.5.5 RELEASE </p>
-      <p className="mb-5 text-4xl"> January 1, 2025 </p>
-      <p className="mb-5 text-4xl"> AVAILABLE IN </p>
-      <h3 className="mb-5 text-5xl" id="counter">COUNTDOWN</h3>
+      <p className="mb-5 text-4xl"> RELEASE HAS BEEN DELAYED FOR A FEW HOURS </p>
     </div>
     
     <div className="text-center mt-12" >
       <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/Hfrtfk4RPJE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/0cPGTSFtuRE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
 
@@ -100,14 +98,6 @@ const Home = () => (
     <br></br>
     <p className="text-white text-center"> new EXE and cool features made possible by darkfiren's exe </p> */}
     
-
-    <h2 className="text-white text-center mt-12"> CURRENT VERSION </h2>
-
-    <div className="text-center mt-6" >
-      <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/6moqrHUK_6s" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      </div>
-    </div>
   </div>
 );
 
