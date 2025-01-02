@@ -79,14 +79,10 @@ const Home = () => (
         animate="animate"
         variants={versionVariants}
       >
-        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.4.3 </p>
+        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.5.5 </p>
       </motion.div>
     </div>
 
-    <div className="text-center text-white">
-      <p className="mb-5 text-3xl"> DBZ LF2 v0.5.5 RELEASE </p>
-      <p className="mb-5 text-4xl"> RELEASE HAS BEEN DELAYED FOR A FEW HOURS </p>
-    </div>
     
     <div className="text-center mt-12" >
       <div className="video-responsive">

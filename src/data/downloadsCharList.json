@@ -375,5 +375,82 @@
           "name": "Super Vegito"
       }]
     }
+  },
+  {
+    "version": "v0.5.5",
+    "characters": {
+      "saiyan": [
+        {
+          "name": "Vegeta", "new": true
+        }
+      ],
+      "namek": [ 
+        {
+          "name": "Goku"
+        }, {
+          "name": "SS Goku"
+        }, {
+          "name": "Vegeta"
+        }, {
+          "name": "Frieza Force Soldier (Fist)", "new": true
+        }, {
+          "name": "Frieza Force Soldier (Gun)", "new": true
+        }, {
+          "name": "Frieza Force Soldier (Special)", "new": true
+        }, {
+          "name": "Frieza", "new": true
+        }
+      ],
+      "android": [
+        {
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "Super Vegeta"
+        }, {
+          "name": "Trunks [A]"
+        }, {
+          "name": "SS Trunks [A]"
+        }, {
+          "name": "Super Trunks [A]"
+        }, {
+          "name": "Ultra Trunks [A]"
+        }, {
+          "name": "Perfect Cell", "new": true
+        }
+      ],
+      "buu": [{
+          "name": "Vegeta"
+        },{
+          "name": "SS Vegeta"
+        },{
+          "name": "SS2 Vegeta"
+        },{
+          "name": "Majin Vegeta"
+        },{
+          "name": "Goku"
+        },{
+          "name": "SS Goku"
+        },{
+          "name": "SS2 Goku"
+        },{
+          "name": "SS3 Goku"
+        },{
+          "name": "Gohan"
+        },{
+          "name": "SS Gohan"
+        },{
+          "name": "SS2 Gohan"
+        },{
+          "name": "Ultimtate Gohan"
+        },{
+          "name": "Vegito"
+        },{
+          "name": "Super Vegito"
+      }, {
+        "name": "Majin Buu", "new": true
+      }]
+    }
   }
 ]

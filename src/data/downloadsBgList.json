@@ -121,5 +121,36 @@
         }
       ]
     }
+  },
+  {
+    "version": "v0.5.5",
+    "backgrounds": {
+      "saiyan": [],
+      "namek": [
+        {
+          "name": "Planet Namek"
+        }, {
+          "name": "Planet Namek (Destroyed)", "new": true
+        }
+      ],
+      "android": [],
+      "buu": [
+        {
+          "name": "Budokai"
+        },
+        {
+          "name": "Budokai [Ringout]"
+        },{
+          "name": "Time Chamber"
+        },{
+          "name": "Time Chamber [Hazards]"
+        }
+      ],
+      "lf2": [
+        {
+          "name": "Wastelands"
+        }
+      ]
+    }
   }
 ]

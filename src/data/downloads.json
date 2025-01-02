@@ -1,5 +1,58 @@
 [
   {
+    "version": "v0.5.5",
+    "date": "1/1/2025",
+    "download": "https://www.mediafire.com/file/30m1lugsz58jnwq/DeeBeeZee_LF2_v0.5.5.zip/file",
+    "trailer": "0cPGTSFtuRE",
+    "characters": {
+      "new": 7,
+      "total": 31
+    },
+    "backgrounds": {
+      "new": 0.5,
+      "total": 6 
+    },
+    "updates": {
+      "major_updates": {
+        "characters": [
+          "[+] Vegeta (Saiyan)",
+          "[+] Frieza Force Soldier (Fist) (Namek)",
+          "[+] Frieza Force Soldier (Gun) (Namek)",
+          "[+] Frieza Force Soldier (Special) (Namek)",
+          "[+] Frieza (Namek)",
+          "[+] Perfect Cell (Android)",
+          "[+] Majin Buu (Buu)"
+        ],
+        "backgrounds": [
+          "[+] Planet Namek (Destroyed) (Concept)"
+        ],
+        "list_of_major_updates": [
+          "New PDK Loading system",
+          "New Loading Screens",
+          "Direction Keys in Character Select Menu",
+          "New Character Skin System",
+          "New BG Destruction Transition Mechanic",
+          "BATTLE MODE HAS BEEN FIXED AND IS NOW AVAILABLE!",
+          "Defense Multipliers in Battle Mode allow for balanced battles",
+          "New Scouters System: Bonus combat speed and damage for basic attacks",
+          "New Frieza Warriors Stages! (Levels 1-3)"
+        ]
+      },
+      "minor_updates": {
+        "sprite_changes": [
+
+        ],
+        "new_moves": [
+
+        ],
+        "character_changes": [
+
+
+        ]
+      }
+    }
+  },
+  {
     "version": "v0.4.3.1",
     "date": "9/28/2024",
     "download": "https://www.mediafire.com/file/bpdib1kbekr4o2q/DeeBeeZee_LF2_v0.4.3.1.zip/file",
