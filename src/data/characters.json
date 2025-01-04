@@ -7,6 +7,7 @@
     "saga": "Saiyan",
     "race": ["Saiyan"],
     "type": { "hero": false, "villain": true, "other": false },
+    "moveset_video": "uC931rrfg1k",
     "stats": {
       "power_level": 2160,
       "attack": 1.2,
@@ -16,16 +17,78 @@
       "ki_charge": 7
     },
     "moves": {
-      "basic": [],
+      "basic": [
+      {
+        "name": "Ki Charge",
+        "input": "DJA A Hold A"
+      }, {
+        "name": "Ki Blast",
+        "input": "D > A (A A A...)"
+      }
+    ],
       "team": [],
-      "special": [],
-      "counter": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley", 
+          "input": "D > AJ"
+        }, {
+          "name": "Shine Shot",
+          "input": "D > AD (A)"
+        }, {
+          "name": "Destructo Disc",
+          "input": "D ^ A"
+        }, {
+          "name": "Explosive Wave",
+          "input": "D ^ J"
+        }, {
+          "name": "Super Explosive Wave",
+          "input": "D ^ J hold J"
+        }, { 
+          "name": "Dirty Fireworks",
+          "input": "D v A"
+        }, { 
+          "name": "Galick Gun",
+          "input": "D > J (Press A during charging to shoot faster (costs more Ki the earlier you press A)"
+        }, {
+          "name": "Ultimate Galick Gun",
+          "input": "D > J Press J during charging to start flying in the air (the earlier you press J the more Ki is used. Press A during flying to start the attack earlier (less height and less range on the attack)"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
       "transformations": []
     },
     "combos": {
       "links": [],
-      "basic": [],
-      "special": [],
+      "basic": [
+        [53], {
+          "name": "Intermediate Combo",
+          "input": "Super Punch + J + A"
+        }, {
+          "name": "Run Attack Combo",
+          "input": "Run Attack + J"
+        }, {
+          "name": "Basic Combo -> Dash Attack",
+          "input": "Super Punch + J + Dash Attack"
+        }, {
+          "name": "Basic Combo -> Run Attack Combo",
+          "input": "Super Punch + J + Run Attack + J"
+        }, {
+          "name": "Advanced Combo",
+          "input": "Super Punch + J + A + A"
+        }, {
+          "name": "Epic Wombo Combo",
+          "input": "D ^ A + D v A + Run Attack + J"
+        }
+      ],
+      "special": [{
+        "name": "Basic Combo -> Shine Shot",
+        "input": "Super Punch + J + D < A"
+      }],
       "counter": []
     }
   },
@@ -381,6 +444,157 @@
       "counter": []
     }
   },
+  {
+    "id": 30,
+    "release": "v0.5.5",
+    "url_id": "ff-fist",
+    "name": "Frieza Force Soldier (Fist)",
+    "saga": "Namek",
+    "race": ["Alien"],
+    "type": { "hero": false, "villain": true, "other": false },
+    "moveset_video": "RQl5UDXpCLs",
+    "stats": {
+      "power_level": 1170,
+      "attack": 0.97,
+      "defense": 1.21,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 0
+    },
+    "moves": {
+      "basic": [],
+      "team": [],
+      "special": [{
+        "name": "Equip Scouter",
+        "input": "D v J"
+      }],
+      "counter": [{
+        "name": "Basic Counter",
+        "input": "Block attack + A"
+      }],
+      "transformations": []
+    },
+    "combos": {
+      "links": [],
+      "basic": [ [53] ],
+      "special": [],
+      "counter": []
+    }
+  },
+  {
+    "id": 31,
+    "release": "v0.5.5",
+    "url_id": "ff-gun",
+    "name": "Frieza Force Soldier (Gun)",
+    "saga": "Namek",
+    "race": ["Alien"],
+    "type": { "hero": false, "villain": true, "other": false },
+    "moveset_video": "kxrterxmN44",
+    "stats": {
+      "power_level": 1170,
+      "attack": 0.97,
+      "defense": 1.21,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 0
+    },
+    "moves": {
+      "basic": [{
+        "name": "Knockback Kick",
+        "input": "A when close to the enemy"
+      },{
+        "name": "Ki Blast",
+        "input": "A (A A A...)"
+      },{
+        "name": "Chasing Ki Blast",
+        "input": "D > A (A A A...)"
+      }],
+      "team": [],
+      "special": [
+        {
+          "name": "Super Energy Wave Volley",
+          "input": "D > AJ, press D to stop"
+        }, {
+          "name": "Power Blast",
+          "input": "D v A"
+        }, {
+          "name": "Point Blank Power Blast",
+          "input": "Catching + A"
+        }, {
+          "name": "Equip Scouter",
+          "input": "D v J"
+        }
+      ],
+      "counter": [],
+      "transformations": []
+    },
+    "combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    }
+  },
+  {
+    "id": 33,
+    "release": "v0.5.5",
+    "url_id": "ff-special",
+    "name": "Frieza Force Soldier (Special)",
+    "saga": "Namek",
+    "race": ["Alien"],
+    "type": { "hero": false, "villain": true, "other": false },
+    "moveset_video": "BrqbZVswCJE",
+    "stats": {
+      "power_level": 1170,
+      "attack": 1.02,
+      "defense": 1.33,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 5
+    },
+    "moves": {
+      "basic": [{
+        "name": "Ki Charge",
+        "input": "DJA A Hold A"
+      },
+      {
+        "name": "Ki Blast",
+        "input": "D > A (A A A...)"
+      }],
+      "team": [],
+      "special": [{
+        "name": "Super Energy Wave Volley",
+        "input": "D > AJ"
+      },
+      {
+        "name": "Power Blast",
+        "input": "D > J (J J J...)"
+      }, {
+        "name": "Special Rush",
+        "input": "D v A (can also be used in Catching)"
+      }],
+      "counter": [],
+      "transformations": []
+    },
+    "combos": {
+      "links": [],
+      "basic": [[53], {
+        "name": "Intermediate Combo",
+        "input": "Super Punch + J + A"
+      }, {
+        "name": "Special Rush -> Intermediate Combo",
+        "input": "D v A + A + J + A"
+      }],
+      "special": [ {
+        "name": "Power Blast Combo",
+        "input": "Super Punch + J + D < J (J J J...)"
+      }, {
+        "name": "Special Rush -> Power Blast Combo",
+        "input": "D v A + A + J + D < J (J J J...)"
+      }],
+      "counter": []
+    }
+  },
     {
       "id": 61,
       "release": "v0.5.5",
@@ -389,6 +603,7 @@
       "saga": "Namek",
       "race": ["Frieza"],
       "type": { "hero": false, "villain": true, "other": false },
+      "moveset_video": "VkNY_adtCNs",
       "stats": {
         "power_level": 8460,
         "attack": 2.3,
@@ -398,16 +613,66 @@
         "ki_charge": 7
       },
       "moves": {
-        "basic": [],
+        "basic": [
+          {
+            "name": "Ki Charge",
+            "input": "DJA A Hold A"
+          },
+          {
+            "name": "Death Beam",
+            "input": "D > A (A A A...)"
+          }
+        ],
         "team": [],
-        "special": [],
-        "counter": [],
+        "special": [
+          {
+            "name": "Barrage Death Beam",
+            "input": "D > AJ"
+          }, {
+            "name": "Death Pyscho Bomb",
+            "input": "D > AD"
+          }, {
+            "name": "Death Wave", "combo_id": 2,
+            "input": "D > J"
+          }, {
+            "name": "Imprisonment Ball",
+            "input": "D > J (In Air)"
+          }, {
+            "name": "Psychic Move", "combo_id": 1,
+            "input": "D > JA"
+          }, {
+            "name": "Psychic Rock Throw",
+            "input": "D ^ A"
+          } , {
+            "name": "Psychic Island Throw",
+            "input": "D ^ J"
+          }, {
+            "name": "Small Death Ball",
+            "input": "D v A"
+          }, {
+            "name": "Cocky Kicks", "combo_id": 3,
+            "input": "D v J (also works from catching)"
+          }
+        ],
+        "counter": [
+          {
+            "name": "Basic Counter",
+            "input": "Block attack + A"
+          }
+        ],
         "transformations": []
       },
       "combos": {
-        "links": [],
-        "basic": [],
-        "special": [],
+        "links": [[1,2]],
+		"basic": [
+			{ "name": "Basic Combo", "input": "Super Punch + J" },
+			{ "name": "Advanced Combo", "input": "Super Punch + JA" },
+			{ "name": "Ultimate Combo", "input": "Super Punch + JA + D ^ J" }
+		],	
+        "special": [
+			{ "name": "Special Combo", "input": "DvJ + J + D>J" },
+			{ "name": "Special Combo 2", "input": "DvJ + A + D^A + D^J" }
+		],
         "counter": []
       }
     },
@@ -1042,6 +1307,7 @@
     "saga": "Android",
     "race": ["Bio-Android"],
     "type": { "hero": false, "villain": true, "other": false },
+    "moveset_video": "B4nqX2fAzgU",
     "stats": {
       "power_level": 27280,
       "attack": 4.0,
@@ -1051,15 +1317,83 @@
       "ki_charge": 7
     },
     "moves": {
-      "basic": [],
+      "basic": [
+		{
+          "name": "Headbutt attack",
+          "input": "A while Running"
+        },
+		{
+          "name": "Blast Dash Attack",
+          "input": "A while Dashing"
+        },
+	    {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+	  ],
       "team": [],
-      "special": [],
-      "counter": [],
+      "special": [
+	    {
+          "name": "Super Energy Wave Volley",
+          "input": "D > AJ"
+        },
+	    {
+          "name": "Kamehameha",
+          "input": "D > J"
+        },
+	    {
+          "name": "Super Kamehameha",
+          "input": "D > JA"
+        },
+	    {
+          "name": "Psycho Tiles Creation",
+          "input": "D v J"
+        },
+	    {
+          "name": "Death Saucer",
+          "input": "D ^ A"
+        },
+	    {
+          "name": "Psychic Rock Throw",
+          "input": "D v A (A A A ...)"
+        },
+	    {
+          "name": "Psycho Crash",
+          "input": "Catching + J"
+        },
+	    {
+          "name": "Jumping Ki Blasts", "combo_id": 1,
+          "input": "D > A (A A A ...) (While in air)"
+        },
+	    {
+          "name": "Gliding Ki Blasts", "combo_id": 2,
+          "input": "D > J (A A A ...) (While in air)"
+        },
+		{
+          "name": "Multi Form",
+          "input": "DJA J + Hold A (2 minutes cooldown)"
+        }
+	  ],
+      "counter": [
+	  	{
+          "name": "Counter Attack",
+          "input": "Block hit + A"
+        }
+	  ],
       "transformations": []
     },
     "combos": {
-      "links": [],
-      "basic": [],
+      "links": [[1, 2], [2, 1]],
+      "basic": [
+        { "name": "Basic Combo", "input": "Super Punch + J" },
+		{ "name": "Intermediate Combo", "input": "Super Punch + JA"},
+		{ "name": "Advanced Combo", "input": "Super Punch + JAJ"},
+		{ "name": "Ultimate Combo", "input": "Super Punch + JAJ + D>J"}
+      ],
       "special": [],
       "counter": []
     }
@@ -1557,7 +1891,7 @@
           "name": "Final Kamehameha",
           "input": "D > J",
           "partner": "SS Vegeta [4]",
-          "partner_input": "D > J"          
+          "partner_input": "D > J"
         }
       ],
       "counter": [
@@ -2320,6 +2654,7 @@
     "saga": "Buu",
     "race": ["Majin"],
     "type": { "hero": false, "villain": true, "other": false },
+    "moveset_video": "eeNVYEzxIeE",
     "stats": {
       "power_level": 101250,
       "attack": 8.0,
@@ -2329,17 +2664,105 @@
       "ki_charge": 4
     },
     "moves": {
-      "basic": [],
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        },
+		{
+          "name": "Elastic Catch", "combo_id": 1,
+          "input": "A while Running"
+        },
+		{
+          "name": "Arm Whip",
+          "input": "A while Dashing"
+        }
+      ],
       "team": [],
-      "special": [],
-      "counter": [],
+      "special": [
+        {
+          "name": "Kamehameha",
+          "input": "D > J"
+        },
+        {
+          "name": "Mystic Shot",
+          "input": "D v J (A A A ...)"
+        },
+        {
+          "name": "Mystic Ball",
+          "input": "D v A, Direction keys to move around, hold J for underground attack, D to stop Mystic Ball"
+        },
+		{
+          "name": "Mystic Ball Recovery",
+          "input": "D v A while falling"
+        },
+        {
+          "name": "Calamity Blaster", "combo_id": 2,
+          "input": "Catching + D v J"
+        },
+        {
+          "name": "Gigantic Fury", 
+          "input": "A while Running + hold J. Hold > or < to smash enemy into the desired direction"
+        },
+        {
+          "name": "Elastic Tentacle", "combo_id": 3,
+          "input": "Catching + J. Hold J to increase swing distance and A to decrease it. Hold D to throw."
+        },
+        {
+          "name": "Parachute",
+          "input": "D + hold J while jumping"
+        },
+        {
+          "name": "Parachute Recovery",
+          "input": "J + hold J while falling"
+        },
+		{
+          "name": "Parachute Dash",
+          "input": "D > A while holding J on parachute"
+        },
+        {
+          "name": "Hide",
+          "input": "D ^ A. Hold A for attacking the nearest enemy"
+        },
+        {
+          "name": "Planet Burst",
+          "input": "D ^ J"
+        },
+        {
+          "name": "Epic Dance",
+          "input": "DJA DJA"
+        }
+      ],
+      "counter": [
+        {
+          "name": "Counter Attack",
+          "input": "Block attack + A"
+        }
+      ],
       "transformations": []
     },
     "combos": {
-      "links": [],
-      "basic": [],
-      "special": [],
-      "counter": []
+      "links": [[1,2], [1,3]],
+      "basic": [
+        { "name": "Basic Combo", "input": "Super Punch + J" },
+		{ "name": "Advanced Combo", "input": "Super Punch + JA"},
+		{ "name": "Advanced Combo v1", "input": "Super Punch + JA + J"},
+		{ "name": "Advanced Combo v2", "input": "Super Punch + JA + D v J"},
+		{ "name": "Ultimate Combo", "input": "Super Punch + JA + D^A"}
+      ],
+      "special": [
+	    { "name": "Parachute Combo", "input": "D > A while holding J on parachute + JA + D^A" }
+	  ],
+      "counter": [
+	    {
+          "name": "Counter Attack Combo",
+          "input": "Block attack + A + J"
+        }
+	  ]
     }
   }
 ]

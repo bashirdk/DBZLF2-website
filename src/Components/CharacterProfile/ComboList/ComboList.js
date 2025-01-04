@@ -129,7 +129,8 @@ const ComboList = ({ character }) => {
             <button className={`combo-accordion-button ${setActive} text-white`} onClick={toggleAccordion}>
               <div className="border-b lf2-border-blue text-white p-2">
                 <h3 className="inline-block float-left"> COMBO LIST &nbsp; <Chevron className={`${setRotate}`} width={10} fill={"#fff"} /> </h3> 
-                <br></br>
+                <br></br> <br></br> 
+                <p className="text-center -mt-3 font-bold">CLICK HERE TO SEE COMBOS</p>
                 <p className="text-right"> <i> Commands for facing right </i> </p>
               </div>
             </button>

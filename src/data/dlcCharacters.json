@@ -778,10 +778,6 @@
         {
           "name": "Instant Transmission (Ally)",
           "input": "D v JJ"
-        },
-        {
-          "name": "Instant Transmission Attack",
-          "input": "D v J Hold A"
         }
       ],
       "counter": [
