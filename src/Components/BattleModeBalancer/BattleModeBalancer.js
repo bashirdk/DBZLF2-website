@@ -42,6 +42,37 @@ class BattleModeBalancer extends Component {
 		this.setState({char2DefenseInput: event});
 	}
 
+numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+roundPowerLevelNumber(num) {
+	if (num >= 1000 && num < 10000) {
+			// Round 4-digit number to the nearest 10
+			return Math.round(num / 10) * 10;
+	} else if (num >= 10000 && num < 100000) {
+			// Round 5-digit number to the nearest 100
+			return Math.round(num / 10) * 10;
+	} else if (num >= 100000 && num < 1000000) {
+			// Round 6-digit number to the nearest 1000
+			return Math.round(num / 100) * 100;
+	} else {
+			// Return the number as is if it's not a 4, 5, or 6 digit number
+			return num;
+	}
+}
+
+	calculatePowerLevel(attack, defense, hp_regen) {
+		if (hp_regen === 2) {
+			return this.numberWithCommas(this.roundPowerLevelNumber(attack * defense * 1000));
+		}
+		if (hp_regen === 4) {
+			return this.numberWithCommas(this.roundPowerLevelNumber(attack * defense * 1.1 * 1000));
+		}
+		if (hp_regen === 10) {
+			return this.numberWithCommas(this.roundPowerLevelNumber(attack * defense * 2 * 1000));
+		}
+	}
 
 	render() {
 		
@@ -49,16 +80,19 @@ class BattleModeBalancer extends Component {
 		let team1char = this.state.selectedCharTeam1;
 		let team2char = this.state.selectedCharTeam2;
 		let char1DefMultiplier = this.state.char1DefenseInput;
-		let char2DefMultiplier = this.state.char2DefenseInput;
+		let char2DefMultiplier = this.state.char2DefenseInput;		
 
 		let char1Def = Math.round(team1char && team1char.stats.defense * char1DefMultiplier * 100) / 100;
 		let char2Def = Math.round(team2char && team2char.stats.defense * char2DefMultiplier * 100) / 100;
+
+		let char1Damage = team1char && team2char ? Math.round((team1char.stats.attack * 15) / char2Def) : 0;
+		let char2Damage = team1char && team2char ? Math.round((team2char.stats.attack * 15) / char1Def) : 0;
 
 		const characterGrid = characters.map((character) => (
 			<img 
 					src={require(`../../images/face/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.bmp`)}
 					alt={`face pic of ${character.name}`}
-					className=""
+					className="pixel"
 					onClick={() => this.setCharacter1(character)}
 				/>
 		));
@@ -67,7 +101,7 @@ class BattleModeBalancer extends Component {
 			<img 
 					src={require(`../../images/face/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.bmp`)}
 					alt={`face pic of ${character.name}`}
-					className=""
+					className="pixel"
 					onClick={() => this.setCharacter2(character)}
 				/>
 		));
@@ -95,17 +129,20 @@ class BattleModeBalancer extends Component {
               <div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
                 <h3 className="text-center text-blue"> Team 1 </h3>
 
-								<p>Selected Character: </p>
-
-								<h3 className="text-center"> {team1char.name} </h3>
+								<h3 className="text-center"> {team1char.name ? team1char.name : 'N/A'} </h3>
 								<div className="text-center w-full">
 								{ team1char ? 
-										<img 
+									<img 
 										src={require(`../../images/face/${team1char.saga.toLowerCase()}/${team1char.url_id.toLowerCase()}.bmp`)}
 										alt={`face pic of ${team1char.name}`}
-										className="w-1/2 pixel"
+										className="w-1/3 pixel"
 									/>
-									: ''
+									:
+									<img 
+										src={require(`../../images/face/random.bmp`)}
+										alt={`face pic of random`}
+										className="w-1/3 pixel"
+									/>
 								}
 								</div>
 
@@ -131,19 +168,18 @@ class BattleModeBalancer extends Component {
 										</tr>
 										<tr>
 											<td>Power Level</td>
-											<td>{team1char ? team1char.stats.power_level : 0}</td>
+											<td>{team1char ? this.numberWithCommas(team1char.stats.power_level) : 0}</td>
 											<td>Power Level</td>
-											<td className="font-bold text-yellow">{team1char ? Math.round(team1char.stats.attack *char1Def * 1000) : 0 }</td>
+											<td className="font-bold text-yellow">{team1char ? this.calculatePowerLevel(team1char.stats.attack, char1Def, team1char.stats.hp_regen) : 0 }</td>
 										</tr>
 									</tbody>
 								</table>
 
-
-								<p>Punch Damage: {team1char ? Math.round(team1char.stats.attack * 15) : 0}</p> 
-								<p>Damage to Enemy {team1char && team2char ? (team1char.stats.attack * 15) / team1char.stats.defend : 0 } </p>
-
-
-								Defense: <input type="number" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char1DefenseInput} onChange={(e) => this.setChar1DefenseMultiplier(e.target.value)}></input>
+								<div className="text-right">
+									<p>Punch Damage: {team1char ? Math.round(team1char.stats.attack * 15) : 0}</p> 
+									<p>Damage to Enemy: {char1Damage} </p>
+									Defense: <input type="number" className="text-right" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char1DefenseInput} onChange={(e) => this.setChar1DefenseMultiplier(e.target.value)}></input>
+								</div>
 								
 								<p></p>
 								<div className="bm-balance-grid text-center">
@@ -158,17 +194,20 @@ class BattleModeBalancer extends Component {
               <div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
                 <h3 className="text-center text-red"> Team 2 </h3>
 
-								<p>Selected Character: </p>
-
-								<h3 className="text-center"> {team2char.name} </h3>
+								<h3 className="text-center"> {team2char.name ? team2char.name : "N/A"} </h3>
 								<div className="text-center w-full">
 								{ team2char ? 
 										<img 
 										src={require(`../../images/face/${team2char.saga.toLowerCase()}/${team2char.url_id.toLowerCase()}.bmp`)}
 										alt={`face pic of ${team2char.name}`}
-										className="w-1/2 pixel"
+										className="w-1/3 pixel"
 									/>
-									: ''
+									:
+									<img 
+										src={require(`../../images/face/random.bmp`)}
+										alt={`face pic of random`}
+										className="w-1/3 pixel"
+									/>
 								}
 								</div>
 
@@ -195,20 +234,20 @@ class BattleModeBalancer extends Component {
 											
 										</tr>
 										<tr>
-											<td className="font-bold text-yellow">{team2char ? Math.round(team2char.stats.attack * char2Def * 1000) : 0 }</td>
+											<td className="font-bold text-yellow">{team2char ? this.calculatePowerLevel(team2char.stats.attack, char2Def, team2char.stats.hp_regen) : 0 }</td>
 											<td>Power Level</td>
-											<td>{team2char ? team2char.stats.power_level : 0}</td>
+											<td>{team2char ? this.numberWithCommas(team2char.stats.power_level) : 0}</td>
 											<td>Power Level</td>
 										
 										</tr>
 									</tbody>
 								</table>
 
-								<p>Punch Damage: {team2char ? Math.round(team2char.stats.attack * 15) : 0}</p> 
-								<p>Damage to Enemy {team1char && team2char ? (team2char.stats.attack * 15) / team1char.stats.defend : 0 } </p>
+								<p>{team2char ? Math.round(team2char.stats.attack * 15) : 0} :Punch Damage</p> 
+								<p>{char2Damage} :Damage to Enemy </p>
 
-								Defense: <input type="number" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char2DefenseInput} onChange={(e) => this.setChar2DefenseMultiplier(e.target.value)}></input>
-								
+							 <input type="number" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char2DefenseInput} onChange={(e) => this.setChar2DefenseMultiplier(e.target.value)}></input> 	:Defense
+
 								<p></p>
 								<div className="bm-balance-grid text-center">
 									{characterGrid2}
