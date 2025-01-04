@@ -1,0 +1,33 @@
+.bm-balance-grid img{
+  margin: 2.86px;
+  width: 60px;
+}
+
+.bm-balancer-table {
+  width: 100%;
+  border: 1px solid white;
+}
+.bm-balancer-table thead{
+  border: 3px solid white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bm-balancer-table td{
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.bm-balancer-table.team1 tbody td:nth-child(even){
+  text-align: center;
+}
+.bm-balancer-table.team1 tbody td:nth-child(odd){
+  text-align: right;
+}
+
+.bm-balancer-table.team2 tbody td:nth-child(odd){
+  text-align: center;
+}
+.bm-balancer-table.team2 tbody td:nth-child(even){
+  text-align: left;
+}

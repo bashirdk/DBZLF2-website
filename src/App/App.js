@@ -22,6 +22,7 @@ import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faDiscord, faBlogger, faPatreon } from '@fortawesome/free-brands-svg-icons'
 
 import TagManager from 'react-gtm-module'
+import BattleModeBalancer from "../Components/BattleModeBalancer/BattleModeBalancer";
 
 library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger, faPatreon)
 
@@ -53,6 +54,7 @@ const App = () => (
               <Route path="/downloads/" exact component={Downloads} />
               <Route path="/faqs/" exact component={FAQs} />
               <Route path="/guide/" exact component={Guide} />
+              <Route path="/tools/battle-mode-balancer/" exact component={BattleModeBalancer} />
               <Route path="/" exact component={Home} />
               <Route component={NoMatch} />
             </Switch>
