@@ -124,137 +124,175 @@ roundPowerLevelNumber(num) {
 
 				<div className="text-white">
 
-				<section className="sm:pr-2 inline-block align-top w-full sm:w-1/2">
-            <section className="">
-              <div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
-                <h3 className="text-center text-blue"> Team 1 </h3>
+				<section className="inline-block align-top w-full">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
 
-								<h3 className="text-center"> {team1char.name ? team1char.name : 'N/A'} </h3>
-								<div className="text-center w-full">
-								{ team1char ? 
-									<img 
-										src={require(`../../images/face/${team1char.saga.toLowerCase()}/${team1char.url_id.toLowerCase()}.bmp`)}
-										alt={`face pic of ${team1char.name}`}
-										className="w-1/3 pixel"
-									/>
-									:
-									<img 
-										src={require(`../../images/face/random.bmp`)}
-										alt={`face pic of random`}
-										className="w-1/3 pixel"
-									/>
-								}
-								</div>
 
-								<table className="bm-balancer-table team1">
-									<thead>
-										<tr>
-											<td colspan="2"> ORIGINAL STATS</td>
-											<td colspan="2"> NEW STATS</td>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Attack</td>
-											<td>{team1char ? team1char.stats.attack : 0}</td>
-											<td>Attack</td>
-											<td>{team1char ? team1char.stats.attack : 0}</td>
-										</tr>
-										<tr>
-											<td>Defense</td>
-											<td>{team1char ? team1char.stats.defense : 0 }</td>
-											<td>Defense</td>
-											<td>{char1Def ? char1Def : 0}</td>
-										</tr>
-										<tr>
-											<td>Power Level</td>
-											<td>{team1char ? this.numberWithCommas(team1char.stats.power_level) : 0}</td>
-											<td>Power Level</td>
-											<td className="font-bold text-yellow">{team1char ? this.calculatePowerLevel(team1char.stats.attack, char1Def, team1char.stats.hp_regen) : 0 }</td>
-										</tr>
-									</tbody>
-								</table>
+						<section className="sm:pr-3 inline-block align-top w-full sm:w-1/2">
+							<h3 className="text-center text-blue my-1"> Team 1 </h3>
 
-								<div className="text-right">
-									<p>Punch Damage: {team1char ? Math.round(team1char.stats.attack * 15) : 0}</p> 
-									<p>Damage to Enemy: {char1Damage} </p>
-									Defense: <input type="number" className="text-right" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char1DefenseInput} onChange={(e) => this.setChar1DefenseMultiplier(e.target.value)}></input>
-								</div>
+							<h3 className="text-center my-1"> {team1char.name ? team1char.name : 'N/A'} </h3>
+							<div className="text-center w-full">
+							{ team1char ? 
+								<img 
+									src={require(`../../images/face/${team1char.saga.toLowerCase()}/${team1char.url_id.toLowerCase()}.bmp`)}
+									alt={`face pic of ${team1char.name}`}
+									className="w-1/3 pixel my-1"
+								/>
+								:
+								<img 
+									src={require(`../../images/face/random.bmp`)}
+									alt={`face pic of random`}
+									className="w-1/3 pixel my-1"
+								/>
+							}
+							</div>
+
+							<table className="bm-balancer-table team1 my-1">
+								<thead>
+									<tr>
+										<td colspan="2"> ORIGINAL STATS</td>
+										<td colspan="2"> NEW STATS</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Attack</td>
+										<td>{team1char ? team1char.stats.attack : 0}</td>
+										<td>Attack</td>
+										<td>{team1char ? team1char.stats.attack : 0}</td>
+									</tr>
+									<tr>
+										<td>Defense</td>
+										<td>{team1char ? team1char.stats.defense : 0 }</td>
+										<td>Defense</td>
+										<td>{char1Def ? char1Def : 0}</td>
+									</tr>
+									<tr>
+										<td>Power Level</td>
+										<td>{team1char ? this.numberWithCommas(team1char.stats.power_level) : 0}</td>
+										<td>Power Level</td>
+										<td className="font-bold text-yellow">{team1char ? this.calculatePowerLevel(team1char.stats.attack, char1Def, team1char.stats.hp_regen) : 0 }</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</section>
+
+						<section className="sm:pl-3 inline-block align-top w-full sm:w-1/2">
+						<h3 className="text-center text-red my-1"> Team 2 </h3>
+
+						<h3 className="text-center my-1"> {team2char.name ? team2char.name : "N/A"} </h3>
+						<div className="text-center w-full">
+						{ team2char ? 
+								<img 
+								src={require(`../../images/face/${team2char.saga.toLowerCase()}/${team2char.url_id.toLowerCase()}.bmp`)}
+								alt={`face pic of ${team2char.name}`}
+								className="w-1/3 pixel my-1"
+							/>
+							:
+							<img 
+								src={require(`../../images/face/random.bmp`)}
+								alt={`face pic of random`}
+								className="w-1/3 pixel my-1"
+							/>
+						}
+						</div>
+
+
+						<table className="bm-balancer-table team2 my-1">
+							<thead>
+								<tr>
+									<td colspan="2"> NEW STATS</td>
+									<td colspan="2"> ORIGINAL STATS</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>{team2char ? team2char.stats.attack : 0}</td>
+									<td>Attack</td>
+									<td>{team2char ? team2char.stats.attack : 0}</td>
+									<td>Attack</td>
+								</tr>
+								<tr>
+									<td>{char2Def}</td>
+									<td>Defense</td>	
+									<td>{team2char ? team2char.stats.defense : 0}</td>
+									<td>Defense</td>
+									
+								</tr>
+								<tr>
+									<td className="font-bold text-yellow">{team2char ? this.calculatePowerLevel(team2char.stats.attack, char2Def, team2char.stats.hp_regen) : 0 }</td>
+									<td>Power Level</td>
+									<td>{team2char ? this.numberWithCommas(team2char.stats.power_level) : 0}</td>
+									<td>Power Level</td>
 								
-								<p></p>
-								<div className="bm-balance-grid text-center">
-									{characterGrid}
-								</div>
-              </div>
-            </section>
-          </section>
-          
-          <section className="sm:pl-2 inline-block align-top w-full sm:w-1/2">
-            <section className="my-1">
-              <div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
-                <h3 className="text-center text-red"> Team 2 </h3>
+								</tr>
+							</tbody>
+						</table>
 
-								<h3 className="text-center"> {team2char.name ? team2char.name : "N/A"} </h3>
-								<div className="text-center w-full">
-								{ team2char ? 
-										<img 
-										src={require(`../../images/face/${team2char.saga.toLowerCase()}/${team2char.url_id.toLowerCase()}.bmp`)}
-										alt={`face pic of ${team2char.name}`}
-										className="w-1/3 pixel"
-									/>
-									:
-									<img 
-										src={require(`../../images/face/random.bmp`)}
-										alt={`face pic of random`}
-										className="w-1/3 pixel"
-									/>
-								}
-								</div>
+					</section>
+
+					<section className="inline-block align-top w-full text-center my-5">
+
+						<input type="checkbox" value="yes" />
+						<label for="coding"> Auto Balancer</label>
+
+						<fieldset>
+							<legend className="text-center">Speed of Battle:</legend>
+							<div>
+								<input type="radio" value="slow" />
+								<label for="auto_balance_slow"> Slow </label>
+
+								<input type="radio" value="normal" />
+								<label for="auto_balance_normal"> Normal </label>
+
+								<input type="radio"  value="fast" />
+								<label for="auto_balance_fast"> Fast </label>
+							</div>
+						</fieldset>
+
+					</section>
 
 
-								<table className="bm-balancer-table team2">
-									<thead>
-										<tr>
-											<td colspan="2"> NEW STATS</td>
-											<td colspan="2"> ORIGINAL STATS</td>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>{team2char ? team2char.stats.attack : 0}</td>
-											<td>Attack</td>
-											<td>{team2char ? team2char.stats.attack : 0}</td>
-											<td>Attack</td>
-										</tr>
-										<tr>
-											<td>{char2Def}</td>
-											<td>Defense</td>	
-											<td>{team2char ? team2char.stats.defense : 0}</td>
-											<td>Defense</td>
-											
-										</tr>
-										<tr>
-											<td className="font-bold text-yellow">{team2char ? this.calculatePowerLevel(team2char.stats.attack, char2Def, team2char.stats.hp_regen) : 0 }</td>
-											<td>Power Level</td>
-											<td>{team2char ? this.numberWithCommas(team2char.stats.power_level) : 0}</td>
-											<td>Power Level</td>
-										
-										</tr>
-									</tbody>
-								</table>
 
-								<p>{team2char ? Math.round(team2char.stats.attack * 15) : 0} :Punch Damage</p> 
-								<p>{char2Damage} :Damage to Enemy </p>
+					<section className="sm:pr-3 inline-block align-top w-full sm:w-1/2">
 
-							 <input type="number" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char2DefenseInput} onChange={(e) => this.setChar2DefenseMultiplier(e.target.value)}></input> 	:Defense
+						<div className="text-right">
+							<p>Punch Damage: {team1char ? Math.round(team1char.stats.attack * 15) : 0}</p> 
+							<p>Damage to Enemy: {char1Damage} </p>
+							Defense Multiplier: <input type="number" className="text-right" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char1DefenseInput} onChange={(e) => this.setChar1DefenseMultiplier(e.target.value)}></input>
+						</div>
 
-								<p></p>
-								<div className="bm-balance-grid text-center">
-									{characterGrid2}
-								</div>
-              </div>
-            </section>
-          </section>
+						<div className="bm-balance-grid text-center my-5">
+							<h4> Select a Character </h4>
+							{characterGrid}
+						</div>
+
+					</section>
+
+					<section className="sm:pl-3 inline-block align-top w-full sm:w-1/2">
+
+						<p>{team2char ? Math.round(team2char.stats.attack * 15) : 0} :Punch Damage</p> 
+						<p>{char2Damage} :Damage to Enemy </p>
+
+						<input type="number" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char2DefenseInput} onChange={(e) => this.setChar2DefenseMultiplier(e.target.value)}></input> 	:Defense Multiplier
+
+						<div className="bm-balance-grid text-center my-5">
+							<h4> Select a Character </h4>
+							{characterGrid2}
+						</div>
+
+					</section>
+
+
+					</div>
+				</section>
+ 
+
+
+
+
 				</div>
 			</div>
 		);
