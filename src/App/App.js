@@ -22,6 +22,8 @@ import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
 import { faYoutube, faDiscord, faBlogger, faPatreon } from '@fortawesome/free-brands-svg-icons'
 
 import TagManager from 'react-gtm-module'
+import BattleModeBalancer from "../Components/BattleModeBalancer/BattleModeBalancer";
+import Tools from "../Components/Tools/Tools";
 
 library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger, faPatreon)
 
@@ -49,11 +51,13 @@ const App = () => (
               <Route exact path="/characters/:saga/:name" component={withRouter(CharacterProfile)} key={characterKey} />
               <Route exact path="/characters/" component={CharacterList} />
               <Route path="/backgrounds/:saga/:name" component={BackgroundProfile} />
-              <Route path="/backgrounds/" exact component={BackgroundList} />
-              <Route path="/downloads/" exact component={Downloads} />
-              <Route path="/faqs/" exact component={FAQs} />
-              <Route path="/guide/" exact component={Guide} />
-              <Route path="/" exact component={Home} />
+              <Route exact path="/backgrounds/" component={BackgroundList} />
+              <Route exact path="/downloads/" component={Downloads} />
+              <Route exact path="/faqs/"  component={FAQs} />
+              <Route exact path="/guide/" component={Guide} />
+              <Route exact path="/tools/" component={Tools} />
+              <Route exact path="/tools/battle-mode-balancer/" component={BattleModeBalancer} />
+              <Route exact path="/" component={Home} />
               <Route component={NoMatch} />
             </Switch>
           </ScrollToTop>
