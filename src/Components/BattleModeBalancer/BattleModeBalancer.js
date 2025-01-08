@@ -78,36 +78,47 @@ roundPowerLevelNumber(num) {
 
 
 	renderBattleLength(team1char, team2char, char1Damage, char2Damage) {
+		let hpRegenChar1 = '';
+		let hpRegenChar2 = '';
+		if (team1char && team2char) {
+			if (team1char.stats.hp_regen > 2) {
+				hpRegenChar1 = <p className="text-yellow"> <span className="text-blue">Team 1 </span> Character has higher HP regen, focus on balancing power levels rather than Punch to Enemy </p>
+			}
+			if (team2char.stats.hp_regen > 2) {
+				hpRegenChar2 = <p className="text-yellow"> <span className="text-red">Team 2 </span> Character has higher HP regen, focus on balancing power levels rather than Punch to Enemy </p>
+			}
+		}
+
 		if (team1char && team2char) {
 			if (char1Damage >= 100 || char2Damage >= 100) {
-				return <p className="text-red"> Battle will end instantly  </p>
+				return <div> <p className="text-red"> Battle will end instantly  </p> {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 50 || char2Damage >= 50) {
-				return <p className="text-red-light"> Battle will end very quickly  </p>
+				return <div> <p className="text-red-light"> Battle will end very quickly  </p> {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 25 || char2Damage >= 25) {
-				return <p className="text-red"> Battle will end quickly (approx 15-45 seconds) </p>
+				return <div> <p className="text-red"> Battle will end quickly (approx 15-45 seconds) </p> {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 15 || char2Damage >= 15) {
-				return <p className="text-yellow-dark"> Battle will be fast (approx 30-60 seconds) </p>
+				return <div> <p className="text-yellow-dark"> Battle will be fast (approx 30-60 seconds) </p> {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 10 || char2Damage >= 10) {
-				return <p className="text-green"> Battle will be average length (approx 45-90 seconds) </p>
+				return <div> <p className="text-green"> Battle will be average length (approx 45-90 seconds) </p>  {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 7 || char2Damage >= 7) {
-				return <p className="text-yellow-dark"> Battle will be a little longer than average (approx 2-3 minutes) </p>
+				return <div> <p className="text-yellow-dark"> Battle will be a little longer than average (approx 2-3 minutes) </p> {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 5 || char2Damage >= 5) {
-				return <p className="text-red"> Battle will be long (approx 4-7 mins) </p>
+				return <div> <p className="text-red"> Battle will be long (approx 4-7 mins) </p> {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 2 || char2Damage >= 2) {
-				return <p className="text-red"> Battle will be very long (approx 7-10 mins) </p>
+				return <div> <p className="text-red"> Battle will be very long (approx 7-10 mins) </p>  {hpRegenChar1} {hpRegenChar2}</div>
 
 			} else if (char1Damage >= 1 || char2Damage >= 1) {
-				return <p className="text-red-light"> Battle will be extremely long (approx 10-20 mins) </p>
+				return <div> <p className="text-red-light"> Battle will be extremely long (approx 10-20 mins) </p>  {hpRegenChar1} {hpRegenChar2}</div>
 				
 			} else if (char1Damage >= 0 || char2Damage >= 0) {
-				return <p className="text-red"> Battle will be nearly impossible to complete (approx 20+ minutes) </p>
+				return <div> <p className="text-red"> Battle will be nearly impossible to complete (approx 20+ minutes) </p>  {hpRegenChar1} {hpRegenChar2}</div>
 			} 
 		}
 	}
