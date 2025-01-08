@@ -7,6 +7,8 @@ import Helmet from "react-helmet";
 import Characters from "../../data/characters.json";
 // import Accordion from "./Accordion/Accordion"
 
+import AdComponent from "../AdComponent/AdComponent";
+
 class BattleModeBalancer extends Component {
 
 	constructor(props) {
@@ -74,6 +76,42 @@ roundPowerLevelNumber(num) {
 		}
 	}
 
+
+	renderBattleLength(team1char, team2char, char1Damage, char2Damage) {
+		if (team1char && team2char) {
+			if (char1Damage >= 100 || char2Damage >= 100) {
+				return <p className="text-red"> Battle will end instantly  </p>
+
+			} else if (char1Damage >= 50 || char2Damage >= 50) {
+				return <p className="text-red-light"> Battle will end very quickly  </p>
+
+			} else if (char1Damage >= 25 || char2Damage >= 25) {
+				return <p className="text-red"> Battle will end quickly (approx 15-45 seconds) </p>
+
+			} else if (char1Damage >= 15 || char2Damage >= 15) {
+				return <p className="text-yellow-dark"> Battle will be fast (approx 30-60 seconds) </p>
+
+			} else if (char1Damage >= 10 || char2Damage >= 10) {
+				return <p className="text-green"> Battle will be average length (approx 45-90 seconds) </p>
+
+			} else if (char1Damage >= 7 || char2Damage >= 7) {
+				return <p className="text-yellow-dark"> Battle will be a little longer than average (approx 2-3 minutes) </p>
+
+			} else if (char1Damage >= 5 || char2Damage >= 5) {
+				return <p className="text-red"> Battle will be long (approx 4-7 mins) </p>
+
+			} else if (char1Damage >= 2 || char2Damage >= 2) {
+				return <p className="text-red"> Battle will be very long (approx 7-10 mins) </p>
+
+			} else if (char1Damage >= 1 || char2Damage >= 1) {
+				return <p className="text-red-light"> Battle will be extremely long (approx 10-20 mins) </p>
+				
+			} else if (char1Damage >= 0 || char2Damage >= 0) {
+				return <p className="text-red"> Battle will be nearly impossible to complete (approx 20+ minutes) </p>
+			} 
+		}
+	}
+
 	render() {
 		
 		const characters = this.state.characters;
@@ -114,13 +152,18 @@ roundPowerLevelNumber(num) {
 			<div>
 				<Helmet>
 					<title>Battle Mode Balancer - Dragon Ball Z Little Fighter 2</title>
-					<meta name="description" content="Learn how the game plays and works." />
-					<link rel="canonical" href="https://dbzlf2.com/guide/" />
+					<meta name="description" content="Tool used to determine defense values for characters to balance them." />
+					<link rel="canonical" href="https://dbzlf2.com/tools/battle-mode-balancer/" />
 				</Helmet>
 
+				<div className="text-white text-center">
+          <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+          <AdComponent />
+          <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<br></br>
+				</div>
+
 				<h1 className="text-white">Battle Mode Balancer</h1>
-
-
 
 				<div className="text-white">
 
@@ -233,35 +276,26 @@ roundPowerLevelNumber(num) {
 
 					</section>
 
-					<section className="inline-block align-top w-full text-center my-5">
 
-						<input type="checkbox" value="yes" />
-						<label for="coding"> Auto Balancer</label>
 
-						<fieldset>
-							<legend className="text-center">Speed of Battle:</legend>
-							<div>
-								<input type="radio" value="slow" />
-								<label for="auto_balance_slow"> Slow </label>
+					<section className="my-5 inline-block align-top w-full text-center font-bold">
 
-								<input type="radio" value="normal" />
-								<label for="auto_balance_normal"> Normal </label>
-
-								<input type="radio"  value="fast" />
-								<label for="auto_balance_fast"> Fast </label>
-							</div>
-						</fieldset>
+					{this.renderBattleLength(team1char, team2char, char1Damage, char2Damage)}
 
 					</section>
 
 
 
+						<br></br>
+
 					<section className="sm:pr-3 inline-block align-top w-full sm:w-1/2">
 
 						<div className="text-right">
-							<p>Punch Damage: {team1char ? Math.round(team1char.stats.attack * 15) : 0}</p> 
-							<p>Damage to Enemy: {char1Damage} </p>
-							Defense Multiplier: <input type="number" className="text-right" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char1DefenseInput} onChange={(e) => this.setChar1DefenseMultiplier(e.target.value)}></input>
+							<p className="my-1">Punch Damage: {team1char ? Math.round(team1char.stats.attack * 15) : 0}</p> 
+							<p className="my-1">Damage to Enemy: <span className="font-bold text-yellow"> {char1Damage}  </span></p>
+							<p className="my-2">
+								Defense Multiplier: <input type="number" className="text-right" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char1DefenseInput} onChange={(e) => this.setChar1DefenseMultiplier(e.target.value)}></input>
+							</p>
 						</div>
 
 						<div className="bm-balance-grid text-center my-5">
@@ -273,11 +307,11 @@ roundPowerLevelNumber(num) {
 
 					<section className="sm:pl-3 inline-block align-top w-full sm:w-1/2">
 
-						<p>{team2char ? Math.round(team2char.stats.attack * 15) : 0} :Punch Damage</p> 
-						<p>{char2Damage} :Damage to Enemy </p>
+						<p className="my-1">{team2char ? Math.round(team2char.stats.attack * 15) : 0} :Punch Damage</p> 
+						<p className="my-1"> <span className="font-bold text-yellow"> {char2Damage} </span> :Damage to Enemy </p>
 
-						<input type="number" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char2DefenseInput} onChange={(e) => this.setChar2DefenseMultiplier(e.target.value)}></input> 	:Defense Multiplier
-
+						<p className="my-2"><input type="number" min ="0.1" max="100.0" step="0.1" placeholder="1.0" value={this.state.char2DefenseInput} onChange={(e) => this.setChar2DefenseMultiplier(e.target.value)}></input> 	:Defense Multiplier
+						</p>
 						<div className="bm-balance-grid text-center my-5">
 							<h4> Select a Character </h4>
 							{characterGrid2}
@@ -285,12 +319,16 @@ roundPowerLevelNumber(num) {
 
 					</section>
 
-
 					</div>
 				</section>
  
 
-
+				<div className="text-white text-center">
+          <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+          <AdComponent />
+          <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<br></br>
+				</div>
 
 
 				</div>

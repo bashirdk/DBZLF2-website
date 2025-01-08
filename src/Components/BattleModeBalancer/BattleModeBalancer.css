@@ -1,6 +1,15 @@
 .bm-balance-grid img{
-  margin: 2.86px;
+  margin: 1px;
   width: 60px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.bm-balance-grid img:hover{
+  border: 2px solid white;
+}
+.bm-balance-grid{
+  margin: 1.25rem -1.5rem 1.25rem -1.5rem;
 }
 
 .bm-balancer-table {
