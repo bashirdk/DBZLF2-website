@@ -341,6 +341,21 @@ roundPowerLevelNumber(num) {
 					<br></br>
 				</div>
 
+				<section className="my-5">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded p-5">
+						<h3 className="text-center mb-5 text-4xl"> Instructions </h3>
+						<div className="video-responsive">
+							<iframe title="trailer" width="100%" height="315" src={`https://www.youtube.com/embed/Wb51gbQiY9M `} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+						</div>
+					</div>
+				</section>
+
+				<div className="text-white text-center">
+          <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+          <AdComponent />
+          <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<br></br>
+				</div>
 
 				</div>
 			</div>
