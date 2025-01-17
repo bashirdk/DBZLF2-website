@@ -55,8 +55,8 @@ const App = () => (
               <Route exact path="/downloads/" component={Downloads} />
               <Route exact path="/faqs/"  component={FAQs} />
               <Route exact path="/guide/" component={Guide} />
-              <Route exact path="/tools/" component={Tools} />
-              <Route exact path="/tools/battle-mode-balancer/" component={BattleModeBalancer} />
+              <Route exact path="/tools2/" component={Tools} />
+              <Route exact path="/tools/battle-mode-balancer2/" component={BattleModeBalancer} />
               <Route exact path="/" component={Home} />
               <Route component={NoMatch} />
             </Switch>

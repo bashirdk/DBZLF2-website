@@ -46,10 +46,6 @@ const Navbar = () => {
     {
       "title": "FAQs",
       "link": "/faqs"
-    },
-    {
-      "title": "Tools",
-      "link": "/tools"
     }
   ]
 
