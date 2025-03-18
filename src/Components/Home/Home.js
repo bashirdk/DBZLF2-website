@@ -85,13 +85,13 @@ const Home = () => (
 
     <div className="text-center mt-12" >
       <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/txzs-1u7qBc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/z_RdDyoqPyM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
 
     <div className="text-center mt-12" >
       <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/0cPGTSFtuRE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/txzs-1u7qBc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
 
