@@ -19,13 +19,13 @@ import Guide from "../Components/Guide"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
-import { faYoutube, faDiscord, faBlogger, faPatreon } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube, faDiscord, faBlogger, faPatreon, faItchIo, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 import TagManager from 'react-gtm-module'
 import BattleModeBalancer from "../Components/BattleModeBalancer/BattleModeBalancer";
 import Tools from "../Components/Tools/Tools";
 
-library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger, faPatreon)
+library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger, faPatreon, faItchIo, faTwitter)
 
 const tagManagerArgs = {
   gtmId: 'GTM-N2KK6S5'
