@@ -87,7 +87,7 @@ const Home = () => (
 
 
 
-    <div className="sm:block md:flex w-full">
+    <div className="flex w-full home-square-container">
 
       <div className="home-square">
         <a href="https://discord.gg/mPR3Vr5" target="_blank" rel="noopener noreferrer">
