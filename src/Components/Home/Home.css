@@ -66,3 +66,27 @@
     margin-bottom: 50px;
   }
 }
+
+
+
+
+.home-square {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+}
+
+.home-box {
+  min-height: 300px;
+}
+
+@media (max-width: 768px) {
+  .home-box {
+    min-height: 100%;
+  }
+}
+
+
+.text-orange {
+  color: orange;
+}
