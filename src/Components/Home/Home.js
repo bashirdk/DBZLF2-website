@@ -8,6 +8,8 @@ import LittleFighter2 from "../Logo/LittleFighter2";
 
 import { motion } from 'framer-motion'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const versionVariants = {
   initial: {
     opacity: 0,
@@ -82,6 +84,67 @@ const Home = () => (
         <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.5.5 </p>
       </motion.div>
     </div>
+
+
+
+    <div className="flex w-full home-square-container">
+
+      <div className="home-square">
+        <a href="https://discord.gg/mPR3Vr5" target="_blank" rel="noopener noreferrer">
+          <div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-2 p-5 mx-0 text-white home-box">
+            <h2 className="text-center"> JOIN OUR DISCORD COMMUNITY </h2>
+            <div className="text-center text-5xl m-2">
+              <a href="https://discord.gg/mPR3Vr5" target="_blank" rel="noopener noreferrer" className="fa-icon m-1 text-center">
+                <FontAwesomeIcon icon={['fab', "discord"]} size="2x" color="white" /> 
+              </a>
+            </div>
+            <ul className="text-lg">
+              <li>Play Fun <span className="text-yellow">Challenges!</span></li>
+              <li>Join Epic <span className="text-orange">Tournaments!</span></li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+      <div className="home-square">
+        <a href="https://www.patreon.com/DBZLF2" target="_blank" rel="noopener noreferrer">
+          <div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-2 p-5 mx-0 text-white home-box">
+            <h2 className="text-center"> SUPPORT US BY BECOMING A PATRON </h2>
+            <div className="text-center text-5xl m-2">
+              <a href="https://www.patreon.com/DBZLF2" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
+                <FontAwesomeIcon icon={['fab', "patreon"]} size="2x" color="white" /> 
+              </a>
+            </div>
+            <ul className="text-lg">
+              <li>Early <span className="text-yellow">reveals</span></li>
+              <li>Exclusive <span className="text-orange">reveals</span></li>
+              <li>Early <span className="text-red">access</span></li>
+              <li>Beta testing</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+      <div className="home-square">
+        <a href="https://www.youtube.com/user/dbzlf2?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
+          <div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-2 p-5 mx-0 text-white home-box">
+            <h2 className="text-center"> SUBSCRIBE TO US ON YOUTUBE </h2>
+            <div className="text-center text-5xl m-2">
+              <a href="https://www.youtube.com/user/dbzlf2?sub_confirmation=1" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
+                <FontAwesomeIcon icon={['fab', "youtube"]} size="2x" color="white" /> 
+              </a>
+            </div>
+            <ul className="text-lg">
+              <li>Development <span className="text-yellow">streams</span></li>
+              <li>Awesome version <span className="text-orange">trailers</span></li>
+              <li>Epic character <span className="text-red">reveals</span></li>
+            </ul>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
 
     <div className="text-center mt-12" >
       <div className="video-responsive">
