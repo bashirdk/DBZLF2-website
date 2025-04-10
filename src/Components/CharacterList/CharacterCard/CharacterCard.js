@@ -11,7 +11,7 @@ const CharacterCard = ({ character, faceSwap }) => (
   
   <Link to={`/characters/${character.saga.toLowerCase()}${subSaga(character)}/${character.url_id.toLowerCase()}`}>
     <div className="character-card inline-block mx-1 my-1 w-48 overflow-hidden relative">
-      { !faceSwap
+      { faceSwap
       ?
         <>
           <img 

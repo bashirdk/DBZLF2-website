@@ -62,7 +62,7 @@
 
 .character-card:hover
 {
-  font-weight: bolder;
+  /* font-weight: bolder; */
   box-shadow: 0 0 5px 3px rgba(90, 119, 216, 0.85);
   color: #5582FF
 }
