@@ -101,6 +101,7 @@
   transition: 0.5s ease;
   opacity: 1;
   transform: translateY(0);
+  image-rendering: auto;
 }
 
 .card-text {
