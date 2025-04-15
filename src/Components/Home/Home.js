@@ -62,8 +62,8 @@ const versionVariants = {
 const Home = () => (
   <div>  
     <Helmet>
-      <title> Dragon Ball Z Little Fighter 2</title>
-      <meta name="description" content={"All about the Dragon Ball Z modficiation of the game Little Fighter 2."} />
+      <title> Dragon Ball Z Little Fighter 2 - Best 2D DBZ Fan Game!</title>
+      <meta name="description" content={"Best 2D Fan made Dragon Ball Z game mod of the game Little Fighter 2. Made by bashscrazy, Excellent Approximation and darkfiren."} />
       <link rel="canonical" href="https://dbzlf2.com/" />
     </Helmet>
     <h1 className="text-white hidden">DBZ LF2</h1>
@@ -145,6 +145,24 @@ const Home = () => (
 
     </div>
 
+
+    <div className="text-center mt-12" >
+      <div className="video-responsive">
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/Io5ocxdjmtE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+    </div>
+
+    <div className="text-center mt-12" >
+      <div className="video-responsive">
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/rQPYc0mShS8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+    </div>
+
+    <div className="text-center mt-12" >
+      <div className="video-responsive">
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/MB8yuyEMqUk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+      </div>
+    </div>
 
     <div className="text-center mt-12" >
       <div className="video-responsive">
