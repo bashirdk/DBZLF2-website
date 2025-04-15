@@ -62,8 +62,8 @@ const versionVariants = {
 const Home = () => (
   <div>  
     <Helmet>
-      <title> Dragon Ball Z Little Fighter 2 - Best 2D DBZ Fan Game!</title>
-      <meta name="description" content={"Best 2D Fan made Dragon Ball Z game mod of the game Little Fighter 2. Made by bashscrazy, Excellent Approximation and darkfiren."} />
+      <title> Dragon Ball Z Little Fighter 2 - EPIC 2D DBZ Fan Game!</title>
+      <meta name="description" content={"EPIC 2D Fan made Dragon Ball Z game mod of the game Little Fighter 2. Made by bashscrazy, Excellent Approximation and darkfiren."} />
       <link rel="canonical" href="https://dbzlf2.com/" />
     </Helmet>
     <h1 className="text-white hidden">DBZ LF2</h1>
