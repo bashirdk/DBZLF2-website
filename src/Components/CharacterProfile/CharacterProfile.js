@@ -55,7 +55,14 @@ const CharacterProfile = ( props ) => {
             />
           </div>
           <div className="char-profile-pixel-header">
-          <h2>{selCharacter.name}</h2>
+            <h2>{selCharacter.name}</h2>
+          </div>
+          <div className="char-profile-anime-img">
+            <img 
+              src={require(`../../images/face/${selCharacter.saga.toLowerCase()}${selCharacter.subsaga ? "/" + selCharacter.subsaga.toLowerCase() : ''}/${selCharacter.url_id.toLowerCase()}.png`)}
+              alt={`face pic of ${selCharacter.name}`}
+              className=""
+            />
           </div>
           </div>
         </section>

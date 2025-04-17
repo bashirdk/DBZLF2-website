@@ -128,6 +128,14 @@
   justify-content: center;
 }
 
+.char-profile-anime-img{
+  margin-left: auto;
+}
+.char-profile-anime-img img{
+  height: 100px;
+  image-rendering: smooth;
+}
+
 .pixelated{
   image-rendering: pixelated;
 }
