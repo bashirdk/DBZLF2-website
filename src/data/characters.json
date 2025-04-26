@@ -204,7 +204,7 @@
     "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 1160,
+      "power_level": 1080,
       "attack": 0.88,
       "defense": 1.23,
       "speed": 2.15,
@@ -247,7 +247,7 @@
     "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 1380,
+      "power_level": 1460,
       "attack": 1.02,
       "defense": 1.43,
       "speed": 2.15,
@@ -294,7 +294,7 @@
     "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
-      "power_level": 1380,
+      "power_level": 1460,
       "attack": 1.02,
       "defense": 1.43,
       "speed": 2.15,
