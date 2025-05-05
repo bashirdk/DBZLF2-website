@@ -23,9 +23,9 @@ const ComboList = ({ character }) => {
   const moveContainerStyle = "border-b lf2-border-blue sm:flex";
   const moveHeaderStyle = "border-b lf2-border-blue px-2 py-3 text-white";
 
-  const comboContainerStyle = "border-b lf2-border-blue block";
-  const comboNameStyle = "lf2-bg-blue-dark text-white w-full block md:border-b-0 px-2 py-3 align-middle";
-  const comboInputStyle = "w-full text-white block px-2 py-3 align-middle";
+  const comboContainerStyle = "border-b-3 lf2-border-blue block";
+  const comboNameStyle = "lf2-bg-blue-dark text-white w-full block md:border-b-0 px-2 pt-3 pb-2 align-middle";
+  const comboInputStyle = "w-full text-white block px-2 pt-1 pb-3 align-middle";
 
 
   // 99 = basic combo
