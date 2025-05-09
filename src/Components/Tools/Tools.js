@@ -56,6 +56,37 @@ class Tools extends Component {
 					</div>
 				</section>
 
+
+				<section className="inline-block align-top w-full">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
+						<h2 className="mb-5">Rect32 Calculator</h2>
+						<section className="sm:pr-5 inline-block align-top w-full sm:w-1/3">
+							<div className="border-2 lf2-border-blue lf2-bg-blue rounded">
+								<img 
+									src={require(`../../images/tools/rect32.png`)}
+									alt={`battle mode balancer tool`}
+									className=""
+								/>
+							</div>
+						</section>
+
+						<section className="inline-block w-full sm:w-2/3 relative">
+							<div className="inline-block border-2 lf2-border-blue lf2-bg-blue rounded p-5">
+								This tool is designed to help you get the Rect32 value based on RGB values that are inputted. Useful for adjusting colours in darkfiren's amazing EXE for things such as bpoint.
+							</div>
+
+							<div className="text-center">
+							<NavLink to="/tools/rec32-calculator" className="nav-logo">
+								<button className="download-button">
+										<span className="mx-2">ACCESS RECT32 CALCULATOR</span>
+									</button>
+								</NavLink>
+								</div>
+
+						</section>
+					</div>
+				</section>
+
 				</div>
 			</div>
 		);
