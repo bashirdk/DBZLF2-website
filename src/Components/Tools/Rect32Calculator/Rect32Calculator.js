@@ -61,7 +61,11 @@ class Rect32Calculator extends Component {
 
 		let rect32 = document.getElementById("rect32_value");
 		if (rect32) {
-			rect32.innerHTML = (red * 65536) + (green * 256) + (blue * 1);
+			if ( (red >= 0 && red <= 255) && (green >= 0 && green <= 255) && (blue >= 0 && blue <= 255)) {
+				rect32.innerHTML = (red * 65536) + (green * 256) + (blue * 1);
+			} else {
+				rect32.innerHTML = "Invalid Values. RGB values are between 0-255."
+			}
 		}
 
 		return (
