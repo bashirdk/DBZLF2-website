@@ -32,12 +32,27 @@ class Rect32Calculator extends Component {
 	setBlue(value) {
 		this.setState({blue: value});
 	}
+
+
+	componentDidUpdate(prevProps, prevState) {
+    const { red, green, blue } = this.state;
+    if (
+      prevState.red !== red ||
+      prevState.green !== green ||
+      prevState.blue !== blue
+    ) {
+      const rect32Colour = document.getElementById("rect32_colour");
+      if (rect32Colour) {
+        rect32Colour.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+      }
+    }
+  }
 	
+	handleInputChange = (e) => {
+    const { name, value } = e.target;
+    this.setState({ [name]: Number(value) });
+  };
 
-
-	calculateRect32() {
-
-	}
 	
 
 	render() {
@@ -55,25 +70,29 @@ class Rect32Calculator extends Component {
 		// 	}
 		// }
 		
-		let red = this.state.red;
-		let green = this.state.green;
-		let blue = this.state.blue;
+		const { red, green, blue } = this.state;
 
-		let rect32 = document.getElementById("rect32_value");
-		if (rect32) {
+		let rect32Value = document.getElementById("rect32_value");
+		if (rect32Value) {
 			if ( (red >= 0 && red <= 255) && (green >= 0 && green <= 255) && (blue >= 0 && blue <= 255)) {
-				rect32.innerHTML = (red * 65536) + (green * 256) + (blue * 1);
+				rect32Value.innerHTML = (red * 65536) + (green * 256) + (blue * 1);
 			} else {
-				rect32.innerHTML = "Invalid Values. RGB values are between 0-255."
+				rect32Value.innerHTML = "Invalid Values. RGB values are between 0-255."
 			}
 		}
+
+
+		// let rect32Colour = document.getElementById("rect32_colour");
+		// if (rect32Colour) {
+		// 	rect32Colour.style.backgroundColor = `rgb(${red}, ${green}, ${blue}`;
+		// }
 
 		return (
 			<div>
 				<Helmet>
 					<title>Rect32 Calculator - Dragon Ball Z Little Fighter 2</title>
-					<meta name="description" content="Tool used to determine defense values for characters to balance them." />
-					<link rel="canonical" href="https://dbzlf2.com/tools/battle-mode-balancer/" />
+					<meta name="description" content="Tool used to get the rect32 value using RGB values." />
+					<link rel="canonical" href="https://dbzlf2.com/tools/rec32-calculator" />
 				</Helmet>
 
 				<div className="text-white text-center">
@@ -100,9 +119,9 @@ class Rect32Calculator extends Component {
 						</thead>
 						<tbody>
 							<tr style={{textAlign:"center"}}>
-								<td><input type="number" min="0" max="255" id="red" onChange={(e) => this.setRed(e.target.value)}></input></td>
-								<td><input type="number" min="0" max="255" id="green" onChange={(e) => this.setGreen(e.target.value)}></input></td>
-								<td><input type="number" min="0" max="255" id="blue" onChange={(e) => this.setBlue(e.target.value)}></input></td>
+								<td><input type="number" min="0" value={red} max="255" id="red" onChange={(e) => this.setRed(e.target.value)}></input></td>
+								<td><input type="number" min="0" value={green} max="255" id="green" onChange={(e) => this.setGreen(e.target.value)}></input></td>
+								<td><input type="number" min="0" value={blue} max="255" id="blue" onChange={(e) => this.setBlue(e.target.value)}></input></td>
 							</tr>
 							{/* <tr>
 								<td><div id="red_colour"></div></td>
@@ -128,6 +147,11 @@ class Rect32Calculator extends Component {
 
 					<p style={{textAlign: "center"}}>Rect32: <span id="rect32_value"></span></p>
 
+					<br></br>
+
+					<div style={{textAlign: "center", width: "100%"}}> 
+						<div id="rect32_colour"></div>
+					</div>
 
 
 
@@ -156,6 +180,10 @@ class Rect32Calculator extends Component {
 							</tr>
 						</thead>
 						<tbody>
+							<tr>
+								<td>May 10, 2025</td>
+								<td> <ul>	<li> Added box that changes colour based on RGB values selected. </li>	</ul>	</td>
+							</tr>
 							<tr>
 								<td>May 9, 2025</td>
 								<td> <ul>	<li> Basic funtionality completed</li>	</ul>	</td>
