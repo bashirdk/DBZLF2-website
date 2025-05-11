@@ -16,9 +16,10 @@ class Rect32Calculator extends Component {
 		
 
 		this.state = {
-			red: 0,
-			green: 0,
-			blue: 0
+			red: 255,
+			green: 255,
+			blue: 255,
+			rect32: 16777215
 		};
 	
 	}
@@ -32,6 +33,9 @@ class Rect32Calculator extends Component {
 	setBlue(value) {
 		this.setState({blue: value});
 	}
+	setRect32(value) {
+		this.setState({rect32: value});
+	}
 
 
 	componentDidUpdate(prevProps, prevState) {
@@ -41,11 +45,17 @@ class Rect32Calculator extends Component {
       prevState.green !== green ||
       prevState.blue !== blue
     ) {
-      const rect32Colour = document.getElementById("rect32_colour");
-      if (rect32Colour) {
-        rect32Colour.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-      }
-    }
+			const rect32Red    = document.getElementById("rect32_red");
+			const rect32Green  = document.getElementById("rect32_green");
+			const rect32Blue   = document.getElementById("rect32_blue");
+			const rect32Colour = document.getElementById("rect32_colour");
+
+			rect32Red.style.backgroundColor   = `rgb(${red}, 0, 0)`;
+			rect32Green.style.backgroundColor = `rgb(0, ${green}, 0)`;
+			rect32Blue.style.backgroundColor  = `rgb(0, 0, ${blue})`;
+			rect32Colour.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+		}
+		
   }
 	
 	handleInputChange = (e) => {
@@ -123,6 +133,11 @@ class Rect32Calculator extends Component {
 								<td><input type="number" min="0" value={green} max="255" id="green" onChange={(e) => this.setGreen(e.target.value)}></input></td>
 								<td><input type="number" min="0" value={blue} max="255" id="blue" onChange={(e) => this.setBlue(e.target.value)}></input></td>
 							</tr>
+							<tr style={{textAlign:"center"}}>
+								<td> <div id="rect32_red"></div> </td>
+								<td> <div id="rect32_green"></div> </td>
+								<td> <div id="rect32_blue"></div> </td>
+							</tr>
 							{/* <tr>
 								<td><div id="red_colour"></div></td>
 								<td><div id="green_colour"></div></td>
@@ -145,7 +160,7 @@ class Rect32Calculator extends Component {
 
 					<br></br>
 
-					<p style={{textAlign: "center"}}>Rect32: <span id="rect32_value"></span></p>
+					<p style={{textAlign: "center"}}>Rect32: <span id="rect32_value">16777215</span></p>
 
 					<br></br>
 
@@ -180,6 +195,10 @@ class Rect32Calculator extends Component {
 							</tr>
 						</thead>
 						<tbody>
+							<tr>
+								<td>May 11, 2025</td>
+								<td> <ul>	<li> Added a rectangle box for each colour to show the shade of red / green / blue. </li>	</ul>	</td>
+							</tr>
 							<tr>
 								<td>May 10, 2025</td>
 								<td> <ul>	<li> Added box that changes colour based on RGB values selected. </li>	</ul>	</td>
