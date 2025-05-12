@@ -107,3 +107,8 @@
   height: 50px;
   background: rgb(0,0,255);
 }
+
+.colorSlider {
+  margin-top: 10px;
+  width: 90%;
+}

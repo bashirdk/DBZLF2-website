@@ -14,7 +14,6 @@ class Rect32Calculator extends Component {
 		this.setGreen = this.setGreen.bind(this);
 		this.setBlue  = this.setBlue.bind(this);
 		
-
 		this.state = {
 			red: 255,
 			green: 255,
@@ -26,17 +25,19 @@ class Rect32Calculator extends Component {
 
 	setRed(value) {
 		this.setState({red: value});
+		document.getElementById("redSlider").value = value;
 	}
 	setGreen(value) {
 		this.setState({green: value});
+		document.getElementById("greenSlider").value = value;
 	}
 	setBlue(value) {
 		this.setState({blue: value});
+		document.getElementById("blueSlider").value = value;
 	}
 	setRect32(value) {
 		this.setState({rect32: value});
 	}
-
 
 	componentDidUpdate(prevProps, prevState) {
     const { red, green, blue } = this.state;
@@ -62,24 +63,10 @@ class Rect32Calculator extends Component {
     const { name, value } = e.target;
     this.setState({ [name]: Number(value) });
   };
-
 	
 
 	render() {
-		
-		// let slider = document.getElementById("redRange");
-		// var output = document.getElementById("red");
-		// if (slider){
-		// 	console.log(slider.value);
-		// 	console.log('output', output);
-		// 	output.value = slider.value; // Display the default slider value
-		
-		// 	// Update the current slider value (each time you drag the slider handle)
-		// 	slider.oninput = function() {
-		// 	output.innerHTML = this.value;
-		// 	}
-		// }
-		
+				
 		const { red, green, blue } = this.state;
 
 		let rect32Value = document.getElementById("rect32_value");
@@ -90,12 +77,6 @@ class Rect32Calculator extends Component {
 				rect32Value.innerHTML = "Invalid Values. RGB values are between 0-255."
 			}
 		}
-
-
-		// let rect32Colour = document.getElementById("rect32_colour");
-		// if (rect32Colour) {
-		// 	rect32Colour.style.backgroundColor = `rgb(${red}, ${green}, ${blue}`;
-		// }
 
 		return (
 			<div>
@@ -138,22 +119,11 @@ class Rect32Calculator extends Component {
 								<td> <div id="rect32_green"></div> </td>
 								<td> <div id="rect32_blue"></div> </td>
 							</tr>
-							{/* <tr>
-								<td><div id="red_colour"></div></td>
-								<td><div id="green_colour"></div></td>
-								<td><div id="blue_colour"></div></td>
+							<tr style={{textAlign:"center"}}>
+								<td> <input type="range" className="colorSlider" id="redSlider" name="volume" min="0" max="255" value={red} onChange={(e) => this.setRed(e.target.value)}></input> </td>
+								<td> <input type="range" className="colorSlider" id="greenSlider" name="volume" min="0" max="255" value={green} onChange={(e) => this.setGreen(e.target.value)}></input> </td>
+								<td> <input type="range" className="colorSlider" id="blueSlider" name="volume" min="0" max="255" value={blue} onChange={(e) => this.setBlue(e.target.value)}></input></td>
 							</tr>
-							<tr>
-								<td>a
-									<div class="slidecontainer"> <input type="range" min="0" max="255" value="0" class="slider" id="redRange"></input></div>
-								</td>
-								<td>
-									<div class="slidecontainer"> <input type="range" min="0" max="255" value="0" class="slider" id="greenRange"></input></div>
-								</td>
-								<td>
-									<div class="slidecontainer"> <input type="range" min="0" max="255" value="0" class="slider" id="blueRange"></input></div>
-								</td>
-							</tr> */}
 						</tbody>
 
 					</table>
@@ -167,7 +137,6 @@ class Rect32Calculator extends Component {
 					<div style={{textAlign: "center", width: "100%"}}> 
 						<div id="rect32_colour"></div>
 					</div>
-
 
 
 					</div>
@@ -195,6 +164,10 @@ class Rect32Calculator extends Component {
 							</tr>
 						</thead>
 						<tbody>
+							<tr>
+								<td>May 12, 2025</td>
+								<td> <ul>	<li> Added a slider to give more options on how to select RGB values. </li>	</ul>	</td>
+							</tr>
 							<tr>
 								<td>May 11, 2025</td>
 								<td> <ul>	<li> Added a rectangle box for each colour to show the shade of red / green / blue. </li>	</ul>	</td>
