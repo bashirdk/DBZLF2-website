@@ -18,7 +18,13 @@ class Rect32Calculator extends Component {
 			red: 255,
 			green: 0,
 			blue: 0,
-			rect32: 16777215
+			rect32: 16777215,
+			sizeMultiplier: 3,
+			spriteWidth: 79,
+			bpointWidth: 1,
+			bpointHeight: 3,
+			bpointTop: 35,
+			bpointLeft: 36,
 		};
 	
 	}
@@ -39,6 +45,18 @@ class Rect32Calculator extends Component {
 		this.setState({rect32: value});
 	}
 
+	setSizeMultiplier(value) {
+		this.setState({sizeMultiplier: value});
+		const { spriteWidth, bpointWidth, bpointHeight, bpointTop, bpointLeft } = this.state;
+		const sprite= document.getElementsByClassName("rect32-char")[0];
+		const bpoint = document.getElementsByClassName("bpoint")[0];
+		sprite.style.width  = `${spriteWidth * value}px`;
+		bpoint.style.width  = `${bpointWidth * value}px`;
+		bpoint.style.height = `${bpointHeight * value}px`;
+		bpoint.style.top    = `${bpointTop * value}px`;
+		bpoint.style.left   = `${bpointLeft * value}px`;
+	}
+
 	componentDidUpdate(prevProps, prevState) {
     const { red, green, blue } = this.state;
     if (
@@ -50,13 +68,13 @@ class Rect32Calculator extends Component {
 			const rect32Green  = document.getElementById("rect32_green");
 			const rect32Blue   = document.getElementById("rect32_blue");
 			const rect32Colour = document.getElementById("rect32_colour");
-			const bpointColor  = document.getElementsByClassName("bpoint");
+			const bpointColor  = document.getElementsByClassName("bpoint")[0];
 
 			rect32Red.style.backgroundColor   = `rgb(${red}, 0, 0)`;
 			rect32Green.style.backgroundColor = `rgb(0, ${green}, 0)`;
 			rect32Blue.style.backgroundColor  = `rgb(0, 0, ${blue})`;
 			rect32Colour.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-			bpointColor[0].style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+			bpointColor.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 		}
 		
   }
@@ -67,8 +85,7 @@ class Rect32Calculator extends Component {
   };
 	
 
-	render() {
-				
+	render() {			
 		const { red, green, blue } = this.state;
 
 		let rect32Value = document.getElementById("rect32_value");
@@ -141,6 +158,12 @@ class Rect32Calculator extends Component {
 						</div>
 
 						<div style={{textAlign: "center", width: "100%", margin: "20px"}}>
+							<button className={`rect32-size-btn ${this.state.sizeMultiplier === 1 ? 'active' : ''}`} onClick={(e) => this.setSizeMultiplier(1)}>1x</button>
+							<button className={`rect32-size-btn ${this.state.sizeMultiplier === 2 ? 'active' : ''}`} onClick={(e) => this.setSizeMultiplier(2)}>2x</button>
+							<button className={`rect32-size-btn ${this.state.sizeMultiplier === 3 ? 'active' : ''}`} onClick={(e) => this.setSizeMultiplier(3)}>3x</button>
+							<button className={`rect32-size-btn ${this.state.sizeMultiplier === 4 ? 'active' : ''}`} onClick={(e) => this.setSizeMultiplier(4)}>4x</button>
+							<button className={`rect32-size-btn ${this.state.sizeMultiplier === 5 ? 'active' : ''}`} onClick={(e) => this.setSizeMultiplier(5)}>5x</button>
+							<br></br><br></br>
 							<div style={{width: "fit-content", textAlign: "center", position: "relative", margin: "0 auto"}}>
 								<span className="bpoint"></span>
 								<img 
@@ -176,6 +199,10 @@ class Rect32Calculator extends Component {
 							</tr>
 						</thead>
 						<tbody>
+							<tr>
+								<td>May 14, 2025</td>
+								<td> <ul>	<li> Add option to change sprite size from 1x to 5x. </li>	</ul>	</td>
+							</tr>
 							<tr>
 								<td>May 13, 2025</td>
 								<td> <ul>	<li> Add SS Goku sprite to see how the bpoint colour looks. </li>	</ul>	</td>
