@@ -16,8 +16,8 @@ class Rect32Calculator extends Component {
 		
 		this.state = {
 			red: 255,
-			green: 255,
-			blue: 255,
+			green: 0,
+			blue: 0,
 			rect32: 16777215
 		};
 	
@@ -50,11 +50,13 @@ class Rect32Calculator extends Component {
 			const rect32Green  = document.getElementById("rect32_green");
 			const rect32Blue   = document.getElementById("rect32_blue");
 			const rect32Colour = document.getElementById("rect32_colour");
+			const bpointColor  = document.getElementsByClassName("bpoint");
 
 			rect32Red.style.backgroundColor   = `rgb(${red}, 0, 0)`;
 			rect32Green.style.backgroundColor = `rgb(0, ${green}, 0)`;
 			rect32Blue.style.backgroundColor  = `rgb(0, 0, ${blue})`;
 			rect32Colour.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+			bpointColor[0].style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 		}
 		
   }
@@ -98,46 +100,56 @@ class Rect32Calculator extends Component {
 				<div className="text-white">
 
 				<section className="inline-block align-top w-full">
-					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-5 mx-0">
 
-					<table id="rect32_table">
-						<thead>
-						<tr style={{textAlign:"center"}}>
-								<td>Red</td>
-								<td>Green</td>
-								<td>Blue</td>
-							</tr>
-						</thead>
-						<tbody>
+						<table id="rect32_table">
+							<thead>
 							<tr style={{textAlign:"center"}}>
-								<td><input type="number" min="0" value={red} max="255" id="red" onChange={(e) => this.setRed(e.target.value)}></input></td>
-								<td><input type="number" min="0" value={green} max="255" id="green" onChange={(e) => this.setGreen(e.target.value)}></input></td>
-								<td><input type="number" min="0" value={blue} max="255" id="blue" onChange={(e) => this.setBlue(e.target.value)}></input></td>
-							</tr>
-							<tr style={{textAlign:"center"}}>
-								<td> <div id="rect32_red"></div> </td>
-								<td> <div id="rect32_green"></div> </td>
-								<td> <div id="rect32_blue"></div> </td>
-							</tr>
-							<tr style={{textAlign:"center"}}>
-								<td> <input type="range" className="colorSlider" id="redSlider" name="volume" min="0" max="255" value={red} onChange={(e) => this.setRed(e.target.value)}></input> </td>
-								<td> <input type="range" className="colorSlider" id="greenSlider" name="volume" min="0" max="255" value={green} onChange={(e) => this.setGreen(e.target.value)}></input> </td>
-								<td> <input type="range" className="colorSlider" id="blueSlider" name="volume" min="0" max="255" value={blue} onChange={(e) => this.setBlue(e.target.value)}></input></td>
-							</tr>
-						</tbody>
+									<td>Red</td>
+									<td>Green</td>
+									<td>Blue</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr style={{textAlign:"center"}}>
+									<td><input type="number" min="0" value={red} max="255" id="red" onChange={(e) => this.setRed(e.target.value)}></input></td>
+									<td><input type="number" min="0" value={green} max="255" id="green" onChange={(e) => this.setGreen(e.target.value)}></input></td>
+									<td><input type="number" min="0" value={blue} max="255" id="blue" onChange={(e) => this.setBlue(e.target.value)}></input></td>
+								</tr>
+								<tr style={{textAlign:"center"}}>
+									<td> <div id="rect32_red"></div> </td>
+									<td> <div id="rect32_green"></div> </td>
+									<td> <div id="rect32_blue"></div> </td>
+								</tr>
+								<tr style={{textAlign:"center"}}>
+									<td> <input type="range" className="colorSlider" id="redSlider" name="volume" min="0" max="255" value={red} onChange={(e) => this.setRed(e.target.value)}></input> </td>
+									<td> <input type="range" className="colorSlider" id="greenSlider" name="volume" min="0" max="255" value={green} onChange={(e) => this.setGreen(e.target.value)}></input> </td>
+									<td> <input type="range" className="colorSlider" id="blueSlider" name="volume" min="0" max="255" value={blue} onChange={(e) => this.setBlue(e.target.value)}></input></td>
+								</tr>
+							</tbody>
 
-					</table>
+						</table>
 
-					<br></br>
+						<br></br>
 
-					<p style={{textAlign: "center"}}>Rect32: <span id="rect32_value">16777215</span></p>
+						<p style={{textAlign: "center"}}>Rect32: <span id="rect32_value">16777215</span></p>
 
-					<br></br>
+						<br></br>
 
-					<div style={{textAlign: "center", width: "100%"}}> 
-						<div id="rect32_colour"></div>
-					</div>
+						<div style={{textAlign: "center", width: "100%"}}> 
+							<div id="rect32_colour"></div>
+						</div>
 
+						<div style={{textAlign: "center", width: "100%", margin: "20px"}}>
+							<div style={{width: "fit-content", textAlign: "center", position: "relative", margin: "0 auto"}}>
+								<span className="bpoint"></span>
+								<img 
+									src={require(`../../../images/tools/ssgoku.png`)}
+									alt={`battle mode balancer tool`}
+									className="rect32-char"
+								/>
+							</div>
+						</div>
 
 					</div>
 				</section>
@@ -164,6 +176,10 @@ class Rect32Calculator extends Component {
 							</tr>
 						</thead>
 						<tbody>
+							<tr>
+								<td>May 13, 2025</td>
+								<td> <ul>	<li> Add SS Goku sprite to see how the bpoint colour looks. </li>	</ul>	</td>
+							</tr>
 							<tr>
 								<td>May 12, 2025</td>
 								<td> <ul>	<li> Added a slider to give more options on how to select RGB values. </li>	</ul>	</td>
