@@ -133,3 +133,28 @@
   height: 9px;
   background-color: rgb(255,0,0);
 }
+
+.rect32-size-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: 1px solid darkgreen;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 7px #999;
+}
+.rect32-size-btn:hover {background-color: #3e8e41}
+
+.rect32-size-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 3px #666;
+  transform: translateY(6px);
+}
+.rect32-size-btn.active {
+  box-shadow: 0 3px #666;
+  transform: translateY(6px);
+}
