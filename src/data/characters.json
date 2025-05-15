@@ -3239,13 +3239,13 @@
       "links": [[1,2], [1,3]],
       "basic": [
         { "name": "Basic Combo", "input": "Super Punch + J" },
-		{ "name": "Advanced Combo", "input": "Super Punch + JA"},
-		{ "name": "Advanced Combo v1", "input": "Super Punch + JA + J"},
-		{ "name": "Advanced Combo v2", "input": "Super Punch + JA + D v J"},
-		{ "name": "Ultimate Combo", "input": "Super Punch + JA + D^A"}
+		{ "name": "Advanced Combo", "input": "Super Punch + J + A"},
+		{ "name": "Advanced Combo v1", "input": "Super Punch + J + A + J"},
+		{ "name": "Advanced Combo v2", "input": "Super Punch + J + A + D v J"},
+		{ "name": "Ultimate Combo", "input": "Super Punch + J+ A + D^J"}
       ],
       "special": [
-	    { "name": "Parachute Combo", "input": "D > A while holding J on parachute + JA + D^A" }
+	    { "name": "Parachute Combo", "input": "D > A while holding J on parachute + J + A + D^J" }
 	  ],
       "counter": [
 	    {
