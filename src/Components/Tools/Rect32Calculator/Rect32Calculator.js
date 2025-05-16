@@ -25,6 +25,7 @@ class Rect32Calculator extends Component {
 			bpointHeight: 3,
 			bpointTop: 35,
 			bpointLeft: 36,
+			img: 'ssgoku',
 		};
 	
 	}
@@ -44,10 +45,17 @@ class Rect32Calculator extends Component {
 	setRect32(value) {
 		this.setState({rect32: value});
 	}
+	setImage(img, bx, by) {
+		this.setState({img: img, bpointLeft: bx, bpointTop: by});
+		const bpoint = document.getElementsByClassName("bpoint")[0];
+		bpoint.style.top    = `${by * this.state.sizeMultiplier}px`;
+		bpoint.style.left   = `${bx * this.state.sizeMultiplier}px`;
+	}
 
 	setSizeMultiplier(value) {
-		this.setState({sizeMultiplier: value});
 		const { spriteWidth, bpointWidth, bpointHeight, bpointTop, bpointLeft } = this.state;
+		this.setState({sizeMultiplier: value});
+
 		const sprite= document.getElementsByClassName("rect32-char")[0];
 		const bpoint = document.getElementsByClassName("bpoint")[0];
 		sprite.style.width  = `${spriteWidth * value}px`;
@@ -69,7 +77,6 @@ class Rect32Calculator extends Component {
 			const rect32Blue   = document.getElementById("rect32_blue");
 			const rect32Colour = document.getElementById("rect32_colour");
 			const bpointColor  = document.getElementsByClassName("bpoint")[0];
-
 			rect32Red.style.backgroundColor   = `rgb(${red}, 0, 0)`;
 			rect32Green.style.backgroundColor = `rgb(0, ${green}, 0)`;
 			rect32Blue.style.backgroundColor  = `rgb(0, 0, ${blue})`;
@@ -86,7 +93,7 @@ class Rect32Calculator extends Component {
 	
 
 	render() {			
-		const { red, green, blue } = this.state;
+		const { red, green, blue, img } = this.state;
 
 		let rect32Value = document.getElementById("rect32_value");
 		if (rect32Value) {
@@ -167,11 +174,19 @@ class Rect32Calculator extends Component {
 							<div style={{width: "fit-content", textAlign: "center", position: "relative", margin: "0 auto"}}>
 								<span className="bpoint"></span>
 								<img 
-									src={require(`../../../images/tools/ssgoku.png`)}
+									src={require(`../../../images/tools/${img}.png`)}
 									alt={`battle mode balancer tool`}
 									className="rect32-char"
 								/>
 							</div>
+
+							<div className="rect32-img-icons">
+								<img src={require(`../../../images/tools/ssgoku.png`)} alt={`battle mode balancer tool`} className={`rect32-icon ${this.state.img === 'ssgoku' ? 'active' : ''}`} onClick={(e) => this.setImage("ssgoku", 36, 35)} />
+								<img src={require(`../../../images/tools/piccolow.png`)} alt={`battle mode balancer tool`} className={`rect32-icon ${this.state.img === 'piccolow' ? 'active' : ''}`} onClick={(e) => this.setImage("piccolow", 39, 25)} />
+								<img src={require(`../../../images/tools/frieza.png`)} alt={`battle mode balancer tool`} className={`rect32-icon ${this.state.img === 'frieza' ? 'active' : ''}`} onClick={(e) => this.setImage("frieza", 37, 39)} />
+								<img src={require(`../../../images/tools/buu.png`)} alt={`battle mode balancer tool`} className={`rect32-icon ${this.state.img === 'buu' ? 'active' : ''}`} onClick={(e) => this.setImage("buu", 35, 40)} />
+							</div>
+
 						</div>
 
 					</div>
@@ -200,12 +215,16 @@ class Rect32Calculator extends Component {
 						</thead>
 						<tbody>
 							<tr>
+								<td>May 16, 2025</td>
+								<td> <ul>	<li> Added option to pick between 4 characters with different skin colours to test different blood colours. </li>	</ul>	</td>
+							</tr>
+							<tr>
 								<td>May 14, 2025</td>
-								<td> <ul>	<li> Add option to change sprite size from 1x to 5x. </li>	</ul>	</td>
+								<td> <ul>	<li> Added option to change sprite size from 1x to 5x. </li>	</ul>	</td>
 							</tr>
 							<tr>
 								<td>May 13, 2025</td>
-								<td> <ul>	<li> Add SS Goku sprite to see how the bpoint colour looks. </li>	</ul>	</td>
+								<td> <ul>	<li> Added SS Goku sprite to see how the bpoint colour looks. </li>	</ul>	</td>
 							</tr>
 							<tr>
 								<td>May 12, 2025</td>
