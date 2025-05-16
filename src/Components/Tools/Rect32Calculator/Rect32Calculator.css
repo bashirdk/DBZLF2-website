@@ -158,3 +158,17 @@
   box-shadow: 0 3px #666;
   transform: translateY(6px);
 }
+
+.rect32-img-icons img {
+  width: 79px;
+  outline: 2px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+.rect32-img-icons img:hover {
+  background: rgba(255,255,255,0.5);
+}
+.rect32-icon.active{
+  background: white;
+}
