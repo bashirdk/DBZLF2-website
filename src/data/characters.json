@@ -6,7 +6,7 @@
     "name": "Piccolo (Weighted)",
     "saga": "Saiyan",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
+    "moveset_video": "txzs-1u7qBc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 1380,
@@ -57,7 +57,7 @@
     "name": "Piccolo (Agile)",
     "saga": "Saiyan",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
+    "moveset_video": "txzs-1u7qBc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 1520,
@@ -201,7 +201,6 @@
     "name": "Namek Healer",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 1080,
@@ -244,7 +243,6 @@
     "name": "Namek Warrior",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 1460,
@@ -291,7 +289,6 @@
     "name": "Warrior Namek",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 1460,
@@ -338,7 +335,7 @@
     "name": "Nail",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
+    "moveset_video": "rQPYc0mShS8",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 2580,
@@ -385,7 +382,7 @@
     "name": "Piccolo (Weighted)",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
+    "moveset_video": "z_RdDyoqPyM",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 3880,
@@ -436,7 +433,7 @@
     "name": "Piccolo (Agile)",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "ik4zivBIDz8",
+    "moveset_video": "z_RdDyoqPyM",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 4290,
@@ -1071,7 +1068,7 @@
       "name": "Piccolo (Weighted)",
       "saga": "Android",
       "race": ["Namek"],
-      "moveset_video": "ik4zivBIDz8",
+      "moveset_video": "MB8yuyEMqUk",
       "type": { "hero": true, "villain": false, "other": false },
       "stats": {
         "power_level": 11040,
@@ -1122,7 +1119,7 @@
       "name": "Piccolo (Agile)",
       "saga": "Android",
       "race": ["Namek"],
-      "moveset_video": "ik4zivBIDz8",
+      "moveset_video": "MB8yuyEMqUk",
       "type": { "hero": true, "villain": false, "other": false },
       "stats": {
         "power_level": 12180,
@@ -1887,6 +1884,106 @@
       "special": [],
       "counter": []
     }
+  },
+  {
+    "id": 97,
+    "release": "TBD",
+    "url_id": "piccolo-w",
+    "name": "Piccolo (Weighted)",
+    "saga": "Buu",
+    "race": ["Namek"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 14590,
+      "attack": 3.23,
+      "defense": 4.52,
+      "speed": 2.15,
+      "ki": 100,
+      "hp_regen": 4,
+      "ki_regen": 6,
+      "ki_charge": 5
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "special": [
+      ],
+      "team": [],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [{
+        "name": "Remove Weighted Clothing (Agile)",
+        "input": "DJA + D",
+        "id": 96, "direction": 1, "type": "agile"
+      }]
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
+  },
+  {
+    "id": 96,
+    "release": "TBD",
+    "url_id": "piccolo-a",
+    "name": "Piccolo (Agile)",
+    "saga": "Buu",
+    "race": ["Namek"],
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 16100,
+      "attack": 3.39,
+      "defense": 4.75,
+      "speed": 2.15,
+      "ki": 100,
+      "hp_regen": 4,
+      "ki_regen": 6,
+      "ki_charge": 5
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "special": [
+      ],
+      "team": [],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [{
+        "name": "Weighted Clothing",
+        "input": "DJA + D",
+        "id": 97, "direction": 0, "type": "base"
+      }]
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
   },
   {
     "id": 70,
