@@ -29,33 +29,33 @@ const versionVariants = {
 
 
 // Set the date we're counting down to
-// var countDownDate = new Date(Date.UTC(2025, 0, 1, 19, 0, 0)).getTime();
+var countDownDate = new Date(Date.UTC(2025, 4, 31, 16, 0, 0)).getTime();
 
 // Update the count down every 1 second
-// var x = setInterval(function() {
+var x = setInterval(function() {
 
-//   // Get today's date and time
-//   var now = new Date().getTime();
+  // Get today's date and time
+  var now = new Date().getTime();
     
-//   // Find the distance between now and the count down date
-//   var distance = countDownDate - now;
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
     
-//   // Time calculations for days, hours, minutes and seconds
-//   var days    = Math.floor(distance / (1000 * 60 * 60 * 24));
-//   var hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Time calculations for days, hours, minutes and seconds
+  var days    = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours   = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-//   // Output the result in an element with id="demo"
-//   document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-//   + minutes + "m " + seconds + "s ";
+  // Output the result in an element with id="demo"
+  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
     
-//   // If the count down is over, write some text 
-//   if (distance < 0) {
-//     clearInterval(x);
-//     document.getElementById("counter").innerHTML = "EXPIRED";
-//   }
-// }, 1000);
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("counter").innerHTML = "EXPIRED";
+  }
+}, 1000);
 
 
 
@@ -81,7 +81,7 @@ const Home = () => (
         animate="animate"
         variants={versionVariants}
       >
-        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.5.5 </p>
+        <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.6.9 </p>
       </motion.div>
     </div>
 
@@ -146,33 +146,16 @@ const Home = () => (
     </div>
 
 
-    <div className="text-center mt-12" >
-      <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/Io5ocxdjmtE" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      </div>
+    <div className="text-center text-white">
+      <p className="mb-3 text-5xl font-bold"> DBZ LF2 v0.6.9 TRAILER PREMIERE </p>
+      <p className="mb-3 text-3xl"> May 31, 2025 </p>
+      <p className="mb-3 text-3xl"> AVAILABLE IN </p>
+      <h3 className="mb-3 text-5xl" id="counter">COUNTDOWN</h3>
     </div>
 
     <div className="text-center mt-12" >
       <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/rQPYc0mShS8" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      </div>
-    </div>
-
-    <div className="text-center mt-12" >
-      <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/MB8yuyEMqUk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      </div>
-    </div>
-
-    <div className="text-center mt-12" >
-      <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/z_RdDyoqPyM" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-      </div>
-    </div>
-
-    <div className="text-center mt-12" >
-      <div className="video-responsive">
-        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/txzs-1u7qBc" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe title="trailer" width="100%" height="315" src="https://www.youtube.com/embed/m28x87FCFBw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </div>
 

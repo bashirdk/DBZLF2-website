@@ -27,7 +27,7 @@
   margin-bottom: -100px;
 }
 .hero-logos .version {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 992px) {
@@ -40,7 +40,7 @@
     margin-bottom: -140px;
   }
   .hero-logos .version {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -73,7 +73,7 @@
 .home-square {
   width: 100%;
   max-width: 400px;
-  margin: 10px;
+  margin: 0 10px;
 }
 
 .home-box {
