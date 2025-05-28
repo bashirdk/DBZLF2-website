@@ -125,6 +125,19 @@
     ]
   },
   {
+    "id": 0,
+    "release": "v0.6.9",
+    "url_id": "rc",
+    "name": "Rocky Canyon",
+    "saga": "Buu",
+    "width": 2400,
+    "zwidth": 110,
+    "desc": "Rocky Canyons where Babadi sent Goku and Majin Vegeta for their battle.",
+    "fights": [
+      "SS2 Goku vs. Majin Vegeta"
+    ]
+  },
+  {
     "id": 2,
     "release": "v0.1",
     "url_id": "lf",
