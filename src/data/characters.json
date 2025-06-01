@@ -1,7 +1,7 @@
 [
   {
     "id": 93,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "piccolo-w",
     "name": "Piccolo (Weighted)",
     "saga": "Saiyan",
@@ -52,7 +52,7 @@
   },
   {
     "id": 91,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "piccolo-a",
     "name": "Piccolo (Agile)",
     "saga": "Saiyan",
@@ -196,7 +196,7 @@
   },
   {
     "id": 301,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "n-healer",
     "name": "Namek Healer",
     "saga": "Namek",
@@ -238,7 +238,7 @@
   },
   {
     "id": 99,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "n-warrior",
     "name": "Namek Warrior",
     "saga": "Namek",
@@ -284,7 +284,7 @@
   },
   {
     "id": 300,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "warrior-n",
     "name": "Warrior Namek",
     "saga": "Namek",
@@ -330,7 +330,7 @@
   },
   {
     "id": 98,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "nail",
     "name": "Nail",
     "saga": "Namek",
@@ -377,7 +377,7 @@
   },
   {
     "id": 95,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "piccolo-w",
     "name": "Piccolo (Weighted)",
     "saga": "Namek",
@@ -428,7 +428,7 @@
   },
   {
     "id": 94,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "piccolo-a",
     "name": "Piccolo (Agile)",
     "saga": "Namek",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": 97,
-      "release": "TBD",
+      "release": "v0.6.9",
       "url_id": "piccolo-w",
       "name": "Piccolo (Weighted)",
       "saga": "Android",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": 96,
-      "release": "TBD",
+      "release": "v0.6.9",
       "url_id": "piccolo-a",
       "name": "Piccolo (Agile)",
       "saga": "Android",
@@ -1887,7 +1887,7 @@
   },
   {
     "id": 97,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "piccolo-w",
     "name": "Piccolo (Weighted)",
     "saga": "Buu",
@@ -1937,7 +1937,7 @@
   },
   {
     "id": 96,
-    "release": "TBD",
+    "release": "v0.6.9",
     "url_id": "piccolo-a",
     "name": "Piccolo (Agile)",
     "saga": "Buu",
@@ -3233,7 +3233,109 @@
       ],
       "counter": []
     }
-  }, {
+  }, 
+  {
+    "id": 307,
+    "release": "v0.6.9",
+    "url_id": "gogeta",
+    "name": "Gogeta",
+    "saga": "Buu",
+    "race": ["Saiyan"],
+    "moveset_video": "m28x87FCFBw?t=908",
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 235000,
+      "attack": 12.5,
+      "defense": 18.75,
+      "speed": 2.15,
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 7
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "special": [
+      ],
+      "team": [],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [{
+        "name": "Super Gogeta",
+        "input": "DJA J",
+        "id": 308, "direction": 1, "type": "ss"
+      }]
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
+  },
+  {
+    "id": 308,
+    "release": "v0.6.9",
+    "url_id": "super-gogeta",
+    "name": "Super Gogeta",
+    "saga": "Buu",
+    "race": ["Saiyan"],
+    "moveset_video": "m28x87FCFBw?t=841",
+    "type": { "hero": true, "villain": false, "other": false },
+    "stats": {
+      "power_level": 470000,
+      "attack": 17.68,
+      "defense": 26.52,
+      "speed": 2.15,
+      "ki": 100,
+      "hp_regen": 2,
+      "ki_regen": 6,
+      "ki_charge": 6
+    },
+    "moves": {
+      "basic": [
+        {
+          "name": "Ki Charge",
+          "input": "DJA A Hold A"
+        },
+        {
+          "name": "Ki Blast",
+          "input": "D > A (A A A...)"
+        }
+      ],
+      "special": [
+      ],
+      "team": [],
+      "counter": [
+        {
+          "name": "Basic Counter",
+          "input": "Block attack + A"
+        }
+      ],
+      "transformations": [{
+        "name": "Base Form",
+        "input": "DJA D",
+        "id": 307, "direction": 0, "type": "base"
+      }]
+    },"combos": {
+      "links": [],
+      "basic": [],
+      "special": [],
+      "counter": []
+    } 
+  },{
     "id": 88,
     "release": "v0.5.5",
     "url_id": "majin-buu",

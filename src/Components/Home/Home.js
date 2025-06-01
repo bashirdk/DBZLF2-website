@@ -29,7 +29,7 @@ const versionVariants = {
 
 
 // Set the date we're counting down to
-var countDownDate = new Date(Date.UTC(2025, 4, 31, 16, 0, 0)).getTime();
+var countDownDate = new Date(Date.UTC(2025, 5, 9, 16, 0, 0)).getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -147,8 +147,8 @@ const Home = () => (
 
 
     <div className="text-center text-white">
-      <p className="mb-3 text-5xl font-bold"> DBZ LF2 v0.6.9 TRAILER PREMIERE </p>
-      <p className="mb-3 text-3xl"> May 31, 2025 </p>
+      <p className="mb-3 text-5xl font-bold"> DBZ LF2 v0.6.9 GAME RELEASE </p>
+      <p className="mb-3 text-3xl"> June 9, 2025 </p>
       <p className="mb-3 text-3xl"> AVAILABLE IN </p>
       <h3 className="mb-3 text-5xl" id="counter">COUNTDOWN</h3>
     </div>
