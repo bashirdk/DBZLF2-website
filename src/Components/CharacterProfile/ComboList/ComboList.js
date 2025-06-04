@@ -43,22 +43,36 @@ const ComboList = ({ character }) => {
     }
   ]}
 
-  const getCombo = (id, type, moves = character.moves) => {
-    let move;
+  const getCombo = (id, type, moves = character.moves, triedDefault = false) => {
+    if (!moves || typeof moves !== 'object') return null;
+  
+    let move = null;
+
+    // console.log('moves', moves);
+  
     Object.keys(moves).forEach(key => {
-      moves[key].forEach( element => {
-        if (element.combo_id === id) {
-          move = element[`${type}`];
+      moves[key].forEach(element => {
+        // console.log('element', element);
+        // console.log('element', element.hasOwnProperty(type))
+        if (element.combo_id === id ) {
+          move = element[type];
         }
-      })
-    })
-    if (!move) {
-      move = getCombo(id, type, defaultCombos);
+      });
+    });
+  
+    if (!move && !triedDefault) {
+      // console.log("id", id);
+      // console.log("type", type);
+      return getCombo(id, type, defaultCombos, true); // now only tries once
     }
-    return move;
-  }
+  
+    return move || null;
+  };
 
   const loopCombo = (array, type, connector) => {
+    // console.log('array', array);
+    // console.log('type', type);
+    // console.log('connector', connector);
     let comboName;
 
     if (array.constructor === Array) {
@@ -69,6 +83,7 @@ const ComboList = ({ character }) => {
           comboName = getCombo(id, type);
         }
       })
+      // console.log('combo name', comboName)
       return comboName;
     } else {
       return array[type];
@@ -86,7 +101,9 @@ const ComboList = ({ character }) => {
       </div>  
       )
     } else {
+      // console.log('input COMBOMOVE LIST', input);
       const mapMoves = input.map((mappedMove) => {
+        // console.log("mappedMove", mappedMove);
         if (mappedMove.ultimate)
         {
           var ultimateMove = (

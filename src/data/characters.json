@@ -6,7 +6,7 @@
     "name": "Piccolo (Weighted)",
     "saga": "Saiyan",
     "race": ["Namek"],
-    "moveset_video": "txzs-1u7qBc",
+    "moveset_video": "hAG6RCctasY",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 1380,
@@ -16,7 +16,7 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -30,6 +30,40 @@
         }
       ],
       "special": [
+        {
+          "name": "Mystic Grab", "combo_id:": 1,
+          "input": "D > AJ"
+        }, {
+          "name": "Aerial Mystic Grab", "combo_id:": 2,
+          "input": "D > A (In Air)"
+        }, {
+          "name": "Special Beam Charge",
+          "input": "D > J (3 levels of charging, Can walk while charging)"
+        }, {
+          "name": "Special Beam Cannon",
+          "input": "Special Beam Charge + A (press D to shoot behind)"
+        }, {
+          "name": "Explosive Demon Wave", "combo_id:": 3,
+          "input": "D ^ J"
+        }, {
+          "name": "Chasing Bullet",
+          "input": "D ^ J Hold J (6s CD)"
+        },{
+          "name": "Vanish Elbow",
+          "input": "D v A (1.4s CD)"
+        }, {
+          "name": "Scatter Shot", "combo_id:": 4,
+          "input": "D v A (In Air)"
+        }, {
+          "name": "Mystic Ground Slam",
+          "input": "D v J (J J J...)"
+        }, {
+          "name": "Grabbing Mystic Ground Slam", "combo_id:": 5,
+          "input": "Grab + D > J"
+        }, {
+          "name": "Regeneration",
+          "input": "D ^ A"
+        }
       ],
       "team": [],
       "counter": [
@@ -40,13 +74,22 @@
       ],
       "transformations": [{
         "name": "Remove Weighted Clothing (Agile)",
-        "input": "DJA + D",
+        "input": "DJA + J",
         "id": 91, "direction": 1, "type": "agile"
       }]
     },"combos": {
-      "links": [],
-      "basic": [],
-      "special": [],
+      "links": [
+        { "name": "Mystic Grab -> Grabbing Mystic Ground Slam", "input": "D > AJ -> D > J" },
+        { "name": "Aerial Mystic Grab -> Scatter Shot", "input": "D > A (In Air) -> D v A" },
+        { "name": "Grabbing Mystic Ground Slam -> Explosive Demon Wave", "input": "Grab + D > J -> D ^ J" }
+      ],
+      "basic": [
+        [53], { "name": "Basic Combo + Scatter Shot", "input": "Super Punch + J + D v A" }
+      ],
+      "special": [
+        { "name": "Aerial Mystic Grab + Jump Attack", "input": " D > A (In Air) + A" }, 
+        { "name": "Mystic Grab + Grabbing Mystic Ground Slam + Explosive Demon Wave", "input": "D > AJ + D > J + D ^ J" }
+      ],
       "counter": []
     } 
   },
@@ -57,7 +100,7 @@
     "name": "Piccolo (Agile)",
     "saga": "Saiyan",
     "race": ["Namek"],
-    "moveset_video": "txzs-1u7qBc",
+    "moveset_video": "hAG6RCctasY",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 1520,
@@ -67,7 +110,7 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -81,6 +124,40 @@
         }
       ],
       "special": [
+        {
+          "name": "Mystic Grab", "combo_id:": 1,
+          "input": "D > AJ"
+        }, {
+          "name": "Aerial Mystic Grab", "combo_id:": 2,
+          "input": "D > A (In Air)"
+        }, {
+          "name": "Special Beam Charge",
+          "input": "D > J (3 levels of charging, Can walk while charging)"
+        }, {
+          "name": "Special Beam Cannon",
+          "input": "Special Beam Charge + A (press D to shoot behind)"
+        }, {
+          "name": "Explosive Demon Wave", "combo_id:": 3,
+          "input": "D ^ J"
+        }, {
+          "name": "Chasing Bullet",
+          "input": "D ^ J Hold J (6s CD)"
+        },{
+          "name": "Vanish Elbow",
+          "input": "D v A (1.4s CD)"
+        }, {
+          "name": "Scatter Shot", "combo_id:": 4,
+          "input": "D v A (In Air)"
+        }, {
+          "name": "Nails Attack",
+          "input": "D v J"
+        }, {
+          "name": "Explosive Breath Cannon", "combo_id:": 5,
+          "input": "Grab + J"
+        }, {
+          "name": "Regeneration",
+          "input": "D ^ A"
+        }
       ],
       "team": [],
       "counter": [
@@ -91,15 +168,22 @@
       ],
       "transformations": [{
         "name": "Weighted Clothing",
-        "input": "DJA + D",
+        "input": "DJA J (standing on top of weighted clothing)",
         "id": 93, "direction": 0, "type": "base"
       }]
-    },"combos": {
-      "links": [],
-      "basic": [],
-      "special": [],
-      "counter": []
-    } 
+      },"combos": {
+        "links": [
+          { "name": "Mystic Grab -> Explosive Breath Cannon", "input": "D > AJ -> J" },
+          { "name": "Aerial Mystic Grab -> Scatter Shot", "input": "D > A (In Air) -> D v A" }
+        ],
+        "basic": [
+          [53], { "name": "Basic Combo + Scatter Shot", "input": "Super Punch + J -> D v A" }
+        ],
+        "special": [
+          { "name": "Aerial Mystic Grab + Jump Attack", "input": " D > A (In Air) + A" }
+        ],
+        "counter": []
+      } 
   },
   {
     "id": 92,
@@ -195,13 +279,14 @@
     }
   },
   {
-    "id": 301,
+    "id": 39,
     "release": "v0.6.9",
     "url_id": "n-healer",
     "name": "Namek Healer",
     "saga": "Namek",
     "race": ["Namek"],
     "type": { "hero": true, "villain": false, "other": false },
+    "moveset_video": "7hi4AsyCuYo",
     "stats": {
       "power_level": 1080,
       "attack": 0.88,
@@ -237,13 +322,14 @@
     } 
   },
   {
-    "id": 99,
+    "id": 32,
     "release": "v0.6.9",
     "url_id": "n-warrior",
     "name": "Namek Warrior",
     "saga": "Namek",
     "race": ["Namek"],
     "type": { "hero": true, "villain": false, "other": false },
+    "moveset_video": "THkNM6O4lDs",
     "stats": {
       "power_level": 1460,
       "attack": 1.02,
@@ -283,13 +369,14 @@
     } 
   },
   {
-    "id": 300,
+    "id": 35,
     "release": "v0.6.9",
     "url_id": "warrior-n",
     "name": "Warrior Namek",
     "saga": "Namek",
     "race": ["Namek"],
     "type": { "hero": true, "villain": false, "other": false },
+    "moveset_video": "zW9ahe2x9tc",
     "stats": {
       "power_level": 1460,
       "attack": 1.02,
@@ -335,7 +422,7 @@
     "name": "Nail",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "rQPYc0mShS8",
+    "moveset_video": "Gv-NfAhCMgs",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 2580,
@@ -345,7 +432,7 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -382,7 +469,7 @@
     "name": "Piccolo (Weighted)",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "z_RdDyoqPyM",
+    "moveset_video": "nv8tLsKXXfU",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 3880,
@@ -392,7 +479,7 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -416,7 +503,7 @@
       ],
       "transformations": [{
         "name": "Remove Weighted Clothing (Agile)",
-        "input": "DJA + D",
+        "input": "DJA J",
         "id": 94, "direction": 1, "type": "agile"
       }]
     },"combos": {
@@ -433,7 +520,7 @@
     "name": "Piccolo (Agile)",
     "saga": "Namek",
     "race": ["Namek"],
-    "moveset_video": "z_RdDyoqPyM",
+    "moveset_video": "nv8tLsKXXfU",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 4290,
@@ -443,7 +530,7 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -467,7 +554,7 @@
       ],
       "transformations": [{
         "name": "Weighted Clothing",
-        "input": "DJA + D",
+        "input": "DJA J (standing on top of weighted clothing)",
         "id": 95, "direction": 0, "type": "base"
       }]
     },"combos": {
@@ -1078,7 +1165,7 @@
         "ki": 100,
         "hp_regen": 4,
         "ki_regen": 6,
-        "ki_charge": 5
+        "ki_charge": 7
       },
       "moves": {
         "basic": [
@@ -1102,7 +1189,7 @@
         ],
         "transformations": [{
           "name": "Remove Weighted Clothing (Agile)",
-          "input": "DJA + D",
+          "input": "DJA J",
           "id": 96, "direction": 1, "type": "agile"
         }]
       },"combos": {
@@ -1129,7 +1216,7 @@
         "ki": 100,
         "hp_regen": 4,
         "ki_regen": 6,
-        "ki_charge": 5
+        "ki_charge": 7
       },
       "moves": {
         "basic": [
@@ -1153,7 +1240,7 @@
         ],
         "transformations": [{
           "name": "Weighted Clothing",
-          "input": "DJA + D",
+          "input": "DJA J (standing on top of weighted clothing)",
           "id": 97, "direction": 0, "type": "base"
         }]
       },"combos": {
@@ -1886,7 +1973,7 @@
     }
   },
   {
-    "id": 97,
+    "id": 302,
     "release": "v0.6.9",
     "url_id": "piccolo-w",
     "name": "Piccolo (Weighted)",
@@ -1901,7 +1988,7 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -1925,8 +2012,8 @@
       ],
       "transformations": [{
         "name": "Remove Weighted Clothing (Agile)",
-        "input": "DJA + D",
-        "id": 96, "direction": 1, "type": "agile"
+        "input": "DJA J",
+        "id": 303, "direction": 1, "type": "agile"
       }]
     },"combos": {
       "links": [],
@@ -1936,7 +2023,7 @@
     } 
   },
   {
-    "id": 96,
+    "id": 303,
     "release": "v0.6.9",
     "url_id": "piccolo-a",
     "name": "Piccolo (Agile)",
@@ -1951,7 +2038,7 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 7
     },
     "moves": {
       "basic": [
@@ -1975,8 +2062,8 @@
       ],
       "transformations": [{
         "name": "Weighted Clothing",
-        "input": "DJA + D",
-        "id": 97, "direction": 0, "type": "base"
+        "input": "DJA J (standing on top of weighted clothing)",
+        "id": 302, "direction": 0, "type": "base"
       }]
     },"combos": {
       "links": [],
