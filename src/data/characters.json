@@ -493,6 +493,43 @@
         }
       ],
       "special": [
+        {
+          "name": "Mystic Grab",
+          "input": "D > AJ"
+        }, {
+          "name": "Aerial Mystic Grab",
+          "input": "D > A (In Air)"
+        }, {
+          "name": "Special Beam Charge",
+          "input": "D > J (3 levels of charging, Can walk while charging)"
+        }, {
+          "name": "Special Beam Cannon",
+          "input": "Special Beam Charge + A (press D to shoot behind)"
+        }, {
+          "name": "Explosive Demon Wave",
+          "input": "D ^ J"
+        }, {
+          "name": "Explosive Wave", 
+          "input": "D ^ J (in Air)"
+        },{
+          "name": "Chasing Bullet",
+          "input": "D ^ J Hold J (6s CD)"
+        },{
+          "name": "Aura Punch",
+          "input": "D v A"
+        }, {
+          "name": "Mystic Take Off",
+          "input": "D v J"
+        }, {
+          "name": "Scatter Shot", 
+          "input": "D v A (after Mystic Take Off)"
+        }, {
+          "name": "Piledriver",
+          "input": "Grab + J"
+        }, {
+          "name": "Regeneration",
+          "input": "D ^ A"
+        }
       ],
       "team": [],
       "counter": [
@@ -506,10 +543,34 @@
         "input": "DJA J",
         "id": 94, "direction": 1, "type": "agile"
       }]
-    },"combos": {
-      "links": [],
-      "basic": [],
-      "special": [],
+    },"combos": { 
+      "links": [
+        { "name": "Mystic Grab -> Piledriver", "input": "D > AJ -> Grab + J"},
+        { "name": "Mystic Take Off -> Scatter Shot", "input": "D v J -> D v A" }
+      ],
+      "basic": [[53],
+      { "name": "Basic Combo + Explosive Wave", "input": "Super Punch + J + A + D^J" },
+      { "name": "Basic Combo + Explosive Wave + Piledriver", "input": "Super Punch + J + A + D^J + DvJ" },
+      { "name": "Basic Combo + Explosive Wave + Piledriver + Scatter Shot", "input": "Super Punch + J + A + D^J + DvJ + Hold A" },
+      { "name": "ULTIMATE COMBO", "input": "Super Punch + J + A + D^J + DvJ + Hold A + D<A + Hold J + D^J", "ultimate": true },
+      { "name": "ULTIMATE WOMBO COMBO", "input": "Super Punch + J + A + D^J + DvJ + Hold A + D<A + Hold J + D^J + DvJ + Hold A", "ultimate": true }
+    ],
+      "special": [
+        { "name": "Mystic Grab + Piledriver + Scatter Shot", "input": "D>AJ + J + Hold A"},
+        { "name": "Mystic Grab ULTIMATE COMBO", "input": "D>AJ + J + Hold A + D<A + Hold J + D^J", "ultimate": true},
+        { "name": "Mystic Grab ULTIMATE WOMBO COMBO", "input": "D>AJ + J + Hold A + D<A + Hold J + D^J + DvJ + Hold A", "ultimate": true },
+        { "name": "Aerial Mystic Grab + Explosive Wave", "input": "D>A (in air) + hold J + D^J"},
+        { "name": "Aerial Mystic Grab + Explosive Wave + Piledriver", "input": "D>A (in air) + hold J + D^J + DvJ"},
+        { "name": "Aerial Mystic Grab + Explosive Wave + Piledriver + Scatter Shot", "input": "D>A (in air) + hold J + D^J + DvJ + Hold A"},
+        { "name": "Aerial Mystic Grab ULTIMATE COMBO", "input": "D>A (in air) + hold J + D^J + DvJ + Hold A + D<A + Hold J + D^J", "ultimate": true},
+        { "name": "Aerial Mystic Grab ULTIMATE COMBO", "input": "D>A (in air) + hold J + D^J + DvJ + Hold A + D<A + Hold J + D^J + DvJ + Hold A", "ultimate": true },
+        { "name": "Aura Punch Combo", "input": "D v A + J" },
+        { "name": "Aura Punch Combo + Explosive Wave", "input": "DvA + J + A + D^J" },
+        { "name": "Aura Punch Combo + Explosive Wave + Piledriver", "input": "DvA + J + A + D^J + DvJ" },
+        { "name": "Aura Punch Combo + Explosive Wave + Piledriver + Scatter Shot", "input": "DvA + J + A + D^J + DvJ + Hold A" },
+        { "name": "Aura Punch ULTIMATE COMBO", "input": "DvA + J + A + D^J + DvJ + Hold A + D<A + Hold J + D^J", "ultimate": true },
+        { "name": "Aura Punch ULTIMATE WOMBO COMBO", "input": "DvA + J + A + D^J + DvJ + Hold A + D<A + Hold J + D^J + DvJ + Hold A", "ultimate": true }
+      ],
       "counter": []
     } 
   },
