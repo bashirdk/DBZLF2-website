@@ -452,5 +452,63 @@
         "name": "Majin Buu", "new": true
       }]
     }
+  },
+  {
+    "version": "v0.6.9",
+    "characters": {
+      "saiyan": [
+        { "name": "Piccolo (Weighted)", "new": true },
+        { "name": "Piccolo (Agile)", "new": true },
+        { "name": "Vegeta" }
+      ],
+      "namek": [ 
+        { "name": "Namek Healer", "new": true },
+        { "name": "Namek Warrior", "new": true },
+        { "name": "Warrior Namek", "new": true },
+        { "name": "Nail", "new": true },
+        { "name": "Piccolo (Weighted)", "new": true },
+        { "name": "Piccolo (Agile)", "new": true },
+        { "name": "Goku" },
+        { "name": "SS Goku" },
+        { "name": "Vegeta" },
+        { "name": "Frieza Force Soldier (Fist)" }, 
+        { "name": "Frieza Force Soldier (Gun)" }, 
+        { "name": "Frieza Force Soldier (Special)" }, 
+        { "name": "Frieza" }
+      ],
+      "android": [
+        { "name": "Piccolo (Weighted)", "new": true },
+        { "name": "Piccolo (Agile)", "new": true },
+        { "name": "Vegeta" },
+        { "name": "SS Vegeta" },
+        { "name": "Super Vegeta" },
+        { "name": "Trunks [A]" },
+        { "name": "SS Trunks [A]" },
+        { "name": "Super Trunks [A]" },
+        { "name": "Ultra Trunks [A]" },
+        { "name": "Perfect Cell" }
+      ],
+      "buu": [
+        { "name": "Piccolo (Weighted)", "new": true },
+        { "name": "Piccolo (Agile)", "new": true },
+        { "name": "Vegeta" },
+        { "name": "SS Vegeta" },
+        { "name": "SS2 Vegeta" },
+        { "name": "Majin Vegeta" },
+        { "name": "Goku" },
+        { "name": "SS Goku" },
+        { "name": "SS2 Goku" },
+        { "name": "SS3 Goku" },
+        { "name": "Gohan" },
+        { "name": "SS Gohan" },
+        { "name": "SS2 Gohan" },
+        { "name": "Ultimtate Gohan" },
+        { "name": "Vegito" },
+        { "name": "Super Vegito" },
+        { "name": "Gogeta", "new": true },
+        { "name": "Super Gogeta", "new": true },
+        { "name": "Majin Buu" }
+    ]
+    }
   }
 ]

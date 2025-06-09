@@ -88,6 +88,10 @@ function Accordion(props) {
   let new_moves = mapUpdatesData(props.updates.minor_updates.new_moves);
   let speed_adjustments = mapUpdatesData(props.updates.minor_updates.speed_adjustments);
 
+  let balance_changes = mapUpdatesData(props.updates.major_updates.balance_changes);
+  let ai_updates = mapUpdatesData(props.updates.major_updates.ai_updates);
+  let stage_mode = mapUpdatesData(props.updates.major_updates.stage_mode);
+
   // let characterListSaiyan = downloadsCharBgList(props.characterList.saiyan);
   // let characterListNamek = downloadsCharBgList(props.characterList.namek);
   // let characterListAndroid = downloadsCharBgList(props.characterList.android);
@@ -172,6 +176,9 @@ function Accordion(props) {
         }
 
           <div className="text-center">
+
+
+
             { props.download ?
              <a href={props.download} target="_blank" rel="noreferrer">
              <button className="download-button">
@@ -253,7 +260,10 @@ function Accordion(props) {
             {outputIfExists("New Characters", characters)}
             {outputIfExists("Backgrounds", backgrounds)}
             {outputIfExists("Level System", levelSystem)}
+            {outputIfExists("Balance Changes", balance_changes)}
+            {outputIfExists("AI Updates", ai_updates)}
             {outputIfExists("Other Updates", list_of_major_updates)}
+            {outputIfExists("Stage Mode Mechanics", stage_mode)}
           </div>
           <br/>
           <h3 className="mb-1">Minor Updates</h3>

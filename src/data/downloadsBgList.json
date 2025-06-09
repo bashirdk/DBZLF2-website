@@ -152,5 +152,31 @@
         }
       ]
     }
+  }, {
+    "version": "v0.6.9",
+    "backgrounds": {
+      "saiyan": [
+        { "name": "Break Wasteland [Obstacles]", "new": true },
+        { "name": "Break Wasteland", "new": true }
+      ],
+      "namek": [
+        { "name": "Planet Namek" }, 
+        { "name": "Planet Namek (Destroyed)" }
+      ],
+      "android": [],
+      "buu": [
+        { "name": "Budokai" },
+        { "name": "Budokai [Ringout]" },
+        { "name": "Rocky Canyon", "new": true },
+        { "name": "West City", "new": true },
+        { "name": "West City [Night]", "new": true },
+        { "name": "Time Chamber" },
+        { "name": "Time Chamber [Hazards]" }
+      ],
+      "lf2": [
+        { "name": "Wastelands" },
+        { "name": "AI Wastelands", "new": true }
+      ]
+    }
   }
 ]

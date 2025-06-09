@@ -1,5 +1,98 @@
 [
   {
+    "version": "v0.6.9",
+    "date": "6/9/2025",
+    "download_ver": true,
+    "download": "https://www.mediafire.com/file/30m1lugsz58jnwq/DeeBeeZee_LF2_v0.5.5.zip/file",
+    "download_b": false,
+    "download_r": false,
+    "trailer": "m28x87FCFBw",
+    "characters": {
+      "new": 14,
+      "total": 45
+    },
+    "backgrounds": {
+      "new": 6,
+      "total": 12
+    },
+    "updates": {
+      "major_updates": {
+        "characters": [
+          "[+] Piccolo (Saiyan) (Weighted)",
+          "[+] Piccolo (Saiyan)(Agile)",
+          "[+] Namek Healer (Namek)",
+          "[+] Namek Warrior (Namek)",
+          "[+] Warrior Namek (Namek)",
+          "[+] Nail (Namek)",
+          "[+] Piccolo (Namek) (Weighted)",
+          "[+] Piccolo (Namek) (Agile)",
+          "[+] Piccolo (Android) (Weighted)",
+          "[+] Piccolo (Android) (Agile)",
+          "[+] Piccolo (Buu) (Weighted)",
+          "[+] Piccolo (Buu) (Agile)",
+          "[+] Gogeta (Buu)",
+          "[+] Super Gogeta (Buu)"
+        ],
+        "backgrounds": [
+          "[+] Rocky Canyon",
+          "[+] AI Wastelands",
+          "[+] Break Wasteland [Obstacles]",
+          "[+] Break Wasteland",
+          "[+] West City",
+          "[+] West City [Night]"
+        ],
+        "ai_updates": [
+          "New intelligent ki charge system for AI",
+          "New intelligent transformation system for AI that detects the enemy power level",
+          "New AI dodge, now coms will actually dodge your ki attacks so they wont be as easy to hit (dodge is disabled on easy difficulty)",
+          "New melee AI adapted to each difficulty. The higher the difficulty, the more skilled the coms will be in melee fights",
+          "Now frieza soldiers only shoot blasts if they are close to their target, making bullet hells less common"
+        ],
+        "balance_changes": [
+          "Air recovery costs 6 bars of ki now (300 ki)",
+          "Maximum ki is now 20 bars (1000 ki)",
+          "Removed 'bunnyhop'",
+          "Dash attack costs 1/2 bar of ki (25 ki)",
+          "Injury frames last longer (7 TU -> 10 TU)",
+          "Broke defend lasts longer (9 TU - > 12 TU"
+        ],
+        "list_of_major_updates": [
+          "Brand new stage mode",
+          "Added character unlock system",
+          "Added HP system to blast attacks",
+          "Added voice lines in the character selection menu",
+          "Added Balanced and Realistic game editions"
+        ],
+        "stage_mode": [
+          "Added spaceship that spawns frieza soldiers",
+          "Added timed battle mode",
+          "Added debuff timer",
+          "Added Namek and Frieza Force aerial squads",
+          "Added cutscenes",
+          "Quest mode",
+          "Stage thumbnails",
+          "Built-in challenges",
+          "New fade off animation for soldiers in stage mode"
+        ]
+      },
+      "minor_updates": {
+        "sprite_changes": [
+          "Added glow to basic ki balls. The intensity of the glow depends on the power level"
+        ],
+        "new_moves": [
+          "[+] Vegeta (Buu): Galick Gun",
+          "[+] SS Vegeta (Buu): Galick Gun",
+          "[+] SS Vegeta (Buu): Big Bang Attack",
+          "[+] SS2 Vegeta (Buu): Galick Gun"
+        ],
+        "character_changes": [
+          "Nerfed some of Perfect Cell's moves",
+          "Nerfed some of Kid Buu's moves"
+
+        ]
+      }
+    }
+  },{
     "version": "v0.5.5",
     "date": "1/1/2025",
     "download": "https://www.mediafire.com/file/30m1lugsz58jnwq/DeeBeeZee_LF2_v0.5.5.zip/file",
