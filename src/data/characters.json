@@ -300,11 +300,11 @@
     "moves": {
       "basic": [
         {
-          "name": "Ki Blast",
+          "name": "Finger Beams",
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [
@@ -351,7 +351,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [
@@ -398,7 +398,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [
@@ -445,7 +445,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [
@@ -604,7 +604,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [
@@ -1239,7 +1239,7 @@
             "input": "D > A (A A A...)"
           }
         ],
-        "special": [
+        "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
         ],
         "team": [],
         "counter": [
@@ -1290,7 +1290,7 @@
             "input": "D > A (A A A...)"
           }
         ],
-        "special": [
+        "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
         ],
         "team": [],
         "counter": [
@@ -2062,7 +2062,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Wait for the moveset video, it will be at the bottom of this page when it's ready."}
       ],
       "team": [],
       "counter": [
@@ -2112,7 +2112,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Wait for the moveset video, it will be at the bottom of this page when it's ready."}
       ],
       "team": [],
       "counter": [
@@ -3389,7 +3389,7 @@
     "name": "Gogeta",
     "saga": "Buu",
     "race": ["Saiyan"],
-    "moveset_video": "m28x87FCFBw?t=908",
+    "moveset_video": "Wq3c3aiO3xc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 235000,
@@ -3412,7 +3412,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [
@@ -3440,7 +3440,7 @@
     "name": "Super Gogeta",
     "saga": "Buu",
     "race": ["Saiyan"],
-    "moveset_video": "m28x87FCFBw?t=841",
+    "moveset_video": "Bso9XW86jQE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 470000,
@@ -3463,7 +3463,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [

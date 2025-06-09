@@ -78,6 +78,44 @@ function Accordion(props) {
     }
   }
 
+  function downloadButton(download, button) {
+    return ( download ?
+    <a href={props.download} target="_blank" rel="noreferrer">
+      <button className={"download-button " + button}>
+        <FontAwesomeIcon icon="download" color="white" />
+        <span className="mx-2">DOWNLOAD</span>
+      </button>
+    </a>
+  :
+   <>
+    <button className={"download-button " + button} disabled>
+      <FontAwesomeIcon icon="download" color="white" />
+      <span className="mx-2">DOWNLOAD</span>
+    </button>
+    </>
+    )
+  }
+
+  function downloadButtons(props) {
+    return (
+      <>
+        <p> BALANCED AND REALISTIC VERSIONS COMING SOON </p>
+        <table className="version-table">
+          <tr>
+            <td> {downloadButton(props.download_b, 'download-button')} </td>
+            <td> {downloadButton(props.download, '')} </td>
+            <td> {downloadButton(props.download_r, 'download-button')} </td>
+          </tr>
+          <tr>
+            <td> <span className="download-legend balanced-ver-legend"> BALANCED </span> </td>
+            <td> <span className="download-legend standard-ver-legend"> STANDARD </span> </td>
+            <td> <span className="download-legend realistic-ver-legend"> REALISTIC </span> </td>
+          </tr>
+        </table>
+      </>
+    );
+  }
+
   let characters = mapUpdatesData(props.updates.major_updates.characters);
   let backgrounds = mapUpdatesData(props.updates.major_updates.backgrounds);
   let list_of_major_updates = mapUpdatesData(props.updates.major_updates.list_of_major_updates);
@@ -87,6 +125,10 @@ function Accordion(props) {
   let sprite_changes = mapUpdatesData(props.updates.minor_updates.sprite_changes);
   let new_moves = mapUpdatesData(props.updates.minor_updates.new_moves);
   let speed_adjustments = mapUpdatesData(props.updates.minor_updates.speed_adjustments);
+
+  let balance_changes = mapUpdatesData(props.updates.major_updates.balance_changes);
+  let ai_updates = mapUpdatesData(props.updates.major_updates.ai_updates);
+  let stage_mode = mapUpdatesData(props.updates.major_updates.stage_mode);
 
   // let characterListSaiyan = downloadsCharBgList(props.characterList.saiyan);
   // let characterListNamek = downloadsCharBgList(props.characterList.namek);
@@ -122,6 +164,9 @@ function Accordion(props) {
     backgroundListBuu = downloadsCharBgList(props.backgroundList.buu);
     backgroundListLf2 = downloadsCharBgList(props.backgroundList.lf2);
   }
+
+
+
 
   return (
     <div className="accordion__section border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
@@ -172,7 +217,12 @@ function Accordion(props) {
         }
 
           <div className="text-center">
-            { props.download ?
+
+            { props.download_ver ? 
+              downloadButtons(props)              
+            :
+
+            props.download ?
              <a href={props.download} target="_blank" rel="noreferrer">
              <button className="download-button">
                 <FontAwesomeIcon icon="download" color="white" />
@@ -191,8 +241,15 @@ function Accordion(props) {
                 <FontAwesomeIcon icon="download" color="white" />
                 <span className="mx-2">DOWNLOAD</span>
               </button>
-            </a>}
+            </a>
+
+            }
+
+
+            { }
             {/* <AdComponent /> */}
+
+
           </div>
 
           {!props.dlc ? 
@@ -253,7 +310,10 @@ function Accordion(props) {
             {outputIfExists("New Characters", characters)}
             {outputIfExists("Backgrounds", backgrounds)}
             {outputIfExists("Level System", levelSystem)}
+            {outputIfExists("Balance Changes", balance_changes)}
+            {outputIfExists("AI Updates", ai_updates)}
             {outputIfExists("Other Updates", list_of_major_updates)}
+            {outputIfExists("Stage Mode Mechanics", stage_mode)}
           </div>
           <br/>
           <h3 className="mb-1">Minor Updates</h3>

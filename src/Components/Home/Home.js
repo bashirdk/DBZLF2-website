@@ -2,6 +2,7 @@ import "./Home.css";
 
 import React from "react";
 import Helmet from "react-helmet";
+import { NavLink } from "react-router-dom";
 
 import DragonBall from "../Logo/DragonBall";
 import LittleFighter2 from "../Logo/LittleFighter2";
@@ -148,9 +149,8 @@ const Home = () => (
 
     <div className="text-center text-white">
       <p className="mb-3 text-5xl font-bold"> DBZ LF2 v0.6.9 GAME RELEASE </p>
-      <p className="mb-3 text-3xl"> June 9, 2025 </p>
-      <p className="mb-3 text-3xl"> AVAILABLE IN </p>
-      <h3 className="mb-3 text-5xl" id="counter">COUNTDOWN</h3>
+      <p className="mb-3 text-3xl"> OUT NOW!</p>
+      <p className="mb-3 text-3xl"> Download <NavLink to="/downloads" className="nav-logo"> HERE </NavLink> </p>
     </div>
 
     <div className="text-center mt-12" >

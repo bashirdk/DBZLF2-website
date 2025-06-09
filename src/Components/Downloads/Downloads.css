@@ -12,7 +12,7 @@
   color: white;
   font-weight: 600;
   font-size: 20px;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 .download-button:hover
 {
@@ -26,4 +26,49 @@
 }
 .download-button:disabled:hover{
   background-color: gray;
+}
+
+.download-button-b {
+  background-color: #4772FF  !important;
+  border: 1px solid #284CB7  !important;
+}
+.download-button-b:hover
+{
+  background-color: #284CB7  !important;
+}
+
+.download-button-r {
+  background-color: #DB3030  !important;
+  border: 1px solid #A81717  !important;
+}
+.download-button-r:hover
+{
+  background-color: #A81717  !important;
+}
+
+
+.version-table {
+  margin: 0 auto;
+}
+.download-legend{
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.balanced-ver-legend {
+  /* float: left; */
+  font-weight: 900;
+  color: #4772FF ;
+}
+.standard-ver-legend {
+  /* float: center; */
+  text-align: center;
+  font-weight: 900;
+  color: #68d391;
+}
+.realistic-ver-legend {
+  /* float: right; */
+  font-weight: 900;
+  color: #DB3030 ;
 }
