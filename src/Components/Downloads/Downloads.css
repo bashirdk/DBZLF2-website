@@ -29,36 +29,34 @@
 }
 
 .download-button-b {
-  background-color: blue !important;
-  border: 1px solid darkblue !important;
+  background-color: #4772FF  !important;
+  border: 1px solid #284CB7  !important;
 }
 .download-button-b:hover
 {
-  background-color: darkblue !important;
+  background-color: #284CB7  !important;
 }
 
 .download-button-r {
-  background-color: red !important;
-  border: 1px solid darkred !important;
+  background-color: #DB3030  !important;
+  border: 1px solid #A81717  !important;
 }
 .download-button-r:hover
 {
-  background-color: darkred !important;
+  background-color: #A81717  !important;
 }
 
 
 .download-legend{
   text-align: center;
-  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 20px;
-}
-.download-legend span{
-  margin: 0 10px;
 }
 .balanced-ver-legend {
   /* float: left; */
   font-weight: 900;
-  color: blue;
+  color: #4772FF ;
 }
 .standard-ver-legend {
   /* float: center; */
@@ -69,5 +67,5 @@
 .realistic-ver-legend {
   /* float: right; */
   font-weight: 900;
-  color: red;
+  color: #DB3030 ;
 }

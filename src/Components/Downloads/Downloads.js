@@ -53,12 +53,6 @@ class Downloads extends Component {
 				<h1 className="text-white">Downloads</h1>
 
 				<h2 className="text-white text-center"> Latest Game Version </h2>
-
-				<div className="download-legend">
-					<span className="balanced-ver-legend"> BALANCED </span>
-					<span className="standard-ver-legend"> STANDARD </span>
-					<span className="realistic-ver-legend"> REALISTIC </span>
-				</div>
 				
 				<Accordion
 					version={DownloadsJSON[0].version}
