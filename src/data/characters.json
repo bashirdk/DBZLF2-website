@@ -3389,7 +3389,7 @@
     "name": "Gogeta",
     "saga": "Buu",
     "race": ["Saiyan"],
-    "moveset_video": "",
+    "moveset_video": "Wq3c3aiO3xc",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 235000,
@@ -3412,7 +3412,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [ {"name": "COMING SOON", "input": "Wait for the moveset video, it will be at the bottom of this page when it's ready."}
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [
@@ -3440,7 +3440,7 @@
     "name": "Super Gogeta",
     "saga": "Buu",
     "race": ["Saiyan"],
-    "moveset_video": "",
+    "moveset_video": "Bso9XW86jQE",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 470000,
@@ -3463,7 +3463,7 @@
           "input": "D > A (A A A...)"
         }
       ],
-      "special": [ {"name": "COMING SOON", "input": "Wait for the moveset video, it will be at the bottom of this page when it's ready."}
+      "special": [ {"name": "COMING SOON", "input": "Take a look at the moveset video at the bottom of this page for now."}
       ],
       "team": [],
       "counter": [

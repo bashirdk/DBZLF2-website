@@ -21,6 +21,8 @@ class Guide extends Component {
 
 				<h1 className="text-white">DBZ LF2 Game Guide</h1>
 
+				<p className="text-white"> THIS GUIDE IS CURRENTLY OUTDATED AND WILL BE UPDATED SOON TO REFLECT THE CHANGES IN v0.6.9</p>
+
 				<div className="guide-summary text-white guide-contents border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-7 pr-5 pt-5 pb-10 mx-0 lg:mx-3">
 					<ul>
 						<li><h2><a href="#controls" className="guide-blue">Controls </a></h2></li>
