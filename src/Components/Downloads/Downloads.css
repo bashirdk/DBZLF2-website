@@ -47,6 +47,9 @@
 }
 
 
+.version-table {
+  margin: 0 auto;
+}
 .download-legend{
   text-align: center;
   margin-top: 0;

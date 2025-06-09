@@ -99,12 +99,12 @@ function Accordion(props) {
   function downloadButtons(props) {
     return (
       <>
-        <p> REALSITC AND BALANCED VERSIONS COMING SOON </p>
-        <table>
+        <p> BALANCED AND REALISTIC VERSIONS COMING SOON </p>
+        <table className="version-table">
           <tr>
-            <td> {downloadButton(props.download_b, 'download-button-b')} </td>
+            <td> {downloadButton(props.download_b, 'download-button')} </td>
             <td> {downloadButton(props.download, '')} </td>
-            <td> {downloadButton(props.download_r, 'download-button-r')} </td>
+            <td> {downloadButton(props.download_r, 'download-button')} </td>
           </tr>
           <tr>
             <td> <span className="download-legend balanced-ver-legend"> BALANCED </span> </td>
