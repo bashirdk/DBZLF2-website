@@ -78,6 +78,35 @@ function Accordion(props) {
     }
   }
 
+  function downloadButton(download, button) {
+    return ( download ?
+    <a href={props.download} target="_blank" rel="noreferrer">
+      <button className={"download-button " + button}>
+        <FontAwesomeIcon icon="download" color="white" />
+        <span className="mx-2">DOWNLOAD</span>
+      </button>
+    </a>
+  :
+   <>
+    <button className={"download-button " + button} disabled>
+      <FontAwesomeIcon icon="download" color="white" />
+      <span className="mx-2">DOWNLOAD</span>
+    </button>
+    </>
+    )
+  }
+
+  function downloadButtons(props) {
+    return (
+      <>
+        <p> REALSITC AND BALANCED VERSIONS COMING SOON </p>
+        {downloadButton(props.download_b, 'download-button-b')}
+        {downloadButton(props.download, '')}
+        {downloadButton(props.download_r, 'download-button-r')}
+      </>
+    );
+  }
+
   let characters = mapUpdatesData(props.updates.major_updates.characters);
   let backgrounds = mapUpdatesData(props.updates.major_updates.backgrounds);
   let list_of_major_updates = mapUpdatesData(props.updates.major_updates.list_of_major_updates);
@@ -126,6 +155,9 @@ function Accordion(props) {
     backgroundListBuu = downloadsCharBgList(props.backgroundList.buu);
     backgroundListLf2 = downloadsCharBgList(props.backgroundList.lf2);
   }
+
+
+
 
   return (
     <div className="accordion__section border-2 lf2-border-blue lf2-bg-blue my-5 rounded text-white">
@@ -177,9 +209,11 @@ function Accordion(props) {
 
           <div className="text-center">
 
+            { props.download_ver ? 
+              downloadButtons(props)              
+            :
 
-
-            { props.download ?
+            props.download ?
              <a href={props.download} target="_blank" rel="noreferrer">
              <button className="download-button">
                 <FontAwesomeIcon icon="download" color="white" />
@@ -198,8 +232,15 @@ function Accordion(props) {
                 <FontAwesomeIcon icon="download" color="white" />
                 <span className="mx-2">DOWNLOAD</span>
               </button>
-            </a>}
+            </a>
+
+            }
+
+
+            { }
             {/* <AdComponent /> */}
+
+
           </div>
 
           {!props.dlc ? 

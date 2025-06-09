@@ -19,7 +19,7 @@
       "major_updates": {
         "characters": [
           "[+] Piccolo (Saiyan) (Weighted)",
-          "[+] Piccolo (Saiyan)(Agile)",
+          "[+] Piccolo (Saiyan) (Agile)",
           "[+] Namek Healer (Namek)",
           "[+] Namek Warrior (Namek)",
           "[+] Warrior Namek (Namek)",
@@ -57,6 +57,7 @@
           "Broke defend lasts longer (9 TU - > 12 TU"
         ],
         "list_of_major_updates": [
+          "NEW GAME MECHANIC: Vanish (Blast)",
           "Brand new stage mode",
           "Added character unlock system",
           "Added HP system to blast attacks",

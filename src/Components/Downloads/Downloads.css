@@ -12,7 +12,7 @@
   color: white;
   font-weight: 600;
   font-size: 20px;
-  margin: 10px 0;
+  margin: 10px 10px;
 }
 .download-button:hover
 {
@@ -26,4 +26,48 @@
 }
 .download-button:disabled:hover{
   background-color: gray;
+}
+
+.download-button-b {
+  background-color: blue !important;
+  border: 1px solid darkblue !important;
+}
+.download-button-b:hover
+{
+  background-color: darkblue !important;
+}
+
+.download-button-r {
+  background-color: red !important;
+  border: 1px solid darkred !important;
+}
+.download-button-r:hover
+{
+  background-color: darkred !important;
+}
+
+
+.download-legend{
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+.download-legend span{
+  margin: 0 10px;
+}
+.balanced-ver-legend {
+  /* float: left; */
+  font-weight: 900;
+  color: blue;
+}
+.standard-ver-legend {
+  /* float: center; */
+  text-align: center;
+  font-weight: 900;
+  color: #68d391;
+}
+.realistic-ver-legend {
+  /* float: right; */
+  font-weight: 900;
+  color: red;
 }
