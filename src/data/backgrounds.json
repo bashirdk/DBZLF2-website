@@ -10,7 +10,7 @@
     "video": "",
     "desc": "Break Wasteland is a vast wasteland filled with many dangerous animals. It is surrounded by an expansive desert, which is said to be a much harsher environment than the wasteland itself.",
     "special": true,
-    "special_desc": "Special Features of this background include <ul> <li> Ready... Fight! starting </li> <li> Lively Crowd </li> <li> 3D effect during camera panning (particularly on the stairs) </li> <li> Fully voiced and dynamic play by play announcer </li> <li> Ringout feature allowing you to knock out enemies by hitting them out of bounds </li> </ul>",
+    "special_desc": "Special Feature of this background are the rocks around the background. They act as obstacles that can be used as cover from enemy attacks. Be careful because if the rocks take too much damage they will blow up and you will lose your cover!",
     "fights": [
       "Gohan vs Nature",
       "Gohan vs Animals"
