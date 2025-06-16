@@ -98,11 +98,15 @@ class Guide extends Component {
 						<p><b>F5:</b> Speed up the game</p>
 						<p><b>F6:</b> Unlimited Ki (VS Mode only)</p>
 						<p><b>F7:</b> Set All HP and MP to 500 (fully heal) (VS Mode only)</p>
+						<p><b>F8:</b> Drop Weapons (doesn't do anything) </p>
+						<p><b>F9:</b> Destroy Weapons (Namek arms, capes, staffs, rocks) </p>
 						<p><b>F11:</b> Lower volume</p>
 						<p><b>F12:</b> Raise volume</p>
 
 						<h3 id="unlocks">Special Unlocks</h3>
 						<p>Type in "lf2.net" when in game to unlock the "CRAZY!" difficulty and all the locked characters. </p>
+						<br></br>
+						<p>There's also a secret code that you can get by beating Arcade 5 which will unlock 2 bonus characters! </p>
 
 						<h3 id="commands">Special Commands</h3>
 						<div className="text-center p-2">
@@ -138,6 +142,8 @@ class Guide extends Component {
 						<p>You can see the stats of each character. To get more details on each stat check <NavLink to="#stats" >HERE.</NavLink> </p>
 						<h4>Team</h4>
 						<p>Here you can select the team the character is on. There are 4 different teams and also independent if you want to play by yourself. </p>
+						<h4>Skins</h4>
+						<p> You can change the skin of the character by pressing D on them before selecting them. Skins are only available on a select few number of characters which are highlighted in a green box in the picture above. </p>
 
 						<hr></hr>
 

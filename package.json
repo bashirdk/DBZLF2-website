@@ -22,7 +22,10 @@
     "react-scripts": "^5.0.0"
   },
   "devDependencies": {
-    "tailwindcss": "^0.7.4"
+    "memfs": "^4.17.2",
+    "tailwindcss": "^0.7.4",
+    "webpack": "^5.99.9",
+    "webpack-dev-middleware": "^7.4.2"
   },
   "scripts": {
     "tailwind:css": "tailwind build src/tailwind.src.css -c tailwind.js -o src/tailwind.css",
