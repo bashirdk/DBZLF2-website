@@ -1,9 +1,9 @@
 [
   {
-    "version": "v0.6.9",
+    "version": "v0.6.9H",
     "date": "6/9/2025",
     "download_ver": true,
-    "download": "https://www.mediafire.com/file/pgj2nrmk16cl2sz/DeeBeeZee_LF2_v0.6.9.zip/file",
+    "download": "https://www.mediafire.com/file/wz1sfhlleualj74/DeeBeeZee_LF2_v0.6.9_hotfix.zip/file",
     "download_b": false,
     "download_r": false,
     "trailer": "m28x87FCFBw",
@@ -16,6 +16,21 @@
       "total": 12
     },
     "updates": {
+      "hotfix": [
+        "CLEAN UP: Reduced game size from 980 mb -> 300 mb",
+        "PERFORMANCE: Some BGs have been updated to hopefully enhance performance (Rocky Canyon, Namek, Destroyed Namek)",
+        "SURVIVAL CRASH ISSUE: crashing probably hasn't been fixed, however if you beat the survival stage, now the new stages become unlocked so you can continue after the crash from where you left off!",
+        "BUG FIX: Battle mode didn't complete before if you had some minions in slots that had no characters",
+        "BUG FIX: some arcades had bugged soldiers if you brought many allies",
+        "BUG FIX: Goku [4] and Super Gogeta couldn't interact with stage mode cinematic interactor",
+        "BUG FIX: Fixed desync dust effects in Time Chamber Hazards BG after 1:15 time elapses",
+        "UPDATE: Updated Stage Mode Mirror Match",
+        "SPRITE CHANGE: Added new charge ki dust colours to new BGs (West City, Rocky Canyon)",
+        "SPRITE CHANGE: Improved Super Vegeta Ultimate Final Flash attack",
+        "CHARACTER CHANGE: Make Super Vegeta Atomic Blast combos easier to perform",
+        "CHARACTER CHANGE: Fix Super Vegito basic combo -> Kakarot Big Bang Attack",
+        "AND MANY OTHER MINOR CHANGES!"
+      ],
       "major_updates": {
         "characters": [
           "[+] Piccolo (Saiyan) (Weighted)",
