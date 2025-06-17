@@ -305,7 +305,7 @@ function Accordion(props) {
         ''
           }
           
-          <h3 className="mb-1">Hotfix</h3>
+          <h3 className="mb-1">Hotfix Updates</h3>
           <div className="mx-3">
             {outputIfExists("", hotfix)}
           </div>
