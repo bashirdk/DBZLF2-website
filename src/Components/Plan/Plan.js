@@ -1,6 +1,5 @@
 import "./Plan.css";
 
-import { NavLink } from "react-router-dom";
 import React, { Component } from "react";
 import Helmet from "react-helmet";
 
@@ -30,7 +29,7 @@ class Plan extends Component {
 	}
 
 	numberWithCommas(x) {
-		if (x==0) { return ''; }
+		if (x===0) { return ''; }
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
