@@ -12,16 +12,18 @@ class Plan extends Component {
 	// console.log(planJSON);
 
 	renderTableData(data) {
-		return data.sort((a, b) => a.pl - b.pl).map((plan) => (
+		return data.filter(plan => !plan.hidden).sort((a, b) => a.pl - b.pl).map((plan) => (
 			<tr className={`plan-${plan.race} ${plan.whatif ? 'plan-what-if' : ''}`}  key={plan.character}>
 				<td>{plan.character}</td>
 				<td>{this.numberWithCommas(plan.pl)}</td>
+				<td>{ plan.complete ? '✔️' : '❌' }</td>
+				<td>{ plan.remaster ? '✔️' : '❌' }</td>
 			</tr>
 		));
 	}
 
 	renderBGTableData(data) {
-		return data.sort((a, b) => a.pl - b.pl).map((plan) => (
+		return data.filter(plan => !plan.hidden).sort((a, b) => a.pl - b.pl).map((plan) => (
 			<tr className={``}  key={plan.bg}>
 				<td>{plan.bg}</td>
 			</tr>
@@ -59,7 +61,8 @@ class Plan extends Component {
 				
 				<div className="text-white mb-5">
 					<p> These are a list of planned and potential characters that will be added into the game. </p>
-					<p> There is no planned order, so they will come when they come </p>
+					<p> There is no planned order, so they will come when they come. </p>
+					<p> Note: Power Levels are subject to change including characters that have already been released. </p>
 				</div>
 
 				<p className="text-white"> Race Legend: </p>
@@ -72,65 +75,82 @@ class Plan extends Component {
 					<li className="plan-android"> Android/Cyborg </li>
 					<li className="plan-bio-android" style={{maxWidth: "120px"}}> Bio-Android Cell </li>
 					<li className="plan-buu"> Majin Buu </li>
-					<li className="plan-saiyan plan-what-if"> What If </li>
+					{/* <li className="plan-saiyan plan-what-if"> What If </li> */}
 				</ul>
 
 				<br></br>
 
-				<table className="plan-table text-white font-semibold">
-					<thead>
-						<tr>
-							<th>Saiyan</th><th>Namek</th><th>Android</th><th>Buu</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<table className="plan-saga-table">
-									<thead><tr><th>Character</th><th>PL</th></tr></thead>
-									<tbody>{this.renderTableData(characters.saiyan)}</tbody>
-								</table>
-							</td>
-							<td>
-								<table className="plan-saga-table">
-									<thead><tr><th>Character</th><th>PL</th></tr></thead>
-									<tbody>{this.renderTableData(characters.namek)}</tbody>
-								</table>
-							</td>
-							<td>
-								<table className="plan-saga-table">
-									<thead><tr><th>Character</th><th>PL</th></tr></thead>
-									<tbody>{this.renderTableData(characters.android)}</tbody>
-								</table>
-							</td>
-							<td>
-								<table className="plan-saga-table">
-									<thead><tr><th>Character</th><th>PL</th></tr></thead>
-									<tbody>{this.renderTableData(characters.buu)}</tbody>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<div className="responsive-table">
+					<table className="plan-table text-white font-semibold">
+						<thead>
+							<tr>
+								<th>Saiyan</th><th>Namek</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<table className="plan-saga-table">
+										<thead><tr><th>Character</th><th>PL</th><th>Complete</th><th>Remaster</th></tr></thead>
+										<tbody>{this.renderTableData(characters.saiyan)}</tbody>
+									</table>
+								</td>
+								<td>
+									<table className="plan-saga-table">
+										<thead><tr><th>Character</th><th>PL</th><th>Complete</th><th>Remaster</th></tr></thead>
+										<tbody>{this.renderTableData(characters.namek)}</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
-				<table className="plan-table text-white font-bold">
-					<thead>
-						<tr>
-							<th>Movies</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<table className="plan-saga-table">
-									<thead><tr><th>Character</th><th>PL</th></tr></thead>
-									<tbody>{this.renderTableData(characters.movies)}</tbody>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<div className="responsive-table">
+					<table className="plan-table text-white font-semibold">
+						<thead>
+							<tr>
+								<th>Android</th><th>Buu</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<table className="plan-saga-table">
+										<thead><tr><th>Character</th><th>PL</th><th>Complete</th><th>Remaster</th></tr></thead>
+										<tbody>{this.renderTableData(characters.android)}</tbody>
+									</table>
+								</td>
+								<td>
+									<table className="plan-saga-table">
+										<thead><tr><th>Character</th><th>PL</th><th>Complete</th><th>Remaster</th></tr></thead>
+										<tbody>{this.renderTableData(characters.buu)}</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
+				<div className="responsive-table">
+					<table className="plan-table text-white font-bold">
+						<thead>
+							<tr>
+								<th>Movies</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<table className="plan-saga-table">
+										<thead><tr><th>Character</th><th>PL</th><th>Complete</th><th>Remaster</th></tr></thead>
+										<tbody>{this.renderTableData(characters.movies)}</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
 				</div>
 
