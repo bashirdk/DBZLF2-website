@@ -1232,7 +1232,7 @@
       "name": "Piccolo (Weighted)",
       "saga": "Android",
       "race": ["Namek"],
-      "moveset_video": "MB8yuyEMqUk",
+      "moveset_video": "rq8H26Ol0Fo",
       "type": { "hero": true, "villain": false, "other": false },
       "stats": {
         "power_level": 11040,
@@ -1284,7 +1284,7 @@
       "name": "Piccolo (Agile)",
       "saga": "Android",
       "race": ["Namek"],
-      "moveset_video": "MB8yuyEMqUk",
+      "moveset_video": "rq8H26Ol0Fo",
       "type": { "hero": true, "villain": false, "other": false },
       "stats": {
         "power_level": 12180,
@@ -2066,6 +2066,7 @@
     "name": "Piccolo (Weighted)",
     "saga": "Buu",
     "race": ["Namek"],
+    "moveset_video": "AhvoUYO7Oio",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 14590,
@@ -2117,6 +2118,7 @@
     "name": "Piccolo (Agile)",
     "saga": "Buu",
     "race": ["Namek"],
+    "moveset_video": "AhvoUYO7Oio",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 16100,

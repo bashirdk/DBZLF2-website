@@ -369,9 +369,9 @@ class TournamentCalculator extends Component {
 				</Helmet>
 
 				<div className="text-white text-center">
-          <p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
-          <AdComponent />
-          <p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<AdComponent />
+					<p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
 					<br></br>
 				</div>
 
@@ -449,6 +449,14 @@ class TournamentCalculator extends Component {
 					</div>
 				</section>
 				</div>
+
+				<div className="text-white text-center">
+					<p>Below is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<AdComponent />
+					<p>Above is an ad. Please whitelist our website on your adblocker to help support us.</p>
+					<br></br>
+				</div>
+
 			</div>
 		);
 	}

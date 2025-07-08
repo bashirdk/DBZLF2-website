@@ -72,7 +72,9 @@ class Tools extends Component {
 
 						<section className="inline-block w-full sm:w-2/3 relative">
 							<div className="inline-block border-2 lf2-border-blue lf2-bg-blue rounded p-5">
-								This tool is designed to help you build your teams for the Tournament.
+								This tool is designed to help you build your teams for the Standard Edition Tournaments.
+								It comes fully equipped with a DP calculator, a team builder, and a team viewer.
+								There is a copy to clipboard button for the team setup to allow you to easily send the team to an admin.
 							</div>
 
 							<div className="text-center">
