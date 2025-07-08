@@ -21,11 +21,17 @@ class TournamentCalculator extends Component {
 	static SEMI_FINALS_MAX_CHARACTERS 	 = 5;
 	static FINALS_MAX_CHARACTERS 				 = 5;
 
+	static ROUNDS = [
+		{ name: 'Round One', 			maxChars: TournamentCalculator.ROUND_ONE_MAX_CHARACTERS, 			maxDP: TournamentCalculator.ROUND_ONE_MAX_DP },
+		{ name: 'Quarter-Finals', maxChars: TournamentCalculator.QUARTER_FINALS_MAX_CHARACTERS, maxDP: TournamentCalculator.QUARTER_FINALS_MAX_DP },
+		{ name: 'Semi-Finals', 		maxChars: TournamentCalculator.SEMI_FINALS_MAX_CHARACTERS, 		maxDP: TournamentCalculator.SEMI_FINALS_MAX_DP },
+		{ name: 'Finals', 				maxChars: TournamentCalculator.FINALS_MAX_CHARACTERS, 				maxDP: TournamentCalculator.FINALS_MAX_DP }
+	];
+
 	constructor(props) {
 		super(props);
 		
 		const characters = Characters.filter((character) => character.stats.dp);
-
 
 		this.state = {
 			characters,
@@ -33,7 +39,7 @@ class TournamentCalculator extends Component {
 			quarterFinalsSelected: [],
 			semiFinalsSelected: [],
 			finalsSelected: [],
-			currentRoundSelected: '', // Track which round is currently selected
+			currentRoundSelected: '',
 			currentRoundDPTotal: 0,
 			currentRoundDPRemaining: 0,
 		};
@@ -91,13 +97,17 @@ class TournamentCalculator extends Component {
 	// Method to get the selected characters for the current round
 	getSelectedCharactersForRound(round) {
 		switch(round) {
-			case 'Round One':
+			// Round One
+			case TournamentCalculator.ROUNDS[0].name:
 				return this.state.roundOneSelected;
-			case 'Quarter-Finals':
+			// Quarter-Finals
+			case TournamentCalculator.ROUNDS[1].name:
 				return this.state.quarterFinalsSelected;
-			case 'Semi-Finals':
+			// Semi-Finals
+			case TournamentCalculator.ROUNDS[2].name:
 				return this.state.semiFinalsSelected;
-			case 'Finals':
+			// Finals
+			case TournamentCalculator.ROUNDS[3].name:
 				return this.state.finalsSelected;
 			default:
 				return [];
@@ -105,35 +115,15 @@ class TournamentCalculator extends Component {
 	}
 
 	// Method to get max characters for the current round
-	getMaxCharactersForRound(round) {
-		switch(round) {
-			case 'Round One':
-				return TournamentCalculator.ROUND_ONE_MAX_CHARACTERS;
-			case 'Quarter-Finals':
-				return TournamentCalculator.QUARTER_FINALS_MAX_CHARACTERS;
-			case 'Semi-Finals':
-				return TournamentCalculator.SEMI_FINALS_MAX_CHARACTERS;
-			case 'Finals':
-				return TournamentCalculator.FINALS_MAX_CHARACTERS;
-			default:
-				return 0;
-		}
+	getMaxCharactersForRound(currentRound) {
+		const foundRound = TournamentCalculator.ROUNDS.find((round) => round.name === currentRound);
+		return foundRound ? foundRound.maxChars : 0;
 	}
 
-	// Method to get max DP for the current round
-	getMaxDPForRound(round) {
-		switch(round) {
-			case 'Round One':
-				return TournamentCalculator.ROUND_ONE_MAX_DP;
-			case 'Quarter-Finals':
-				return TournamentCalculator.QUARTER_FINALS_MAX_DP;
-			case 'Semi-Finals':
-				return TournamentCalculator.SEMI_FINALS_MAX_DP;
-			case 'Finals':
-				return TournamentCalculator.FINALS_MAX_DP;
-			default:
-				return 0;
-		}
+		// Method to get max characters for the current round
+	getMaxDPForRound(currentRound) {
+		const foundRound = TournamentCalculator.ROUNDS.find((round) => round.name === currentRound);
+		return foundRound ? foundRound.maxDP : 0;
 	}
 
 	setCharacter(character) {
@@ -173,16 +163,20 @@ class TournamentCalculator extends Component {
 	// Method to update selected characters for a specific round
 	updateSelectedCharactersForRound(round, characters) {
 		switch(round) {
-			case 'Round One':
+			// Round One
+			case TournamentCalculator.ROUNDS[0].name:
 				this.setState({ roundOneSelected: characters });
 				break;
-			case 'Quarter-Finals':
+			// Quarter-Finals
+			case TournamentCalculator.ROUNDS[1].name:
 				this.setState({ quarterFinalsSelected: characters });
 				break;
-			case 'Semi-Finals':
+			// Semi-Finals
+			case TournamentCalculator.ROUNDS[2].name:
 				this.setState({ semiFinalsSelected: characters });
 				break;
-			case 'Finals':
+			// Finals
+			case TournamentCalculator.ROUNDS[3].name:
 				this.setState({ finalsSelected: characters });
 				break;
 			default:
@@ -213,6 +207,7 @@ class TournamentCalculator extends Component {
 
 		const currentRoundSelected = this.getSelectedCharactersForRound(this.state.currentRoundSelected);
 		const currentDP = this.getTotalDP(currentRoundSelected);
+		// const maxDP = this.getMaxDPForRound(this.state.currentRoundSelected);
 		const maxDP = this.getMaxDPForRound(this.state.currentRoundSelected);
 		const characterDP = character.stats.dp;
 
@@ -329,14 +324,7 @@ class TournamentCalculator extends Component {
 
 	// Method to check if all rounds have their character slots filled
 	areAllRoundsComplete() {
-		const rounds = [
-			{ name: 'Round One', maxChars: TournamentCalculator.ROUND_ONE_MAX_CHARACTERS },
-			{ name: 'Quarter-Finals', maxChars: TournamentCalculator.QUARTER_FINALS_MAX_CHARACTERS },
-			{ name: 'Semi-Finals', maxChars: TournamentCalculator.SEMI_FINALS_MAX_CHARACTERS },
-			{ name: 'Finals', maxChars: TournamentCalculator.FINALS_MAX_CHARACTERS }
-		];
-
-		return rounds.every(round => {
+		return TournamentCalculator.ROUNDS.every(round => {
 			const selectedCharacters = this.getSelectedCharactersForRound(round.name);
 			return selectedCharacters.length === round.maxChars;
 		});
@@ -356,14 +344,6 @@ class TournamentCalculator extends Component {
 					/>
 			</div>
 		));
-
-		const rounds = [
-			{ name: 'Round One', maxChars: TournamentCalculator.ROUND_ONE_MAX_CHARACTERS, maxDP: TournamentCalculator.ROUND_ONE_MAX_DP },
-			{ name: 'Quarter-Finals', maxChars: TournamentCalculator.QUARTER_FINALS_MAX_CHARACTERS, maxDP: TournamentCalculator.QUARTER_FINALS_MAX_DP },
-			{ name: 'Semi-Finals', maxChars: TournamentCalculator.SEMI_FINALS_MAX_CHARACTERS, maxDP: TournamentCalculator.SEMI_FINALS_MAX_DP },
-			{ name: 'Finals', maxChars: TournamentCalculator.FINALS_MAX_CHARACTERS, maxDP: TournamentCalculator.FINALS_MAX_DP }
-		];
-
 		
 		return (
 			<div>
@@ -391,7 +371,7 @@ class TournamentCalculator extends Component {
 						<div className="text-center mb-6">
 							<h3 className="text-xl mb-4">Select a Round to Begin</h3>
 							<div className="flex justify-center gap-4">
-								{rounds.map((round) => (
+								{TournamentCalculator.ROUNDS.map((round) => (
 									<button
 										key={round.name}
 										onClick={() => this.selectRound(round.name)}
@@ -409,13 +389,13 @@ class TournamentCalculator extends Component {
 
 						{/* Character Selection */}
 						<div className="tournament-grid text-center my-5">
-							<h4>Select your team for {this.state.currentRoundSelected || 'Round'} </h4>
+							<h3>Select your team for {this.state.currentRoundSelected || 'Round'} </h3>
 							{characterGrid}
 						</div>
 
 						{/* Round Display */}
 						<div id="rounds-display">
-							{rounds.map((round) => {
+							{TournamentCalculator.ROUNDS.map((round) => {
 								const maxChars = this.getMaxCharactersForRound(round.name);
 								const charWidth = maxChars * 82; // 80px character + 2px gap
 								return (
@@ -436,11 +416,7 @@ class TournamentCalculator extends Component {
 
 						{/* Copy to Clipboard Button */}
 						<div className="text-center mt-6">
-							<button
-								onClick={this.copyRoundsToClipboard}
-								className="copy-clipboard-button"
-								disabled={!this.areAllRoundsComplete()}
-							>
+							<button	onClick={this.copyRoundsToClipboard} className="copy-clipboard-button" disabled={!this.areAllRoundsComplete()}>
 								📋 Copy Tournament Setup to Clipboard
 							</button>
 						</div>

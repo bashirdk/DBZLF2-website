@@ -63,7 +63,7 @@ class Tools extends Component {
 						<section className="sm:pr-5 inline-block align-top w-full sm:w-1/3">
 							<div className="border-2 lf2-border-blue lf2-bg-blue rounded">
 								<img 
-									src={require(`../../images/tools/rect32.png`)}
+									src={require(`../../images/tools/dp-calculator.png`)}
 									alt={`battle mode balancer tool`}
 									className=""
 								/>
