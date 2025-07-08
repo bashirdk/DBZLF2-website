@@ -330,6 +330,21 @@ class TournamentCalculator extends Component {
 		});
 	}
 
+	// Helper function to get DP usage color and message
+	getDPUsageStatus(dpUsed, maxDP) {
+		if (!maxDP || maxDP === 0) return { color: 'red', message: 'No DP limit set.' };
+		const usage = (dpUsed / maxDP) * 100;
+		if (usage >= 90) {
+			return { color: 'green', message: '' };
+		} else if (usage >= 80) {
+			return { color: 'yellow', message: 'It\'s okay, but you should probably use some stronger characters.' };
+		} else if (usage >= 70) {
+			return { color: 'orange', message: 'You should reconsider your character roster.' };
+		} else {
+			return { color: 'red', message: 'You should definitely pick a stronger team.' };
+		}
+	}
+
 	render() {
 		const characters = this.state.characters;
 
@@ -398,7 +413,13 @@ class TournamentCalculator extends Component {
 							{TournamentCalculator.ROUNDS.map((round) => {
 								const maxChars = this.getMaxCharactersForRound(round.name);
 								const charWidth = maxChars * 82; // 80px character + 2px gap
+								const selectedChars = this.getSelectedCharactersForRound(round.name);
+								const dpUsed = this.getTotalDP(selectedChars);
+								const maxDP = round.maxDP;
+								const { color, message } = this.getDPUsageStatus(dpUsed, maxDP);
+								const allSelected = selectedChars.length === maxChars;
 								return (
+									<>
 									<div key={round.name} className="round-display">
 										<div className="round-info">
 											<div>{round.name}:</div>
@@ -407,9 +428,13 @@ class TournamentCalculator extends Component {
 											{this.renderCharacters(maxChars, round.name)}
 										</div>
 										<div className="round-info">
-											<div>DP: {this.getTotalDP(this.getSelectedCharactersForRound(round.name))} / {round.maxDP}</div>
+											<div>
+												DP: <span style={{ color }}>{dpUsed} / {maxDP}</span>
+											</div>
 										</div>
 									</div>
+									{	<div className="block" style={{ color, fontSize: '1.25rem', fontWeight: 600, textAlign: 'center', marginBottom: '1rem' }}>{allSelected ? message : ''}</div>}
+									</>
 								);
 							})}
 						</div>

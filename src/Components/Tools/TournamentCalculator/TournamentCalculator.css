@@ -44,12 +44,13 @@
 
 .dp-value {
   position: absolute;
-  bottom: 5px;
-  left: 0;
-  background: rgba(0,0,0,0.5);
-  padding: 5px 5px;
+  top: 0;
+  left: 5px;
+  /* background: rgba(0,0,0,0.5); */
   font-weight: 900;
   font-size: 20px;
+  -webkit-text-stroke: 4px black;
+  paint-order: stroke fill;
 }
 
 .tournament-char {
@@ -72,7 +73,6 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 1rem;
   justify-content: center;
 }
 
