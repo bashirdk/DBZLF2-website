@@ -112,3 +112,44 @@
 .tournament-round-button-selected {
   background: lightgreen;
 }
+
+.copy-clipboard-button {
+  background: #4a90e2;
+  color: white;
+  border: 2px solid #357abd;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.copy-clipboard-button:hover {
+  background: #357abd;
+  border-color: #2d5a8a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.copy-clipboard-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.copy-clipboard-button:disabled {
+  background: #666;
+  border-color: #555;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.copy-clipboard-button:disabled:hover {
+  background: #666;
+  border-color: #555;
+  transform: none;
+  box-shadow: none;
+}

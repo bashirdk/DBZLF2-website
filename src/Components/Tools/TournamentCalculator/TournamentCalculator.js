@@ -2,7 +2,7 @@ import "./TournamentCalculator.css";
 
 import React, { Component } from "react";
 import Helmet from "react-helmet";
-
+import html2canvas from "html2canvas";
 
 import Characters from "../../../data/characters.json";
 // import Accordion from "./Accordion/Accordion"
@@ -244,6 +244,87 @@ class TournamentCalculator extends Component {
 		return false;
 	}
 
+	// Method to copy rounds display to clipboard as image
+	copyRoundsToClipboard = async () => {
+		try {
+			const roundsDisplay = document.getElementById('rounds-display');
+			if (!roundsDisplay) {
+				console.error('Rounds display element not found');
+				return;
+			}
+
+			// Capture the rounds display as canvas
+			const canvas = await html2canvas(roundsDisplay, {
+				backgroundColor: '#122565', // Dark background to match the theme
+				scale: 2,
+				useCORS: true,
+				allowTaint: true,
+				width: roundsDisplay.offsetWidth,
+				height: roundsDisplay.offsetHeight,
+				imageTimeout: 0, // Prevent timeout issues with images
+				removeContainer: false, // Keep original styling
+				foreignObjectRendering: false, // Better compatibility
+				ignoreElements: (element) => {
+					// Don't ignore any elements, keep all styling
+					return false;
+				}
+			});
+
+			// Set pixelated rendering on the canvas context
+			const ctx = canvas.getContext('2d');
+			ctx.imageSmoothingEnabled = false;
+			ctx.mozImageSmoothingEnabled = false;
+			ctx.webkitImageSmoothingEnabled = false;
+			ctx.msImageSmoothingEnabled = false;
+
+			// Convert canvas to blob
+			canvas.toBlob(async (blob) => {
+				try {
+					// Try to use modern Clipboard API
+					if (navigator.clipboard) {
+						try {
+							// eslint-disable-next-line no-undef
+							const clipboardItem = new ClipboardItem({
+								'image/png': blob
+							});
+							await navigator.clipboard.write([clipboardItem]);
+							alert('Tournament setup copied to clipboard!');
+							return;
+						} catch (clipboardError) {
+							console.log('ClipboardItem not supported, falling back to download');
+						}
+					}
+					
+					// Fallback for older browsers - create download link
+					const url = URL.createObjectURL(blob);
+					const link = document.createElement('a');
+					link.href = url;
+					link.download = 'tournament-setup.png';
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+					URL.revokeObjectURL(url);
+					alert('Tournament setup saved as image! (Clipboard not supported in this browser)');
+				} catch (err) {
+					console.error('Failed to copy to clipboard:', err);
+					// Fallback - save as file
+					const url = URL.createObjectURL(blob);
+					const link = document.createElement('a');
+					link.href = url;
+					link.download = 'tournament-setup.png';
+					document.body.appendChild(link);
+					link.click();
+					document.body.removeChild(link);
+					URL.revokeObjectURL(url);
+					alert('Tournament setup saved as image!');
+				}
+			}, 'image/png');
+		} catch (err) {
+			console.error('Failed to capture image:', err);
+			alert('Failed to capture image. Please try again.');
+		}
+	}
+
 	setCurrentRoundDP(round) {
 		switch(round) {
 			case 'Round One':
@@ -255,6 +336,21 @@ class TournamentCalculator extends Component {
 			case 'Finals':
 				return this.getTotalDP(this.state.finalsSelected);
 		}
+	}
+
+	// Method to check if all rounds have their character slots filled
+	areAllRoundsComplete() {
+		const rounds = [
+			{ name: 'Round One', maxChars: TournamentCalculator.ROUND_ONE_MAX_CHARACTERS },
+			{ name: 'Quarter-Finals', maxChars: TournamentCalculator.QUARTER_FINALS_MAX_CHARACTERS },
+			{ name: 'Semi-Finals', maxChars: TournamentCalculator.SEMI_FINALS_MAX_CHARACTERS },
+			{ name: 'Finals', maxChars: TournamentCalculator.FINALS_MAX_CHARACTERS }
+		];
+
+		return rounds.every(round => {
+			const selectedCharacters = this.getSelectedCharactersForRound(round.name);
+			return selectedCharacters.length === round.maxChars;
+		});
 	}
 
 	render() {
@@ -330,23 +426,36 @@ class TournamentCalculator extends Component {
 						</div>
 
 						{/* Round Display */}
-						{rounds.map((round) => {
-							const maxChars = this.getMaxCharactersForRound(round.name);
-							const charWidth = maxChars * 82; // 80px character + 2px gap
-							return (
-								<div key={round.name} className="round-display">
-									<div className="round-info text-right">
-										<div>{round.name}:</div>
+						<div id="rounds-display">
+							{rounds.map((round) => {
+								const maxChars = this.getMaxCharactersForRound(round.name);
+								const charWidth = maxChars * 82; // 80px character + 2px gap
+								return (
+									<div key={round.name} className="round-display">
+										<div className="round-info">
+											<div>{round.name}:</div>
+										</div>
+										<div className="round-characters" style={{ width: `${charWidth}px` }}>
+											{this.renderCharacters(maxChars, round.name)}
+										</div>
+										<div className="round-info">
+											<div>DP: {this.getTotalDP(this.getSelectedCharactersForRound(round.name))} / {round.maxDP}</div>
+										</div>
 									</div>
-									<div className="round-characters" style={{ width: `${charWidth}px` }}>
-										{this.renderCharacters(maxChars, round.name)}
-									</div>
-									<div className="round-info">
-										<div>DP: {this.getTotalDP(this.getSelectedCharactersForRound(round.name))} / {round.maxDP}</div>
-									</div>
-								</div>
-							);
-						})}
+								);
+							})}
+						</div>
+
+						{/* Copy to Clipboard Button */}
+						<div className="text-center mt-6">
+							<button
+								onClick={this.copyRoundsToClipboard}
+								className="copy-clipboard-button"
+								disabled={!this.areAllRoundsComplete()}
+							>
+								📋 Copy Tournament Setup to Clipboard
+							</button>
+						</div>
 
 					</div>
 				</section>
