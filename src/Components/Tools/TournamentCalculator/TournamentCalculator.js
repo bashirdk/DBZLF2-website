@@ -330,12 +330,23 @@ class TournamentCalculator extends Component {
 						</div>
 
 						{/* Round Display */}
-						{rounds.map((round) => (
-							<div key={round.name} className="mb-4">
-								{this.renderCharacters(this.getMaxCharactersForRound(round.name), round.name)}
-								{round.name}: ( {this.getTotalDP(this.getSelectedCharactersForRound(round.name))} / {round.maxDP} )
-							</div>
-						))}
+						{rounds.map((round) => {
+							const maxChars = this.getMaxCharactersForRound(round.name);
+							const charWidth = maxChars * 82; // 80px character + 2px gap
+							return (
+								<div key={round.name} className="round-display">
+									<div className="round-info text-right">
+										<div>{round.name}:</div>
+									</div>
+									<div className="round-characters" style={{ width: `${charWidth}px` }}>
+										{this.renderCharacters(maxChars, round.name)}
+									</div>
+									<div className="round-info">
+										<div>DP: {this.getTotalDP(this.getSelectedCharactersForRound(round.name))} / {round.maxDP}</div>
+									</div>
+								</div>
+							);
+						})}
 
 					</div>
 				</section>
