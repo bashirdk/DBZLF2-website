@@ -185,6 +185,8 @@ class TournamentCalculator extends Component {
 			case 'Finals':
 				this.setState({ finalsSelected: characters });
 				break;
+			default:
+				break;
 		}
 	}
 
@@ -355,7 +357,6 @@ class TournamentCalculator extends Component {
 
 	render() {
 		const characters = this.state.characters;
-		const isRoundSelected = this.state.currentRoundSelected !== '';
 
 		const characterGrid = characters.map((character) => (
 			<div className="inline-block relative">
