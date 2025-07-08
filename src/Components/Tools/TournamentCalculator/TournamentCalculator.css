@@ -16,6 +16,28 @@
 .tournament-grid img:hover{
   border: 2px solid white;
 }
+
+/* Pulsating glow for selected characters */
+@keyframes pulsating-glow {
+  0% {
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    border: 2px solid white;
+  }
+  50% {
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    border: 2px solid white;
+  }
+  100% {
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    border: 2px solid white;
+  }
+}
+
+.tournament-grid img.selected {
+  animation: pulsating-glow 1s ease-in-out infinite;
+  border: 2px solid white;
+}
+
 .tournament-grid{
   margin: 1.25rem -1.5rem 1.25rem -1.5rem;
 }
@@ -34,6 +56,7 @@
   width: 80px;
   background: black;
   height: 90px;
+  margin: 1px;
 }
 .tournament-char:before {
   content: '?';

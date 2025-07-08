@@ -203,6 +203,47 @@ class TournamentCalculator extends Component {
 		);
 	}
 
+	// Helper method to check if adding a character would exceed max DP
+	wouldExceedMaxDP(character) {
+		if (!this.state.currentRoundSelected) {
+			return false; // No round selected, so no DP limit
+		}
+
+		const currentRoundSelected = this.getSelectedCharactersForRound(this.state.currentRoundSelected);
+		const currentDP = this.getTotalDP(currentRoundSelected);
+		const maxDP = this.getMaxDPForRound(this.state.currentRoundSelected);
+		const characterDP = character.stats.dp;
+
+		return (currentDP + characterDP) > maxDP;
+	}
+
+	// Helper method to check if character should be disabled
+	isCharacterDisabled(character) {
+		// Disable if no round is selected
+		if (!this.state.currentRoundSelected) {
+			return true;
+		}
+
+		// Disable if character is already selected
+		if (this.isCharacterSelected(character)) {
+			return false; // Allow deselection
+		}
+
+		// Disable if adding this character would exceed max DP
+		if (this.wouldExceedMaxDP(character)) {
+			return true;
+		}
+
+		// Disable if max characters reached
+		const currentRoundSelected = this.getSelectedCharactersForRound(this.state.currentRoundSelected);
+		const maxCharacters = this.getMaxCharactersForRound(this.state.currentRoundSelected);
+		if (currentRoundSelected.length >= maxCharacters) {
+			return true;
+		}
+
+		return false;
+	}
+
 	setCurrentRoundDP(round) {
 		switch(round) {
 			case 'Round One':
@@ -226,7 +267,7 @@ class TournamentCalculator extends Component {
 				<img 
 						src={require(`../../../images/face/${character.saga.toLowerCase()}/${character.url_id.toLowerCase()}.bmp`)}
 						alt={`face pic of ${character.name}`}
-						className={`tournament-grid ${this.isCharacterSelected(character) ? 'disabled' : ''} ${!isRoundSelected ? 'disabled' : ''}`}
+						className={`tournament-grid ${this.isCharacterDisabled(character) ? 'disabled' : ''} ${this.isCharacterSelected(character) ? 'selected' : ''}`}
 						onClick={ () => this.setCharacter(character)}
 					/>
 			</div>
