@@ -16,7 +16,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 7
     },
     "moves": {
       "basic": [
@@ -110,7 +111,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 7
     },
     "moves": {
       "basic": [
@@ -200,7 +202,8 @@
       "defense": 1.8,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 10
     },
     "moves": {
       "basic": [
@@ -295,7 +298,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 8,
-      "ki_charge": 0
+      "ki_charge": 0,
+      "dp": 4
     },
     "moves": {
       "basic": [
@@ -338,7 +342,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 5,
+      "dp": 6
     },
     "moves": {
       "basic": [
@@ -385,7 +390,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 5,
+      "dp": 6
     },
     "moves": {
       "basic": [
@@ -432,7 +438,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 11
     },
     "moves": {
       "basic": [
@@ -479,7 +486,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 19
     },
     "moves": {
       "basic": [
@@ -591,7 +599,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 19
     },
     "moves": {
       "basic": [
@@ -642,7 +651,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 27
     },
     "moves": {
       "basic": [
@@ -751,7 +761,8 @@
       "ki": 125,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 38
     },
     "moves": {
       "basic": [
@@ -898,7 +909,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 20
     },
     "moves": {
       "basic": [
@@ -992,7 +1004,8 @@
       "defense": 1.21,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 0
+      "ki_charge": 0,
+      "dp": 4
     },
     "moves": {
       "basic": [],
@@ -1029,7 +1042,8 @@
       "defense": 1.21,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 0
+      "ki_charge": 0,
+      "dp": 5
     },
     "moves": {
       "basic": [{
@@ -1083,7 +1097,8 @@
       "defense": 1.33,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 5
+      "ki_charge": 5,
+      "dp": 7
     },
     "moves": {
       "basic": [{
@@ -1143,7 +1158,8 @@
         "defense": 3.68,
         "hp_regen": 2,
         "ki_regen": 4,
-        "ki_charge": 7
+        "ki_charge": 7,
+        "dp": 32
       },
       "moves": {
         "basic": [
@@ -1216,7 +1232,7 @@
       "name": "Piccolo (Weighted)",
       "saga": "Android",
       "race": ["Namek"],
-      "moveset_video": "MB8yuyEMqUk",
+      "moveset_video": "rq8H26Ol0Fo",
       "type": { "hero": true, "villain": false, "other": false },
       "stats": {
         "power_level": 11040,
@@ -1226,7 +1242,8 @@
         "ki": 100,
         "hp_regen": 4,
         "ki_regen": 6,
-        "ki_charge": 7
+        "ki_charge": 7,
+        "dp": 57
       },
       "moves": {
         "basic": [
@@ -1267,7 +1284,7 @@
       "name": "Piccolo (Agile)",
       "saga": "Android",
       "race": ["Namek"],
-      "moveset_video": "MB8yuyEMqUk",
+      "moveset_video": "rq8H26Ol0Fo",
       "type": { "hero": true, "villain": false, "other": false },
       "stats": {
         "power_level": 12180,
@@ -1277,7 +1294,8 @@
         "ki": 100,
         "hp_regen": 4,
         "ki_regen": 6,
-        "ki_charge": 7
+        "ki_charge": 7,
+        "dp": 57
       },
       "moves": {
         "basic": [
@@ -1328,7 +1346,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 28
     },
     "moves": {
       "basic": [
@@ -1394,7 +1413,8 @@
       "ki": 125,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 44
     },
     "moves": {
       "basic": [
@@ -1494,7 +1514,8 @@
       "ki": 150,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 54
     },
     "moves": {
       "basic": [
@@ -1590,7 +1611,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 27
     },
     "moves": {
       "basic": [
@@ -1652,7 +1674,8 @@
       "ki": 125,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 50
     },
     "moves": {
       "basic": [
@@ -1756,7 +1779,8 @@
       "ki": 125,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 58
     },
     "moves": {
       "basic": [
@@ -1861,7 +1885,8 @@
       "ki": 175,
       "hp_regen": 2,
       "ki_regen": 2,
-      "ki_charge": 9
+      "ki_charge": 9,
+      "dp": 72
     },
     "moves": {
       "basic": [
@@ -1949,7 +1974,8 @@
       "defense": 6.2,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 140
     },
     "moves": {
       "basic": [
@@ -2040,6 +2066,7 @@
     "name": "Piccolo (Weighted)",
     "saga": "Buu",
     "race": ["Namek"],
+    "moveset_video": "AhvoUYO7Oio",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 14590,
@@ -2049,7 +2076,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 75
     },
     "moves": {
       "basic": [
@@ -2090,6 +2118,7 @@
     "name": "Piccolo (Agile)",
     "saga": "Buu",
     "race": ["Namek"],
+    "moveset_video": "AhvoUYO7Oio",
     "type": { "hero": true, "villain": false, "other": false },
     "stats": {
       "power_level": 16100,
@@ -2099,7 +2128,8 @@
       "ki": 100,
       "hp_regen": 4,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 75
     },
     "moves": {
       "basic": [
@@ -2150,7 +2180,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 37
     },
     "moves": {
       "basic": [
@@ -2234,7 +2265,8 @@
       "ki": 105,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 66
     },
     "moves": {
       "basic": [
@@ -2313,7 +2345,8 @@
       "ki": 150,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 118
     },
     "moves": {
       "basic": [
@@ -2384,7 +2417,8 @@
       "ki": 140,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 140
     },
     "moves": {
       "basic": [
@@ -2480,7 +2514,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 38
     },
     "moves": {
       "basic": [
@@ -2562,7 +2597,8 @@
       "ki": 105,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 69
     },
     "moves": {
       "basic": [
@@ -2675,7 +2711,8 @@
       "ki": 150,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 130
     },
     "moves": {
       "basic": [
@@ -2781,7 +2818,8 @@
       "ki": 200,
       "hp_regen": 2,
       "ki_regen": 2,
-      "ki_charge": 10
+      "ki_charge": 10,
+      "dp": 330
     },
     "moves": {
       "basic": [
@@ -2889,7 +2927,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 30
     },
     "moves": {
       "basic": [
@@ -2955,7 +2994,8 @@
       "ki": 105,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 58
     },
     "moves": {
       "basic": [
@@ -3037,7 +3077,8 @@
       "ki": 150,
       "hp_regen": 2,
       "ki_regen": 4,
-      "ki_charge": 6
+      "ki_charge": 6,
+      "dp": 95
     },
     "moves": {
       "basic": [
@@ -3112,7 +3153,8 @@
       "ki": 100,
       "hp_regen": 2,
       "ki_regen": 6,
-      "ki_charge": 7
+      "ki_charge": 7,
+      "dp": 700
     },
     "moves": {
       "basic": [
@@ -3498,7 +3540,8 @@
       "defense": 6.4,
       "hp_regen": 10,
       "ki_regen": 8,
-      "ki_charge": 4
+      "ki_charge": 4,
+      "dp": 450
     },
     "moves": {
       "basic": [
