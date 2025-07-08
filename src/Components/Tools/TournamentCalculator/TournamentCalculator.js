@@ -327,19 +327,6 @@ class TournamentCalculator extends Component {
 		}
 	}
 
-	setCurrentRoundDP(round) {
-		switch(round) {
-			case 'Round One':
-				return this.getTotalDP(this.state.roundOneSelected);
-			case 'Quarter-Finals':
-				return this.getTotalDP(this.state.quarterFinalsSelected);
-			case 'Semi-Finals': 
-				return this.getTotalDP(this.state.semiFinalsSelected);
-			case 'Finals':
-				return this.getTotalDP(this.state.finalsSelected);
-		}
-	}
-
 	// Method to check if all rounds have their character slots filled
 	areAllRoundsComplete() {
 		const rounds = [
