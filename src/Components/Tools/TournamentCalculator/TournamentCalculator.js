@@ -11,9 +11,9 @@ import AdComponent from "../../AdComponent/AdComponent";
 
 class TournamentCalculator extends Component {
 
-	static ROUND_ONE_MAX_DP 		 = 100;
-	static QUARTER_FINALS_MAX_DP = 200;
-	static SEMI_FINALS_MAX_DP		 = 500;
+	static ROUND_ONE_MAX_DP 		 = 50;
+	static QUARTER_FINALS_MAX_DP = 100;
+	static SEMI_FINALS_MAX_DP		 = 300;
 	static FINALS_MAX_DP				 = 1200;
 
 	static ROUND_ONE_MAX_CHARACTERS 		 = 3;
@@ -232,10 +232,40 @@ class TournamentCalculator extends Component {
 		}
 
 		// Disable if max characters reached
-		const currentRoundSelected = this.getSelectedCharactersForRound(this.state.currentRoundSelected);
-		const maxCharacters = this.getMaxCharactersForRound(this.state.currentRoundSelected);
-		if (currentRoundSelected.length >= maxCharacters) {
+		const currentRound = this.state.currentRoundSelected;
+		const selectedChars = this.getSelectedCharactersForRound(currentRound);
+		const maxChars = this.getMaxCharactersForRound(currentRound);
+		const maxDP = this.getMaxDPForRound(currentRound);
+		if (selectedChars.length >= maxChars) {
 			return true;
+		}
+
+		// New: Check if picking this character would make it impossible to fill the team
+		if (selectedChars.length < maxChars - 1) {
+			// How many slots will be left after picking this character?
+			const slotsLeft = maxChars - (selectedChars.length + 1);
+
+			// Get all characters not already selected (by base name, saga, and DP)
+			const alreadySelectedIds = selectedChars.map(
+				c => `${this.getBaseCharacterName(c)}|${c.saga}|${c.stats.dp}`
+			);
+			alreadySelectedIds.push(`${this.getBaseCharacterName(character)}|${character.saga}|${character.stats.dp}`);
+
+			const availableChars = this.state.characters.filter(
+				c => !alreadySelectedIds.includes(`${this.getBaseCharacterName(c)}|${c.saga}|${c.stats.dp}`)
+			);
+
+			// Get the lowest DP costs for the number of slots left
+			const sortedDPs = availableChars.map(c => c.stats.dp).sort((a, b) => a - b);
+			const minDPNeeded = sortedDPs.slice(0, slotsLeft).reduce((a, b) => a + b, 0);
+
+			// Calculate DP used if this character is picked
+			const dpUsed = this.getTotalDP(selectedChars) + character.stats.dp;
+
+			// If picking this character + the lowest DP chars for the rest would exceed maxDP, disable
+			if (dpUsed + minDPNeeded > maxDP) {
+				return true;
+			}
 		}
 
 		return false;
