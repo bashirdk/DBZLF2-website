@@ -1,0 +1,155 @@
+.tournament-grid img{
+  margin: 1px;
+  width: 80px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  image-rendering: pixelated;
+}
+.tournament-grid img.disabled{
+  cursor: not-allowed;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  border: 2px solid #ff6b6b;
+  pointer-events: none;
+}
+.tournament-grid img:hover{
+  border: 2px solid white;
+}
+
+/* Pulsating glow for selected characters */
+@keyframes pulsating-glow {
+  0% {
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    border: 2px solid white;
+  }
+  50% {
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    border: 2px solid white;
+  }
+  100% {
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    border: 2px solid white;
+  }
+}
+
+.tournament-grid img.selected {
+  animation: pulsating-glow 1s ease-in-out infinite;
+  border: 2px solid white;
+}
+
+.tournament-grid{
+  margin: 1.25rem -1.5rem 1.25rem -1.5rem;
+}
+
+.dp-value {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  /* background: rgba(0,0,0,0.5); */
+  font-weight: 900;
+  font-size: 20px;
+  -webkit-text-stroke: 4px black;
+  paint-order: stroke fill;
+}
+
+.tournament-char {
+  width: 80px;
+  background: black;
+  height: 90px;
+  margin: 1px;
+}
+.tournament-char:before {
+  content: '?';
+  font-size: 45px;
+  font-weight: 900;
+  top: 20px;
+  left: 20px;
+  padding: 50px 30px;
+}
+
+/* Round display alignment */
+.round-display {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.round-characters {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.round-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90px;
+  flex-shrink: 0;
+  min-width: 150px; /* Increased width for larger font */
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-align: center; /* Center the text within its container */
+}
+
+.tournament-round-button {
+  color: white;
+  margin: 10px;
+  background: darkgreen;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.tournament-round-button:hover {
+  background: green;
+}
+.tournament-round-button-selected {
+  background: lightgreen;
+}
+
+.copy-clipboard-button {
+  background: #4a90e2;
+  color: white;
+  border: 2px solid #357abd;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.copy-clipboard-button:hover {
+  background: #357abd;
+  border-color: #2d5a8a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.copy-clipboard-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.copy-clipboard-button:disabled {
+  background: #666;
+  border-color: #555;
+  color: #999;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.copy-clipboard-button:disabled:hover {
+  background: #666;
+  border-color: #555;
+  transform: none;
+  box-shadow: none;
+}

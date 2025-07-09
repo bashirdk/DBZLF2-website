@@ -26,6 +26,7 @@ import TagManager from 'react-gtm-module'
 
 import Tools from "../Components/Tools/Tools";
 import BattleModeBalancer from "../Components/BattleModeBalancer/BattleModeBalancer";
+import TournamentCalculator from "../Components/Tools/TournamentCalculator";
 import Rect32Calculator from "../Components/Tools/Rect32Calculator";
 
 library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger, faPatreon, faItchIo, faTwitter)
@@ -61,6 +62,7 @@ const App = () => (
               <Route exact path="/guide/" component={Guide} />
               <Route exact path="/tools/" component={Tools} />
               <Route exact path="/tools/battle-mode-balancer/" component={BattleModeBalancer} />
+              <Route exact path="/tools/tournament-calculator/" component={TournamentCalculator} />
               <Route exact path="/tools/rec32-calculator/" component={Rect32Calculator} />
               <Route exact path="/" component={Home} />
               <Route component={NoMatch} />
