@@ -83,8 +83,6 @@
         { "character": "SS2 Vegeta", "race": "saiyan", "pl": 27760, "whatif": true, "hidden": true, "complete": false, "remaster": false },
 
         { "character": "Yamcha", "race": "human", "pl": 3070, "complete": false, "remaster": false },
-        { "character": "Future Gohan", "race": "saiyan", "pl": 5410, "complete": false, "remaster": false },
-        { "character": "SS Future Gohan", "race": "saiyan", "pl": 10820, "complete": false, "remaster": false },
         { "character": "Android 16", "race": "android", "pl": 12000 }
       ],
       "buu": [
@@ -128,11 +126,9 @@
         { "character": "Super Great Saiyaman", "race": "saiyan", "pl": 14520, "whatif": true, "hidden": true, "complete": false, "remaster": false },
         { "character": "Shin", "race": "alien", "pl": 13000, "complete": false, "remaster": false },
 
-
         { "character": "Dabura", "race": "alien", "pl": 21600,  "complete": false, "remaster": false }
       ],
       "movies": [
-        { "character": "Bardock", "race": "saiyan", "pl": 2000, "hidden": true, "complete": false, "remaster": false },
         { "character": "Cooler", "race": "frieza", "pl": 9000, "hidden": true, "complete": false, "remaster": false },
         { "character": "Cooler (5th form)", "race": "frieza", "pl": 12000, "hidden": true, "complete": false, "remaster": false },
         { "character": "Broly", "race": "saiyan", "pl": 9000, "complete": false, "remaster": false },
@@ -140,6 +136,13 @@
         { "character": "SS Broly", "race": "saiyan", "pl": 18000, "complete": false, "remaster": false },
         { "character": "LSS Broly", "race": "saiyan", "pl": 45000, "complete": false, "remaster": false },
         { "character": "Super Janemba", "race": "alien", "pl": 150000, "hidden": true,  "complete": true, "remaster": false }
+      ],
+      "special": [
+        { "character": "Bardock", "race": "saiyan", "pl": 2000, "hidden": false, "complete": false, "remaster": false },
+        { "character": "Master Roshi", "race": "human", "pl": 675, "hidden": false, "complete": false, "remaster": false },
+        { "character": "Master Roshi (MAX Power)", "race": "human", "pl": 1200, "hidden": false, "complete": false, "remaster": false },
+        { "character": "Future Gohan", "race": "saiyan", "pl": 5410, "complete": false, "remaster": false },
+        { "character": "SS Future Gohan", "race": "saiyan", "pl": 10820, "complete": false, "remaster": false }
       ]
     }
   },

@@ -136,7 +136,7 @@ class Plan extends Component {
 					<table className="plan-table text-white font-bold">
 						<thead>
 							<tr>
-								<th>Movies</th>
+								<th>Movies</th><th>Special</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -145,6 +145,12 @@ class Plan extends Component {
 									<table className="plan-saga-table">
 										<thead><tr><th>Character</th><th>PL</th><th>Complete</th><th>Remaster</th></tr></thead>
 										<tbody>{this.renderTableData(characters.movies)}</tbody>
+									</table>
+								</td>
+								<td>
+									<table className="plan-saga-table">
+										<thead><tr><th>Character</th><th>PL</th><th>Complete</th><th>Remaster</th></tr></thead>
+										<tbody>{this.renderTableData(characters.special)}</tbody>
 									</table>
 								</td>
 							</tr>
