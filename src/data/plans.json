@@ -1,0 +1,188 @@
+[
+  {
+    "characters": {
+      "saiyan": [
+        { "character": "Chiaotzu", "race": "human", "pl": 970, "complete": false, "remaster": false },
+        { "character": "Saibaman", "race": "alien", "pl": 1080, "complete": false, "remaster": false },
+        { "character": "Yamcha", "race": "human", "pl": 1080, "complete": false, "remaster": false },
+        { "character": "Raditz", "race": "saiyan", "pl": 1380, "complete": false, "remaster": false },
+        { "character": "Krillin", "race": "human", "pl": 1120, "complete": false, "remaster": false },
+        { "character": "Tien", "race": "human", "pl": 1160, "complete": false, "remaster": false },
+        { "character": "Gohan", "race": "saiyan", "pl": 1500, "complete": false, "remaster": false },
+        { "character": "Piccolo (Weighted)", "race": "namek", "pl": 1380, "complete": true, "remaster": false },
+        { "character": "Piccolo (Agile)", "race": "namek", "pl": 1520, "complete": true, "remaster": false },
+        { "character": "Nappa", "race": "saiyan", "pl": 1750, "complete": false, "remaster": false },
+        { "character": "Goku", "race": "saiyan", "pl": 1880, "complete": false, "remaster": false },
+        { "character": "Vegeta", "race": "saiyan", "pl": 2160, "complete": true, "remaster": false },
+
+        { "character": "SS Goku", "race": "saiyan", "pl": 3760, "whatif": true, "hidden": true,  "complete": true, "remaster": false }
+      ],
+      "namek": [
+        { "character": "FF Soldier (Fist)", "race": "alien", "pl": 1170, "complete": true, "remaster": false },
+        { "character": "FF Soldier (Gun)", "race": "alien", "pl": 1170, "complete": true, "remaster": false },
+        { "character": "FF Soldier (Special)", "race": "alien", "pl": 1350, "complete": true, "remaster": false },
+        { "character": "FF Soldier (Brute)", "race": "alien", "pl": 1400, "complete": false, "remaster": false },
+        { "character": "Namek Healer", "race": "namek", "pl": 1080, "complete": true, "remaster": false },
+        { "character": "Namek Warrior", "race": "namek", "pl": 1460, "complete": true, "remaster": false },
+        { "character": "Warrior Namek", "race": "namek", "pl": 1460, "complete": true, "remaster": false },
+        { "character": "Nail", "race": "namek", "pl": 2580, "complete": true, "remaster": false },
+        { "character": "Guldo", "race": "alien", "pl": 1520, "complete": false, "remaster": false },
+        { "character": "Burter", "race": "alien", "pl": 2280, "complete": false, "remaster": false },
+        { "character": "Jeice", "race": "alien", "pl": 2410, "complete": false, "remaster": false },
+        { "character": "Recoome", "race": "alien", "pl": 2530, "complete": false, "remaster": false },
+        { "character": "Krillin", "race": "human", "pl": 2350, "complete": false, "remaster": false },
+        { "character": "Ginyu", "race": "alien", "pl": 2840, "complete": false, "remaster": false },
+        { "character": "Gohan", "race": "saiyan", "pl": 3470, "complete": false, "remaster": false },
+        { "character": "Frieza (1st form)", "race": "frieza", "pl": 4360, "complete": false, "remaster": false },
+        { "character": "Frieza (2nd form)", "race": "frieza", "pl": 4900, "complete": false, "remaster": false },
+        { "character": "Piccolo (Weighted)", "race": "namek", "pl": 3880, "complete": true, "remaster": false },
+        { "character": "Piccolo (Agile)", "race": "namek", "pl": 4290, "complete": true, "remaster": false },
+        { "character": "Vegeta", "race": "saiyan", "pl": 4860, "complete": true, "remaster": false },
+        { "character": "Frieza (3rd form)", "race": "frieza", "pl": 5480, "complete": false, "remaster": false },
+        { "character": "Goku", "race": "saiyan", "pl": 5710, "complete": true, "remaster": false },
+        { "character": "Frieza", "race": "frieza", "pl": 8460, "complete": true, "remaster": false },
+        { "character": "Frieza (100%)", "race": "frieza", "pl": 10820, "complete": false, "remaster": false },
+        { "character": "SS Goku", "race": "saiyan", "pl": 11420, "complete": true, "remaster": false },
+
+        { "character": "SS Vegeta", "race": "saiyan", "pl": 9720, "whatif": true, "hidden": true, "complete": false, "remaster": false },
+
+        { "character": "Dodoria", "race": "alien", "pl": 2120, "complete": false, "remaster": false },
+        { "character": "Zarbon", "race": "alien", "pl": 2160, "complete": false, "remaster": false },
+        { "character": "Zarbon (Monster)", "race": "alien", "pl": 2320,  "complete": false, "remaster": false }
+      ], 
+      "android": [
+        { "character": "Krillin", "race": "human", "pl": 3300, "complete": false, "remaster": false },
+        { "character": "Tien", "race": "human", "pl": 3510, "complete": false, "remaster": false },
+        { "character": "Trunks (Sword)", "race": "saiyan", "pl": 5760, "complete": false, "remaster": false },
+        { "character": "Trunks (Armor)", "race": "saiyan", "pl": 6740, "complete": true, "remaster": false },
+        { "character": "Vegeta", "race": "saiyan", "pl": 6940, "complete": true, "remaster": false },
+        { "character": "Goku", "race": "saiyan", "pl": 7940, "complete": false, "remaster": false },
+        { "character": "Gohan", "race": "saiyan", "pl": 8300, "complete": false, "remaster": false },
+        { "character": "Android 19", "race": "android", "pl": 6750, "complete": false, "remaster": false },
+        { "character": "Dr. Gero", "race": "android", "pl": 7010, "complete": false, "remaster": false },
+        { "character": "Frieza (Mecha)", "race": "frieza", "pl": 10820, "complete": false, "remaster": false },
+        { "character": "SS Trunks (Sword)", "race": "saiyan", "pl": 11530, "complete": false, "remaster": false },
+        { "character": "18", "race": "android", "pl": 10930, "complete": false, "remaster": false },
+        { "character": "17", "race": "android", "pl": 11100, "complete": false, "remaster": false },
+        { "character": "Piccolo (Weighted)", "race": "namek", "pl": 11040, "complete": true, "remaster": false },
+        { "character": "Piccolo (Agile)", "race": "namek", "pl": 12180, "complete": true, "remaster": false },
+        { "character": "Imperfect Cell", "race": "bio-android", "pl": 15750, "complete": false, "remaster": false },
+        { "character": "SS Trunks (Armor)", "race": "saiyan", "pl": 13480, "complete": true, "remaster": false },
+        { "character": "SS Vegeta", "race": "saiyan", "pl": 13900, "complete": true, "remaster": false },
+        { "character": "Semi-Perfect Cell", "race": "bio-android", "pl": 17240, "complete": false, "remaster": false },
+        { "character": "Super Trunks", "race": "saiyan", "pl": 16180, "complete": true, "remaster": false },
+        { "character": "Super Vegeta", "race": "saiyan", "pl": 16680, "complete": true, "remaster": false },
+        { "character": "SS Goku", "race": "saiyan", "pl": 15880, "complete": false, "remaster": false },
+        { "character": "SS Gohan", "race": "saiyan", "pl": 16600, "complete": false, "remaster": false },
+        { "character": "Cell Jr.", "race": "android", "pl": 15920, "complete": false, "remaster": false },
+        { "character": "Ultra Trunks (Armor)", "race": "saiyan", "pl": 20200, "complete": true, "remaster": false },
+        { "character": "Perfect Cell", "race": "bio-android", "pl": 27280, "complete": true, "remaster": false },
+        { "character": "Super Perfect Cell", "race": "bio-android", "pl": 34550, "complete": false, "remaster": false },
+        { "character": "SS2 Gohan", "race": "saiyan", "pl": 33200, "complete": false, "remaster": false },
+
+        { "character": "SS2 Vegeta", "race": "saiyan", "pl": 27760, "whatif": true, "hidden": true, "complete": false, "remaster": false },
+
+        { "character": "Yamcha", "race": "human", "pl": 3070, "complete": false, "remaster": false },
+        { "character": "Android 16", "race": "android", "pl": 12000 }
+      ],
+      "buu": [
+        { "character": "Majin Soldier", "race": "alien", "pl": 1800, "complete": false, "remaster": false },
+        { "character": "Goten", "race": "saiyan", "pl": 5640, "complete": false, "remaster": false },
+        { "character": "Trunks", "race": "saiyan", "pl": 5760, "complete": false, "remaster": false },
+        { "character": "Gohan", "race": "saiyan", "pl": 7260, "complete": true, "remaster": false },
+        { "character": "Vegeta", "race": "saiyan", "pl": 8300, "complete": true, "remaster": false },
+        { "character": "Goku", "race": "saiyan", "pl": 8640, "complete": true, "remaster": false },
+        { "character": "SS Goten", "race": "saiyan", "pl": 11280, "complete": false, "remaster": false },
+        { "character": "SS Trunks", "race": "saiyan", "pl": 11520, "complete": false, "remaster": false },
+        { "character": "Gotenks", "race": "saiyan", "pl": 12720, "complete": false, "remaster": false },
+        { "character": "SS Gohan", "race": "saiyan", "pl": 14520, "complete": true, "remaster": false },
+        { "character": "SS Vegeta", "race": "saiyan", "pl": 16660, "complete": true, "remaster": false },
+        { "character": "SS Goku", "race": "saiyan", "pl": 17280, "complete": true, "remaster": false },
+        { "character": "SS Gotenks", "race": "saiyan", "pl": 25540, "complete": false, "remaster": false },
+        { "character": "SS2 Gohan", "race": "saiyan", "pl": 29040, "complete": true, "remaster": false },
+        { "character": "SS2 Vegeta", "race": "saiyan", "pl": 33200, "complete": true, "remaster": false },
+        { "character": "Majin Vegeta", "race": "saiyan", "pl": 34560, "complete": true, "remaster": false },
+        { "character": "SS2 Goku", "race": "saiyan", "pl": 34560, "complete": true, "remaster": false },
+        { "character": "Fat Buu", "race": "buu", "pl": 69750, "complete": false, "remaster": false },
+        { "character": "Kid Buu", "race": "buu", "pl": 101250, "complete": false, "remaster": false },
+        { "character": "SS3 Goku", "race": "saiyan", "pl": 103680, "complete": true, "remaster": false },
+        { "character": "Super Buu", "race": "buu", "pl": 135870, "complete": false, "remaster": false },
+        { "character": "SS3 Gotenks", "race": "saiyan", "pl": 152640, "complete": false, "remaster": false },
+        { "character": "Ultimate Gohan", "race": "saiyan", "pl": 174280, "complete": true, "remaster": false },
+        { "character": "Super Buutenks", "race": "buu", "pl": 189200, "complete": false, "remaster": false },
+        { "character": "Super Buuhan", "race": "buu", "pl": 210510, "complete": false, "remaster": false },
+        { "character": "Gogeta", "race": "saiyan", "pl": 235000, "complete": true, "remaster": true },
+        { "character": "Vegito", "race": "saiyan", "pl": 244000, "complete": true, "remaster": true },
+        { "character": "Super Gogeta", "race": "saiyan", "pl": 470000, "complete": true, "remaster": false },
+        { "character": "Super Vegito", "race": "saiyan", "pl": 488000, "complete": true, "remaster": false },
+
+        { "character": "Gokuhan", "race": "saiyan", "pl": 600000, "whatif": true, "hidden": true, "complete": false, "remaster": false },
+        { "character": "Gokule", "race": "saiyan", "pl": 9000, "whatif": true, "hidden": true, "complete": false, "remaster": false },
+        { "character": "SS Gokule", "race": "saiyan", "pl": 18000, "whatif": true, "hidden": true, "complete": false, "remaster": false },
+        { "character": "SS2 Gokule", "race": "saiyan", "pl": 36000, "whatif": true, "hidden": true, "complete": false, "remaster": false },
+        { "character": "Hercule", "race": "human", "pl": 300, "complete": false, "remaster": false },
+        { "character": "Videl", "race": "human", "pl": 430, "complete": false, "remaster": false },
+        { "character": "Great Saiyaman", "race": "saiyan", "pl": 7260, "complete": false, "remaster": false },
+        { "character": "Super Great Saiyaman", "race": "saiyan", "pl": 14520, "whatif": true, "hidden": true, "complete": false, "remaster": false },
+        { "character": "Shin", "race": "alien", "pl": 13000, "complete": false, "remaster": false },
+
+        { "character": "Dabura", "race": "alien", "pl": 21600,  "complete": false, "remaster": false }
+      ],
+      "movies": [
+        { "character": "Cooler", "race": "frieza", "pl": 9000, "hidden": true, "complete": false, "remaster": false },
+        { "character": "Cooler (5th form)", "race": "frieza", "pl": 12000, "hidden": true, "complete": false, "remaster": false },
+        { "character": "Broly", "race": "saiyan", "pl": 9000, "complete": false, "remaster": false },
+        { "character": "RSS Broly", "race": "saiyan", "pl": 15000, "complete": false, "remaster": false },
+        { "character": "SS Broly", "race": "saiyan", "pl": 18000, "complete": false, "remaster": false },
+        { "character": "LSS Broly", "race": "saiyan", "pl": 45000, "complete": false, "remaster": false },
+        { "character": "Super Janemba", "race": "alien", "pl": 150000, "hidden": true,  "complete": true, "remaster": false }
+      ],
+      "special": [
+        { "character": "Bardock", "race": "saiyan", "pl": 2000, "hidden": false, "complete": false, "remaster": false },
+        { "character": "Master Roshi", "race": "human", "pl": 675, "hidden": false, "complete": false, "remaster": false },
+        { "character": "Master Roshi (MAX Power)", "race": "human", "pl": 1200, "hidden": false, "complete": false, "remaster": false },
+        { "character": "Future Gohan", "race": "saiyan", "pl": 5410, "complete": false, "remaster": false },
+        { "character": "SS Future Gohan", "race": "saiyan", "pl": 10820, "complete": false, "remaster": false }
+      ]
+    }
+  },
+  {
+    "backgrounds":{
+      "saiyan": [
+        { "bg": "Kame House" },
+        { "bg": "Spinach Wastes" },
+        { "bg": "Break Wasteland [Obstacles]" },
+        { "bg": "Break Wasteland" },
+        { "bg": "Gizard Wasteland" }
+      ],
+      "namek": [
+        { "bg": "Namek" },
+        { "bg": "Destroyed Namek" },
+        { "bg": "Namek Village" },
+        { "bg": "Destroyed Namek Village" }
+      ],
+      "android": [
+        { "bg": "Amenbo Island" },
+        { "bg": "Mountain Road" },
+        { "bg": "Tropical Islands" },
+        { "bg": "Cell Games Arena" },
+        { "bg": "Destroyed Cell Games Arena" }
+      ],
+      "buu": [
+        { "bg": "Budokai [Ring Out]" },
+        { "bg": "Budokai" },
+        { "bg": "Rocky Canyon" },
+        { "bg": "West City" },
+        { "bg": "West City [Night]" },
+        { "bg": "The Lookout" },
+        { "bg": "Time Chamber [Hazards]" },
+        { "bg": "Time Chamber" },
+        { "bg": "World of Kai" }
+
+      ],
+      "movies":[
+        { "bg": "Amenbo Island" }
+      ]
+    }
+  }
+]

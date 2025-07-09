@@ -1,0 +1,103 @@
+.responsive-table {
+  overflow-x: auto;
+}
+
+.plan-table {
+  border: 1px solid white;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.plan-table th {
+  border: 1px solid white;
+  padding: 5px;
+}
+.plan-table tr {
+  border: 1px solid white;
+}
+.plan-table td {
+  border: 1px solid white;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.plan-saga-table td:nth-child(1) {
+  text-align: left;
+}
+.plan-saga-table td:nth-child(2) {
+  text-align: right;
+}
+.plan-saga-table td:nth-child(3) {
+  text-align: center;
+}
+.plan-saga-table td:nth-child(4) {
+  text-align: center;
+}
+
+.plan-saga-table {
+  border: 0 !important;
+  margin: 0 auto;
+}
+.plan-saga-table th {
+  border: 0 0 1px 0 solid white !important;
+}
+.plan-saga-table tr {
+  border: 0 !important;
+}
+.plan-saga-table td {
+  border: 0 !important;
+}
+
+.plan-what-if {
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 900
+}
+
+/*
+Race Labels
+*/
+.plan-android {
+  color: #ff0000;
+}
+
+.plan-bio-android td:nth-child(1) {
+  background-image: linear-gradient(90deg, #FFED4A, #45a329, #00b0f0, #cc0099 );
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.plan-bio-android td:nth-child(2) {
+  background-image: linear-gradient(90deg, #FFED4A, #45a329, #00b0f0, #cc0099 );
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.plan-buu {
+  color: #ff99ff;
+}
+
+.plan-human {
+  color: #00b0f0;
+}
+
+.plan-namek {
+  color: #45a329;
+}
+
+.plan-saiyan {
+  color: #FFED4A;
+}
+
+.plan-frieza {
+  color: #cc0099;
+}
+
+.plan-alien {
+  color: #b7b7b7;
+}
+
+.plan-commeson {
+  color: #BA009E;
+}

@@ -13,6 +13,7 @@ import CharacterList from "../Components/CharacterList";
 import CharacterProfile from "../Components/CharacterProfile";
 import BackgroundList from "../Components/BackgroundList/BackgroundList";
 import BackgroundProfile from "../Components/BackgroundProfile";
+import Plan from "../Components/Plan";
 import Downloads from "../Components/Downloads";
 import FAQs from "../Components/FAQs";
 import Guide from "../Components/Guide"
@@ -55,6 +56,7 @@ const App = () => (
               <Route exact path="/characters/" component={CharacterList} />
               <Route path="/backgrounds/:saga/:name" component={BackgroundProfile} />
               <Route exact path="/backgrounds/" component={BackgroundList} />
+              <Route exact path="/plan/" component={Plan} />
               <Route exact path="/downloads/" component={Downloads} />
               <Route exact path="/faqs/"  component={FAQs} />
               <Route exact path="/guide/" component={Guide} />
