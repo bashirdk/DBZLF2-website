@@ -1224,8 +1224,19 @@
 		],
         "counter": []
       }
-    },
-    {
+    }, {
+      "id": 15,
+      "remove": true,
+      "release": "v0.1",
+      "url_id": "krillin",
+      "name": "Krillin",
+      "saga": "Android",
+      "race": ["human"],
+      "type": { "hero": true, "villain": false, "other": false },
+      "stats": {
+        "dp": 40
+      }
+    }, {
       "id": 97,
       "release": "v0.6.9",
       "url_id": "piccolo-w",
