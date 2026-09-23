@@ -14,7 +14,7 @@ class Guide extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Game Guide - Deadly Battle Zone Little Fighter 2</title>
+					<title>Game Guide - Deadly Battle Zone Larping Fighters 2</title>
 					<meta name="description" content="Learn how the game plays and works." />
 					<link rel="canonical" href="https://dbzlf2.com/guide/" />
 				</Helmet>
@@ -371,7 +371,7 @@ class Guide extends Component {
 					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
 						<h2 id="multiplayer" className="text-center"> Multiplayer (Online)</h2>
 
-						<p> There are a few ways to play Little Fighter 2 online such as Parsec, LF2 Lobby, Hamachi, etc. We will only be focusing on Parsec and LF2 Lobby in this guide. </p>
+						<p> There are a few ways to play Larping Fighters 2 online such as Parsec, LF2 Lobby, Hamachi, etc. We will only be focusing on Parsec and LF2 Lobby in this guide. </p>
 
 						<h3 id="parsec"> Parsec</h3>
 						<p>Parsec is a proprietary remote desktop application primarily used for playing games through video streaming. 

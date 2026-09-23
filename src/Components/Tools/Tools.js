@@ -14,7 +14,7 @@ class Tools extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Tools - Deadly Battle Zone Little Fighter 2</title>
+					<title>Tools - Deadly Battle Zone Larping Fighters 2</title>
 					<meta name="description" content="Tools for different tasks." />
 					<link rel="canonical" href="https://dbzlf2.com/tools/" />
 				</Helmet>

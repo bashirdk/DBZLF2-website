@@ -46,7 +46,7 @@ class Downloads extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Downloads - Deadly Battle Zone Little Fighter 2</title>
+					<title>Downloads - Deadly Battle Zone Larping Fighters 2</title>
 					<meta name="description" content="List of DBZ LF2 download releases." />
 					<link rel="canonical" href="https://dbzlf2.com/downloads/" />
 				</Helmet>

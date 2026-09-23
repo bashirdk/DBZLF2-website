@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="md:flex items-center justify-between">
           <div className="text-center md:text-left text-white footer-links">
             <p className="my-3"> Deadly Battle Zone </p>
-            <p className="my-3"> <a href="https://lf2.net/" target="_blank" rel="noreferrer"> Little Fighter 2 </a> © 1999-2008, <a href="http://martiwong.com/" target="_blank" rel="noreferrer">Marti Wong</a> & <a href="https://lf2.net/starsky/" target="_blank" rel="noreferrer">Starsky Wong</a>, All rights reserved.</p>
+            <p className="my-3"> <a href="https://lf2.net/" target="_blank" rel="noreferrer"> Litte Fighter 2 </a> © 1999-2008, <a href="http://martiwong.com/" target="_blank" rel="noreferrer">Marti Wong</a> & <a href="https://lf2.net/starsky/" target="_blank" rel="noreferrer">Starsky Wong</a>, All rights reserved.</p>
           </div>
           <div className="text-center my-5 md:text-left text-white">
             <a href="https://www.youtube.com/user/dbzlf2" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">

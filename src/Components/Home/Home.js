@@ -63,8 +63,8 @@ import { NavLink } from "react-router-dom";
 const Home = () => (
   <div>  
     <Helmet>
-      <title> Deadly Battle Zone Little Fighter 2 - EPIC 2D DBZ Fan Game!</title>
-      <meta name="description" content={"EPIC 2D Fan made Deadly Battle Zone game mod of the game Little Fighter 2. Made by bashscrazy, Excellent Approximation and darkfiren."} />
+      <title> Deadly Battle Zone Larping Fighters 2 - EPIC 2D DBZ Fan Game!</title>
+      <meta name="description" content={"EPIC 2D Fan made Deadly Battle Zone game mod of the game Larping Fighters 2. Made by bashscrazy, Excellent Approximation and darkfiren."} />
       <link rel="canonical" href="https://dbzlf2.com/" />
     </Helmet>
     <h1 className="text-white hidden">DBZ LF2</h1>

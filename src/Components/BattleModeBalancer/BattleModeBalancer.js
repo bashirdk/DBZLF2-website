@@ -162,7 +162,7 @@ roundPowerLevelNumber(num) {
 		return (
 			<div>
 				<Helmet>
-					<title>Battle Mode Balancer - Deadly Battle Zone Little Fighter 2</title>
+					<title>Battle Mode Balancer - Deadly Battle Zone Larping Fighters 2</title>
 					<meta name="description" content="Tool used to determine defense values for characters to balance them." />
 					<link rel="canonical" href="https://dbzlf2.com/tools/battle-mode-balancer/" />
 				</Helmet>

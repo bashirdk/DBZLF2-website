@@ -107,7 +107,7 @@ class Rect32Calculator extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Rect32 Calculator - Deadly Battle Zone Little Fighter 2</title>
+					<title>Rect32 Calculator - Deadly Battle Zone Larping Fighters 2</title>
 					<meta name="description" content="Tool used to get the rect32 value using RGB values." />
 					<link rel="canonical" href="https://dbzlf2.com/tools/rec32-calculator" />
 				</Helmet>

@@ -38,7 +38,7 @@ class Start extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Getting Started - Game Guide - Deadly Battle Zone Little Fighter 2</title>
+					<title>Getting Started - Game Guide - Deadly Battle Zone Larping Fighters 2</title>
 					<meta name="description" content="Learn how the game plays and works." />
 					<link rel="canonical" href="https://dbzlf2.com/guide/getting-started" />
 				</Helmet>
@@ -68,7 +68,7 @@ class Start extends Component {
 					<p> Downloading and Extracting and Playing the game! </p>
 
 					<h3 id="download_game" ref={this.targetRef}> {DOWNLOAD_GAME} </h3>
-					<p> DBZ LF2 is a mod of Little Fighter 2, however it doesn't require the LF2 base game as it is a standalone game/download.
+					<p> DBZ LF2 is a mod of Larping Fighters 2, however it doesn't require the LF2 base game as it is a standalone game/download.
 					To start, you must first download the game. You can find a list of downloads <NavLink to="/downloads/"> HERE. </NavLink> </p>
 
 					<h3 id="install_game" ref={this.targetRef}> {INSTALL_GAME} </h3>

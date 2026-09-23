@@ -49,7 +49,7 @@ class Plan extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Planned List - Deadly Battle Zone Little Fighter 2</title>
+					<title>Planned List - Deadly Battle Zone Larping Fighters 2</title>
 					<meta name="description" content="List of planned and possible characters." />
 					<link rel="canonical" href="https://dbzlf2.com/guide/" />
 				</Helmet>
