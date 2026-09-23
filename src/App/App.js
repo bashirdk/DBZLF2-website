@@ -13,6 +13,7 @@ import CharacterList from "../Components/CharacterList";
 import CharacterProfile from "../Components/CharacterProfile";
 import BackgroundList from "../Components/BackgroundList/BackgroundList";
 import BackgroundProfile from "../Components/BackgroundProfile";
+import Plan from "../Components/Plan";
 import Downloads from "../Components/Downloads";
 import FAQs from "../Components/FAQs";
 import Guide from "../Components/Guide"
@@ -26,6 +27,7 @@ import TagManager from 'react-gtm-module'
 
 import Tools from "../Components/Tools/Tools";
 import BattleModeBalancer from "../Components/BattleModeBalancer/BattleModeBalancer";
+import TournamentCalculator from "../Components/Tools/TournamentCalculator";
 import Rect32Calculator from "../Components/Tools/Rect32Calculator";
 
 library.add(faCoffee, faDownload, faYoutube, faDiscord, faBlogger, faPatreon, faItchIo, faTwitter)
@@ -55,12 +57,14 @@ const App = () => (
               <Route exact path="/characters/" component={CharacterList} />
               <Route path="/backgrounds/:saga/:name" component={BackgroundProfile} />
               <Route exact path="/backgrounds/" component={BackgroundList} />
+              <Route exact path="/plan/" component={Plan} />
               <Route exact path="/downloads/" component={Downloads} />
               <Route exact path="/faqs/"  component={FAQs} />
               <Route exact path="/guide/" component={Guide} />
               <Route exact path="/guide/getting-started" component={Start} />
               <Route exact path="/tools/" component={Tools} />
               <Route exact path="/tools/battle-mode-balancer/" component={BattleModeBalancer} />
+              <Route exact path="/tools/tournament-calculator/" component={TournamentCalculator} />
               <Route exact path="/tools/rec32-calculator/" component={Rect32Calculator} />
               <Route exact path="/" component={Home} />
               <Route component={NoMatch} />

@@ -59,6 +59,39 @@ class Tools extends Component {
 
 				<section className="inline-block align-top w-full">
 					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
+						<h2 className="mb-5">Tournament DP Calculator</h2>
+						<section className="sm:pr-5 inline-block align-top w-full sm:w-1/3">
+							<div className="border-2 lf2-border-blue lf2-bg-blue rounded">
+								<img 
+									src={require(`../../images/tools/dp-calculator.png`)}
+									alt={`battle mode balancer tool`}
+									className=""
+								/>
+							</div>
+						</section>
+
+						<section className="inline-block w-full sm:w-2/3 relative">
+							<div className="inline-block border-2 lf2-border-blue lf2-bg-blue rounded p-5">
+								This tool is designed to help you build your teams for the Standard Edition Tournaments.
+								It comes fully equipped with a DP calculator, a team builder, and a team viewer.
+								There is a copy to clipboard button for the team setup to allow you to easily send the team to an admin.
+							</div>
+
+							<div className="text-center">
+							<NavLink to="/tools/tournament-calculator" className="nav-logo">
+								<button className="download-button">
+										<span className="mx-2">ACCESS TOURNAMENT DP CALCULATOR</span>
+									</button>
+								</NavLink>
+								</div>
+
+						</section>
+					</div>
+				</section>
+
+
+				<section className="inline-block align-top w-full">
+					<div className="border-2 lf2-border-blue lf2-bg-blue rounded my-5 px-6 pt-5 pb-10 mx-0">
 						<h2 className="mb-5">Rect32 Calculator</h2>
 						<section className="sm:pr-5 inline-block align-top w-full sm:w-1/3">
 							<div className="border-2 lf2-border-blue lf2-bg-blue rounded">

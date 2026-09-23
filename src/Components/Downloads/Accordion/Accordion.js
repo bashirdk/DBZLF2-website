@@ -126,6 +126,7 @@ function Accordion(props) {
   let new_moves = mapUpdatesData(props.updates.minor_updates.new_moves);
   let speed_adjustments = mapUpdatesData(props.updates.minor_updates.speed_adjustments);
 
+  let hotfix = mapUpdatesData(props.updates.hotfix);
   let balance_changes = mapUpdatesData(props.updates.major_updates.balance_changes);
   let ai_updates = mapUpdatesData(props.updates.major_updates.ai_updates);
   let stage_mode = mapUpdatesData(props.updates.major_updates.stage_mode);
@@ -304,6 +305,11 @@ function Accordion(props) {
         ''
           }
           
+          <h3 className="mb-1">Hotfix Updates</h3>
+          <div className="mx-3">
+            {outputIfExists("", hotfix)}
+          </div>
+          <br/>
 
           <h3 className="mb-1">Major Updates</h3>
           <div className="mx-3">

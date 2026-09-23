@@ -22,7 +22,7 @@ class CharacterList extends Component {
 		
 		const groups = ["Saiyan", "Namek", "Android", "Buu"].map((saga) => ({
 			name: `${saga} Saga`,
-			characters: Characters.filter((character) => character.saga === saga),
+			characters: Characters.filter((character) => character.saga === saga && character.remove !== true),
 		}));
 
 		const groupsDLC = ["Super"].map((saga) => ({
@@ -31,7 +31,7 @@ class CharacterList extends Component {
 			characters: CharactersDLC.filter((character) => character.saga === saga),
 		}));
 
-		const characters = Characters.filter((character) => character.name);
+		const characters = Characters.filter((character) => character.name && character.remove !== true);
 
 		this.state = {
 			groups,

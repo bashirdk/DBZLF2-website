@@ -7,7 +7,7 @@ export default class AdComponent extends React.Component {
 
 render () {
     return (
-      <ins class="adsbygoogle"
+      <ins className="adsbygoogle"
         style={{display:"block"}}
         data-ad-format="fluid"
         data-ad-layout-key="-f5+4w+7r-eg+48"
