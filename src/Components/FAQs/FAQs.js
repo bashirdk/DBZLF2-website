@@ -1,7 +1,7 @@
 import "./FAQs.css";
 
 import React, { Component } from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import FAQsJSON from "../../data/faqs.json";
 

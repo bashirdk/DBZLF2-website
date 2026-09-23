@@ -1,7 +1,7 @@
 import "./TournamentCalculator.css";
 
 import React, { Component } from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import html2canvas from "html2canvas";
 
 import Characters from "../../../data/characters.json";
