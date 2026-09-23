@@ -19,9 +19,9 @@ const Footer = () => (
             <a href="https://discord.gg/mPR3Vr5" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
               <FontAwesomeIcon icon={['fab', "discord"]} size="2x" color="white" /> 
             </a>
-            <a href="https://www.patreon.com/DBZLF2" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
+            {/* <a href="https://www.patreon.com/DBZLF2" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
               <FontAwesomeIcon icon={['fab', "patreon"]} size="2x" color="white" /> 
-            </a>
+            </a> */}
             <a href="https://dbzlf2.itch.io/dbzlf2" target="_blank" rel="noopener noreferrer" className="fa-icon m-1">
               <FontAwesomeIcon icon={['fab', "itch-io"]} size="2x" color="white" /> 
             </a>
