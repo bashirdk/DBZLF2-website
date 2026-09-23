@@ -1,7 +1,7 @@
 import "./Rect32Calculator.css";
 
 import React, { Component } from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 
 import AdComponent from "../../AdComponent/AdComponent";
