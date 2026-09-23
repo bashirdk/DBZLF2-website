@@ -4,7 +4,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Switch, withRouter } from "react-router-dom";
 
 import ScrollToTop from "../Components/ScrollToTop";
-// import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 import PageTracker from "../Components/PageTracker/PageTracker";
 import Navbar from "../Components/Navbar";
