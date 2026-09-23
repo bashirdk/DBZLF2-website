@@ -7,6 +7,16 @@
   text-shadow:  0 0 2px black, 0 0 5px #3ffbfd, 0 0 10px white;
 }
 
+.nav-newlogo {
+  height: 40px;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  .nav-newlogo {
+    height: 70px;
+  }
+}
 
 .nav-logo .dbz-logo {
   width: 130px;

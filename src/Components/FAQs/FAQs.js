@@ -27,7 +27,7 @@ class FAQs extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>FAQs - Dragon Ball Z Little Fighter 2</title>
+					<title>FAQs - Deadly Battle Zone Little Fighter 2</title>
 					<meta name="description" content="List of frequently asked questions." />
 					<link rel="canonical" href="https://dbzlf2.com/faqs/" />
 				</Helmet>

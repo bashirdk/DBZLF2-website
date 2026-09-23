@@ -4627,6 +4627,18 @@ table {
   width: 16rem;
 }
 
+.w-80 {
+  width: 20em;
+}
+
+.w-96 {
+  width: 24em;
+}
+
+.w-120 {
+  width: 30em;
+}
+
 .w-auto {
   width: auto;
 }

@@ -38,7 +38,7 @@ class Start extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Getting Started - Game Guide - Dragon Ball Z Little Fighter 2</title>
+					<title>Getting Started - Game Guide - Deadly Battle Zone Little Fighter 2</title>
 					<meta name="description" content="Learn how the game plays and works." />
 					<link rel="canonical" href="https://dbzlf2.com/guide/getting-started" />
 				</Helmet>

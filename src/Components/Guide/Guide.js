@@ -14,7 +14,7 @@ class Guide extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Game Guide - Dragon Ball Z Little Fighter 2</title>
+					<title>Game Guide - Deadly Battle Zone Little Fighter 2</title>
 					<meta name="description" content="Learn how the game plays and works." />
 					<link rel="canonical" href="https://dbzlf2.com/guide/" />
 				</Helmet>

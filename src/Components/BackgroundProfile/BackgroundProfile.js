@@ -26,7 +26,7 @@ class BackgroundProfile extends Component {
       return (
         <div>
           <Helmet>
-            <title>{this.state.background.name} - Dragon Ball Z Little Fighter 2</title>
+            <title>{this.state.background.name} - Deadly Battle Zone Little Fighter 2</title>
             <meta name="description" content={"Background profile page of " + this.state.background.name + ": stats and moves. "} />
             <link rel="canonical" href={this.state.background.url_id} />
           </Helmet>
@@ -113,7 +113,7 @@ class BackgroundProfile extends Component {
       return (
         <div>
           <Helmet>
-            <title> Background not found - Dragon Ball Z Little Fighter 2</title>
+            <title> Background not found - Deadly Battle Zone Little Fighter 2</title>
           </Helmet>
           <h1 className="text-white text-center my-24">Background not found.</h1>
         </div>

@@ -46,7 +46,7 @@ class BackgroundList extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Backgrounds - Dragon Ball Z Little Fighter 2</title>
+					<title>Backgrounds - Deadly Battle Zone Little Fighter 2</title>
 					<meta name="description" content="List of Backgrounds in DBZ LF2." />
 					<link rel="canonical" href="https://dbzlf2.com/backgrounds/" />
 				</Helmet>

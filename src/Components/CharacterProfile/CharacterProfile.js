@@ -39,7 +39,7 @@ const CharacterProfile = ( props ) => {
     return (
       <div>
         <Helmet>
-          <title>{selCharacter.name} - Dragon Ball Z Little Fighter 2</title>
+          <title>{selCharacter.name} - Deadly Battle Zone Little Fighter 2</title>
           <meta name="description" content={"Character profile page of " + selCharacter.name + ": stats and moves. "} />
           <link rel="canonical" href={selCharacter.url_id} />
         </Helmet>
@@ -118,7 +118,7 @@ const CharacterProfile = ( props ) => {
     return (
       <div>
         <Helmet>
-          <title> Character not found - Dragon Ball Z Little Fighter 2</title>
+          <title> Character not found - Deadly Battle Zone Little Fighter 2</title>
         </Helmet>
         <h1 className="text-white text-center my-24">Character not found.</h1>
       </div>

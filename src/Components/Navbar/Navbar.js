@@ -64,7 +64,7 @@ const Navbar = () => {
       <nav className="py-4 h-16 md:h-24 flex items-center justify-between mx-3">
         <div className="h-full">
           <NavLink to="/" className="nav-logo">
-          <DragonBall
+          {/* <DragonBall
             strokeWidth="5"
             width="132"
             height="35"
@@ -74,7 +74,13 @@ const Navbar = () => {
             stroke="rgba(0,0,0,1)"
             width="132"
             height="35"
+          /> */}
+          <img 
+            src={require(`../../images/dbzlf2-logo.png`)}
+            alt="pic of logo"
+             className="nav-newlogo"
           />
+
           </NavLink>
         </div>
         <div className="nav-hamburger">

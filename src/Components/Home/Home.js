@@ -63,13 +63,13 @@ const versionVariants = {
 const Home = () => (
   <div>  
     <Helmet>
-      <title> Dragon Ball Z Little Fighter 2 - EPIC 2D DBZ Fan Game!</title>
-      <meta name="description" content={"EPIC 2D Fan made Dragon Ball Z game mod of the game Little Fighter 2. Made by bashscrazy, Excellent Approximation and darkfiren."} />
+      <title> Deadly Battle Zone Little Fighter 2 - EPIC 2D DBZ Fan Game!</title>
+      <meta name="description" content={"EPIC 2D Fan made Deadly Battle Zone game mod of the game Little Fighter 2. Made by bashscrazy, Excellent Approximation and darkfiren."} />
       <link rel="canonical" href="https://dbzlf2.com/" />
     </Helmet>
     <h1 className="text-white hidden">DBZ LF2</h1>
 
-    <div className="hero-logos">
+    {/* <div className="hero-logos">
       <DragonBall
         strokeWidth="1"
       />
@@ -84,8 +84,33 @@ const Home = () => (
       >
         <p variants={versionVariants} className="version-label text-white text-right -mt-16 mr-2 sm:-mt-3 lg:-mt-8 lg:mr-10"> Ver 0.6.9 </p>
       </motion.div>
-    </div>
+    </div> */}
 
+    {/* <div className="text-center my-8">
+    <img 
+      src={require(`../../images/dbzlf2-logo.png`)}
+      alt={`pic of logo`}
+      className="w-120 mx-auto"
+    />
+        <div className="text-center text-white">
+      <p className=" text-5xl font-bold" style={{marginTop: "100px;"}}> Deadly Battle Zone: <br></br>Larping Fighters 2 </p> <br></br>
+      </div>
+    </div> */}
+
+<div className="flex w-full flex-col items-center md:flex-row md:justify-center md:gap-8 gap-8 my-8">
+  <img
+    src={require(`../../images/dbzlf2-logo.png`)}
+    alt="pic of logo"
+    className="w-120 h-auto mx-5"
+  />
+
+  <div className="text-center text-white">
+    <p className="text-5xl font-bold">
+      Deadly Battle Zone: <br />
+      Larping Fighters 2
+    </p>
+  </div>
+</div>
 
 
     {/* <div className="flex w-full home-square-container">
@@ -148,7 +173,7 @@ const Home = () => (
 
 
     <div className="text-center text-white">
-      <p className="mb-3 text-5xl font-bold"> DBZ LF2 v0.6.9 GAME RELEASE </p>
+      <p className="mb-3 text-4xl font-bold"> DBZ LF2 v0.6.9 GAME RELEASE </p>
       <p className="mb-3 text-3xl"> OUT NOW!</p>
       <p className="mb-3 text-3xl"> Download <NavLink to="/downloads" className="nav-logo"> HERE </NavLink> </p>
     </div>

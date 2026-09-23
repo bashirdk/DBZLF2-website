@@ -106,7 +106,7 @@ class CharacterList extends Component {
 		return (
 			<div>
 				<Helmet>
-					<title>Characters - Dragon Ball Z Little Fighter 2</title>
+					<title>Characters - Deadly Battle Zone Little Fighter 2</title>
 					<meta name="description" content="List of Characters in DBZ LF2." />
 					<link rel="canonical" href="https://dbzlf2.com/characters/" />
 				</Helmet>

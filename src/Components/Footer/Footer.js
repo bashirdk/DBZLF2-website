@@ -9,7 +9,7 @@ const Footer = () => (
       <footer className="py-10 mx-3">  
         <div className="md:flex items-center justify-between">
           <div className="text-center md:text-left text-white footer-links">
-            <p className="my-3"> Dragon Ball Z © 2003 BIRD STUDIO/ SHUEISHA, TOEI ANIMATION. </p>
+            <p className="my-3"> Deadly Battle Zone </p>
             <p className="my-3"> <a href="https://lf2.net/" target="_blank" rel="noreferrer"> Little Fighter 2 </a> © 1999-2008, <a href="http://martiwong.com/" target="_blank" rel="noreferrer">Marti Wong</a> & <a href="https://lf2.net/starsky/" target="_blank" rel="noreferrer">Starsky Wong</a>, All rights reserved.</p>
           </div>
           <div className="text-center my-5 md:text-left text-white">
