@@ -16,6 +16,10 @@
   position:absolute;
 }
 
+.home-logo {
+  width: 30rem;
+}
+
 .hero-logos .dbz-logo {
   width: 45%;
   margin-top: -100px;

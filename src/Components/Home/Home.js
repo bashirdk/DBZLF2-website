@@ -101,7 +101,7 @@ const Home = () => (
   <img
     src={require(`../../images/dbzlf2-logo.png`)}
     alt="pic of logo"
-    className="w-120 h-auto mx-5"
+    className="home-logo h-auto mx-5"
   />
 
   <div className="text-center text-white">
