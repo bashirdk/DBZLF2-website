@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import React from 'react';
 
-import DragonBall from "../Logo/DragonBall";
-import LittleFighter2 from "../Logo/LittleFighter2";
+// import DragonBall from "../Logo/DragonBall";
+// import LittleFighter2 from "../Logo/LittleFighter2";
 
 import "./Navbar.css";
 

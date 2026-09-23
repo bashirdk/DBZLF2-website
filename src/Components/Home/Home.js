@@ -4,29 +4,29 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 
-import DragonBall from "../Logo/DragonBall";
-import LittleFighter2 from "../Logo/LittleFighter2";
+// import DragonBall from "../Logo/DragonBall";
+// import LittleFighter2 from "../Logo/LittleFighter2";
 
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const versionVariants = {
-  initial: {
-    opacity: 0,
-    y: -50,
-  }, 
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 3,
-      duration: 1,
-      ease: "easeInOut"
-    }
-  }
+// const versionVariants = {
+//   initial: {
+//     opacity: 0,
+//     y: -50,
+//   }, 
+//   animate: {
+//     opacity: 1,
+//     y: 0,
+//     transition: {
+//       delay: 3,
+//       duration: 1,
+//       ease: "easeInOut"
+//     }
+//   }
   
-}
+// }
 
 
 // Set the date we're counting down to
