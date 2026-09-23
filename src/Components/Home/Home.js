@@ -9,7 +9,7 @@ import LittleFighter2 from "../Logo/LittleFighter2";
 
 import { motion } from 'framer-motion'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const versionVariants = {
   initial: {
