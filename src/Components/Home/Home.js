@@ -1,7 +1,7 @@
 import "./Home.css";
 
 import React from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 
 import DragonBall from "../Logo/DragonBall";
@@ -48,14 +48,14 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("counter").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  // document.getElementById("counter").innerHTML = days + "d " + hours + "h "
+  // + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("counter").innerHTML = "EXPIRED";
-  }
+  // if (distance < 0) {
+  //   clearInterval(x);
+  //   document.getElementById("counter").innerHTML = "EXPIRED";
+  // }
 }, 1000);
 
 

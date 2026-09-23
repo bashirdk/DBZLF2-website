@@ -1,7 +1,7 @@
 import "./CharacterList.css";
 
 import React, { Component } from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 import CharacterGroup from "./CharacterGroup";
 import Characters from "../../data/characters.json";

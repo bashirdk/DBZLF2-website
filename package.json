@@ -10,28 +10,25 @@
     "chart.js": "^4.4.3",
     "framer-motion": "^4.1.17",
     "i": "^0.3.7",
-    "npm": "^8.3.0",
     "postcss": "^8.4.5",
     "react": "^17.0.2",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^16.14.0",
-    "react-ga": "^2.7.0",
+    "react-dom": "^17.0.2",
     "react-gtm-module": "^2.0.11",
-    "react-helmet": "^5.2.1",
+    "react-helmet-async": "^3.0.0",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "5.0.0"
   },
   "devDependencies": {
     "memfs": "^4.17.2",
-    "tailwindcss": "^0.7.4",
-    "webpack": "^5.99.9",
-    "webpack-dev-middleware": "^7.4.2"
+    "react-app-rewired": "^2.2.1",
+    "tailwindcss": "^0.7.4"
   },
   "scripts": {
     "tailwind:css": "tailwind build src/tailwind.src.css -c tailwind.js -o src/tailwind.css",
-    "start": "npm run tailwind:css && react-scripts start",
-    "build": "npm run tailwind:css && react-scripts build",
-    "test": "react-scripts test",
+    "start": "npm run tailwind:css && react-app-rewired start",
+    "build": "npm run tailwind:css && react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

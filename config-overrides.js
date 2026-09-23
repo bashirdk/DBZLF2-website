@@ -1,0 +1,17 @@
+const path = require("path");
+
+module.exports = function override(config) {
+  config.resolve.alias = {
+    ...(config.resolve.alias || {}),
+    "react/jsx-runtime": path.resolve(
+      __dirname,
+      "node_modules/react/jsx-runtime.js"
+    ),
+    "react/jsx-dev-runtime": path.resolve(
+      __dirname,
+      "node_modules/react/jsx-dev-runtime.js"
+    ),
+  };
+
+  return config;
+};

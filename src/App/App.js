@@ -4,7 +4,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Switch, withRouter } from "react-router-dom";
 
 import ScrollToTop from "../Components/ScrollToTop";
-import ReactGA from 'react-ga';
+// import ReactGA from 'react-ga';
 
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
@@ -16,6 +16,7 @@ import BackgroundProfile from "../Components/BackgroundProfile";
 import Downloads from "../Components/Downloads";
 import FAQs from "../Components/FAQs";
 import Guide from "../Components/Guide"
+import Start from "../Components/Guide/Start"
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee, faDownload } from '@fortawesome/free-solid-svg-icons'
@@ -34,8 +35,8 @@ const tagManagerArgs = {
 }
 TagManager.initialize(tagManagerArgs)
 
-ReactGA.initialize('UA-63142906-4');
-ReactGA.pageview('/');
+// ReactGA.initialize('UA-63142906-4');
+// ReactGA.pageview('/');
 
 const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not found</h1>
 
@@ -57,6 +58,7 @@ const App = () => (
               <Route exact path="/downloads/" component={Downloads} />
               <Route exact path="/faqs/"  component={FAQs} />
               <Route exact path="/guide/" component={Guide} />
+              <Route exact path="/guide/getting-started" component={Start} />
               <Route exact path="/tools/" component={Tools} />
               <Route exact path="/tools/battle-mode-balancer/" component={BattleModeBalancer} />
               <Route exact path="/tools/rec32-calculator/" component={Rect32Calculator} />
