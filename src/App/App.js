@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Switch, withRouter } from "react-router
 import ScrollToTop from "../Components/ScrollToTop";
 // import ReactGA from 'react-ga';
 
+import PageTracker from "../Components/PageTracker/PageTracker";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Home from "../Components/Home";
@@ -40,12 +41,15 @@ TagManager.initialize(tagManagerArgs)
 // ReactGA.initialize('UA-63142906-4');
 // ReactGA.pageview('/');
 
+ReactGA.initialize('G-9YGRTR4JP0');
+
 const NoMatch = () => <h1 className="text-white text-center my-24">404: Page not found</h1>
 
 const characterKey = window.location.pathname;
 
 const App = () => (
   <Router>
+    <PageTracker />
     <>
       <Navbar />
       <div className="container mx-auto min-h-screen">
